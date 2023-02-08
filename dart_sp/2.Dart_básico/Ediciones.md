@@ -1,5 +1,11 @@
+En 1 - Introducción
+    *Sin correciones.
+
+En 2 - Metodo main
+    *Sin correcciones.
+
 En 3 - Primer programa
-    ***Falta ver 2do parrafo de requirements
+    *Modificado una linea de la explicacion de requerimientos. Un cambio en el plurar o singular.
 
 En 4 - Variables:
     *Corregido sugerencia en dartpad
@@ -15,9 +21,9 @@ En 6 - Escape de caracteres
     *Correciones menores.
 
 En 7 - Lineas multiples
-    * Eliminado el link a SIGLAS en la version en ingles.
-    * En muiltilines cambiado el texto de las comillas simples y dobles
-    * Correcciones menores.
+    *Eliminado el link a SIGLAS en la version en ingles.
+    *En muiltilines cambiado el texto de las comillas simples y dobles
+    *Correcciones menores.
 
 En 8. Metodos eb textos
     *Modificado el parrafo donde dice que print es una función y no un método.
@@ -50,5 +56,19 @@ En 13 - Operadores de incremento y decremento
     *Correciones menores.
 
 En 14 - Operadores lógicos
-    * Agregado: llegaron a alguna conclusion?
+    *Agregado: llegaron a alguna conclusion?
+    *Modificada la explicacion de los operadores logicos.
+
+En 15 - Operador condicional
+    *Modificado una parte de los pasos (2do parrafo).
+    *pequeña modificacion linea 66.
+
+En 16 - Comentarios
+    *Corregido la explicación de TODO (tareas).
+
+En 17 - Expresiones y declaraciones
+    *Sin correcciones.
+    
+En 18 - Afirmaciones
+    *Agregada una pregunta: y si la condicion es verdadera?
     *

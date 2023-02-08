@@ -4,9 +4,11 @@ As we told you in the previous article, we want you to learn how to create __tes
 
 ## Requirements?
 
-Since now we're __using _Dartpad_, we don't have specific testing tools__ and so, we're going to be changing the ways in which we create our tests.
+Since now we are __using _Dartpad_, we do not have specific testing tools__. Therefore, we are going to create approximations to what would be the tests. And the first step is to know how to write and understand correctly the _requirements_.
 
-We are going to create a series of rules called ___requirements___ that is what we want our program to do. We are going to skip here the tests or error marking that the language itself already uses. For example, if we do not write the _main method_, without writing any test, the language will automatically mark the error; this will happen in many other cases and it is a huge help when we write hundreds of lines of code.
+What are they? They are a list of statements (or just one of them) that says what we expect our program to do. Then, in the near future (middle part of this course), we are going to use automation tools (🤤) that will be based on those requirements.
+
+For now, we are taking one step at a time, greeting this new world we are embarking on!
 
 ## _Hello world_
 

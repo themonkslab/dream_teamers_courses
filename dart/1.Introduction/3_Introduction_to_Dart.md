@@ -43,6 +43,12 @@ Because it will warn us with trumpets, we are going to realize the most importan
 
 And this is going to be maintained at the moment of executing our program and even before, at the moment of compiling it.
 
+Be aware that this is going to bother you often at first, but it is something that you will gradually internalize, section by section. In fact, there will be in this course a special one for _null safety_.
+
+__When you run into some little problem and can't find your why, think in _null safety___, and everything you know so far and abstain from insulting close relatives; I'm telling you from experience! 🤣
+
+Ah! Before I wanted to prevent your possible family breakups, I mentioned to you that this was also annoying at compiling time. Compi... what?
+
 Compi... what?
 
 ## 🚧 _Compile_
