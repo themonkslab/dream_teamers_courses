@@ -6,7 +6,7 @@ Como les contamos en el artículo anterior, queremos que aprendan a crear __test
 
 Como ahora estamos __utilizando _Dartpad_, no contamos con herramientas específicas de testing__. Por ello, vamos a ir creando aproximaciones a lo que serían los tests. Y el primer paso para ello, es saber escribir y entender correctamente los _requirements_.
 
-Qué son? Es un enunciado (o una lista de ellos) que dice qué esperamos que nuestro programa haga. Luego, en el futuro cercano (parte intermedia de este curso), vamos a utilizar herramientas de automatización (🤤) que se basarán en dichos requerimientos.
+Qué son? Son una lista de enunciados (o solo uno ellos) que dice qué esperamos que nuestro programa haga. Luego, en el futuro cercano (parte intermedia de este curso), vamos a utilizar herramientas de automatización (🤤) que se basarán en dichos requerimientos.
 
 Por ahora, vamos pasito a pasito, saludando a este nuevo mundo en el que nos metemos!
 
