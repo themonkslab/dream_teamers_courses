@@ -1,19 +1,19 @@
 # _Dynamic keyword_
 
-Es una palabra clave que __nos permite salirnos del _type safety_ (seguridad de tipo) que nos propone Dart; nos permite declarar una variable que puede ser de cualquier tipo en cualquier momento__. Veamos primero cómo se utiliza y luego entendamos el por qué en casos muy específicos, puede sernos de utilidad:
+It is a keyword that __allows us to get out of the _type safety_ proposed by Dart; it allows us to declare a variable that can be of any type at any time__. Let's first see how it is used and then understand why, in very specific cases, it can be useful:
 
 ```dart
 void main() {
     int x = 1;
     x = true; // error
     dynamic y = 6;
-    y = false; // no hay error! 😵‍💫
+    y = false; // no error! 😵‍💫
 }
 ```
 
-Ya vimos todas las ventajas que nos trae el tipado de Dart, __porqué habríamos de abandonarlo?__
+We have already seen all the advantages that the Dart typing system brings us, why should we abandon it?
 
-En casos muy específicos como cuando trabajemos con archivos del tipo _json_ y no sepamos qué contenido va a tener cada variable, se nos hará muy útil utilizar _keyword_:
+In very specific cases such as when we work with _json_ type files and we do not know what content each variable will have, it will be very useful to use this _keyword_:
 
 ```dart
 {
@@ -25,4 +25,4 @@ En casos muy específicos como cuando trabajemos con archivos del tipo _json_ y 
 }
 ```
 
-Si bien aun nos falta información para entenderlo completamente, podemos observar que los __valores__ de la derecha __van cambiando__ y por ello, __necesitamos el tipo dinámico__ para crear las variables que alojen este tipo de datos.
+Although we still lack information to fully understand it, we can see that the __values__ on the right __are changing__ and therefore, __we need the dynamic type__ to create the variables that hold this kind of data.

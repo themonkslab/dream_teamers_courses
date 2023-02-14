@@ -1,27 +1,27 @@
 # _Const keyword_
 
-Ya vimos que `var` nos permite cambiar el contenido de una variable e inferir automáticamente su tipo; `final` nos permite setear una variable también infiriendo su tipo pero que sería de solo lectura y calculada mientras ejecutamos un programa. Para qué queremos una palabra clave más?
+We have already seen that `var` allows us to change the content of a variable and automatically infer its type; `final` allows us to set a variable also inferring its type but that would be read-only and calculated while executing a program. Why do we want one more keyword?
 
-Continuemos con el ejemplo de los días y el entrenamiento. Supongamos que hay días que serán feriados y no vamos a entrenar dichos días. Sería una __información que tendríamos antes de empezar__ a entrenar, de hecho la tendríamos aun antes __de hacer nuestro programa y además, no cambiaría__: en Argentina desde que es Argentina, todos los años el 9 de Julio es el día de la independencia. Cómo haríamos esto? Muy simple:
-
-```dart
-void main() {
-    const independenceDay = '9 de Julio';
-}
-```
-
-Podemos declarar esa variable como `const` porque la inicializamos con un `String` literal que en sí, es también `const`. Sin embargo, 💀 fíjense qué sucede si intentamos hacer algo así:
+Let's continue with the example of days and training. Suppose that there are days that will be official holidays and we are not going to train on those days. It would be an __information that we would know before starting__ to train, in fact we would have it even before __making our program and furthermore, it would not change__: in Argentina since it is Argentina, every year the 9th of July is the Independence Day. How could we do this? Very simple:
 
 ```dart
 void main() {
-    const independenceDay = '9 de Julio';
-    final independenceDayUpperCase = independenceDay.toUpperCase();
+    const independenceDay = '9th of July';
 }
 ```
 
-Nos dice que una variable constante debe ser inicializada con un valor constante y eso es porque Dart puede evaluar esa expresión en tiempo de ejecución y no antes.
+We can declare that variable as `const` because we initialize it with a literal `String` which itself is also `const`. However, 💀 notice what happens if we try to do something like this:
 
-No obstante, hay cosas que Dart sí puede calcular de antemano:
+```dart
+void main() {
+    final independenceDay = '9th of July';
+    const independenceDayUpperCase = independenceDay.toUpperCase();
+}
+```
+
+It is telling us that a constant variable must be initialized with a constant value and that is because Dart can evaluate that expression at runtime and not before.
+
+However, there are things that Dart can calculate beforehand:
 
 ```dart
 void main() {
@@ -31,15 +31,15 @@ void main() {
 }
 ```
 
-Y para cerrar, como son variables constantes, solamente pueden ser fijadas una vez; no podremos asignarle otro valor en el futuro.
+And finally, since they are constant variables, they can only be set once; we will not be able to assign another value to them in the future.
 
-Por esta razón, es que __Dart prefiere este tipo de variables__ ya que le permite optimizar enormemente el programa. Por lo que siempre __prefieran este orden__, cuando la situación lo permita: __`const` sobre `final` y luego `final` sobre `var`.__
+For this reason, __Dart prefers this type of variables__ as it allows you to greatly optimize the program. So always __prefer this order__, when the situation allows it: __`const` over `final` and then `final` over `var`.__.
 
-Ah! Antes me gustaría mostrarles que esto es correcto solo que no es necesario ya que Dart infiere el tipo sin nosotros tener que decirle: `const String myName = 'Mauro';`.
+Ah, before we continue I would like to show you that this is correct but not necessary since Dart infers the type without us having to tell it: `const String myName = 'Mauro';`.
 
-## 💪 _final_, _const_ o _var_?
+## 💪 _final_, _const_ or _var_?
 
-__Requirement__: Analicen el siguiente código y determinen cuál variable puede ser declaradas con `const`, `final` o `var` y que siga resultando en un programa válido.
+__Requirement__: Analyze the following code and determine which variable can be declared with `const`, `final` or `var` and still result in a valid program.
 
 ```dart
 void main() {
@@ -54,7 +54,7 @@ void main() {
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {
@@ -67,9 +67,9 @@ void main() {
 }
 ```
 
-Pero existe una mejor solución... cuál sería?
+Now a better one...
 
-__💀 Mejor solución__:
+__💀 Better solution__:
 
 ```dart
 void main() {
@@ -77,9 +77,9 @@ void main() {
     const topping = 'with tomatoes';
     const favourite = '$text $topping';
     final newText = favourite.replaceAll('pizza', 'pasta');
-    const newFavourite = 'Now I like curry'; // como esta variable no se utiliza 
-    // bien podríamos crear una nueva.
-    // Además Dart nos avisa que no se utiliza!
+    const newFavourite = 'Now I like curry';    // since this variable is not used 
+                                                // we might as well create a new one.
+                                                // Besides, Dart warns us that it is not used!
     print(newText);
 }
 ```
