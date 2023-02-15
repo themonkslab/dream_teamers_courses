@@ -1,8 +1,8 @@
-# Flujo de control
+# Control flow
 
 @Mau Di Bert
 
-En esta sección veremos qué es el _control flow_ o cómo escribir __código que tomará decisiones basado en ciertas condiciones__. Esto se va poniendo más interesante! Aprenderemos:
+In this section we'll see what _control flow_ is, or how to write __code that will make decisions based on certain conditions__. This is getting more interesting! We will learn:
 
 - _if/else statements_
 - _while/for loops_
