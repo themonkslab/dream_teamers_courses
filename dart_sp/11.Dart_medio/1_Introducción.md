@@ -4,7 +4,7 @@ Ya han pasado por una gran cantidad de horas de lectura, ejercitación y aprendi
 
 Es momento de pasar a la segunda parte de este curso en donde aprenderemos como manejarnos con VSCode más parecido a como lo hacemos cuando trabajamos con él y haremos lo mismo con Dart.
 
-Esto trabajaremos:
+En esto trabajaremos:
 
 - Crear, correr y debuggear apps.
 - Componentes de un proyecto.
