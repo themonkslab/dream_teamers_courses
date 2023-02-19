@@ -10,7 +10,7 @@ Ya conocemos el comando `dart` y si lo ingresan a su terminal, van a poder obser
 
 Vamos a utilizar el primero de los _templates_ para __crear una aplicación para línea de comandos__. Introducimos entonces: `dart create -t console first_dart_project` y damos enter. Dart está creando el proyecto por nosotros! Para ingresar,... 💀 Ya tienen todos los elementos para abrir una instancia dentro de esa carpeta desde allí en VSCode! Prueben!
 
-Probaron? Era simplemente entrar a esa carpeta utilizando `cd first_dart project` (recuerden que si introducen los primeros caracteres del nombre del directorio y luego la tecla `tab`, se los autocompleta) y allí `code .` (siendo `.` el directorio en el que nos encontramos).
+Probaron? Era simplemente entrar a esa carpeta utilizando `cd first_dart project` (recuerden que si introducen los primeros caracteres del nombre del directorio y luego la tecla `tab`, se los autocompleta) y una vez dentro de la carpeta `code .` (siendo `.` el directorio en el que nos encontramos).
 
 Súper! Ya están dentro de su primer proyecto! 💪
 
@@ -30,7 +30,7 @@ Cómo ya saben, Dart necesita una función `main` que es el punto de entrada de 
 
 A su vez, si observan dicha función, pueden ver que llama a otra utilizando un `import` al que le agrega la palabra `as`, lo que hace que todo el archivo se llame con el nombre que le asigna, en este caso `first_dart_project`.
 
-Esta otra función, `calculate`, se encuentra dentro de un archivo otra vez con el mismo nombre que el del proyecto pero en la carpeta `lib`.
+Además hay otra función `calculate` que se encuentra dentro de un archivo otra vez con el mismo nombre que el del proyecto pero en la carpeta `lib`.
 
 ![Main function](./3.2_main_function.png)
 
@@ -38,7 +38,7 @@ Ahora que ya tenemos un idea mínima de dónde están nuestras funciones princip
 
 ### Correr nuestro programa desde la terminal
 
-Si ustedes ingresan el comando `dart`, van a ver que uno de los últimos comandos disponibles es el `run` (correr). Si ingresan entonces `dart run` estando dentro de la carpeta del proyecto vale aclarar, Dart sabe automáticamente cuál es el archivo que contiene su `main`, de qué archivo se trata, en qué carpeta está y corre su programa sin problemas. 💀 Vayan a ver qué pasa si mueven ese archivo que está dentro de la carpeta `bin` a otra ubicación?
+Si ustedes ingresan el comando `dart`, van a ver que uno de los últimos comandos disponibles es el `run` (correr). Si ingresan entonces `dart run` estando dentro de la carpeta del proyecto vale aclarar, Dart sabe automáticamente cuál es el archivo que contiene su `main` y en qué carpeta está y corre su programa sin problemas. 💀 Vayan a ver qué pasa si mueven ese archivo que está dentro de la carpeta `bin` a otra ubicación?
 
 Cuando creamos un proyecto de consola por _template_, se crea con una estructura determinada (que respetamos y seguimos como buena práctica), por lo que Dart sabe dónde está cada cosa. Si las cambiamos de lugar, no puede correr nuestro programa con el comando `run` así sin más. Sin embargo, si le proveyéramos del _path_ o locación precisa de nuestro archivo luego de `dart run` (`dart run ./locacion_de_nuestro_archivo/su_nombre.dart`), también lo correría.
 
