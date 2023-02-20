@@ -40,7 +40,7 @@ Now that we have a minimal idea of where our main functions are, I can tell you 
 
 If you enter the `dart` command, you will see that one of the last available commands is the `run` command. If you enter `dart run` while inside the project folder, Dart automatically knows which file contains your `main` and in which folder it is so it runs your program without any problems. 💀 Go and see what happens if you move that file inside the `bin` folder to another location?
 
-When we create a console project by _template_, it is created with a certain structure (which we respect and follow as a best practice), so Dart knows where everything is located. If we change them from one place to another, it cannot run our program with the `run` command just like that. However, if we provide it with the _path_ or precise location of our file after `dart run` (`dart run ./location_of_our_file/your_file_name.dart`), it will also run it.
+When we create a console project by _template_, it is created with a certain structure (which we respect and follow as a best practice), so Dart knows where everything is located. If we change files from one place to another, it cannot run our program with the `run` command just like that. However, if we provide it with the _path_ or precise location of our file after `dart run` (`dart run ./location_of_our_file/your_file_name.dart`), it will also run it.
 
 However, what happens if we modify the main function a bit to use its arguments? Something like this:
 
@@ -62,11 +62,9 @@ We will just go through the arguments received from the command line and print t
 
 ![Dart run help](./3.3_run_help.png)
 
-And how would we do then, according to such help, to introduce arguments? 💀 Take a little time to try it out!
+And how would you do then, according to such help, to introduce arguments? 💀 Take a little time to try it out!
 
 Have you tried? You have to enter the _path_ of the file and then the arguments: `dart run ./bin/first_dart_project.dart 1 2 3`.
-
-### Correr nuestro programa desde VSCode
 
 ### Running our program from VSCode
 

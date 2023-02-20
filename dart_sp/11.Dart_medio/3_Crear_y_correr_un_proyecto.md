@@ -38,7 +38,7 @@ Ahora que ya tenemos un idea mínima de dónde están nuestras funciones princip
 
 ### Correr nuestro programa desde la terminal
 
-Si ustedes ingresan el comando `dart`, van a ver que uno de los últimos comandos disponibles es el `run` (correr). Si ingresan entonces `dart run` estando dentro de la carpeta del proyecto vale aclarar, Dart sabe automáticamente cuál es el archivo que contiene su `main` y en qué carpeta está y corre su programa sin problemas. 💀 Vayan a ver qué pasa si mueven ese archivo que está dentro de la carpeta `bin` a otra ubicación?
+Si ustedes ingresan el comando `dart`, van a ver que uno de los últimos comandos disponibles es el `run` (correr). Si ingresan entonces `dart run` estando dentro de la carpeta del proyecto, Dart sabe automáticamente cuál es el archivo que contiene su `main` y en qué carpeta está y corre su programa sin problemas. 💀 Vayan a ver qué pasa si mueven ese archivo que está dentro de la carpeta `bin` a otra ubicación?
 
 Cuando creamos un proyecto de consola por _template_, se crea con una estructura determinada (que respetamos y seguimos como buena práctica), por lo que Dart sabe dónde está cada cosa. Si las cambiamos de lugar, no puede correr nuestro programa con el comando `run` así sin más. Sin embargo, si le proveyéramos del _path_ o locación precisa de nuestro archivo luego de `dart run` (`dart run ./locacion_de_nuestro_archivo/su_nombre.dart`), también lo correría.
 
