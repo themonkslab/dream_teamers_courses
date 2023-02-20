@@ -35,7 +35,7 @@ Did you research? What the `-R` does is to make the deletion recursive since it 
 
 On the other hand, you will see when you start doing some research, the words `su` and `sudo`. I didn't tell you before, but __every operating system works with different users with different roles__, which allows us to prevent that __someone__ who shouldn't __do something he/she shouldn't__.
 
-__The most powerful user is called `root`__ and is the one who has all the permissions. If you type `su`, you will be asked for the _password_ to log in as that user. On Mac for example, this user is disabled by default. On the other hand, if you type `sudo` (_Super User DO_), this command gives the current user administrator permissions. Be careful! There is no `sudo` command in Windows, the nearest equivalent is `runas`(_run as administrator_).
+__The most powerful user is called `root`__ and is the one who has all the permissions. If you type `su`, you will be asked for the _password_ to log in as that user. On Mac for example, this user is disabled by default. On the other hand, if you type `sudo` (_Super User DO_), this command gives the current user administrator permissions.
 
 To finish this not so brief introduction, I leave you a list of commands that you may find very useful. Oh and before: if you ever get stuck in the middle of a command or a process, you can use `ctrl + c` to get out of it! Now, the commands:
 
@@ -49,4 +49,4 @@ To finish this not so brief introduction, I leave you a list of commands that yo
 -`find <path(s)> <search condition(s)> <actions>`: searches for files by browsing directory trees specified by the paths, evaluating from left to right the search conditions. In addition, you can specify actions on the results obtained.
 -`pwd <options>`: Displays the name of the directory in which you are located (_print working directory_).
 
-I hope you have enough to get your little hands into exploring, testing and doing it especially in front of unknowledgeable people to make yourselves look like keyboard superheroes! 🦸‍♂️
+You may find that many of these commands don't work in Windows, but don't let that stop you from exploring, testing and doing it especially in front of unknowledgeable people to make yourself look like a keyboard superhero! 🦸‍♂️

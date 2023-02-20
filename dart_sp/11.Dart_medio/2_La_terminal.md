@@ -35,7 +35,7 @@ Buscaron!? Lo que hace la `-R` es hacer recursiva la eliminación ya se trata de
 
 Por otro lado, van a ver cuando empiecen a investigar un poco, las palabras 'su' y 'sudo'. No se los dije antes, pero __cada sistema operativo funciona con distintos usuarios los cuales cuentan cada uno con diferentes roles__, lo que nos permite evitar que __alguien__ que no debe __haga algo que no debe__.
 
-__El usuario más poderoso se llama `root`__ y es quien tiene todos los permisos. Si ustedes teclean `su`, les va a pedir el _password_ para loguearse como dicho usuario. En Mac por ejemplo, dicho usuario está desactivado por defecto. Por otro lado, si uno teclea `sudo` (_Super User DO_), dota al usuario actual de permisos de administrador. Cuidado! no existe el comando `su`o `sudo`en windows, el mas parecido es `runas`.
+__El usuario más poderoso se llama `root`__ y es quien tiene todos los permisos. Si ustedes teclean `su`, les va a pedir el _password_ para loguearse como dicho usuario. En Mac por ejemplo, dicho usuario está desactivado por defecto. Por otro lado, si uno teclea `sudo` (_Super User DO_), dota al usuario actual de permisos de administrador.
 
 Como para terminar esta capaz no tan breve introducción, les dejo un listado de comandos que les pueden resultar de mucha utilidad. Ah! Antes: si alguna vez se quedan en la mitad de un comando o un proceso, pueden utilizar `ctrl + c` para salir de allí! Ahora sí, los comandos:
 
@@ -49,4 +49,4 @@ Como para terminar esta capaz no tan breve introducción, les dejo un listado de
 -`find <ruta(s)> <condición(es) de búsqueda> <acciones>`: busca archivos recorriendo árboles de directorios especificados por las rutas, evaluando de izquierda a derecha las condiciones de búsqueda. Además se pueden especificar acciones sobre los resultados obtenidos.
 -`pwd <opciones>`: Muestra el nombre del directorio en el que uno se encuentra situado (_print working directory_).
 
-Espero que tengan suficiente para meter sus manitas a explorar, probar y hacerlo sobre todo frente a personas innotas para hacerse ver como superhéroes del teclado! 🦸‍♂️
+Podrán ver que muchos de estos comandos no funcionan en Windows, pero que eso no los detenga de explorar, probar y hacerlo sobre todo frente a personas innotas para hacerse ver como superhéroes del teclado! 🦸‍♂️
