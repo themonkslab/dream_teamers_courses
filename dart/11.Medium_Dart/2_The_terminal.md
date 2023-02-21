@@ -39,12 +39,12 @@ __The most powerful user is called `root`__ and is the one who has all the permi
 
 To finish this not so brief introduction, I leave you a list of commands that you may find very useful. Oh and before: if you ever get stuck in the middle of a command or a process, you can use `ctrl + c` to get out of it! Now, the commands:
 
-- `top`: shows you a list of the programs in use with their _PID_ or _program id_. It is worth clarifying that an _id_ is an identifier, it applies to millions of situations but it lets you know that an object is specifically that object.
+- `top`: shows a list of the programs in use with their _PID_ or _program id_. It is worth clarifying that an _id_ is an identifier, it applies to millions of situations but it lets you know that an object is specifically that object.
 - `killall [program command]`: kills or terminates a program using its command. For example: `killall code`.
 - `kill PID`: kills a program using its PID. For example: `kill 4320`.
 - `ls <options> <files>`: list the contents of a directory.
 - `cp <options> <file> <path>`: copies a file or directory to the specified directory.
-- `mv <options> <file> <path>`: used to move files and directories from one directory to another, or to rename a file or directory.
+- `mv <options> <file> <path>`: moves files and directories from one directory to another, or renames a file or directory.
 - `cat <options> <files>`: displays the contents of the files by standard output.
 -`find <path(s)> <search condition(s)> <actions>`: searches for files by browsing directory trees specified by the paths, evaluating from left to right the search conditions. In addition, you can specify actions on the results obtained.
 -`pwd <options>`: Displays the name of the directory in which you are located (_print working directory_).
