@@ -18,7 +18,7 @@ __Lo primero que van a ver, es el _prompt_ o prontuario__ en español y es la ay
 
 Hace unos párrafos, mencionamos que uno le ingresa órdenes a la terminal. Como sucede con cualquier lenguaje __estas órdenes tienen que estar en orden__ porque sino la terminal como sucedería con otras personas, no entenderían nada. En una __orden tipo__ la primera palabra indica la orden a ser ejecutada y las palabras restantes se pasan como opciones o parámetros y argumentos de la orden: `-> ~ orden [ opciones ] [ arguments ]`
 
-__Las opciones son diferentes posibilidades de como usar el comando y las podemos ingresar utilizando `--` antes de la opción, o un solo `-` antes de la abreviatura__ de la opción, que puede ser la primer letra o las primeras dos. Por ejemplo tenemos el comando `dart`, que vendría ser una utilidad en la terminal para desarrollar en Dart. Si solo tecleamos `dart`, esto es lo que nos aparece:
+__Las opciones son diferentes posibilidades de cómo usar el comando y las podemos ingresar utilizando `--` antes de la opción, o un solo `-` antes de la abreviatura__ de la opción, que puede ser la primer letra o las primeras dos. Por ejemplo tenemos el comando `dart`, que vendría ser una utilidad en la terminal para desarrollar en Dart. Si solo tecleamos `dart`, esto es lo que nos aparece:
 
 ![Comando dart](2.2_comando_dart.png)
 
@@ -44,7 +44,7 @@ Como para terminar esta capaz no tan breve introducción, les dejo un listado de
 - `kill PID`: mata un programa utilizando su PID. Por ejemplo: `kill 4320`.
 - `ls <opciones> <ficheros>`: lista el contenido de un directorio.
 - `cp <opciones> <archivo> <ruta>`: copia un archivo o directorio en el directorio especificado.
-- `mv <opciones> <archivo> <ruta>`: se utiliza  para mover archivos y directorios de un directorio a otro, o para renombrar un archivo o directorio.
+- `mv <opciones> <archivo> <ruta>`: mueve archivos y directorios de un directorio a otro, o renombra un archivo o directorio.
 - `cat <opciones> <archivos>`: muestra por pantalla el contenido de los archivos por la salida estándar.
 -`find <ruta(s)> <condición(es) de búsqueda> <acciones>`: busca archivos recorriendo árboles de directorios especificados por las rutas, evaluando de izquierda a derecha las condiciones de búsqueda. Además se pueden especificar acciones sobre los resultados obtenidos.
 -`pwd <opciones>`: Muestra el nombre del directorio en el que uno se encuentra situado (_print working directory_).
