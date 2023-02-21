@@ -688,4 +688,6 @@ varias pistas! 💀 Van a probar?
 
 De esta forma pudimos completar todos nuestros tests! Estamos listos para una
 nueva forma de pensar el código y escribirlo! Tengan paciencia que les aseguro
-esto va a pagar con creces en el futuro!
+esto va a pagar con creces en el futuro. Además, vamos a ir viendo formas nuevas
+de testear a medida que vayamos aprendiendo código nuevo ya que va a estar, de
+ahora en más, en nuestra rutina diaria.
