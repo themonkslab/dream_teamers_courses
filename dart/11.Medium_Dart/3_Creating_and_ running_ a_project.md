@@ -82,9 +82,6 @@ You will notice that this file is a `Map` or something like that (this is the wa
 
 ```json
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -104,9 +101,6 @@ Now, how do we add up our arguments? Easy! We add another _key_ called `"args"` 
 
 ```json
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -125,6 +119,6 @@ Now, how do we add up our arguments? Easy! We add another _key_ called `"args"` 
 }
 ```
 
-Voila! you can now run your first project from VSCode too! In fact, you can do it super fast if you go to your `first_dart_project.dart` file, locate the `main` and click right above where it says: _Run_. That's the quick version! 😂
+Voilà! you can now run your first project from VSCode too! In fact, you can do it super fast if you go to your `first_dart_project.dart` file, locate the `main` and click right above where it says: _Run_. That's the quick version! 😂
 
 And once you have seen the quick version of _Run_, you will have seen next to it, another one called _Debugg_. And that? Next chapter!

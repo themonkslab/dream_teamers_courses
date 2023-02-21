@@ -82,9 +82,6 @@ Podrán observar que dicho archivo es un `Map` o algo así (es la manera en la q
 
 ```json
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -104,9 +101,6 @@ Ahora bien, cómo sumamos nuestros argumentos? _Easy_ (fácil)! Sumamos otra _ke
 
 ```json
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
