@@ -6,9 +6,9 @@ Add a brief description of what has been done, which will help to focus the revi
 
 ## Type
 
-- [ ] Translation
-- [ ] Enhancement
-- [ ] New Article
+[ ] Translation
+[ ] Enhancement
+[ ] New Article
 
 ## Screenshots
 
