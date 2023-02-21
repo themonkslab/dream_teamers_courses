@@ -61,16 +61,16 @@ Vamos por partes:
 
 - _Primer botoncito que no sé cómo se llama_ (😂): A su izquierda, pueden ver __dos columnas de tres puntitos cada una__ y cuando pasan el cursor encima, se transforma en una mano: nos sirve para __mover dicha barra__. Atención que solo se mueve una línea hacia abajo y a lo largo de todo VSCode.
 - _Continue/Pause_ (`F5`): _Continue_ sigue con la ejecución del programa hasta que encuentra otro _breakpoint_ mientras que en _Pause_ podemos inspeccionar el código de la línea en la que estamos parados y movernos línea por línea.
-- _Step Over_ (`F10`): ejecuta el siguiente método como si fuera un comando único, sin inspeccionarlo o siguiendo en los métodos o funciones internas de éste. Por ejemplo estuviéramos en un _for loop_, NO entraría y ejecutaría cada iteración.
+- _Step Over_ (`F10`): ejecuta el siguiente método como si fuera un comando único, sin inspeccionarlo o siguiendo en los métodos o funciones internas de éste. Por ejemplo si estuviéramos en un _for loop_, NO entraría y ejecutaría cada iteración.
 - _Step Into_ (`F11`): entra al método siguiente y lo ejecuta línea a línea. Por ejemplo estuviéramos en un _for loop_, SÍ entraría y ejecutaría cada iteración.
-- _Step Out_ (`Shift + F11`): si estamos dentro de un método, retorna al contexto en el que estaba cuando este método fue llamado, completando los pasos restantes como si se tratara de un comando único. Por ejemplo estuviéramos en la segunda iteración de un _for loop_, saldría habiendo primero ejecutando todas juntas cada iteración restante pero sin detenerse en cada una.
+- _Step Out_ (`Shift + F11`): si estamos dentro de un método, retorna al contexto en el que estaba cuando este método fue llamado, completando los pasos restantes como si se tratara de un comando único. Por ejemplo si estuviéramos en la segunda iteración de un _for loop_, saldría habiendo primero ejecutando todas juntas cada iteración restante pero sin detenerse en cada una.
 - _Hot Restart_ (`Ctrl + F5`): lo veremos en Flutter.
 - _Restart_ (`Shift + Cmd/Win + F5`): termina la ejecución del programa y la reinicia en modo debug.
 - _Stop_ (`Shift + F5`): termina la ejecución.
 
 Bien! Vamos a utilizar estos controles y movernos paso a paso, aprendiendo sobre cada una de las áreas de VSCode en el camino.
 
-1. Hagan click en _Step Into_: Van a ver que saltamos a otro archivo, que allí no tenemos variables disponibles y que entonces en el _CALL STACK_, podemos ver como `calculate` se puso encima de `main` pero que si queremos podemos, haciendo click, volver al `main`, aunque la ejecución no se altera: si hiciéramos click en _Step Into_ volvería el foco al `calculate` pero ahora dentro del método.
+1. Hagan click en _Step Into_: Van a ver que saltamos a otro archivo, donde no tenemos variables disponibles, y en el _CALL STACK_, podemos ver como `calculate` se puso encima de `main` aunque podemos volver haciendo click en el sin que la ejecución se altere: si hiciéramos click en _Step Into_ volvería el foco al `calculate` pero ahora dentro del método.
 ![Step Into](4.5_step_into.gif)
 2. (Hicimos ya click en _Step Into_ para probar) Hagan click en _Continue_ y van a observar cómo volvemos al `main` y el _Call Stack_ se limpia. Luego, hagan click en _Step Into_ y van observar el ingresar dentro de una función (`getUserName`) pero ya no salta a otro archivo sino que lo hace dentro del mismo. Después hagan click en _Continue_ y salta al siguiente _breakpoint_ ya con el resultado de la variable que podemos observar posándonos arriba o bien en el sector de _VARIABLES_.
 ![getUserName](4.6_get_user_name.gif)
