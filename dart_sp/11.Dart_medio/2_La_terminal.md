@@ -39,7 +39,7 @@ __El usuario más poderoso se llama `root`__ y es quien tiene todos los permisos
 
 Como para terminar esta capaz no tan breve introducción, les dejo un listado de comandos que les pueden resultar de mucha utilidad. Ah! Antes: si alguna vez se quedan en la mitad de un comando o un proceso, pueden utilizar `ctrl + c` para salir de allí! Ahora sí, los comandos:
 
-- `top`: les muestra un listado de los programas en uso con su _PID_ o _program id_. Vale aclarar que un _id_ es un identificador, se aplica a millones de situaciones pero sirve exactamente para saber que un objeto es específicamente ese objeto.
+- `top`: muestra un listado de los programas en uso con su _PID_ o _program id_. Vale aclarar que un _id_ es un identificador, se aplica a millones de situaciones pero sirve exactamente para saber que un objeto es específicamente ese objeto.
 - `killall [comando del programa]`: mata o termina un programa utilizando su comando. Por ejemplo: `killall code`.
 - `kill PID`: mata un programa utilizando su PID. Por ejemplo: `kill 4320`.
 - `ls <opciones> <ficheros>`: lista el contenido de un directorio.
