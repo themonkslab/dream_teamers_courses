@@ -1,0 +1,18 @@
+// **************************************************************************
+// JsonSerializableGenerator
+// **************************************************************************
+
+CoursesGroup _$CoursesGroupFromJson(Map<String, dynamic> json) => CoursesGroup(
+      group_name: json['group_name'] as String,
+      courses: (json['courses'] as List<dynamic>)
+          .map((e) => Course.fromJson(e as String))
+          .toList(),
+      folder: json['folder'] as String,
+    );
+
+Map<String, dynamic> _$CoursesGroupToJson(CoursesGroup instance) =>
+    <String, dynamic>{
+      'group_name': instance.group_name,
+      'courses': instance.courses,
+      'folder': instance.folder,
+    };
