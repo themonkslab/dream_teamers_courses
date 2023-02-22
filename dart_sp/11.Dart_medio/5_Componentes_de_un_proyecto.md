@@ -12,11 +12,12 @@ __Nota sobre _linting_:__ es el proceso por el cual se analiza nuestro código y
 
 Hasta ahora siempre hablamos de haber creado el primero proyecto de Dart pero en realidad, siendo específicos, __no existe tal cosa llamada proyecto en Dart sino, lo que verdaderamente tenemos son paquetes__ o _Dart packages_.
 
-__Podemos encontrar una enorme cantidad de paquetes curados, reankeados y comentados en [pub.dev](https://pub.dev/),__ que es el repositorio oficial para _packages_ tanto de Dart como de Flutter.
+__Podemos encontrar una enorme cantidad de paquetes curados, rankeados y comentados en [pub.dev](https://pub.dev/),__ que es el repositorio oficial para _packages_ tanto de Dart como de Flutter.
 
 Cuál sería la utilidad de ellos y la de reunirlos todos en un solo lugar? Imaginemos que tenemos que escribir una aplicación para buscar en un servidor una serie de datos, luego transformarlos desde su formato JSON original a clases que tenemos en nuestra app y finalmente almacenarlos en una base de datos.
 
-Imaginen si tuviéramos que escribir todo eso en Dart? Nos volveríamos locos o por lo menos, habríamos consumido enormes cantidades de tiempo en ello. Sin embargo ya hay una __gran colección de paquetes elaborados y mantenidos por un hermoso grupo de personas (la comunidad) que se encargan de hacer estas cosas y muchas más, ahorrándonos impensadas cantidades de tiempo y recursos,__ todas reunidas en el mágico [pub.dev](https://pub.dev/).
+Imaginen ahora que tuviéramos que escribir todo eso en Dart? Nos volveríamos locos o por lo menos, habríamos consumido enormes cantidades de tiempo en ello.
+Por suerte ya hay una __gran colección de paquetes elaborados y mantenidos por un hermoso grupo de personas (la comunidad) que se encargan de hacer estas cosas y muchas más, ahorrándonos impensadas cantidades de tiempo y recursos,__ todas reunidas en el mágico [pub.dev](https://pub.dev/).
 
 Así, un paquete puede depender de otros y viceversa. __Un paquete que es útil para el ecosistema y está subido a _pub.dev_, se llama librería o _library_,__ mientras que __un paquete específico de una aplicación se llama _application package_ o paquete de aplicación.__ 🙄
 
@@ -60,7 +61,7 @@ Ahora que entendimos un poco qué son los paquetes y vimos que hay otras persona
 
 ## Librerías
 
-Las _libreries_ son las partes públicas de un paquete y es lo que en nuestro proyecto representaría la carpeta `/lib`, aunque dichas librerías exigen una forma específica de organizar sus carpetas y archivos, cosa que veremos pronto. Podríamos sin embargo, ayudarnos a escribir mejor código para estas librerías utilizando un poquito de ayuda...
+Las _libraries_ son las partes públicas de un paquete y es lo que en nuestro proyecto representaría la carpeta `/lib`, aunque dichas librerías exigen una forma específica de organizar sus carpetas y archivos, cosa que veremos pronto. Podríamos sin embargo, ayudarnos a escribir mejor código para estas librerías utilizando un poquito de ayuda...
 
 ## Linting
 
