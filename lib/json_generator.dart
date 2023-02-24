@@ -4,20 +4,35 @@ import 'dart:io';
 import 'package:json_generator/models/_index.dart';
 
 void main() async {
-  var coursesDirectory = Directory('courses');
+
+  final List<FileCoursesGroup> coursesEn = [
+    FileCoursesGroup(group_name: 'Learning Path', folder: 'dart', courses: [
+      FileCourse(title: 'Dart and TDD', path: 'dart_y_tdd_en', sections: 
+        await createCourseFromPath('dart'),
+      )
+    ]),
+  ];
+  await generateJsonFile(coursesList: coursesEn, outputFilename: 'courses_en.json');
+
+  final List<FileCoursesGroup> coursesSp = [
+    FileCoursesGroup(group_name: 'Learning Path', folder: 'dart_sp', courses: [
+      FileCourse(title: 'Dart y TDD', path: 'dart_y_tdd_es', sections: 
+        await createCourseFromPath('dart_sp'),
+      )
+    ]),
+  ];
+  await generateJsonFile(coursesList: coursesSp, outputFilename: 'courses_es.json');
+}
+
+Future<void> generateJsonFile({
+    required List<FileCoursesGroup> coursesList, 
+    required String outputFilename,
+  }) async {
+  final coursesDirectory = Directory('courses');
   if (!await coursesDirectory.exists()) {
     await coursesDirectory.create();
   }
-
-  final List<FileCoursesGroup> coursesList = [
-    FileCoursesGroup(group_name: 'Learning Path', folder: 'dart', courses: [
-      FileCourse(title: 'Dart and TDD', path: 'dart_y_tdd_es', sections: 
-        await createCourseFromPath('dart'),
-      )
-    ])
-  ];
-
-  final filename = '${coursesDirectory.path}/courses_es.json';
+  final filename = '${coursesDirectory.path}/$outputFilename';
   final jsonCourse = coursesToJson(coursesList);
   await File(filename).writeAsString(jsonCourse);
 }
@@ -87,7 +102,7 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
       }
     }
 
-    articles.sort(((a, b) => orderList(a, b)));
+    articles.sort((a, b) => (a.title ?? '').compareTo(b.title ?? ''));
     // for (var i = 0; i < articles.length; i++) {
     //   articles[i]['path'] = 'article_$i';
     // }
@@ -100,10 +115,7 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
     ));
   }
 
-  sections.sort((a, b) => orderList(a, b));
-  // for (var i = 0; i < sections.length; i++) {
-  //   sections[i]['path'] = 'section_$i';
-  // }
+  sections.sort((a, b) => (a.title ?? '').compareTo(b.title ?? ''));
   return sections;
 }
 
