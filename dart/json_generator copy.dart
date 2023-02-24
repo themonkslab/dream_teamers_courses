@@ -2,9 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 void main() async {
-  final list = List.of({
-    'dart',
-  });
+  final list = List.of({'dart'});
 
   for (var item in list) {
     // Get course from local files
