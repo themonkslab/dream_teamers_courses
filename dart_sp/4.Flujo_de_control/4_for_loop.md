@@ -17,10 +17,10 @@ void main() {
 Fíjense que de esta forma, nos lleva un par de líneas menos aun! Pero cómo funciona?
 
 1. Declaramos e inicializamos la variable: `var i = 1;`.
-2. Establecemos la condición que se tiene que cumplir para salir del bucle: `i < 10;`.
+2. Establecemos la condición que se tiene que cumplir para permanecer dentro del bucle: `i < 10;`.
 3. Definimos cuál será el incrementador: `i++`.
 
-Así, lo que está dentro del bucle (dentro de las `{...aquí...}`) se ejecutará hasta que la condición que hayamos establecido, resulte en `true`.
+Así, lo que está dentro del bucle (dentro de las `{...aquí...}`) se ejecutará hasta que la condición que hayamos establecido, resulte en `false`.
 
 Tendríamos de esta manera un diagrama parecido al anterior solo que en este caso nuestro _for loop_ pide de forma explicita la actualización (incrementación en este caso) de la variable inicializada:
 
@@ -42,7 +42,7 @@ Para un contador (`i`) que vaya desde 1 a 15
     sino
         `print i`
 
-__Clue__ (pista): van a tener que utilizar el _modulus operator_ (%) y el _logical AND operator_ (&&).
+__Clue__ (pista): van a tener que utilizar el _modulus operator_ `%` y el _logical AND operator_ `&&`.
 
 ---
 
