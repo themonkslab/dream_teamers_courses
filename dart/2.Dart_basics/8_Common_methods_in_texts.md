@@ -23,7 +23,7 @@ There we just go down with the arrow to where it says _toUpperCase_ and press th
 
 Looking at the expression `print(title.toUpperCase())` in detail, we know that `title`, is a variable that stores a `String`. What is `toUpperCase` then? A method!
 
-A method is **one or more operations that can be performed on a given _variable_ or _object_**. To _call it_ we use the _dot operator_ '.', and to _execute it_, the '()': __Object.method()__.
+A method is __one or more operations that can be performed on a given _variable_ or _object___. To _call it_ we use the _dot operator_ '.', and to _execute it_, the '()': __Object.method()__.
 
 On the other hand, we can also see that `print(...)` performs an operation and is called with brackets. Although you will hear it called as a 'method', it is a _function_.
 
