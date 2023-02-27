@@ -73,6 +73,7 @@ void main() {
     print(a); 
 }
 ```
+
 ## _Operators precedence_
 
 It is the order in which the operators are going to be executed. What do you think will be the result of this `print(10 - 2 * 5);`? 💀 Put your mathematical skills to the test! 🤣
