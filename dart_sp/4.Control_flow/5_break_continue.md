@@ -26,7 +26,7 @@ void main() {
 
 ## _Break_
 
-Nos permite __parar, salir__ del _loop_. Si agregamos un _break_ apenas comienza el bucle, qué ocurre? Sale e imprime _Done!_ Además, pueden observar que Dartpad entiende que el código dentro del loop no se va a ejecutar y es lo suficientemente amable para decirnos que es código muerto (_death code_), con un subrayado.
+Nos permite __parar, salir__ del _loop_. Si agregamos un _break_ apenas comienza el bucle, qué ocurre? Sale e imprime _Done!_ Además, pueden observar que Dartpad entiende que el código dentro del loop no se va a ejecutar y es lo suficientemente amable para decirnos que es código muerto (_dead code_), con un subrayado.
 
 ```dart
 void main() {

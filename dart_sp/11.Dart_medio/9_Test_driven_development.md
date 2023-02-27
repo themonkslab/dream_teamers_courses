@@ -611,26 +611,83 @@ Para el primero de los tests que fallan, podríamos tener muchas soluciones. Yo
 elegí explorar en el `result`, que es un `num` (ya vieron que sería la clase
 padre de `int` y `double`) y ver qué tenía dentro de sus métodos; descubrí
 `isInfinity`. Ese método nos arroja un booleano en `true` si efectivamente es
-infinito.
+infinito:
+
+```dart
+ test(
+      'Given 2 and 0, when divide is called, then it should result in Infinity',
+      () {
+    // Given
+    const a = 2;
+    const b = 0;
+
+    // When
+    var result = divide(a, b);
+
+    // Then
+    expect(result.isInfinite, 🤪);
+  });
+```
 
 Hasta ahí tenemos el _actual_ o la primera parte del `expect`. Cuál sería el
-_matcher_? Resulta que hay _matchers_ ya creados para nosotros:
+_matcher_ o 🤪 en nuestro código? Resulta que hay _matchers_ ya creados para nosotros:
 
 - _equals_: Determina si dos objetos son iguales usando operator ==.
-- _isTrue_, isFalse: Determina si el valor actual es verdadero o falso.
+- _isTrue_, _isFalse_: Determina si el valor actual es verdadero o falso.
 - _isNull_: Determina si el valor actual es nulo.
 - _isNotNull_: Determina si el valor actual no es nulo.
 - _isInstanceOf_\<T>: Determina si el valor actual es una instancia del tipo T.
 - _isA_\<T>: Alias para isInstanceOf\<T>.
 - _throwsA_\<Exception>: Determina si la función proporcionada lanza una excepción del tipo especificado.
-- _throwsA_(predicate): Determina si la función proporcionada lanza una excepción que satisface el predicado proporcionado.
+- _throwsA_(predicate): Determina si la función proporcionada lanza una
+  excepción que satisface el predicado proporcionado (más sobre esto en el futuro).
 - _closeTo_: Determina si un número de coma flotante está cerca de un valor dado dentro de una cierta tolerancia.
 - _greaterThan_: Determina si un valor es mayor que el valor esperado.
 - _lessThan_: Determina si un valor es menor que el valor esperado.
 - _contains_: Determina si un iterable o una cadena contiene un valor esperado.
 - _hasLength_: Determina si un iterable o una cadena tiene la longitud esperada.
 
-Hay alguno de estos que aun no vamos a utilizar pero ya los voy dejando! 🫣
+Hay alguno de estos que aun no vamos a utilizar pero ya los voy dejando para que
+les pique la curiosidad! 🫣
 
-<!-- TODO -CONT-: explicar el isTrue y luego utilizar el result.isNan de la
-misma forma  -->
+Entonces, podríamos ahora utilizar uno de ellos y así completar nuestro test:
+
+```dart
+ test(
+      'Given 2 and 0, when divide is called, then it should result in Infinity',
+      () {
+    // Given
+    const a = 2;
+    const b = 0;
+
+    // When
+    var result = divide(a, b);
+
+    // Then
+    expect(result.isInfinite, isTrue);
+  });
+```
+
+Para completar el siguiente utilizo otro método del `result` que me permite
+comprobar que no es un número (_is not a number_ o _NaN_). Creo que ya les di
+varias pistas! 💀 Van a probar?
+
+```dart
+  test('Given 0 and 0, when divide is called, then it should result in 0', () {
+    // Given
+    const a = 0;
+    const b = 0;
+
+    // When
+    var result = divide(a, b);
+
+    // Then
+    expect(result.isNaN, isTrue);
+  });
+```
+
+De esta forma pudimos completar todos nuestros tests! Estamos listos para una
+nueva forma de pensar el código y escribirlo! Tengan paciencia que les aseguro
+esto va a pagar con creces en el futuro. Además, vamos a ir viendo formas nuevas
+de testear a medida que vayamos aprendiendo código nuevo ya que va a estar, de
+ahora en más, en nuestra rutina diaria.
