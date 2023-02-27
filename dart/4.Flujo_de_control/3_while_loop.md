@@ -1,8 +1,8 @@
 # _While loop_
 
-Un _loop_ es un __bucle, un proceso que se repite de forma infinita__. En el caso de un bucle _while_ (mientras), este se repite siempre que se cumpla una condición que fijamos de antemano.
+A _loop_ is an __infinitely repeating process__. In the case of a _while loop_, it repeats as long as a condition we set beforehand is met.
 
-Por ejemplo supongamos que queremos imprimir una cuenta de 1 a 10 y al final, algo que nos indique que terminamos. Podríamos hacer esto:
+For example, suppose we want to print a count from 1 to 10 and at the end, something to tell us that we are done. We could do this:
 
 ```dart
 void main() {
@@ -20,38 +20,38 @@ void main() {
 }
 ```
 
-Sin embargo, ya vieron que esto no cumple con el principio _DRY, don't repeat your self_ (no se repitan!), se ve bastante horrible y además, nos lleva mucho trabajo. Si utilizamos un _while loop_, se vería así:
+However, you already saw that this does not comply with the _DRY, don't repeat your self_, principle, it looks pretty horrible and also, it takes a lot of work. If we use a _while loop_, it would look like this:
 
 ```dart
 void main() {
-    // un int para llevar la cuenta
+    // an int to keep track
     int i = 1;
     while(i < 11) {
         print(i);
-        i++; // esto se encarga de incrementar
-        // la cuenta. Sino, quedaríamos
-        // en un loop infinito
-        // porque 'i' se mantendría en 1
-        // y la condición siempre resultaría
-        // en true
+        i++;    // this takes care of incrementing
+                // the account. Otherwise, we would be left
+                // in an infinite loop
+                // because 'i' would remain at 1
+                // and the condition would always result
+                // true
     }
     print('Done!');
 }
 ```
 
-Logramos el mismo resultado pero con un poquito más de clase 🧐😵‍💫🤣.
+We achieved the same result but with a little bit more class 🧐😵‍💫🤣.
 
 ## 💪 Mario world
 
-__Requirement__: Imprimir la siguiente figura:
+__Requirement__: Print the following figure:
 
 ![Mario exercise](https://raw.githubusercontent.com/themonkslab/courses/main/dart/4.Flujo_de_control/3.1_mario.png)
 
-__Clue__ (pista): pueden concatenar una `String` la cantidad de veces (N) que quieran (_String multiplication_) así: 'string' * N.
+__Clue__: you can concatenate a `String` as many times (N) as you want (_String multiplication_) like this: 'String' * N.
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {
@@ -64,6 +64,6 @@ void main() {
 }
 ```
 
-Si quisiéramos hacer un diagrama de los _while loop_ se vería así:
+If we wanted to make a diagram of the _while loop_ it would look like this:
 
 ![Diagrama while loop](https://raw.githubusercontent.com/themonkslab/courses/main/dart/4.Flujo_de_control/3.2_while_diagrama.png)
