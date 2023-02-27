@@ -57,7 +57,7 @@ void main() {
 
 Lo primero que sucede es una evaluación dentro de `(...)` y si resulta en `true` (si la condición se cumple), ingresa dentro de los `{...}` y ejecuta lo que se encuentra allí, sino salta el bloque _block_ de código y ejecuta lo que sigue.
 
-En el caso de introducir una edad menor a 16, ingresa, ejecuta el código y luego va al final que no tiene una condición, esto es ejecuta el último `print('Enjoy your visit!`); si la edad que introducimos es mayor, omite ese bloque y salta al final.
+Entonces, en el caso de introducir una edad menor a 16, ingresa, ejecuta el código y luego va al final que no tiene una condición, esto es ejecuta el último `print('Enjoy your visit!`); si la edad que introducimos es mayor, omite ese bloque y salta al final.
 
 Vamos a terminarlo!
 
@@ -89,7 +89,7 @@ void main() {
 }
 ```
 
-Podríamos escribir el mismo código si los `else-if` o el `else` pero lo anterior lo vuelve más claro! 💀 Cómo sería hecho solo con `if`?
+Podríamos escribir el mismo código sin los `else-if` o el `else` pero lo anterior lo vuelve más claro! 💀 Cómo sería hecho solo con `if`?
 
 ```dart
 void main() {
