@@ -46,7 +46,7 @@ Como para terminar esta capaz no tan breve introducción, les dejo un listado de
 - `cp <opciones> <archivo> <ruta>`: copia un archivo o directorio en el directorio especificado.
 - `mv <opciones> <archivo> <ruta>`: mueve archivos y directorios de un directorio a otro, o renombra un archivo o directorio.
 - `cat <opciones> <archivos>`: muestra por pantalla el contenido de los archivos por la salida estándar.
--`find <ruta(s)> <condición(es) de búsqueda> <acciones>`: busca archivos recorriendo árboles de directorios especificados por las rutas, evaluando de izquierda a derecha las condiciones de búsqueda. Además se pueden especificar acciones sobre los resultados obtenidos.
--`pwd <opciones>`: Muestra el nombre del directorio en el que uno se encuentra situado (_print working directory_).
+- `find <ruta(s)> <condición(es) de búsqueda> <acciones>`: busca archivos recorriendo árboles de directorios especificados por las rutas, evaluando de izquierda a derecha las condiciones de búsqueda. Además se pueden especificar acciones sobre los resultados obtenidos.
+- `pwd <opciones>`: Muestra el nombre del directorio en el que uno se encuentra situado (_print working directory_).
 
-Podrán ver que muchos de estos comandos no funcionan en Windows, pero que eso no los detenga de explorar, probar y hacerlo sobre todo frente a personas innotas para hacerse ver como superhéroes del teclado! 🦸‍♂️
+Si estan trabajando en Windows podrán ver que muchos de estos comandos no funcionan (algunos tienen otro nombre), pero que eso no los detenga de explorar, probar y hacerlo sobre todo frente a personas innotas para hacerse ver como superhéroes del teclado! 🦸‍♂️

@@ -46,7 +46,7 @@ To finish this not so brief introduction, I leave you a list of commands that yo
 - `cp <options> <file> <path>`: copies a file or directory to the specified directory.
 - `mv <options> <file> <path>`: moves files and directories from one directory to another, or renames a file or directory.
 - `cat <options> <files>`: displays the contents of the files by standard output.
--`find <path(s)> <search condition(s)> <actions>`: searches for files by browsing directory trees specified by the paths, evaluating from left to right the search conditions. In addition, you can specify actions on the results obtained.
--`pwd <options>`: Displays the name of the directory in which you are located (_print working directory_).
+- `find <path(s)> <search condition(s)> <actions>`: searches for files by browsing directory trees specified by the paths, evaluating from left to right the search conditions. In addition, you can specify actions on the results obtained.
+- `pwd <options>`: Displays the name of the directory in which you are located (_print working directory_).
 
-You may find that many of these commands don't work in Windows, but don't let that stop you from exploring, testing and doing it especially in front of unknowledgeable people to make yourself look like a keyboard superhero! 🦸‍♂️
+If you are working in Windows you may find that many of these commands don't work (some have another name), but don't let that stop you from exploring, testing and doing it especially in front of unknowing people to make yourself look like a keyboard superhero! 🦸‍♂️
