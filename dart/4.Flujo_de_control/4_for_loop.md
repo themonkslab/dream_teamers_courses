@@ -1,8 +1,8 @@
 # _For loop_
 
-Este tipo de bucle sirve para lograr lo mismo que el _while loop_ pero de forma más concisa.
+This type of loop is used to achieve the same thing as the _while loop_ but in a more precise way.
 
-Veamos cómo sería la solución del ejercicio anterior pero implementado con un _for loop_:
+Let's see the solution of the previous exercise but implemented with a _for loop_:
 
 ```dart
 void main() {
@@ -14,39 +14,39 @@ void main() {
 }
 ```
 
-Fíjense que de esta forma, nos lleva un par de líneas menos aun! Pero cómo funciona?
+Notice that this way, it takes even a couple of lines less! But how does it work?
 
-1. Declaramos e inicializamos la variable: `var i = 1;`.
-2. Establecemos la condición que se tiene que cumplir para salir del bucle: `i < 10;`.
-3. Definimos cuál será el incrementador: `i++`.
+1. We declare and initialize the variable: `var i = 1;`.
+2. We establish the condition that must be fulfilled to remain inside the loop: `i < 10;`.
+3. We define what the incrementer will be: `i++`.
 
-Así, lo que está dentro del bucle (dentro de las `{...aquí...}`) se ejecutará hasta que la condición que hayamos establecido, resulte en `true`.
+This way, what is inside the loop (`{...here...}`) will be executed until the condition that we have established, results in `false`.
 
-Tendríamos de esta manera un diagrama parecido al anterior solo que en este caso nuestro _for loop_ pide de forma explicita la actualización (incrementación en este caso) de la variable inicializada:
+We would then have a diagram similar to the previous one, except that in this case our _for loop_ explicitly asks for the update (incrementation in this case) of the initialized variable:
 
 ![Diagrama for loop](https://raw.githubusercontent.com/themonkslab/courses/main/dart/4.Flujo_de_control/4.1_for_loop_diagrama.png)
 
 ## 💪 Fizz buzz
 
-Este es un tipo de ejercicio muy común en entrevistas de trabajo. Incluye no solo lo que ya conocen sino también un poco de aritmética. Que se diviertan
+This is a very common type of exercise in job interviews. It includes not only what you already know but also a bit of arithmetic. Have fun!
 
-__Requirement__: Escribir un programa que implemente el algoritmo 'fizz buzz':
+__Requirement__: Write a program that implements the 'fizz buzz' algorithm:
 
-Para un contador (`i`) que vaya desde 1 a 15
-    si `i` es divisible por 3 y 5
-        `print` 'fizz buzz'
-    si `i` es divisible por 3
-        `print` 'fizz'
-    si `i` es divisible por 5
-        `print` 'buzz'
-    sino
+For a counter (`i`) from 1 to 15
+    if `i` is divisible by 3 and 5
+        `print` 'fizz buzz
+    if `i` is divisible by 3
+        `print` 'fizz
+    if `i` is divisible by 5
+        `print` 'buzz
+    otherwise
         `print i`
 
-__Clue__ (pista): van a tener que utilizar el _modulus operator_ (%) y el _logical AND operator_ (&&).
+__Clue__: you will have to use the _modulus operator_ `%` and the _logical AND operator_ `&&`.
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {
