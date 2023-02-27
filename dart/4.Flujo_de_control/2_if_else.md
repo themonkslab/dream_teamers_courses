@@ -1,29 +1,29 @@
 # _if/else statements_
 
-Supongamos que estamos en la entrada de un museo y queremos escribir un programa que haga lo siguiente:
+Suppose we are at the entrance of a museum and we want to write a program that does the following:
 
 _Pseudo code_:
 
 ```dart
-//  Si la persona es menor de 16
-//      Emito un ticket de menor
-//      Le cobro $100
-//  Si la persona es mayor o igual a 60
-//      Emito un ticket de mayor
-//      Le cobro $50
-//  Si no
-//      Emito un ticket regular
-//      Le cobro $200
-//  A todos voy a decirles: 'Disfruten su visita'
+// If the person is under 16
+//      Print a junior's ticket
+//      Charge $100
+// If the person is greater than or equal to 60
+//      Print a senior ticket
+//      Charge $50
+// If not
+// Print a regular ticket
+//      Charge $200
+// To everyone say: 'Enjoy your visit'.
 ```
 
-Veamos cómo podemos traducir esto en código.
+Let's see how we can translate this into code.
 
-Empezaremos en primer lugar con lo que necesitamos y siempre sucederá sin importar el caso:
+First, we will start with what we need and what will always happen no matter the case:
 
-1. Necesitamos la edad del visitante.
-2. Necesitamos un chequeo de que hayamos introducido bien la edad.
-3. Siempre saludaremos a todos, sin importar su edad.
+1. We need the visitor's age.
+2. We need a check that we have entered the age correctly.
+3. We will always greet everyone, regardless of their age.
 
 ```dart
 void main() {
@@ -33,112 +33,112 @@ void main() {
 }
 ```
 
-💀 Aquí, qué imaginan que sucede si ingresan un 0 o número negativo en `visitorsAge`? Prueben!
+💀 Here, what do you imagine happens if you enter a 0 or negative number in `visitorsAge`? Give it a try!
 
-Luego simplemente podemos ir traduciendo el primer 'si' (_if_):
+Then we can start translating the first _if_:
 
 ```dart
 void main() {
     const visitorsAge = 10;
     assert(visitorsAge > 0, 'Age should be at least 1');
-    // Si la persona es menor de 16
+    // If the person is under 16
     if(visitorsAge < 16) {
-        // Emito un ticket de menor
+        // Print a junior ticket
         print('Junior ticket');
-        // Le cobro $100
+        // Charge $100
         print('Price is \$100');
     }
-    // Siempre los saludaré! 😄
+    // I will always greet you! 😄
     print('Enjoy your visit!');
 }
 ```
 
-💀 Qué sucede si ingresan un número que es menor de 16? Y si ingresan uno mayor?
+💀 What happens if you enter a number that is less than 16? And if you enter a larger one?
 
-Lo primero que sucede es una evaluación dentro de `(...)` y si resulta en `true` (si la condición se cumple), ingresa dentro de los `{...}` y ejecuta lo que se encuentra allí, sino salta el bloque _block_ de código y ejecuta lo que sigue.
+The first thing that happens is an evaluation in the `(...)` and if it results in `true` (if the condition is fulfilled), it enters inside the `{...}` and executes what is found there, otherwise it skips the _block_ of code and executes what follows.
 
-En el caso de introducir una edad menor a 16, ingresa, ejecuta el código y luego va al final que no tiene una condición, esto es ejecuta el último `print('Enjoy your visit!`); si la edad que introducimos es mayor, omite ese bloque y salta al final.
+Then, in the case of entering an age lower than 16, it enters, executes the code and then goes to the end which does not have a condition, and executes the last command: `print('Enjoy your visit!`); if the age we enter is higher, it skips that block and jumps to the end.
 
-Vamos a terminarlo!
+Let's finish it!
 
 ```dart
 void main() {
     const visitorsAge = 10;
     assert(visitorsAge > 0, 'Age should be at least 1');
-    // Si la persona es menor de 16
+    // If the person is under 16
     if(visitorsAge < 16) {
-        // Emito un ticket de menor
+        // Print a junior ticket
         print('Junior ticket');
-        // Le cobro $100
+        // Charge $100
         print('Price is \$100');
-    // Si la persona es mayor o igual a 60
+    // If the person is greater than or equal to 60
     } else if (visitorsAge >= 60) {
-        // Emito un ticket de mayor
+        // Print a senior ticket
         print('Senior ticket');
-        // Le cobro $50
+        // Charge $50
         print('Price is \$50');        
-    // Si no
+    // If not
     } else {
-        // Emito un ticket regular
+        // Print a regular ticket
         print('Regular ticket');
-        // Le cobro $200
+        // Charge $200
         print('Price is \$200');         
     }
-    // Siempre los saludaré! 😄
+    // I will always greet you! 😄
     print('Enjoy your visit!');
 }
 ```
 
-Podríamos escribir el mismo código si los `else-if` o el `else` pero lo anterior lo vuelve más claro! 💀 Cómo sería hecho solo con `if`?
+We could write the same code without the `else-if` or the `else` but the above makes it clearer! 💀 How would it be done with just `if`?
 
 ```dart
 void main() {
     const visitorsAge = 10;
     assert(visitorsAge > 0, 'Age should be at least 1');
     // Si la persona es menor de 16
-    if(visitorsAge < 16) {
-        // Emito un ticket de menor
+     if(visitorsAge < 16) {
+        // Print a junior ticket
         print('Junior ticket');
-        // Le cobro $100
+        // Charge $100
         print('Price is \$100');
-    // Si la persona es mayor o igual a 60
+    // If the person is greater than or equal to 60
     }
     if (visitorsAge >= 60) {
-        // Emito un ticket de mayor
+       // Print a senior ticket
         print('Senior ticket');
-        // Le cobro $50
-        print('Price is \$50');        
-    // Si no
+        // Charge $50
+        print('Price is \$50');       
+    // If not
     }
     if (visitorsAge > 15 && visitorsAge < 60){
-        // Emito un ticket regular
+        // Print a regular ticket
         print('Regular ticket');
-        // Le cobro $200
+        // Charge $200
         print('Price is \$200');         
     }
-    // Siempre los saludaré! 😄
+    // I will always greet you! 😄
     print('Enjoy your visit!');
 }
 ```
 
-Vayan a estirar un poco esas piernas, refrescar la cabeza y vuelvan para un ejercicio!
+Go stretch those legs a bit, cool your head and come back for a exercise!
 
-## 💪 Situación financiera
+## 💪 Financial situation
 
-__Requirement__: Escribir un código que tome en cuenta dos variables: cuánto dinero ganaron en el mes y cuántos gastos tienen, para luego imprimir si pueden ahorrar algo, si deben algo o si no cambió su balance mensual.
+__Requirement__: Write a code that takes into account two variables: how much money you earned in the month and how many expenses you have, and then print if you can save anything, if you owe something, or if your monthly balance did not change.
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
-_Pseudo code_, modo inverso:
+_Pseudo code_, reverse mode:
 
-- Imprimir según balance final:
-    1. Si puedo ahorrar
-    2. Si debo dinero
-    3. Si estoy igual al mes anterior
-- Calcular balance final.
-- Almacenar lo que gané y lo que gasté, asegurándome de que haya introducido bien los números.
+- Print according to financial balance:
+    1. if I can save money
+    2. If I owe money
+    3. If I am equal to the previous month
+- Calculate ending balance.
+- Store what I earned and what I spent, making sure I entered the numbers correctly.
 
 _Código_:
 
