@@ -1,6 +1,6 @@
 # _Enumerations_
 
-Recordemos el ejemplo anterior de la carrera:
+Let us recall the previous example of the race:
 
 ```dart
 void main() {
@@ -22,18 +22,18 @@ void main() {
 }
 ```
 
-En este caso, sabemos la cantidad de medallas que tenemos a disposición, por lo que el total de casos es limitado. Qué bueno sería tener alguna __herramienta que nos permita crear un tipo que enumere posibilidades cuando__ estas __son limitadas y pocas__! 😁
+In this case, we know the number of medals we have available, so the total number of cases is limited. How nice it would be to have some __tool that allows us to create a type that lists possibilities when__ these __are limited and few__! 😁
 
-Así es! Eso son las _enumerations_! Las creamos de la siguiente manera:
+That's right, that's what _enumerations_ are! We create them as follows:
 
-1. Declaramos con `enum`
-2. Luego el nombre del _type_ con la primer letra en _uppercase_.
-3. Abrimos llaves,
-4. Y dentro listamos los valores.
+1. We declare them with `enum`.
+2. Then the name of the _type_ with the first letter in _uppercase_.
+3. We open curly brackets,
+4. And inside we list the values.
 
-Así: `enum Medal { gold, silver, bronze, noMedal }`
+Like this: `enum Medal { gold, silver, bronze, noMedal }`
 
-Pero cómo las utilizamos? En conjunto con los `switch` _statements_, son una herramienta super poderosa. Primero creamos el tipo `Medal` fuera de nuestro `main` con los valores posibles, luego declaramos e inicializamos una variable de ese tipo `Medal` con el valor que queramos y luego la utilizamos como variable que vamos a observar. Como los casos son limitados según ese tipo (4, según cada medalla), entonces no nos hace falta un `default` ya que jamás caeríamos allí:
+But how do we use them? In conjunction with the `switch` _statements_, they are a super powerful tool. First we create the `Medal` type outside our `main` with the possible values, then we declare and initialize a variable of that `Medal` type with the value we want and then we use it as the variable we are going to observe. As the cases are limited according to that type (4, one for each medal), then we do not need a `default` since we would never fall there:
 
 ```dart
 enum Medal { gold, silver, bronze, noMedal }
@@ -57,19 +57,19 @@ void main() {
 }
 ```
 
-Así, definimos un tipo `Medal` que __tiene mucho significado y todo nuestro código se vuelve más fácil de entender__. Además, podemos __utilizar las ayudas__ que nos provee Dartpad en este caso:
+Thus, we define a `Medal` type that __has a lot of meaning and all our code becomes easier to understand__. In addition, we can __use the helps__ provided by Dartpad in this case:
 
 ![Ayuda en enums](https://raw.githubusercontent.com/themonkslab/courses/main/dart/4.Flujo_de_control/7.1_ayuda_enums.png)
 
-## 💪 Lluvia de enums
+## 💪 Brainstorming enums
 
-__Requirement__: piensen y escriban 5 enums que se les ocurran podrían cumplir con las consignas anteriores. No hace falta escriban ningún `switch`; solamente los `enum`.
+__Requirement__: think of and write 5 enums that could be used in cases like the one above. No need to write any `switch`; just the `enums`.
 
-__Extra help__: les dejo otro ejemplo: días de la semana.
+__Extra help__: I leave you another example: days of the week.
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 enum Suits { hearts, diamons, clubs, spades}
@@ -81,16 +81,16 @@ enum MostUsedLanguages { english, spanish, chinese}
 
 ## _Trailing comma_
 
-Simple! 💀 Quiero prueben escribir estos dos _enum_ exactamente como se los dejo (prestando atención a las comas), clickeen donde dice 'Format' en Dartpad y vean qué sucede:
+Easy! 💀 I want to try typing these two _in_ exactly as I leave them (paying attention to the commas), click 'Format' on Dartpad and see what happens:
 
 `enum Weather { sunny, cloudy, rainy, snowy }`
 `enum Weather { sunny, cloudy, rainy, snowy, }`
 
-No es necesaria esa coma luego del último valor del `enum` pero es __muy recomendable__ cuando nos facilita la lectura, ya que cuando Dartpad (y luego nuestro editor de código) dé formato a nuestro código, va a __alinear en forma de columna__ en lugar de fila y lo hace mucho más legible en la mayoría de los casos. Y esto no aplica solo a los `enum` sino a __cualquier lista de valores separados por una coma!__
+That comma after the last `enum` value is not necessary, but it is __highly recommended__ when it makes it easier to read, because when Dartpad (and then our code editor) formats our code, it will __align as a column__ instead of a row. This makes it much more readable in most cases and this applies not only to `enum` but to __any list of values separated by a comma!__.
 
-## Un poquito más sobre `enum`
+## A little bit more about `enum`
 
-Fíjense qué sucede si intentan imprimir un valor de un `enum`:
+Notice what happens if you try to print an `enum` value:
 
 ```dart
 enum Medal { gold, silver, bronze, noMedal }
@@ -115,15 +115,15 @@ void main() {
 }
 ```
 
-Y ustedes esperaban que se imprima el nombre! Bueno, para eso (💀), simplemente agreguen un punto al terminar la variable `medal` para llamar a sus métodos y vean qué pasa!
+And you were expecting the name to be printed! Well, for that (💀), just add a dot at the end of the `medal` variable to call your methods and see what happens!
 
-Pueden utilizar el `medal.name` para imprimir el nombre que le asignaron a la variable en lugar de que les imprima por ejemplo, `Medal.gold`.
+You can use the `medal.name` to print out the name you assigned to the variable instead of having it print out for example, `Medal.gold`.
 
-Además de esto, podríamos ver todos los valores de nuestro `enum` llamándolos de esta manera: `Medal.values` y hasta llamar a uno particularmente, así: `Medal.values.byName('silver'`).
+In addition to this, we could see all the values in our `enum` by calling them like this: `Medal.values` and even call one in particular, like this: `Medal.values.byName('silver'`).
 
-## 💪 Calculadora versión 0.0.1
+## 💪 Calculator version 0.0.1
 
-__Requirement__: escribir una calculadora complementando el código base que les paso, utilizando un _switch statement_ y _assertions_ para chequear que los resultados sean correctos. Tienen que escribir 4 ejemplos, uno para cada operación y los resultados deberían ser: 6, 2, 8 y 2.
+__Requirement__: write a calculator with the base code I give you, using a _switch statement_ and _assertions_ to check that the results are correct. You have to write 4 examples, one for each operation and the results should be: 6, 2, 8 and 2.
 
 __Source code__:
 
@@ -135,13 +135,13 @@ void main() {
     const b = 2.0;
     const op = Operation.plus;
     final double result;
-    // TODO: implementar debajo el resto
+    // TODO: write the rest below
 }
 ```
 
 ---
 
-__💀 Solución para result == 6__:
+__💀 Solution for result == 6__:
 
 ```dart
     enum Operation {plus, minus, multiply, divide,}
@@ -170,7 +170,7 @@ void main() {
 }
 ```
 
-__💀 Solución para result == 2 ('-')__:
+__💀 Solution for result == 2 ('-')__:
 
 ```dart
     enum Operation {plus, minus, multiply, divide,}
@@ -199,7 +199,7 @@ void main() {
 }
 ```
 
-__💀 Solución para result == 8__:
+__💀 Solution for result == 8__:
 
 ```dart
     enum Operation {plus, minus, multiply, divide,}
@@ -228,7 +228,7 @@ void main() {
 }
 ```
 
-__💀 Solución para result == 2 ('/')__:
+__💀 Solution for result == 2 ('/')__:
 
 ```dart
     enum Operation {plus, minus, multiply, divide,}
