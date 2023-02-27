@@ -1,11 +1,11 @@
-# _Break_ y _continue statements_
+# _Break_ and _continue statements_
 
-_Break_ (parar) y _continue_ (continuar), son dos mecanismos con los que contamos para alterar el flujo dentro de _for_ y _while_ _loops_.
+_Break_ and _continue_ are two mechanisms we have to alter the flow within _for_ and _while_ _loops_.
 
-Vamos a utilizar el último ejercicio con algunas alteraciones:
+We are going to use the last exercise with some changes:
 
-1. Vamos a cambiar la condición para que vaya hasta 16.
-2. Vamos a agregar un `print('Done!')` al final, por fuera del loop.
+1. We are going to change the condition to go to 16.
+2. We are going to add a `print('Done!')` at the end, outside the loop.
 
 ```dart
 void main() {
@@ -26,7 +26,7 @@ void main() {
 
 ## _Break_
 
-Nos permite __parar, salir__ del _loop_. Si agregamos un _break_ apenas comienza el bucle, qué ocurre? Sale e imprime _Done!_ Además, pueden observar que Dartpad entiende que el código dentro del loop no se va a ejecutar y es lo suficientemente amable para decirnos que es código muerto (_death code_), con un subrayado.
+It allows us to __stop, exit__ the _loop_. If we add a _break_ as soon as the loop starts, what will happen? It exits and prints _Done!_ Also, you may notice that Dartpad understands that the code inside the loop is not going to be executed and is kind enough to tell us that it is _dead code_ with an underscore.
 
 ```dart
 void main() {
@@ -46,7 +46,7 @@ void main() {
 }
 ```
 
-Si en cambio ahora movemos el _break_ dentro del primer _if_ y luego del `print`, podemos ver que imprime todo menos el número 16:
+Instead, if we now move the _break_ into the first _if_ and then the `print`, we can see that it prints everything but the number 16:
 
 ```dart
 void main() {
@@ -68,7 +68,7 @@ void main() {
 
 ## _Continue_
 
-Cuando insertamos esta declaración, obligamos al _loop_ a __saltar a la próxima iteración (`i++`)__. Vamos a insertarlos en nuestro ejercicio:
+When we insert this statement, we force the _loop_ to __jump to the next iteration (`i++`)__. Let's put it into our exercise:
 
 ```dart
 void main() {
@@ -90,7 +90,7 @@ void main() {
 }
 ```
 
-En este caso, pueden ver que no cambia nada ya que si bien al llegar a nuestro primer _continue_, avanza a la siguiente iteración, nuestros `else if` hacen más o menos lo mismo porque una vez entrando a uno de ellos, no puedo entrar al resto debido a que no cumplen con la condición. Qué tal si los removemos?
+In this case, you can see that nothing changes because although once we get to our first _continue_, it advances to the next iteration, our `else if` do more or less the same because once I enter one of them, I can not enter the rest because they do not meet the condition. So how about removing them?
 
 ```dart
 void main() {
@@ -113,8 +113,8 @@ void main() {
 }
 ```
 
-Ahora obtenemos el mismo resultado que antes lográbamos con los `else if` pero gracias a a la utilización de los `continue`.
+Now we obtain the same result as we did before with the `else if` but by using the `continue`.
 
-__Para comprender este y cualquier tipo de _loop_,__ solamente tienen que relajarse y __avanzar iteración por iteración__ y viendo qué sucede en cada vuelta.
+__To understand this and any kind of _loop_,__ you just have to relax and __advance iteration by iteration__ and see what happens at each round.
 
-__Tanto _break_ como _continue_ no son siempre necesarios__: en nuestro ejemplo podemos lograr lo mismo de manera más bella y simple con `else if`. __Utilícenlos solo cuando los necesiten.__
+__Both _break_ and _continue_ are not always necessary__: in our example we can accomplish the same thing more beautifully and simply with `else if`. Use them only if needed.
