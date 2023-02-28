@@ -4,7 +4,7 @@ Lo primero que tenemos que hacer es inicializar la terminal y allí crear un dir
 
 Para crear una carpeta en la terminal, escribimos `mkdir` (de _make_, crear y _directory_, directorio), un espacio y el nombre de la carpeta. Por ejemplo `mkdir dart_exercises`.
 
-Para ingresar en dicha carpeta utilizan el comando `cd`, un espacio y el nombre de la carpeta. Pueden empezar escribiendo el primer caracter de dicha carpeta y luego la tecla _tab_ que les va a completar el nombre si es que hubiera una sola carpeta con un nombre que comience en dicho caracter. Sino, pueden seguir escribiendo hasta dar con la coincidencia y finalmente _enter_ para ingresar. Sería aquí: `cd 5.app_linea_comando`.
+Para ingresar en dicha carpeta utilizan el comando `cd`, un espacio y el nombre de la carpeta. Pueden empezar escribiendo el primer caracter de dicha carpeta y luego la tecla _tab_ que les va a completar el nombre si es que hubiera una sola carpeta con un nombre que comience en dicho caracter. Sino, pueden seguir escribiendo hasta dar con la coincidencia y finalmente _enter_ para ingresar. Aquí sería: `cd 5.app_linea_comando`.
 
 Allí, ingresamos `code .` y eso nos debería abrir una nueva instancia/ventana de VS Code. Si esto no sucede, puede ser que no tengan agregado VS Code a su path. Para ello:
 
