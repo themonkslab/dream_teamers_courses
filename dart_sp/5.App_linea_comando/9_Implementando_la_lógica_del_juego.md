@@ -1,8 +1,8 @@
-# Implementando la lógica del juego
+# Implementing the game logic
 
-Ya tenemos listo nuestro _loop_ y es hora de implementar el resto de la lógica.
+We have our _loop_ ready and it's time to implement the rest of the logic.
 
-Según nuestro _pseudo code_ y si seguimos el orden propuesto, deberíamos implementar el movimiento _random_ de la computadora. Sabemos que tenemos tres movimientos posibles. 🤔 Qué _feature_ de Dart podríamos utilizar para representarlos?
+According to our _pseudo code_ and if we follow the proposed order, we should implement the _random_ movement of the computer. We know that we have three possible moves. Which _feature_ of Dart could we use to represent them?
 
 ```dart
 import 'dart:io';
@@ -74,7 +74,7 @@ Ya tenemos nuestro generador de número aleatorio y ahora vamos a utilizarlo cre
 
 ![Creando número aleatorio](https://raw.githubusercontent.com/themonkslab/courses/blob/main/dart/5.app_linea_comando/5.9.2_creando_numero_aleatorio.gif)
 
-Ahora, teniendo en cuenta lo aprendido en al punto dos anterior, vamos a implementar el movimiento de la computadora. Como dijimos, vamos a utilizar una lista. Qué lista? La que sale de llamar a nuestro _enum_ y accediendo a sus valores. Así: `Move.values`. Allí tenemos la lista pero queremos acceder a alguno de sus tres posibles movimientos y para ello, basta con abrir `[ ]` que es la forma de acceder a los valores mediante _index_  de una lista y ponemos allí dentro el número _random_ que generamos: `More.values[randomNumber];`. Todo junto se vería así:
+Ahora, teniendo en cuenta lo aprendido en al punto dos anterior, vamos a implementar el movimiento de la computadora. Como dijimos, vamos a utilizar una lista. Qué lista? La que sale de llamar a nuestro _enum_ y accediendo a sus valores. Así: `Move.values`. Allí tenemos la lista pero queremos acceder a alguno de sus tres posibles movimientos y para ello, basta con abrir `[ ]` que es la forma de acceder a los valores mediante _index_  de una lista y ponemos allí dentro el número _random_ que generamos: `Move.values[randomNumber];`. Todo junto se vería así:
 
 ```dart
 import 'dart:io';
@@ -184,7 +184,7 @@ void main() {
       final randomNumber = rng.nextInt(3);
       final computerMove = Move.values[randomNumber];
       print('You played: $playerMove');
-      print('Computed played: $computerMove');
+      print('Computer played: $computerMove');
       print('-----------------------------------');
       if (playerMove == computerMove) {
         print('It\'s a draw 😄');
