@@ -1,14 +1,14 @@
-# Implementando la lógica del juego
+# Implementing the game logic
 
-Ya tenemos listo nuestro _loop_ y es hora de implementar el resto de la lógica.
+We have our _loop_ ready and it's time to implement the rest of the logic.
 
-Según nuestro _pseudo code_ y si seguimos el orden propuesto, deberíamos implementar el movimiento _random_ de la computadora. Sabemos que tenemos tres movimientos posibles. 🤔 Qué _feature_ de Dart podríamos utilizar para representarlos?
+According to our _pseudo code_ and if we follow the proposed order, we should implement the _random_ movement of the computer. We know that we have three possible moves. Which _feature_ of Dart could we use to represent them?
 
 ```dart
 import 'dart:io';
 
-enum Move { rock, paper, scissors } // Noten que no ponemos _trailing comma_
-                                    // ya que es más fácil leerlo en una línea
+enum Move { rock, paper, scissors } // Note that we do not put trailing comma
+                                    // as it is easier to read it on one line
 
 void main() {
   while (true) {
@@ -26,13 +26,13 @@ void main() {
 }
 ```
 
-Ya tenemos nuestro _enum_ pero antes de implementar el movimiento aleatorio de la computadora, tendríamos que asignar correctamente el _input_ del usuario:
+We already have our _enum_ but before implementing the random movement of the computer, we should properly assign the user's _input_:
 
 ```dart
 import 'dart:io';
 
-enum Move { rock, paper, scissors } // Noten que no ponemos _trailing comma_
-                                    // ya que es más fácil leerlo en una línea
+enum Move { rock, paper, scissors } // Note that we do not put trailing comma
+                                    // as it is easier to read it on one line
 
 void main() {
   while (true) {
@@ -58,30 +58,30 @@ void main() {
 }
 ```
 
-Ya creamos nuestra variable `playerMove` sin inicialización por lo que su valor inicial es nulo sin embargo, __gracias a utilizar un _enum_ sabemos que solamente contamos con esas tres posibilidades__ y para el final de los condicionales (`if`, `if else` y `else`), dicha variable va a estar inicializada.
+We already created our `playerMove` variable without initialization so its initial value is null, however, __by using an _enum_ we know that we only have those three possibilities__ and at the end of the conditionals (`if`, `if else` and `else`), this variable is going to be initialized.
 
-Ahora sí tenemos que implementar el movimiento de la computadora y para ello, utilizaremos un _random number generator_ o generador de números aleatorios. Lo podemos hacer con otra librería!
+Now we have to implement the movement of the computer and for this, we will use a _random number generator_. We can do it with another library!
 
-Justo en la primer línea luego y dentro del `main`, creamos la variable `final rng` y le asignamos un valor de `Random()`. Van a ver que Dart les dice que no conoce dicho nombre pero ustedes ya saben qué hacer! `Cmd/ctrl + .` (llamada _magic wand_ o varita mágica) y elijan importar `dart:math`. También, recuerden que pueden ver la documentación haciendo _hover_ (situando el cursor arriba) no solo de la librería sino también de ese método específico:
+Right on the first line after and inside the `main`, we create the variable `final rng` and assign a value of `Random()` to it. You will see that Dart tells us it doesn't know that name but you know what to do! `cmd/ctrl + .` (called _magic wand_) and choose to import `dart:math`. Also, remember that you can view the documentation by _hovering over_ not only the library but also that specific method:
 
 ![_Random number generator_](https://raw.githubusercontent.com/themonkslab/courses/blob/main/dart/5.app_linea_comando/5.9.1_random_number_generator.gif)
 
-Ya tenemos nuestro generador de número aleatorio y ahora vamos a utilizarlo creando la variable para el número aleatorio (`final randomNumber`) y haciendo uso del generador para asignarle su valor (`rng.nextInt(3)`). Pueden observar tres cosas:
+We already have our random number generator and now we are going to use it by creating the variable for the random number (`final randomNumber`) and making use of the generator to assign its value (`rng.nextInt(3)`). You can observe three things:
 
-1. Pueden ver por adelantado la documentación del método cuando van recorriendo la lista. Dicho método va a crear un número aleatorio entre un mínimo incluido y un máximo no incluido.
-2. Ustedes dirán 'si son tres los movimientos posibles, por qué el máximo es 3 siendo que no lo incluye y el mínimo es 0'? Porque vamos a trabajar con listas (que ya veremos en el próximo capítulo en detalle) y dichas listas cuentan sus elementos empezando por cero, y se los asignan de forma implícita para que podamos llamarlos por dicho valor (_index_).
-3. Pueden ingresar dentro de la documentación con `cmd/ctrl + click`. Es algo súper útil para entender cómo funciona ese método o librería y aprender mucho más. Dart y Flutter tienen una de las mejores documentaciones por lo que anímense a meterse dentro!
+1. You can see the documentation of the method in advance when you go through the list. This method will create a random number between a minimum included and a maximum not included.
+2. You may ask 'if there are three possible movements, why the maximum is 3 when it does not include it and the minimum is 0'? Because we are going to work with lists (which we will see in detail in the next chapter) and these lists count their elements starting with zero, and assign them implicitly so that we can call them by this value (_index_).
+3. You can enter inside the documentation with `cmd/ctrl + click`. It is super useful to understand how that method or library works and learn a lot more. Dart and Flutter have some of the best documentation so go ahead and dive in!
 
 ![Creando número aleatorio](https://raw.githubusercontent.com/themonkslab/courses/blob/main/dart/5.app_linea_comando/5.9.2_creando_numero_aleatorio.gif)
 
-Ahora, teniendo en cuenta lo aprendido en al punto dos anterior, vamos a implementar el movimiento de la computadora. Como dijimos, vamos a utilizar una lista. Qué lista? La que sale de llamar a nuestro _enum_ y accediendo a sus valores. Así: `Move.values`. Allí tenemos la lista pero queremos acceder a alguno de sus tres posibles movimientos y para ello, basta con abrir `[ ]` que es la forma de acceder a los valores mediante _index_  de una lista y ponemos allí dentro el número _random_ que generamos: `More.values[randomNumber];`. Todo junto se vería así:
+Now, taking into account what we learned in point two above, let's implement the movement of the computer. As we said, we are going to use a list. Which list? The one that comes out from calling our _enum_ and accessing its values. Like this: `Move.values`. There we have the list but we want to access to some of its three possible movements and for it, it is enough to open `[ ]` which is the way to access to the values using the _index_ of a list and there we put the _random_ number that we generated: `Move.values[randomNumber];`. All together it would look like this:
 
 ```dart
 import 'dart:io';
 import 'dart:math';
 
-enum Move { rock, paper, scissors } // Noten que no ponemos _trailing comma_
-// ya que es más fácil leerlo en una línea
+enum Move { rock, paper, scissors } // Note that we do not put trailing comma
+                                    // as it is easier to read it on one line
 
 void main() {
   final rng = Random();
@@ -111,14 +111,14 @@ void main() {
 }
 ```
 
-Y como ahora tenemos dos movimientos de la misma clase (`userMove` y `computerMove`, ambos del _enum Move_), podemos compararlos y determinar el resto de la lógica. Vamos a empezar con los posibles casos en los que el usuario podría ganar o empatar y luego, con un `else` los que pierde.
+And since now we have two moves of the same class (`userMove` and `computerMove`, both from the _enum Move_), we can compare them and determine the rest of the logic. Let's start with the possible cases in which the user could win or draw and then, with an `else` those in which he loses.
 
 ```dart
 import 'dart:io';
 import 'dart:math';
 
-enum Move { rock, paper, scissors } // Noten que no ponemos _trailing comma_
-// ya que es más fácil leerlo en una línea
+enum Move { rock, paper, scissors } // Note that we do not put trailing comma
+                                    // as it is easier to read it on one line
 
 void main() {
   final rng = Random();
@@ -156,14 +156,14 @@ void main() {
 }
 ```
 
-Ya tienen su primer juego! Ahora, le podemos hacer algunos ajustes: ya que eliminamos el `print('Selected...`), podríamos incluir que nos diga qué eligió el usuario y qué la computadora además de unas líneas para que nuestro juego se vuelva más entendible y daríamos por finalizado nuestro juego:
+You now have your first game! At this point, we could make some adjustments: since we eliminated the `print('Selected...`), we could include that it tells us the user's choice and the computer's choice as well as a few lines to make our game more understandable.
 
 ```dart
 import 'dart:io';
 import 'dart:math';
 
-enum Move { rock, paper, scissors } // Noten que no ponemos _trailing comma_
-// ya que es más fácil leerlo en una línea
+enum Move { rock, paper, scissors } // Note that we do not put trailing comma
+                                    // as it is easier to read it on one line
 
 void main() {
   final rng = Random();
@@ -184,7 +184,7 @@ void main() {
       final randomNumber = rng.nextInt(3);
       final computerMove = Move.values[randomNumber];
       print('You played: $playerMove');
-      print('Computed played: $computerMove');
+      print('Computer played: $computerMove');
       print('-----------------------------------');
       if (playerMove == computerMove) {
         print('It\'s a draw 😄');
@@ -208,9 +208,9 @@ void main() {
 }
 ```
 
-Si bien este juego puede parecerles simple, aprendimos un montón de cosas con él:
+Now yes, our game is finished, and while this game may seem simple to you, we learned a lot of things with it:
 
-- Cómo correr programas en la línea de comando y crearlos.
-- Cómo leer el _input_ del usuario.
-- Cómo generar números _random_.
-- Cómo resolver problemas!
+- How to run programs on the command line and create them.
+- How to read the user's _input_.
+- How to generate _random_ numbers.
+- How to solve problems!
