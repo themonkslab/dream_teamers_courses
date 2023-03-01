@@ -81,7 +81,7 @@ Finally we can convert from `int` to `double` or vice versa but keeping in mind:
 ```dart
 void main() {
     int x = 10;
-    double y = x; // in rojo you'll see an error:
+    double y = x; // in red you'll see an error:
                   // A value of type 'int' can't be 
                   // assigned to a variable of type
                   // 'double'.
