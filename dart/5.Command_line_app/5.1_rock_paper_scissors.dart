@@ -1,8 +1,8 @@
 import 'dart:io';
 import 'dart:math';
 
-enum Move { rock, paper, scissors } // Noten que no ponemos _trailing comma_
-// ya que es más fácil leerlo en una línea
+enum Move { rock, paper, scissors } // Note that we do not put trailing comma
+                                    // as it is easier to read it on one line
 
 void main() {
   final rng = Random();
@@ -23,7 +23,7 @@ void main() {
       final randomNumber = rng.nextInt(3);
       final computerMove = Move.values[randomNumber];
       print('You played: $playerMove');
-      print('Computed played: $computerMove');
+      print('Computer played: $computerMove');
       print('-----------------------------------');
       if (playerMove == computerMove) {
         print('It\'s a draw 😄');

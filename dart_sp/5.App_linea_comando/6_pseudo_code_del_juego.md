@@ -1,6 +1,6 @@
 # _Pseudo code_ para el juego
 
-Como venimos haciendo, escribamos lo que necesitamos hacer de forma coloquial en nuestro propio código  según los requerimientos:
+Como venimos haciendo, escribamos lo que necesitamos hacer de forma coloquial en nuestro propio código según los requerimientos:
 
 ```dart
 void main() {
