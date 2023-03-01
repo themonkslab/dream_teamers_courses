@@ -1,8 +1,8 @@
-# Implementing the game logic
+# Implementando la lógica del juego
 
-We have our _loop_ ready and it's time to implement the rest of the logic.
+Ya tenemos listo nuestro _loop_ y es hora de implementar el resto de la lógica.
 
-According to our _pseudo code_ and if we follow the proposed order, we should implement the _random_ movement of the computer. We know that we have three possible moves. Which _feature_ of Dart could we use to represent them?
+Según nuestro _pseudo code_ y si seguimos el orden propuesto, deberíamos implementar el movimiento _random_ de la computadora. Sabemos que tenemos tres movimientos posibles. 🤔 Qué _feature_ de Dart podríamos utilizar para representarlos?
 
 ```dart
 import 'dart:io';
