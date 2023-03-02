@@ -53,22 +53,25 @@ void main() {
     setUp(() {
       dog = Dog(scientificName: 'Perrus');
     });
-    test('when sleep is called, then it should return & (print) "💤 sleeping"',
+    test(
+        'when sleep is called, then it should return & (print) "I\'m a dog and I ❤️ to sleep!, after calling super.sleep that has secrets!"',
         () {
       // When
       final result = dog.sleep();
 
       // Then
-      expect(result, '💤 sleeping');
+      expect(result, 'I\'m a dog and I ❤️ to sleep!');
     });
 
     // we avoid printing for now
-    test('when eat is called, then it should return & (print) "🥩 eating"', () {
+    test(
+        'when eat is called, then it should return & (print) "I am a Dog! I am 🥩 eating"',
+        () {
       // When
       final result = dog.eat();
 
       // Then
-      expect(result, '🥩 eating');
+      expect(result, 'I am a Dog! I am 🥩 eating');
     });
 
     // we avoid printing for now

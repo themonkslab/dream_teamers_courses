@@ -2,8 +2,9 @@ class Animal {
   const Animal({required this.scientificName});
   final String scientificName;
 
+  final String _secretVariable = 'I am a secret!';
   String sleep() {
-    const String sleepingString = '💤 sleeping';
+    final String sleepingString = '💤 sleeping. $_secretVariable';
     print(sleepingString);
     return sleepingString;
   }
@@ -22,7 +23,22 @@ class Animal {
 }
 
 class Dog extends Animal {
-  Dog({required String scientificName}) : super(scientificName: scientificName);
+  Dog({required super.scientificName});
+
+  @override
+  String eat() {
+    const String eatingString = 'I am a Dog! I am 🥩 eating';
+    print(eatingString);
+    return eatingString;
+  }
+
+  @override
+  String sleep() {
+    super.sleep();
+    const String sleepingString = 'I\'m a dog and I ❤️ to sleep!';
+    print(sleepingString);
+    return sleepingString;
+  }
 
   String bark() {
     const String barkingString = '🐶 barking';
