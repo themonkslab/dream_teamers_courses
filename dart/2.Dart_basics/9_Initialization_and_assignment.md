@@ -1,4 +1,4 @@
-# _Initialization and Assignment_.
+# _Initialization and Assignment_
 
 We have already seen that in order to store a value, a variable must be declared by defining its type and a name that represents its content: `String myFirstName;`. In this case we are declaring it.
 
