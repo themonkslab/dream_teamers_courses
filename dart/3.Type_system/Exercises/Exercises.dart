@@ -24,5 +24,17 @@ void main() {
   // Print the total cost of the order in a user-friendly format
   print("The total cost of your order is \$${totalCost.toStringAsFixed(2)} for ${(quantity?? 1)} items.");
 }
+*/
 
+// Exercise 3
+
+/* 
+void main () {
+  const pi = 3.14159;
+  var radius = 5;
+  final area = pi*radius*radius;
+  final perimeter = 2*pi*radius;
+
+  print('The area of the circle is ${area.toStringAsFixed(2)} \nThe perimeter of the circle is ${perimeter.toStringAsFixed(2)}');
+}
 */

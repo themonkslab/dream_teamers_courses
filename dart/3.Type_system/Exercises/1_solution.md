@@ -10,4 +10,4 @@ void main() {
 }
 ```
 
-In this exercise, we use var to declare the correctAnswers variable because its value will change during the program's execution. We use const to declare the totalQuestions variable because its value is a constant that does not change during the program's execution. We use final to declare the score variable because its value is calculated at runtime from the correctAnswers and totalQuestions variables and should not change once it's set.
+In this exercise, we use var to declare the correctAnswers variable because its value could change during the program's execution. We use const to declare the totalQuestions variable because its value is a constant that does not change during the program's execution. We use final to declare the score variable because its value is calculated at runtime from the correctAnswers and totalQuestions variables and should not change once it's set.
