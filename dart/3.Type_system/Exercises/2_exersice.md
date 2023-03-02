@@ -9,6 +9,6 @@ Requirements:
 - Choose either final, var, or const to declare the variables based on the context and their intended usage.
 - The itemPrice variable should be initialized to a value of 29.99.
 - The taxRate variable should be initialized to a value of 0.07.
-- The quantity variable should be initialized to a value of 2.
+- The quantity variable should be initialized as null and the program should use a default value of 1.
 - The totalCost variable should be initialized to a value calculated as itemPrice \* quantity \* (1 + taxRate).
 - The program should print out the total cost of the order in a user-friendly format, such as "The total cost of your order is $XX.XX for Y items."
