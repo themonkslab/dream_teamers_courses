@@ -80,3 +80,23 @@ un poco sucio de letras y un poco sucio de ciudad?
     ''');
 }
 ```
+
+## Nota sobre `\`
+
+Hay otras combinaciones con `\`como `\t` para introducir una tabulación. Por ejemplo en el codigo anterior podríamos agregar algunas tabulaciones:
+
+```dart
+void main() {
+    print('''\tVamos a buscar, amigo, a la virgen del aire…
+Yo sé que nos espera tras de aquellas colinas
+en la azucena del azul…
+\tYo quiero ser, amigo,
+uno, el más mínimo, de sentimientos de cristal…
+o mejor, uno, el más ligero, de sus latidos de perfume…
+\tNo estás tú también
+un poco sucio de letras y un poco sucio de ciudad?
+    ''');
+}
+```
+
+Vaya a probar cual seria el output!
