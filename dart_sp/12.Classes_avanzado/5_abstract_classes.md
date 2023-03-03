@@ -828,4 +828,5 @@ nueva subclase implemente los métodos definidos en la clase abstracta
 __Esta separación reduce la dependencia entre las diferentes partes del sistema y hace que el código sea más fácil de mantener y modificar en el futuro.__
 
 Quiero cerrar este capítulo aclarando que la clase abstracta no se testea en sí
-misma sino con una instancia. Es por esto que los tests sobre `Employee` fueron borrados.
+misma sino con una instancia. Es por esto que los tests sobre `Employee` si los
+tuvieran, pueden borrarse tranquilamente!
