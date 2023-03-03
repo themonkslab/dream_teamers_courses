@@ -80,6 +80,8 @@ un poco sucio de letras y un poco sucio de ciudad?''');
     }
 ```
 
+## Note about `\`
+
 There are other comination with the `\` like `\t` to make a tabulation in the text. For example in the previous code we could introduce some tabulations like this:
 
 ```dart
