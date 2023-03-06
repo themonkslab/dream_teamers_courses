@@ -156,7 +156,7 @@ void main() {
 }
 ```
 
-You now have your first game! At this point, we could make some adjustments: since we eliminated the `print('Selected...`), we could include that it tells us the user's choice and the computer's choice as well as a few lines to make our game more understandable.
+You now have your first game! At this point, we could make some adjustments: since we eliminated the `print('Selected...')`, we could include that it tells us the user's choice and the computer's choice as well as a few lines to make our game more understandable.
 
 ```dart
 import 'dart:io';
