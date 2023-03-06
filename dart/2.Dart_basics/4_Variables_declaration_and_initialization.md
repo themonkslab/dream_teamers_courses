@@ -132,7 +132,7 @@ void main() {
 }
 ```
 
-## _Concatenation_ and _Interpolation_.
+## _Concatenation_ and _Interpolation_
 
 Good! Notice that we introduced something new and that is the possibility to _concatenate_ text values with a '+'. However, you could already see that when printing, the space between the two names is missing and they are overlapping. We are going to create that space just by adding a space:
 
