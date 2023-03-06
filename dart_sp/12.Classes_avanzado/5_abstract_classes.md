@@ -830,3 +830,50 @@ __Esta separación reduce la dependencia entre las diferentes partes del sistema
 Quiero cerrar este capítulo aclarando que la clase abstracta no se testea en sí
 misma sino con una instancia. Es por esto que los tests sobre `Employee` si los
 tuvieran, pueden borrarse tranquilamente!
+
+## 💪 Transaccionando
+
+__Requirement__:
+
+Primero, crear una clase abstracta llamada `PaymentType` que tenga los siguientes atributos y métodos abstractos:
+
+- `id` (`int`): identificador único del pago.
+- `amount` (`double`): cantidad de dinero del pago.
+- `processPayment()`: método abstracto que procesa el pago (imprime con qué fue
+  realizado y retorna dicho tipo.)
+
+Luego, crear dos subclases llamadas `CashPayment` y `PayPalPayment` que extiendan de la clase `PaymentType`.
+
+`CashPayment` debe tener un constructor que acepte un parámetro `id` y un
+parámetro `amount`, y su método `processPayment()` debe imprimir "Paid amount:
+`$amount`" y retornar una `String` 'CashPayment'.
+
+`PaypalPayment` debe tener un constructor que acepte un parámetro `id`, un
+`parámetro amount` y un parámetro del tipo `String` llamado `email`, y su método
+`processPayment()` debe imprimir "Paid amount: `$amount`" y retornar una
+`String` 'PaypalPayment'.
+
+Luego, crear otra clase llamada `Transaction` que cuenta con los siguientes atributos:
+
+- `id` (`int`): id del cliente.
+- `fullName` (`String`): nombre completo del cliente.
+- `paymentType` (`PaymentType`): tipo de pago elegido por el cliente.
+- `processTransaction`: método que llama al `processPayment` del `PaymentType` e
+  imprime con qué método de pago fue realizada.
+
+Después, elaborar un ejemplo que ejecute 2 transacciones llamando a `processTransaction`, una con cada tipo
+de `PaymentType`. Todas las clases deben estar testeadas.
+
+Finalmente en nuestro ejemplo, llamar a una clase que aun no creamos:
+`BankTransactionPayment` como si la ejecutáramos. Tiene que tener `id`, `amount`
+y `bankAcount`, además del método `processPayment`. Crear sus tests, la clase y
+responder el porqué la clase `Transaction` siguió funcionando sin tener que ser
+modificada.
+
+__💀 Solución__:
+[abstract_classes_exercise](dart_sp/12.Classes_avanzado/abstract_classes_exercise)
+
+No tenemos que modificar la clase Transaction para poder agregar un nuevo tipo
+de pago, ya que dicha clase recibe un objeto de tipo PaymentType e interactúa
+con sus métodos; la implementación de los métodos de PaymentType es
+responsabilidad de las clases que heredan de PaymentType.
