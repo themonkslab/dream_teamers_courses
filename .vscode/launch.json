@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "dream_teamers_courses",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "classes_advanced",
+            "cwd": "dart_sp\\11.Dart_medio\\classes_advanced",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "first_dart_packages_exercise",
+            "cwd": "dart_sp\\11.Dart_medio\\first_dart_packages_exercise",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "first_dart_project",
+            "cwd": "dart_sp\\11.Dart_medio\\first_dart_project",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "first_package",
+            "cwd": "dart_sp\\11.Dart_medio\\first_package",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "first_package_enhanced",
+            "cwd": "dart_sp\\11.Dart_medio\\first_package_enhanced",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
