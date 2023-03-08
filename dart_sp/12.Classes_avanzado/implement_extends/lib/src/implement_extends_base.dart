@@ -25,7 +25,6 @@ class CashPayment implements PaymentType, PaymentExtras {
   @override
   String processPayment() {
     print('Paid amount: $amount. Taxable: $isTaxable');
-
     return 'CashPayment';
   }
 }
