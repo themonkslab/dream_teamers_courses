@@ -34,8 +34,6 @@ Perfect! Now that we understand a little more, I can tell you that we can also d
 
 Let's suppose we are making a web page that can only be viewed by those who are of legal age. Then we could make an _assertion_ to throw an _exception_ if the user is a minor and tries to enter the page:
 
-Translated with www.DeepL.com/Translator (free version)
-
 ```dart
 void main() {
     int userAge = 15;
