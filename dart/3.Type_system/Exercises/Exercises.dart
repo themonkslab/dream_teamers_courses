@@ -1,4 +1,4 @@
-// Exercise 1
+//Exercise 1
 
 /*
 void main() {
@@ -26,7 +26,7 @@ void main() {
 }
 */
 
-// Exercise 3
+//Exercise 3
 
 /* 
 void main () {
