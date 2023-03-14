@@ -16,7 +16,7 @@ void main() {
 
 Como podrán ver, aun podemos cambiar sus valores! Lo que no podemos hacer es asignarle a dicha variable, una nueva lista. Si escribimos el código a continuación, nos arroja un error del tipo: 'The final variable cities can only be set once'.
 
-Sucede lo mismo si utilizan `const`, con la única diferencia de que sería más performante ya que Dart puede calcular esa lista en tiempo de compilación y que el error en este caso dice que a las `const` no se les puede asignar un valor:
+Sucede algo similiar si utilizan `const`, pero ahora el error es de otro tipo, ya que Dart solo puede asignar a esta un valor en tiempo de compilación, y en este caso dice que a las `const` no se les puede asignar un valor:
 
 ```dart
 void main() {
@@ -27,7 +27,7 @@ void main() {
 }
 ```
 
-Y la última pregunta de este artículo: no es raro que podamos cambiar un valor si la lista fue declarada como `const`? 💀 Qué les parece?
+Y la última pregunta de este artículo: podremos cambiar un valor si la lista fue declarada como `const`? 💀 Qué les parece?
 
 ```dart
 void main() {
