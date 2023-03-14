@@ -1,10 +1,10 @@
 # _List methods_
 
-Vamos a recorrer métodos muy útiles que nos provee esta clase o tipo.
+Let's walk through very useful methods provided by this class or type.
 
-## _isEmpty_ o _isNotEmpty_
+## _isEmpty_ or _isNotEmpty_
 
-Nos permite __chequear si la lista está vacía o no__. En nuestro ejemplo anterior pueden probarlo:
+It allows us to __check if the list is empty or not__. You can try it in our previous example:
 
 ```dart
 void main() {
@@ -14,14 +14,14 @@ void main() {
 }
 ```
 
-Y también pueden hacerlo más claro, creando una _list literal_ vacía:
+And you can also make it clearer by creating an empty _list literal_:
 
 ```dart
 void main() {
     var cities = ['Cordoba', 'New York', 'Paris'];
     print(cities.isEmpty); // false
     print(cities.isNotEmpty); // true
-    assert(cities.isNotEmpty); // Para no olvidarnos de los asserts! 😉
+    assert(cities.isNotEmpty); // So that we don't forget the asserts! 😉
     print([].isEmpty); // true
     print([].isNotEmpty); // false
 }
@@ -29,7 +29,7 @@ void main() {
 
 ## _Length_
 
-Nos permite obtener la __cantidad de elementos__ que tiene dicha lista:
+It allows us to obtain the __number of elements__ in the list:
 
 ```dart
 void main() {
@@ -38,9 +38,9 @@ void main() {
 }
 ```
 
-## _First_ y _last_
+## _First_ and _last_
 
-Nos permite __obtener el primer y último elemento__ de la lista:
+Allows us to __get the first and last element__ of the list:
 
 ```dart
 void main() {
@@ -50,13 +50,13 @@ void main() {
 }
 ```
 
-💀 Recuerdan qué sucedía si buscábamos un elemento a través de un _index_ que no estaba dentro del rango de la lista? Prueben qué sucede si buscan con estos dos métodos en una lista vacía, así: `print([].first)` o `print([].last)`.
+💀 Remember what happened if we searched for an element through an _index_ that was not within the range of the list? Try what happens if you search with these two methods in an empty list, like this: `print([].first)` or `print([].last)`.
 
-Exacto: un error que nos dice que dicho elemento no existe.
+Exactly: an error telling us that this element does not exist.
 
-## _Add_ e _insert_
+## _Add_ and _insert_
 
-Podemos __agregar valores a una lista__ de las siguientes dos maneras. __La primera lo agrega luego del último elemento__ de la lista:
+We can __add values to a list__ in the following two ways. __The first one adds it after the last element__ in the list:
 
 ```dart
 void main() {
@@ -66,7 +66,7 @@ void main() {
 }
 ```
 
-__La segunda__, nos permite __decidir en qué lugar__ insertamos dicho valor y para ello nos pide como primer _argument_ (argumento), el índice en donde queremos colocarlo y luego el valor; recuerden que empezamos a contar en las listas, desde el 0:
+__The second one__ allows us to __decide in which place__ we _insert_ this value and for this we are asked as first _argument_  the index where we want to place it and then the value; remember that we start counting in the lists, from 0:
 
 ```dart
 void main() {
@@ -76,9 +76,9 @@ void main() {
 }
 ```
 
-## _RemoveAt_ y _clear_
+## _RemoveAt_ and _clear_
 
-Como podemos agregar valores, también podemos eliminarlos. Para __remover valores__ de una lista, utilizamos el __método _removeAt_ con el _index_ para indicar de qué valor se trata__:
+The same way we can add values, we can also remove them. To __remove values__ from a list, we use the ___removeAt_ method with the _index_ to indicate which value it is__:
 
 ```dart
 void main() {
@@ -90,7 +90,7 @@ void main() {
 }
 ```
 
-Y si quisiéramos __borrar completamente todos los valores__ de una lista, podemos utilizar el método `clear`:
+And if we would like to completely __clear all values__ from a list, we can use the `clear` method:
 
 ```dart
 void main() {
@@ -104,9 +104,9 @@ void main() {
 }
 ```
 
-## _Contains_ e _indexOf_
+## _Contains_ and _indexOf_
 
-Si quisiéramos saber __si un elemento se encuentra dentro de nuestra lista, utilizamos _contains_:__
+If we want to know __if an element is inside our list, we use _contains_:__
 
 ```dart
 void main() {
@@ -116,7 +116,7 @@ void main() {
 }
 ```
 
-Pero si además quisiéramos saber __en qué posición se encuentra? Utilizamos _indexOf_:__
+But if we also wanted to know __in what position is it? We use _indexOf_:__
 
 ```dart
 void main() {
@@ -128,7 +128,7 @@ void main() {
 
 ## 💪 _Guess_
 
-__Requirement__: tienen que calcular si el siguiente _assertion_ va a dar `true` o `false`, osea si va a pasar de largo o va a fallar.
+__Requirement__: you have to calculate if the next _assertion_ is going to give `true` or `false`, that is, if it is going to pass or fail..
 
 ```dart
 void main() {
@@ -144,9 +144,9 @@ void main() {
 }
 ```
 
-__💀 Solución__:
+__💀 Solution__:
 
-El _assertion_ o afirmación y lo hago medio largo a esto así no pueden ver tan fácilmente la solución y de verdad espero estén haciendo el cálculo (🤣), resulta en...
+The _assertion_ or statement, and I make it kind of long so you can't so easily see the solution and I really hope you are doing the calculation (🤣), results in...
 
 ...
 
@@ -154,4 +154,4 @@ El _assertion_ o afirmación y lo hago medio largo a esto así no pueden ver tan
 
 😅
 
-... `true`, por lo que no salta ningún error!
+... `true`,  so no error is triggered!
