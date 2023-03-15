@@ -464,3 +464,18 @@ void main() {
   );
 }
 ```
+
+## _Composition vs Inheritance_
+
+Ya vimos que herencia y composición son dos patrones importantes que se utilizan para __establecer relaciones entre las clases y los objetos.__
+
+__La herencia__ se refiere a la __capacidad de una clase de heredar las propiedades y comportamientos de otra clase__. En otras palabras, una clase hereda de otra clase los atributos y métodos que ésta define. La clase que hereda se llama "clase hija" o "subclase", mientras que la clase que se hereda se llama "clase padre" o "superclase". La herencia puede ser __útil para reutilizar código y crear jerarquías de clases.__
+
+Por otro lado, __la composición__ se refiere a __la capacidad de una clase de tener un objeto de otra clase como un miembro o propiedad__. En otras palabras, una clase compuesta tiene una instancia de otra clase. La clase compuesta utiliza los métodos y propiedades del objeto que contiene para realizar sus operaciones. La composición puede ser __útil para crear objetos más complejos y para agregar funcionalidades de forma modular__.
+
+En resumen, la herencia establece una relación de "es un" entre las clases (una
+subclase "es una" superclase), mientras que la composición establece una
+relación de "tiene un" entre las clases (una clase compuesta "tiene un" objeto
+de otra clase).  __La herencia es una buena opción cuando hay muchas similitudes entre los elementos que estamos modelando, mientras que la composición es mejor cuando hay diferencias significativas entre ellos.__
+
+Ambos conceptos son importantes y pueden ser utilizados en diferentes situaciones, dependiendo de los requerimientos del diseño y la arquitectura.
