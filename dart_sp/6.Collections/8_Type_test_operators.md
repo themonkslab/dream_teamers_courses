@@ -14,8 +14,7 @@ void main() {
 }
 ```
 
-Una forma de ayudarse a decubrirlo, sería ponerle un punto a la variable y ver qué métodos nos proporciona Dart. 💀 Como imagino habrán podido ver, solamente nos ofrece cuatro métodos y no todos los que esperamos por ser una `String`. Eso es porque definimos el tipo de `value` dentro del `Map` como un `dynamic`. Sin embargo, __podríamos
-castear un objeto si sabemos de qué tipo es, utilizando el _cast operator_ `as`.__ Sería que nosotros le confirmamos a Dart que se trata de un tipo `String` en este caso, y él mismo se encarga de cambiar el tipo `dynamic` a uno del tipo `String`:
+Una forma de ayudarse a decubrirlo, sería ponerle un punto a la variable y ver qué métodos nos proporciona Dart. 💀 Como imagino habrán podido ver, solamente nos ofrece cuatro métodos y no todos los que esperamos por ser una `String`. Eso es porque definimos el tipo de `value` dentro del `Map` como un `dynamic`. Sin embargo, __podríamos castear un objeto si sabemos de qué tipo es, utilizando el _cast operator_ `as`__. Sería que nosotros le confirmamos a Dart que se trata de un tipo `String` en este caso, y él mismo se encarga de cambiar el tipo `dynamic` a uno del tipo `String`:
 
 ```dart
 void main() {
@@ -53,9 +52,9 @@ void main() {
         'age': 38,
         'height': 1.65,
     };
-    final name = mau['age'];
-    assert(name is String, 'The conversion did not worked correctly');
-    print(name.toUpperCase());
+    final age = mau['age'];
+    assert(age is String, 'The conversion did not worked correctly');
+    print(age.toUpperCase());
 }
 ```
 
