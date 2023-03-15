@@ -14,14 +14,22 @@ void main() {
 }
 ```
 
-Como podrán ver, aun podemos cambiar sus valores! Lo que no podemos hacer es asignarle a dicha variable, una nueva lista. Si escribimos el código a continuación, nos arroja un error del tipo: 'The final variable cities can only be set once'.
-
-Sucede lo mismo si utilizan `const`, con la única diferencia de que sería más performante ya que Dart puede calcular esa lista en tiempo de compilación y que el error en este caso dice que a las `const` no se les puede asignar un valor:
+Como podrán ver, aun podemos cambiar sus valores! Lo que no podemos hacer es
+asignarle a dicha variable, una nueva lista. Si escribimos el código a
+continuación, nos arroja un error del tipo: 'The final variable cities can only
+be set once'.
 
 ```dart
 void main() {
     final citiesA = <String>['Cordoba', 'New York', 'Paris'];
     citiesA = ['Buenos Aires'];
+}
+```
+
+Sucede lo mismo si utilizan `const`, con la única diferencia de que sería más performante al momento de declararla ya que Dart puede calcular esa lista en tiempo de compilación.  El error en este caso sin embargo, dice que a las `const` no se les puede asignar un valo:
+
+```dart
+void main() {
     const citiesB = <String>['Cordoba', 'New York', 'Paris'];
     citiesB = ['Buenos Aires'];
 }

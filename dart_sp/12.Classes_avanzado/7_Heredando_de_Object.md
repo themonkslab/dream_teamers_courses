@@ -276,7 +276,7 @@ tengan valores de `hashCode` diferentes, lo que puede causar problemas en el
 almacenamiento y recuperación de datos en estructuras de datos.
 
 Por lo tanto, siempre se debe sobrescribir `hashCode` cuando se sobrescribe el
-método `==.`
+método `==.` __Quiero decir que dos objetos iguales, deben tener el mismo `hashCode`__
 
 Cómo lo hacemos?
 
