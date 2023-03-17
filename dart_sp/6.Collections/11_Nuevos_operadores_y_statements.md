@@ -49,7 +49,7 @@ void main() {
 }
 ```
 
-Noten que no es un `if` _statement_ ya que no podrían aplicarlo aquí sino un tipo nuevo de _statement_!
+Noten que no es un `if` _statement_ ya que no podrían aplicarlo aquí (en la inicilización de la lista) sino un tipo nuevo de _statement_!
 
 ## _Collection-for_
 
