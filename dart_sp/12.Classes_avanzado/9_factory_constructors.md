@@ -322,4 +322,10 @@ estaría asumiendo la responsabilidad de crear instancias de sí misma y tambié
 de convertir instancias de la clase `Cat` en instancias de `Kitten`__. Al
 utilizar un factory constructor en la clase `Kitten`, se delega la
 responsabilidad de la creación de instancias a la propia clase y se evita la
-violación del principio de responsabilidad única. Ya trabajaremos más en este concepto!
+violación del principio de responsabilidad única. Ya trabajaremos más en este
+concepto!
+
+### Convertir JSONs
+
+Tenemos aun otro ejemplo pero es lo suficientemente importante como para ponerlo
+en un artículo separado, el siguiente!
