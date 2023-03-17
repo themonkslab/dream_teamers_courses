@@ -140,7 +140,14 @@ Y dónde se supone que esos paquetes son almacenados una vez que los descargamos
 
 ## _Semantic Versioning_
 
-Supongamos que creamos un paquete que depende de una librería llamada `super_library` para hacer llamados a un servidor que nos traiga información sobre libros publicados en español. Cuando empezamos a utilizarla, vamos a su documentación que nos dice cómo utilizarla a través de su _API_ o _Application Programmer Interface_ o la interface de uso digamos. Ya entendimos, la hacemos funcionar en nuestro paquete y todo marcha de mil maravillas.
+Supongamos que creamos un paquete que depende de una librería llamada
+`super_library` para hacer llamados a un servidor que nos traiga información
+sobre libros publicados en español. Cuando empezamos a utilizarla, vamos a su
+documentación que nos dice cómo utilizarla a través de su _API_ o _Application
+Programmer Interface_ o Interfaz de Programación de Aplicaciones (un conjunto de
+reglas y protocolos que permiten que diferentes aplicaciones se comuniquen entre
+sí). Ya entendimos, la hacemos funcionar en nuestro paquete y todo marcha de mil
+maravillas.
 
 Con el tiempo, esa librería que es muy conocida y con la que mucha gente trabaja, se va actualizando y va mejorando. __Cómo le informa al resto de la comunidad qué va sucediendo internamente__ sin tener los usuarios que estar entrando cada vez a la documentación? __Utilizando versiones! Y _Semantic Versioning_ o versionado semántico es un standar en la industria.__
 
