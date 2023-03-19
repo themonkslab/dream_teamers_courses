@@ -1,4 +1,4 @@
-# Copiando colecciones
+# Copying collections
 
 Suppose we have a `List<int>` and we want to make a copy of it. The form that comes first to our mind, could be something like this right?
 
