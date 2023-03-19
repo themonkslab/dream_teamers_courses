@@ -1,8 +1,8 @@
 # _Nested collections_
 
-Ahora que entendemos sobre colecciones, podemos conocer organizaciones más complejas de ellas. _Nested_ significa __anidadas__ y refiere a __colecciones que se encuentran dentro de otras colecciones__.
+Now that we understand about collections, we can learn about more complex organizations of them. _Nested_ refers to __collections that are inside other collections__.
 
-Supongamos que queremos representar un listado de listOfRestaurant con la siguiente información:
+Suppose we want to represent a listOfRestaurant listing with the following information:
 
 ```dart
 void main() {
@@ -20,7 +20,7 @@ void main() {
 }
 ```
 
-Cómo representamos estos datos? Lo vamos a hacer con mapas de la siguiente manera:
+How do we represent this data? We are going to do it with maps in the following way:
 
 ```dart
 void main() {
@@ -53,13 +53,11 @@ void main() {
     }
   ];
 }
-
-
 ```
 
-En este ejemplo podemos observar que los `rating`, son un listado de `int` dentro de cada `Map` y cada uno de ellos a su vez, pertenece a una `List`, a la que podríamos declararle el tipo así: `List<Map<String, dynamic>>`.
+In this example we can observe that the `ratings`, are a list of `int` inside each `Map` and at the same time, each one of them belongs to a `List`, so we could declare the type like this: `List<Map<String, dynamic>>`.
 
-Podemos también iterar sobre cada uno de ellos así:
+We can also iterate over each of them like this:
 
 ```dart
 void main() {
@@ -88,7 +86,7 @@ void main() {
 
 ## 💪 Average rating
 
-__Requirement__: dada la previa lista de restaurantes, calcular el promedio de rating de cada uno y sumarlo a su respectivo map con la _key_ `avgRating`. Utilicen de base, el código que les dejo. Poner el `avgRating` solamente con un decimal.
+__Requirement__: given the previous list of restaurants, calculate the average rating of each one and add it to its respective map with the _key_ `avgRating`. Use as base, the code that I leave you. Set the `avgRating` to one decimal place.
 
 ```dart
 void main() {
@@ -120,7 +118,7 @@ void main() {
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {

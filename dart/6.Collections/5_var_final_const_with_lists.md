@@ -1,10 +1,8 @@
 # `Var`, `final` y `const` _with lists_
 
-_Disclaimer_ o descargo de responsabilidad: notarán que vengo mezclando cuándo utilizo términos en inglés y cuando en español y con el paso del curso vamos utilizando más de los primeros: es totalmente adrede. La idea es que se acostumbren y que acompañen a este curso con aprendizaje de inglés ya que es el idioma por excelencia no solo en cualquier trabajo sino en cualquier código que vayan a leer!
+We can use to declare our lists `var`, `final` and `const`, letting Dart infer their type or making explicit their type like this: `<String>[...]`.
 
-Podemos utilizar para declarar nuestras listas `var`, `final` y `const`, dejando que Dart infiera su tipo o bien haciendo explícito su tipo así: `<String>[...]`.
-
-Ya vimos que si las declaramos con `var`, podemos cambiar sus valores pero qué pasa si las declaramos con `final`? 💀
+We already saw that if we declare them with `var`, we can change their values but what if we declare them with `final`? 💀
 
 ```dart
 void main() {
@@ -14,20 +12,18 @@ void main() {
 }
 ```
 
-Como podrán ver, aun podemos cambiar sus valores! Lo que no podemos hacer es asignarle a dicha variable, una nueva lista. Si escribimos el código a continuación, nos arroja un error del tipo: 'The final variable cities can only be set once'.
-
-Sucede lo mismo si utilizan `const`, con la única diferencia de que sería más performante ya que Dart puede calcular esa lista en tiempo de compilación y que el error en este caso dice que a las `const` no se les puede asignar un valor:
+As you can see, we can still change its values! What we cannot do is to assign a new list to this variable. If we write the code below, we get an error like: 'The final variable cities can only be set once'.
 
 ```dart
 void main() {
     final citiesA = <String>['Cordoba', 'New York', 'Paris'];
     citiesA = ['Buenos Aires'];
-    const citiesB = <String>['Cordoba', 'New York', 'Paris'];
-    citiesB = ['Buenos Aires'];
 }
 ```
 
-Y la última pregunta de este artículo: no es raro que podamos cambiar un valor si la lista fue declarada como `const`? 💀 Qué les parece?
+The same happens if we use `const`, with the only difference that it would be more performant when declaring it since Dart can calculate that list at compile time.  The error in this case however, says that `const` cannot be assigned a value:
+
+And the last question of this article: isn't it weird that we can change a value if the list was declared as `const`? 💀 What do you think?
 
 ```dart
 void main() {
@@ -37,4 +33,4 @@ void main() {
 }
 ```
 
-Exacto! Tenemos un error! Dart no puede chequear eso en tiempo de compilación por lo que en tiempo de ejecución es cuando detecta el error! A tener mucho cuidado con querer cambiar valores de una lista declarada como constante!
+That's right! We have a bug! Dart can't check that at compile time so at run time is when it detects the error! Be very careful with changing values of a list declared as a constant!
