@@ -138,4 +138,4 @@ void main() {
 
 __🧐 Importante__:
 
-- Noten cómo declaramos un `Set` _literal_: `<int>{}`. Si lo hacemos solamente con `{}` Dart va a creer que estamos declarando un `Map`, _type_ que veremos exactamente a continuación.
+Noten cómo declaramos un `Set` _literal_: `<int>{}`. Si lo hacemos solamente con `{}` Dart va a creer que estamos declarando un `Map`, _type_ que veremos exactamente a continuación.
