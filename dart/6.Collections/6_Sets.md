@@ -1,6 +1,6 @@
 # Sets
 
-Son collecciones al igual que las listas con las diferencias que las últimas, pueden contener valores repetidos mientras que los _set_ no. __Los `Set` son colecciones de valores únicos__ y declaramos sus versiones _literal_ con _curly-braces_ o `{ }`:
+They are collections just like lists with the differences that the list may contain repeated values while the _set_ may not. Sets are collections of unique values and we declare their _literal_ versions with `{ }`:
 
 ```dart
 void main() {
@@ -11,7 +11,7 @@ void main() {
 }
 ```
 
-Si quisiéramos acceder a un elemento dentro del `Set`, no podemos utilizar el _subscript operator_ o `[index]`. En ellos, debemos utilizar el método `elementAt':
+If we would like to access an element inside the `Set`, we cannot use the _subscript operator_ or `[index]`. In such cases, we must use the `elementAt` method:
 
 ```dart
 void main() {
@@ -22,7 +22,7 @@ void main() {
 
 ## _Add and remove_
 
-Podemos agregar elementos a nuestro `Set`. Al igual que las `List`, si agregamos un elemento mediante `add`, dicho elemento se agregará al final:
+We can add elements to our `Set`. Like the `List`, if we add an element by `add`, that element will be added at the end:
 
 ```dart
 void main() {
@@ -32,7 +32,7 @@ void main() {
 }
 ```
 
-💀 Qué sucede sin embargo si intentamos hacer lo siguiente? Cuál será el resultado de ese `print`?
+However, what happens if we try to do the following? What will be the result of that `print`?
 
 ```dart
 void main() {
@@ -42,9 +42,9 @@ void main() {
 }
 ```
 
-Exacto! Ya que los `Set` dijimos contienen valores únicos, si agregamos un valor que ya se encuentra allí, entonces no hace nada!
+Exactly! Since the `Set` contains unique values, if we add a value that is already there, then it does nothing!
 
-Podemos también eliminar elementos utilizando `remove` y si intentamos eliminar un elemento que no se encuentra en el `Set`, este se mantiene sin producir errores:
+We can also remove elements using `remove` and if we try to remove an element that is not in the `Set`, it remains without producing errors:
 
 ```dart
 void main() {
@@ -56,13 +56,13 @@ void main() {
 
 ## _Last, first, length, and contains_
 
-Funcionan de la misma manera que en las `List` por lo que no ahondaremos en ellos.
+They work in the same way as in the `List` so we will not delve into them.
 
 ## _Union, intersection and difference_
 
-Estos sí son métodos particulares de los `Set` y pueden sernos de mucha utilidad.
+These are particular methods of the `Set` and can be very useful.
 
-El método __`union` nos permite unir `Set`, manteniendo los elementos únicos__ aun si hay repeticiones:
+The __`union` method allows us to join `Sets`, keeping the unique elements__ even if there are repetitions:
 
 ```dart
 void main() {
@@ -72,7 +72,7 @@ void main() {
 }
 ```
 
-El método __`intersection` nos permite encontrar qué elementos son comunes__ entre ambos `Set`:
+The __`intersection` method allows us to find which elements are common__ between both `Sets`:
 
 ```dart
 void main() {
@@ -82,7 +82,7 @@ void main() {
 }
 ```
 
-El método __`difference` nos permite encontrar qué elementos están en el primer `Set` pero no en el segundo__:
+The __`difference` method allows us to find which elements are in the first `Set` but not in the second__:
 
 ```dart
 void main() {
@@ -92,7 +92,7 @@ void main() {
 }
 ```
 
-Finalmente, también pueden utilizar _loops_ con ellos:
+Finally, we can also use _loops_ with them:
 
 ```dart
 void main() {
@@ -103,21 +103,21 @@ void main() {
 }
 ```
 
-## 💪 Sumando elementos
+## 💪 Adding elements
 
-__Requirement__: dados dos _sets_ de `int` llamados `a` y `b`, escribir un programa que calcule y retorne otro `Set` con los elementos del primero y del segundo pero que no son comunes a ambos. Luego calcular la suma de los elementos del `Set` resultante.
+__Requirement__: given two _sets_ of `int` named `a` and `b`, write a program that calculates and returns another `Set` with the elements of the first and second but not common to both. Then calculate the sum of the elements of the resulting `Set`.
 
 ```dart
 void main() {
     const a = { 1, 3 };
     const b = { 3, 5 };
-    // Debería imprimir { 1, 5 } y luego 6
+    // It should print { 1, 5 } then 6
 }
 ```
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {
@@ -136,6 +136,6 @@ void main() {
 }
 ```
 
-__🧐 Importante__:
+__🧐 Important__:
 
-- Noten cómo declaramos un `Set` _literal_: `<int>{}`. Si lo hacemos solamente con `{}` Dart va a creer que estamos declarando un `Map`, _type_ que veremos exactamente a continuación.
+Notice how we declare a _literal_ `Set`: `<int>{}`. If we do it only with `{}` Dart will think we are declaring a `Map`, _type_ which we will see exactly next.

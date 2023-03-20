@@ -1,6 +1,6 @@
 # _Iterating on maps_
 
-Ya vimos en _lists_ y _sets_ que podemos iterar, recorrerlos y utilizar sus valores. Qué pasa si intentamos hacer lo mismo con un `Map`?
+We already saw in _lists_ and _sets_ that we can iterate, travel through them and use their values. What happens if we try to do the same with a `Map`?
 
 ```dart
 void main() {
@@ -13,15 +13,15 @@ void main() {
 }
 ```
 
-Van a ver que Dart nos tira un error: _'The type `Map<String, dynamic>` used in the `for` loop must implement Iterable'_. Qué significa esto? Qué es un `Iterable`?
+You will see that Dart throws an error: _'The type `Map<String, dynamic>` used in the `for` loop must implement Iterable'_. What does it mean? What is an `Iterable`?
 
-__`Iterable` es una colección de items a la que puede accederse de forma secuencial.__ Las listas y los sets, son iterables.
+__`Iterable` is a collection of items that can be accessed sequentially.__ Lists and sets are iterable.
 
-Cómo hacemos para iterar entonces en un `Map`?
+So how do we iterate on a `Map`?
 
 ## map.keys
 
-Una forma sería acceder a las `keys` de dicho `Map` y allí, obtener cada `key` o aun si queremos, el valor que contiene cada una:
+One way would be to access the `keys` of the `Map` and there, obtain each `key` or even if we want, the value contained in each one:
 
 ```dart
 void main() {
@@ -37,11 +37,11 @@ void main() {
 }
 ```
 
-💀 Fíjense qué les dice Dart cuando se paran sobre la palabra `keys` en `mau.keys`! Nos dice que es un `Iterable<String>` o sea un iterable de `String`s y por ello es que podemos recorrerlas.
+💀 Notice what Dart tells you when you stop on the word `keys` in `mau.keys`! It tells us that it is an `Iterable<String>` and that is why we can iterate through it.
 
 ## map.values
 
-De la misma forma, podemos hacer lo mismo con los valores:
+Likewise, we can do the same with values:
 
 ```dart
 void main() {
@@ -58,7 +58,7 @@ void main() {
 
 ## map.entries
 
-Esta última forma nos permite acceder a uno y el otro:
+This latter form allows us to access one and the other:
 
 ```dart
 void main() {
@@ -74,9 +74,9 @@ void main() {
 }
 ```
 
-## 💪 Pidiendo pizza
+## 💪 Ordering pizza
 
-__Requirement__: dado un `Map` con precios de pizzas, escribir un programa que calcule el total de una orden. Si la orden contiene una pizza que no está en el menú, debe imprimir `The ${nombre de pizza} pizza is not in the menu`.
+__Requirement__: given a `Map` with pizza prices, write a program that calculates the total for an order. If the order contains a pizza that is not on the menu, it should print `The ${pizza name} pizza is not in the menu`.
 
 ```dart
 void main() {
@@ -95,7 +95,7 @@ void main() {
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {

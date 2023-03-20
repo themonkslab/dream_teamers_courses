@@ -1,8 +1,8 @@
-# Nuevos operadores y _statement_
+# New operators and _statement_
 
 ## _Collection-if_
 
-Supongamos que queremos agregar condicionalmente algo a una lista. Lo podríamos hacer así:
+Suppose we want to add something conditionally to a list. We could do it like this:
 
 ```dart
 void main() {
@@ -19,10 +19,10 @@ void main() {
 }
 ```
 
-Podemos ver dos cosas:
+We can see two things:
 
-1. Que utilizamos `listOfColors` en lugar de lo que parecería más lógico, `colors`. El motivo es que resulta luego mucho más fácil de leer cuando empezamos a utilizar las variables individuales, como `color` en este caso: desde el comienzo de la palabra podemos identificar de qué variable se trata sin tener que ir hasta el final. 😒 Obsesivos nosotros? 🤣
-2. Se podría hacer más simple utilizando _collection-if_:
+1. That we use `listOfColors` instead of what would seem more logical, `colors`. The reason is that it is then much easier to read when we start using the individual variables, such as `color` in this case: from the beginning of the word we can identify which variable it is without having to go all the way to the end. 😒 Obsessive us? 🤣
+2. It could be made simpler by using _collection-if_:
 
 ```dart
 void main() {
@@ -37,7 +37,7 @@ void main() {
   }
   print(listOfColors);
   //
-  // Vean cómo logramos lo mismo de manera más simple
+  // See how we achieve the same in a simpler way
   //
   final coolListOfColors = [
     'green',
@@ -49,11 +49,11 @@ void main() {
 }
 ```
 
-Noten que no es un `if` _statement_ ya que no podrían aplicarlo aquí sino un tipo nuevo de _statement_!
+Note that it is not an `if` _statement_ since you could not apply it here (in the list initialization), but a new type of _statement_!
 
 ## _Collection-for_
 
-Vamos a partir limpiando un poco el código anterior y suponiendo que quisiéramos agregar los valores de otro listado de colores al previo:
+Let's start by cleaning up the previous code and suppose that we would like to add the values of another color list to the previous one:
 
 ```dart
 void main() {
@@ -70,7 +70,7 @@ void main() {
 }
 ```
 
-Podríamos utilizar el método de las `List` llamado __`addAll()`, que nos permite agregar todos los valores de una colección a otra__:
+We could use the `List` method called __`addAll()`, which allows us to add all the values of a collection to another collection__:
 
 ```dart
 void main() {
@@ -88,7 +88,7 @@ void main() {
 }
 ```
 
-Si bien este método también es muy simple, necesitamos utilizarlo una vez que nuestra lista ya fue inicializada. Para hacer lo mismo pero en una inicialización, utilizamos _Collection-for_:
+While this method is also very simple, we need to use it once our list has already been initialized. To do the same but in an initialization, we use _Collection-for_:
 
 ```dart
 void main() {
@@ -108,7 +108,7 @@ void main() {
 
 ## _Spread operator_
 
-No sería hermoso poder poner en lugar de ese _Collection-for_ directamente la variable `extraColors`? Sucede que si hiciéramos eso, estaríamos agregando la lista y no sus elementos. Para poder hacerlo, tenemos que usar este operador: `...`. __El _spread operator_ o llamado algo así como operador de difuminación, nos permite retornar todos los elementos de la lista pero como valores independientes.__:
+Wouldn't it be nice to be able to put instead of that _Collection-for_ directly the variable `extraColors`? It happens that if we do that, we would be adding the list and not its elements. In order to do that, we have to use this operator: `...`. __The _spread operator_ allows us to return all the elements of the list but as independent values__:
 
 ```dart
 void main() {
@@ -128,7 +128,7 @@ void main() {
 
 ## _Composable_
 
-Todos los operadores y declaraciones que vimos en este artículo, __son _composable_, quiere decir que pueden combinarse:__
+All the operators and statements we have seen in this article, __are _composable_, meaning that they can be combined:__
 
 ```dart
 void main() {
@@ -147,9 +147,9 @@ void main() {
 }
 ```
 
-## También con `Set` y `Map`
+## Also with `Set` and `Map`
 
-Todas estas _collections_ y _operators_ que aprendimos, también pueden utilizarse en los otros tipos de colecciones:
+All these _collections_ and _operators_ that we learned, can also be used in the other types of collections:
 
 ```dart
 void main() {
@@ -179,7 +179,7 @@ void main() {
 
 ## 💪 Shopping List
 
-__Requirement__: reescribir el siguiente código utilizando _collection-if_, _collection-for_ y _spread_, consiguiendo el mismo output.
+__Requirement__: rewrite the following code using _collection-if_, _collection-for_ and _spread_, getting the same output.
 
 ```dart
 void main() {
@@ -208,7 +208,7 @@ void main() {
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {

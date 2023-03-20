@@ -14,18 +14,16 @@ void main() {
 
 As you can see, we can still change its values! What we cannot do is to assign a new list to this variable. If we write the code below, we get an error like: 'The final variable cities can only be set once'.
 
-Something similar happens if you use `const`, but now the error is of another type, since Dart can only assign to it a value at _compile time_, and in this case it says that `const` cannot be assigned a value:
-
 ```dart
 void main() {
     final citiesA = <String>['Cordoba', 'New York', 'Paris'];
     citiesA = ['Buenos Aires'];
-    const citiesB = <String>['Cordoba', 'New York', 'Paris'];
-    citiesB = ['Buenos Aires'];
 }
 ```
 
-And the last question of this article: can we change a value if the list was declared as `const`? 💀 What do you think?
+The same happens if we use `const`, with the only difference that it would be more performant when declaring it since Dart can calculate that list at compile time.  The error in this case however, says that `const` cannot be assigned a value:
+
+And the last question of this article: isn't it weird that we can change a value if the list was declared as `const`? 💀 What do you think?
 
 ```dart
 void main() {
@@ -35,4 +33,4 @@ void main() {
 }
 ```
 
-Exacto! Tenemos un error! Dart no puede chequear eso en tiempo de compilación por lo que en tiempo de ejecución es cuando detecta el error! A tener mucho cuidado con querer cambiar valores de una lista declarada como constante!
+That's right! We have a bug! Dart can't check that at compile time so at run time is when it detects the error! Be very careful with changing values of a list declared as a constant!
