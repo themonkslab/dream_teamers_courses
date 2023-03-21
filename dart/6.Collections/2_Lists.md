@@ -1,6 +1,6 @@
-# _Lists_ o listas
+# _Lists_
 
-También conocidas como _arrays_ en otros lenguajes, sirven para representar una __colección de valores__. Podemos inicializarla como un _list literal_ vacío, (`[]`), llenarla de valores e imprimirla de la siguiente manera:
+Also known as _arrays_ in other languages, they serve to represent a __collection of values__. We can initialize it as an empty _list literal_, (`[]`), fill it with values and print it as follows:
 
 ```dart
 void main() {
@@ -9,21 +9,21 @@ void main() {
 }
 ```
 
-## Acceder a sus valores
+## Access its values
 
-__Cómo podemos imprimir específicamente un valor de esa lista?__ 💀 Lo vimos en el ejercicio anterior. Traten de hacer memoria! 🤣
+__How can we specifically print a value from that list?__ 💀 We saw this in the previous exercise. Try to remember! 🤣
 
-Recordando, dijimos que __para acceder a los valores de una lista, lo tenemos que hacer con _square brackets_ o llaves cuadradas (`[ ]`), también llamado _subscript operator_ y poniendo el _index_ o posición de dicho valor dentro de la lista__. Pero vamos explicarnos un poquito más.
+Remembering, we said that __to access the values of a list, we have to do it with _square brackets_ (`[ ]`), also called _subscript operator_ and putting the _index_ or position of that value within the list__. But let's explain a little more.
 
-__Las listas pueden tener la cantidad de valores que queramos__. Vamos a llamar a esta cantidad N. Los _indexes_ se cuentan desde el __primer valor__ y __dicho _index_ es el 0__. Para encontrar el último valor de la lista, deberíamos restar 1 al total de elementos de la lista o N. Así, para acceder al primero, deberíamos hacer: `print(cities[0]);` y para ingresar al último deberíamos hacer `print(cities[cities.length - 1])`.
+__Lists can have any number of values__. Let's call this number N. The _indexes_ are counted from the __first value__ and __that _index_ is 0__. To find the last value in the list, we should subtract 1 from the total number of elements in the list or N. So, to access the first one, we should write: `print(cities[0]);` and to access the last one we should write `print(cities[cities[cities.length - 1])`.
 
-💀 Qué sucede si ingresan un _index_ que no se encuentra en la lista, como -1 o 3? Pueden probarlo!
+💀 What happens if you enter an _index_ that is not in the list, such as -1 or 3? You can try it!
 
-Exacto, nos arroja un `RangeError (index)` que  dice que el _index_ está fuera del rango (_out of range_).
+Exactly, we get a `RangeError (index)` which says that the _index_ is _out of range_.
 
-## Cambiar sus valores
+## Change its values
 
-Podemos utilzar nuevamente el _subscript operator_ para asignar un nuevo valor a el índice de la lista que querramos. Por ejemplo:
+Again we can use the _subscript operator_ to assign a new value to the index of the list we want. For example:
 
 ```dart
 void main() {
@@ -33,9 +33,9 @@ void main() {
 }
 ```
 
-## Utilizar un loop para imprimir sus valores
+## Using a loop to print its values
 
-Si quisiéramos imprimir cada uno de los valores de la lista en una línea nueva, podríamos utilizar el ya conocido _for loop_ para acceder a cada uno de sus elementos e imprimirlos. Necesitaríamos algo nuevo (que acabo de utilizar pero no expliqué) que sería el total de los elementos que tiene dicha lista y que se obtiene de acceder a través de la propiedad `length`.
+If we wanted to print each one of the values of the list in a new line, we could use the already known _for loop_ to access each one of its elements and print them. We would need something new (that I just used but I did not explain) that would be the total of the elements that has this list and that is obtained from accessing through the `length` property.
 
 ```dart
 void main() {
@@ -46,7 +46,7 @@ void main() {
 }
 ```
 
-En el caso anterior utilizamos el _index_ `i` que definimos en el _loop_ para acceder a cada valor en la lista e imprimirlo. Recuerden que `i` comenzará siendo `0`, luego `1` y finalmente `2`. Sin embargo tenemos otro método _for_ aun más simple de utilizar y llamado _for in loop_:
+In the preceding case we use the _index_ `i` that we defined in the _loop_ to access each value in the list and print it. Remember that `i` will start as `0`, then `1` and finally `2`. However we have another _for_ method even simpler to use and called _for in loop_:
 
 ```dart
 void main() {
@@ -60,11 +60,11 @@ void main() {
 }
 ```
 
-Este _for in loop_, nos permite declarar una variable a la que le asigna cada elemento de nuestra lista y que luego podemos utilizar para, por ejemplo, imprimirlo.
+This _for in loop_, allows us to declare a variable to which we assign each element of our list and that later we can use to, for example, print it.
 
-## 💪 Sumar los items de la lista
+## 💪 Sum the items in the list
 
-__Requirement__: imprimir la suma de todos los valores de la lista dada.
+__Requirement__: print the sum of all values in the given list.
 
 ```dart
 void main() {
@@ -72,7 +72,7 @@ void main() {
 }
 ```
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {

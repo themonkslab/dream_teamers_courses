@@ -32,7 +32,7 @@ void main() {
 }
 ```
 
-Y la última pregunta de este artículo: no es raro que podamos cambiar un valor si la lista fue declarada como `const`? 💀 Qué les parece?
+Y la última pregunta de este artículo: podremos cambiar un valor si la lista fue declarada como `const`? 💀 Qué les parece?
 
 ```dart
 void main() {

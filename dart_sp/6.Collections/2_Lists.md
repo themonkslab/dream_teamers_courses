@@ -13,7 +13,7 @@ void main() {
 
 __Cómo podemos imprimir específicamente un valor de esa lista?__ 💀 Lo vimos en el ejercicio anterior. Traten de hacer memoria! 🤣
 
-Recordando, dijimos que __para acceder a los valores de una lista, lo tenemos que hacer con _square brackets_ o llaves cuadradas (`[ ]`), también llamado _subscript operator_ y poniendo el _index_ o posición de dicho valor dentro de la lista__. Pero vamos explicarnos un poquito más.
+Recordando, dijimos que __para acceder a los valores de una lista, lo tenemos que hacer con _square brackets_ o llaves cuadradas (`[ ]`), también llamado _subscript operator_ y poniendo el _index_ o posición de dicho valor dentro de la lista__. Pero vamos a explicarnos un poquito más.
 
 __Las listas pueden tener la cantidad de valores que queramos__. Vamos a llamar a esta cantidad N. Los _indexes_ se cuentan desde el __primer valor__ y __dicho _index_ es el 0__. Para encontrar el último valor de la lista, deberíamos restar 1 al total de elementos de la lista o N. Así, para acceder al primero, deberíamos hacer: `print(cities[0]);` y para ingresar al último deberíamos hacer `print(cities[cities.length - 1])`.
 
