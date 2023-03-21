@@ -1,4 +1,4 @@
-# Inmutabilidad
+# Mutabilidad e Inmutabilidad
 
 Supongamos que necesitamos una clase dentro de una aplicación de
 personal que controle los horarios de salida y entrada de los empleados. Podríamos crear esta clase (y las clases necesarias para que esta funcione), de
@@ -143,5 +143,92 @@ Así eso nos permitiría hacer algo como: `final employee1ScheduleUpdate =
 employee1Schedule.copyWith(employeeId: '002');`, suponiendo que por alguna razón
 el `employeeId` de dicho empleado fue creado de forma incorrecta.
 
-En este micro capítulo quiero que se queden con esta buena práctica para cada
-vez que crean una clase que van a necesitar copiar!
+## _Cascade operator_
+
+El __operador de cascada (..) es una característica que permite invocar varios métodos en un objeto sin tener que repetir el nombre del objeto__. Es decir, podemos encadenar una serie de llamadas a métodos en una sola línea de código.
+
+Se utiliza comúnmente para crear objetos complejos y personalizarlos de manera
+eficiente ya que en lugar de crear un objeto, asignarlo a una variable y luego
+invocar varios métodos en la variable, podemos utilizar el operador de cascada
+para invocar los métodos directamente en el objeto.
+
+Por ejemplo, para crear una lista y agregar varios elementos, podemos hacer lo
+siguiente:
+
+```dart
+var myList = List<int>()
+  ..add(1)
+  ..add(2)
+  ..add(3);
+```
+
+También __se puede utilizar en combinación con constructores y _setters_ para
+personalizar objetos__. Por ejemplo, para crear un objeto `Person` y establecer
+varias propiedades, podemos hacer:
+
+```dart
+class Person {
+  String name;
+  int age;
+  String email;
+  
+  void printDetails() {
+    print('Name: $name');
+    print('Age: $age');
+    print('Email: $email');
+  }
+}
+
+var person = Person()
+  ..name = 'John'
+  ..age = 30
+  ..email = 'john@example.com';
+
+person.printDetails(); // Name: John Age: 30 Email: john@example.com
+```
+
+Y qué relación tiene este _cascade operator_ con la mutabilidad? __Este operador
+se puede utilizar tanto con objetos mutables como con objetos inmutables aunque
+cuando se utiliza con objetos mutables, va a producir cambios en el estado del
+objeto original.__
+
+En general, __es una buena práctica utilizar clases inmutables para garantizar
+una gestión más segura y predecible de los estados__ y evitar efectos
+secundarios no deseados. Sin embargo, __en algunos casos puede ser apropiado
+utilizar clases mutables__.
+
+Supongamos que estamos que estamos creando una aplicación de temporizador que muestra el tiempo restante y la cuenta regresiva para un evento. Necesitaríamos actualizar el tiempo restante en tiempo real y puede ser apropiado utilizar una clase mutable para almacenar y actualizar esta información.
+
+Por ejemplo, podríamos crear una clase `Countdown` que almacene el tiempo
+restante y tenga un método `tick()` que se llame cada segundo para actualizar el
+tiempo restante:
+
+```dart
+class Countdown {
+  int timeRemaining;
+  
+  Countdown(this.timeRemaining);
+  
+  void tick() {
+    timeRemaining--;
+    print('Tiempo restante: $timeRemaining');
+  }
+}
+```
+
+Podemos utilizar acá el _cascade operator_ en lugar de llamar al constructor de
+`Countdown` y hacer ambas cosas en una sola línea de código:
+
+```dart
+void main() {
+  var countdown = Countdown(10)
+    ..tick()
+    ..tick()
+    ..tick();
+}
+```
+
+Para dar un cierre a este capítulo, podemos decir que __en general nos
+inclinamos por clases inmutables salvo al trabajar con valores que cambian con
+frecuencia, que pueden ser actualizados en tiempo real o bien con colecciones de
+datos (como listas y mapas).__
