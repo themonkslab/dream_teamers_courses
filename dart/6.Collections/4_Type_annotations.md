@@ -1,6 +1,6 @@
 # _Type annotations_
 
-Hasta ahora, declaramos listas como `var`. Eso nos permitiría hacer algo como lo siguiente? 🤔 ... 💀
+So far, we declared lists as `var`. Would that let us do something like the following? 🤔 ... 💀
 
 ```dart
 void main() {
@@ -10,7 +10,7 @@ void main() {
 }
 ```
 
-No! Pero por qué? Si se fijan en el error, Dart nos dice que el argumento `int` no puede asignarse al parámetro del tipo `String`. Esto sucede porque cuando declaramos la lista, solo incluimos en ella valores del tipo `String`. Dart entonces, infiere que es una lista de valores `String`. Si hubiéramos agregado algún `int` en nuestra primer lista, podríamos hacerlo, ya que sería una lista de objetos:
+No! But why? If you look at the error, Dart tells us that the `int` argument cannot be assigned to the parameter of type `String`. This happens because when we declare the list, we only include in it values of type `String`. Dart then infers that it is a list of `String` values. If we had added some `int` in our first list, we could do so, since it would be a list of objects:
 
 ```dart
 void main() {
@@ -20,7 +20,7 @@ void main() {
 }
 ```
 
-La inferencia de tipo que hizo Dart en el primer ejemplo es correcta pero nosotros podemos reforzarla para no perder de vista su tipo, de la siguiente manera:
+The type inference made by Dart in the first example is correct but we can reinforce it in order not to lose sight of its type, as follows:
 
 ```dart
 void main() {
@@ -29,7 +29,7 @@ void main() {
 }
 ```
 
-💀 Y qué sucedería en este caso? Podríamos incluir el número entero?
+💀 And what would happen in this case? Could we include the integer?
 
 ```dart
 void main() {
@@ -38,9 +38,9 @@ void main() {
 }
 ```
 
-Así es, porque simplemente estamos diciendo que es una lista pero no especificando el tipo de valor de los elementos de esa lista mediante `<Tipo>`.
+That's right, because we are simply saying that it is a list but not specifying the type of value of the elements of that list using `<Type>`.
 
-En general sin embargo, es preferible declarar variables utilizando `var`, `final` o `const`. Pero cómo podríamos hacer para decirle a Dart entonces, que queremos una lista solamente de, en este caso, `String`? De la siguiente manera:
+In general however, it is preferable to declare variables using `var`, `final` or `const`. But in this case, how could we tell Dart then, that we want a list only of `String`? In the following way:
 
 ```dart
 void main() {
@@ -49,4 +49,4 @@ void main() {
 }
 ```
 
-`<String>`, es una _type annotation_ o anotación de tipo en Dart y ellas son opcionales, mas se van a encontrar mucho con ellas y ayudan mucho a desarrollar mejor código.
+`<String>`, is a _type annotation_ in Dart and they are optional, but you will encounter them a lot and they help you develop better code.
