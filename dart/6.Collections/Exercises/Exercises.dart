@@ -1,61 +1,67 @@
-import 'dart:collection';
+// Exercise 1
+
 import 'dart:io';
 
 void main () {
-  // List of colors
-  List <String> listOfColors =  ["red", "blue", "green", "yellow", "black", "white"];
-  List
+//List of all the different types of coffee the coffee shop offers
+  const coffeeTypes = ['espresso', 'cappuccino', 'latte', 'macchiato'];
 
-/*   // Map to store clothing items by color
-  //Map clothingByColor = <String, List<String>> {};
-  var clothingByColor = Map.fromIterable(listOfColors);
-  print(clothingByColor); */
+//Dictionary that holds each location and the amount of each coffee they currently have in stock
+  final inventory = {
+    'New York': {
+        'espresso': 50,
+        'cappuccino': 25,
+        'latte': 40,
+        'macchiato': 30
+    },
+    'Los Angeles': {
+        'espresso': 20,
+        'cappuccino': 15,
+        'latte': 30,
+        'macchiato': 10
+    },
+    'Chicago': {
+        'espresso': 35,
+        'cappuccino': 30,
+        'latte': 20,
+        'macchiato': 25
+    }
+  };
 
-  // Loop to prompt user to enter clothing items and colors
+//Displays a list of all the different types of coffee the coffee shop offers.
+  print('\nWe offer the following types of coffee:');
+  int i = 1;
+  for (var coffee in coffeeTypes) {
+    print('${i} - ${coffee.toUpperCase()}');
+    i++;
+  }
+
   while (true) {
-    print("Insert the clothing item (type 'done' to exit or 'clothes' to print the list): ");
-    final item = stdin.readLineSync().toString();
-
-    if (item.toLowerCase() == 'done') {
-      print('\nthanks for using Smart Closet');
+//Allow the user to select a coffee from the list
+    stdout.write('''\nChoose a coffee from the list to see the amount of that coffee currently in stock across all locations (1 to 4 for coffee - 's' to skip): ''');
+    final coffeeInput = stdin.readLineSync().toString().toLowerCase();
+    
+//Display the amount of that coffee currently in stock across all locations and ask to update
+    if (coffeeInput == 's') {
+      print('You chose to skip');
       break;
-    }
-
-    print('Great! now choose a color from the list $listOfColors: ');
-    final colorInput = stdin.readLineSync().toString().toLowerCase();
-
-    if (listOfColors.contains(colorInput) == false) {
-      print("The color is not on the list. Do you want to add it (press 'y' to add or any to skip): ");
-      var addColor = stdin.readLineSync().toString().toLowerCase();
-      if (addColor == 'y') {
-        listOfColors.add(colorInput);
+    } else if (coffeeInput == '1' || coffeeInput == '2' || coffeeInput == '3' || coffeeInput == '4') {
+      final coffeeChoise = coffeeTypes[int.parse(coffeeInput)-1];
+      print('You chose ${coffeeChoise.toUpperCase()}\n');
+      var totalCoffeeChoise = 0; 
+        for (var location in inventory.entries) {
+        print('${location.key}: ${location.value['$coffeeChoise']}');
+        totalCoffeeChoise += (location.value['$coffeeChoise'])?? 0;
       }
+      print('------------');
+      print('The total amount of ${coffeeChoise.toUpperCase()} between all locations is $totalCoffeeChoise');
+    } else {
+      print('Invalid input. Try again');
     }
-
-    
-
-
-
-    /* for (var color in listOfColors) {
-      clothingByColor ['$color']= ''; 
-    } */
-    //print(listOfColors);
-
-
-
-    
-    }
-
-
-
-   // if (color == listOfColors[0]) {
-    //}
-
-    
+  }
 }
 
-
-
-
-
-
+    final updateAmounts = true;
+      while (true) {
+        print('Do you want to update the amounts of coffee at each location?');
+      updateAmounts = stdin.readLineSync().toString()
