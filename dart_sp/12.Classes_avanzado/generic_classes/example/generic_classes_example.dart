@@ -1,4 +1,3 @@
-import 'package:test/test.dart';
 
 // void main() {
 //   final simulatedResult = processRequest(returnError: true);
@@ -55,115 +54,115 @@ import 'package:test/test.dart';
 //   }
 // }
 
-abstract class Media {
-  final String title;
-  final int year;
-  final String genre;
+// abstract class Media {
+//   final String title;
+//   final int year;
+//   final String genre;
 
-  Media({
-    required this.title,
-    required this.year,
-    required this.genre,
-  });
+//   Media({
+//     required this.title,
+//     required this.year,
+//     required this.genre,
+//   });
 
-  // Aquí el _factory constructor_ Media.fromJson recibe un Map<String, dynamic>
-  // al que llamaremos _json_ y luego utilizaremos este Map para construir una
-  // nueva instancia de Movie o Serie.
-  // Accedemos a cada uno de sus valores con la sintaxis json['key'] y
-  // asignamos cada uno de estos valores a las propiedades de la nueva
-  // instancia.
-  // Por ejemplo, el valor de la propiedad title de la nueva instancia será
-  // json['title'] y como sabemos que es una `String` podemos usar el operador
-  // `as` para convertir el valor de json['title'] a `String`.
-  // Lo mismo para las demás propiedades.
-  factory Media.fromJson(Map<String, dynamic> json) {
-    // Aquí tenemos algo particular ya que la propiedad director es una
-    // propiedad de Movie y no de Serie.
-    // Para saber si el JSON que recibimos es de una película o de una serie lo
-    // que hacemos es verificar si el JSON contiene la propiedad director.
-    if (json.containsKey('director')) {
-      return Movie(
-        title: json['title'] as String,
-        year: json['year'] as int,
-        genre: json['genre'] as String,
-        director: json['director'] as String,
-      );
-    } else if (json.containsKey('directors')) {
-      // Aquí tenemos algo particular ya que la propiedad directors es una
-      // lista.
-      // Para convertir la lista de `dynamic` a `String` utilizamos el método
-      // map de la clase List. Este método recibe una función que recibe un tipo
-      // de dato y retorna un tipo de dato.
-      // 1. Convertimos `json['directors']` en una lista de `dynamic` con el
-      //    operador `as`.
-      // 2. Luego utilizamos el método map para convertir cada elemento de la
-      //    lista de `dynamic` a `String`.
-      // 3. Finalmente convertimos todo a una lista de `String`
-      final directors =
-          (json['directors'] as List<dynamic>).map((e) => e as String).toList();
-      return Serie(
-        title: json['title'] as String,
-        year: json['year'] as int,
-        genre: json['genre'] as String,
-        directors: directors,
-      );
-    } else {
-      // Si el JSON no contiene la propiedad director ni la propiedad directors
-      // es porque el JSON no es válido.
-      throw FormatException('Invalid JSON: $json');
-    }
-  }
-}
+//   // Aquí el _factory constructor_ Media.fromJson recibe un Map<String, dynamic>
+//   // al que llamaremos _json_ y luego utilizaremos este Map para construir una
+//   // nueva instancia de Movie o Serie.
+//   // Accedemos a cada uno de sus valores con la sintaxis json['key'] y
+//   // asignamos cada uno de estos valores a las propiedades de la nueva
+//   // instancia.
+//   // Por ejemplo, el valor de la propiedad title de la nueva instancia será
+//   // json['title'] y como sabemos que es una `String` podemos usar el operador
+//   // `as` para convertir el valor de json['title'] a `String`.
+//   // Lo mismo para las demás propiedades.
+//   factory Media.fromJson(Map<String, dynamic> json) {
+//     // Aquí tenemos algo particular ya que la propiedad director es una
+//     // propiedad de Movie y no de Serie.
+//     // Para saber si el JSON que recibimos es de una película o de una serie lo
+//     // que hacemos es verificar si el JSON contiene la propiedad director.
+//     if (json.containsKey('director')) {
+//       return Movie(
+//         title: json['title'] as String,
+//         year: json['year'] as int,
+//         genre: json['genre'] as String,
+//         director: json['director'] as String,
+//       );
+//     } else if (json.containsKey('directors')) {
+//       // Aquí tenemos algo particular ya que la propiedad directors es una
+//       // lista.
+//       // Para convertir la lista de `dynamic` a `String` utilizamos el método
+//       // map de la clase List. Este método recibe una función que recibe un tipo
+//       // de dato y retorna un tipo de dato.
+//       // 1. Convertimos `json['directors']` en una lista de `dynamic` con el
+//       //    operador `as`.
+//       // 2. Luego utilizamos el método map para convertir cada elemento de la
+//       //    lista de `dynamic` a `String`.
+//       // 3. Finalmente convertimos todo a una lista de `String`
+//       final directors =
+//           (json['directors'] as List<dynamic>).map((e) => e as String).toList();
+//       return Serie(
+//         title: json['title'] as String,
+//         year: json['year'] as int,
+//         genre: json['genre'] as String,
+//         directors: directors,
+//       );
+//     } else {
+//       // Si el JSON no contiene la propiedad director ni la propiedad directors
+//       // es porque el JSON no es válido.
+//       throw FormatException('Invalid JSON: $json');
+//     }
+//   }
+// }
 
-class Movie extends Media {
-  final String director;
+// class Movie extends Media {
+//   final String director;
 
-  Movie({
-    required String title,
-    required int year,
-    required String genre,
-    required this.director,
-  }) : super(
-          title: title,
-          year: year,
-          genre: genre,
-        );
+//   Movie({
+//     required String title,
+//     required int year,
+//     required String genre,
+//     required this.director,
+//   }) : super(
+//           title: title,
+//           year: year,
+//           genre: genre,
+//         );
 
-  factory Movie.fromJson(Map<String, Object?> json) {
-    return Movie(
-      title: json['title'] as String,
-      year: json['year'] as int,
-      genre: json['genre'] as String,
-      director: json['director'] as String,
-    );
-  }
-}
+//   factory Movie.fromJson(Map<String, Object?> json) {
+//     return Movie(
+//       title: json['title'] as String,
+//       year: json['year'] as int,
+//       genre: json['genre'] as String,
+//       director: json['director'] as String,
+//     );
+//   }
+// }
 
-class Serie extends Media {
-  final List<String> directors;
+// class Serie extends Media {
+//   final List<String> directors;
 
-  Serie({
-    required String title,
-    required int year,
-    required String genre,
-    required this.directors,
-  }) : super(
-          title: title,
-          year: year,
-          genre: genre,
-        );
+//   Serie({
+//     required String title,
+//     required int year,
+//     required String genre,
+//     required this.directors,
+//   }) : super(
+//           title: title,
+//           year: year,
+//           genre: genre,
+//         );
 
-  factory Serie.fromJson(Map<String, Object?> json) {
-    final directors =
-        (json['directors'] as List<String?>).map((e) => e as String).toList();
-    return Serie(
-      title: json['title'] as String,
-      year: json['year'] as int,
-      genre: json['genre'] as String,
-      directors: directors,
-    );
-  }
-}
+//   factory Serie.fromJson(Map<String, Object?> json) {
+//     final directors =
+//         (json['directors'] as List<String?>).map((e) => e as String).toList();
+//     return Serie(
+//       title: json['title'] as String,
+//       year: json['year'] as int,
+//       genre: json['genre'] as String,
+//       directors: directors,
+//     );
+//   }
+// }
 
 // void main() {
 //   group('Given a Movie', () {
@@ -269,81 +268,162 @@ class Serie extends Media {
 //   );
 // }
 
+// void main() {
+//   group('Given a Media', () {
+//     test('When fromJson() is called with a Movie, Then returns a Movie', () {
+//       final json = {
+//         'title': 'The Godfather',
+//         'year': 1972,
+//         'genre': 'Drama',
+//         'director': 'Francis Ford Coppola',
+//       };
+
+//       final media = Media.fromJson(json);
+
+//       expect(media, isA<Movie>());
+//     });
+
+//     test('When fromJson() is called with a Serie, returns a Serie', () {
+//       final json = {
+//         'title': 'Breaking Bad',
+//         'year': 2008,
+//         'genre': 'Drama',
+//         'directors': ['Vince Gilligan'],
+//       };
+
+//       final media = Media.fromJson(json);
+
+//       expect(media, isA<Serie>());
+//     });
+
+//     test(
+//         'When fromJson() is called with a wrong Json, throws a FormatException',
+//         () {
+//       final json = {
+//         'title': 'The Godfather',
+//         'year': 1972,
+//         'genre': 'Drama',
+//         'test': 'test',
+//       };
+
+//       expect(() => Media.fromJson(json), throwsFormatException);
+//     });
+//   });
+
+//   group('Given a Movie', () {
+//     test('When fromJson() is called, Then returns a Movie', () {
+//       final json = {
+//         'title': 'The Godfather',
+//         'year': 1972,
+//         'genre': 'Drama',
+//         'director': 'Francis Ford Coppola',
+//       };
+
+//       final movie = Movie.fromJson(json);
+
+//       expect(movie.title, 'The Godfather');
+//       expect(movie.year, 1972);
+//       expect(movie.genre, 'Drama');
+//       expect(movie.director, 'Francis Ford Coppola');
+//     });
+//   });
+
+//   group('Given a Serie', () {
+//     test('When fromJson() is called, Then returns a Serie', () {
+//       final json = {
+//         'title': 'Breaking Bad',
+//         'year': 2008,
+//         'genre': 'Drama',
+//         'directors': ['Vince Gilligan'],
+//       };
+
+//       final serie = Serie.fromJson(json);
+
+//       expect(serie.title, 'Breaking Bad');
+//       expect(serie.year, 2008);
+//       expect(serie.genre, 'Drama');
+//       expect(serie.directors, ['Vince Gilligan']);
+//     });
+//   });
+// }
+
+class EmployeeSchedule {
+  final String employeeId;
+  final Map<DayOfWeek, TimeOfDay> startTimeMap;
+  final Map<DayOfWeek, TimeOfDay> endTimeMap;
+
+  EmployeeSchedule({
+   required this.employeeId,
+   required this.startTimeMap,
+   required this.endTimeMap,
+  });
+
+  EmployeeSchedule copyWith({
+    // Cada uno de los parámetros de este método es opcional
+
+    String? employeeId,
+    Map<DayOfWeek, TimeOfDay>? startTimeMap,
+    Map<DayOfWeek, TimeOfDay>? endTimeMap,
+  }) {
+    // Si no se pasa un valor, se utiliza el valor de la instancia actual
+    return EmployeeSchedule(
+      employeeId: employeeId ?? this.employeeId,
+      startTimeMap: startTimeMap ?? this.startTimeMap,
+      endTimeMap: endTimeMap ?? this.endTimeMap,
+    );
+  }
+}
+
+enum DayOfWeek {
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday,
+  saturday,
+  sunday,
+}
+
+class TimeOfDay {
+  final int hour;
+  final int minute;
+
+  TimeOfDay(this.hour, this.minute);
+}
+
 void main() {
-  group('Given a Media', () {
-    test('When fromJson() is called with a Movie, Then returns a Movie', () {
-      final json = {
-        'title': 'The Godfather',
-        'year': 1972,
-        'genre': 'Drama',
-        'director': 'Francis Ford Coppola',
-      };
+  // Definimos los horarios de trabajo de un empleado utilizando el constructor 
+  final employee1Schedule = EmployeeSchedule(
+    employeeId: '001',
+    startTimeMap: {
+      DayOfWeek.monday: TimeOfDay(9, 0),
+      DayOfWeek.tuesday: TimeOfDay(8, 30),
+      DayOfWeek.wednesday: TimeOfDay(9, 15),
+      DayOfWeek.thursday: TimeOfDay(10, 0),
+      DayOfWeek.friday: TimeOfDay(9, 0),
+      DayOfWeek.saturday: TimeOfDay(0, 0),
+      DayOfWeek.sunday: TimeOfDay(0, 0),
+    },
+    endTimeMap: {
+      DayOfWeek.monday: TimeOfDay(17, 0),
+      DayOfWeek.tuesday: TimeOfDay(17, 30),
+      DayOfWeek.wednesday: TimeOfDay(18, 15),
+      DayOfWeek.thursday: TimeOfDay(16, 30),
+      DayOfWeek.friday: TimeOfDay(17, 0),
+      DayOfWeek.saturday: TimeOfDay(0, 0),
+      DayOfWeek.sunday: TimeOfDay(0, 0),
+    },
+  );
 
-      final media = Media.fromJson(json);
+  // Imprimimos los horarios de trabajo del empleado
+  print('Horario de trabajo de empleado 1:');
+  print('ID: ${employee1Schedule.employeeId}');
+  for (final day in DayOfWeek.values) {
+    final TimeOfDay startTime = employee1Schedule.startTimeMap[day]!;
+    final TimeOfDay endTime = employee1Schedule.endTimeMap[day]!;
+    print('${day.toString().split('.').last}: ${startTime.hour}:${startTime.minute} - ${endTime.hour}:${endTime.minute}');
+  }
 
-      expect(media, isA<Movie>());
-    });
+  employee1Schedule.startTimeMap = 
 
-    test('When fromJson() is called with a Serie, returns a Serie', () {
-      final json = {
-        'title': 'Breaking Bad',
-        'year': 2008,
-        'genre': 'Drama',
-        'directors': ['Vince Gilligan'],
-      };
-
-      final media = Media.fromJson(json);
-
-      expect(media, isA<Serie>());
-    });
-
-    test(
-        'When fromJson() is called with a wrong Json, throws a FormatException',
-        () {
-      final json = {
-        'title': 'The Godfather',
-        'year': 1972,
-        'genre': 'Drama',
-        'test': 'test',
-      };
-
-      expect(() => Media.fromJson(json), throwsFormatException);
-    });
-  });
-
-  group('Given a Movie', () {
-    test('When fromJson() is called, Then returns a Movie', () {
-      final json = {
-        'title': 'The Godfather',
-        'year': 1972,
-        'genre': 'Drama',
-        'director': 'Francis Ford Coppola',
-      };
-
-      final movie = Movie.fromJson(json);
-
-      expect(movie.title, 'The Godfather');
-      expect(movie.year, 1972);
-      expect(movie.genre, 'Drama');
-      expect(movie.director, 'Francis Ford Coppola');
-    });
-  });
-
-  group('Given a Serie', () {
-    test('When fromJson() is called, Then returns a Serie', () {
-      final json = {
-        'title': 'Breaking Bad',
-        'year': 2008,
-        'genre': 'Drama',
-        'directors': ['Vince Gilligan'],
-      };
-
-      final serie = Serie.fromJson(json);
-
-      expect(serie.title, 'Breaking Bad');
-      expect(serie.year, 2008);
-      expect(serie.genre, 'Drama');
-      expect(serie.directors, ['Vince Gilligan']);
-    });
-  });
 }
