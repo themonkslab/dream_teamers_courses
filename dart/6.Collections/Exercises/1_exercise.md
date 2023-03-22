@@ -29,4 +29,6 @@ void main () {
 
   while (true) {
     print('\nEnter a word and its review count, separated by a comma (e.g. "apple,3"). Enter "done" to finish.');
+  }
+}
 ```
