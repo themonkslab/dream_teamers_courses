@@ -8,9 +8,25 @@ abstract class PaymentType {
   double amount;
 
   String processPayment();
+
+  bool isRefundable() => false;
 }
 
-class CashPayment extends PaymentType {
+mixin TimeLogging {
+  void log(String message) {
+    print('${DateTime.now()} || $message');
+  }
+}
+
+mixin Refundable {
+  void refund() {
+    print('This payment is refundable');
+  }
+
+  bool isRefundable() => true;
+}
+
+class CashPayment extends PaymentType with TimeLogging {
   CashPayment({
     required super.id,
     required super.amount,
@@ -18,12 +34,12 @@ class CashPayment extends PaymentType {
 
   @override
   String processPayment() {
-    print('Paid amount: $amount');
+    log('Paid amount: $amount');
     return 'CashPayment';
   }
 }
 
-class PayPalPayment extends PaymentType {
+class PayPalPayment extends PaymentType with TimeLogging, Refundable {
   PayPalPayment({
     required super.id,
     required super.amount,
@@ -34,7 +50,7 @@ class PayPalPayment extends PaymentType {
 
   @override
   String processPayment() {
-    print('Paid amount: $amount to $email');
+    log('Paid amount: $amount to $email');
     return 'PayPalPayment';
   }
 }
@@ -52,11 +68,14 @@ class Transaction {
 
   void processTransaction() {
     var type = paymentType.processPayment();
+    if (paymentType.isRefundable()) {
+      (paymentType as Refundable).refund();
+    }
     print('This transaction was processed by $type');
   }
 }
 
-class BankTransactionPayment extends PaymentType {
+class BankTransactionPayment extends PaymentType with TimeLogging {
   BankTransactionPayment({
     required super.id,
     required super.amount,
@@ -67,7 +86,7 @@ class BankTransactionPayment extends PaymentType {
 
   @override
   String processPayment() {
-    print('Paid amount: $amount to $bankAccount');
+    log('Paid amount: $amount to $bankAccount');
     return 'BankTransactionPayment';
   }
 }
