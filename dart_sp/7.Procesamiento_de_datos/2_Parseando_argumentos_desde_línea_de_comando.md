@@ -14,7 +14,7 @@ Empecemos recordando cómo crear un proyecto en Dart y nuestro primer archivo:
 
 Una vez allí, lo que queremos hacer ahora, es crear un programa para línea de comandos que reciba un argumento que represente el lugar o _path_ en donde se encuentra nuestro archivo a procesar para luego poder hacer algo con el.
 
-Ya sabemos cómo empezar un programa de Dart, cómo establecer su punto de entrada pero cómo hacemos que reciba argumentos? Todavía no vimos lo que son las funciones pero `void main() {}` es una función y dentro de los paréntesis, ellas pueden recibir argumentos del tipo que nosotros establezcamos. Fíjense qué sucede si hacemos lo siguiente:
+Ya sabemos cómo empezar un programa de Dart, cómo establecer su punto de entrada pero cómo hacemos que reciba argumentos? Todavía no vimos lo que son las funciones pero `void main() {}` es una función y dentro de los paréntesis, ella puede recibir argumentos del tipo que nosotros establezcamos. Fíjense qué sucede si hacemos lo siguiente:
 
 ```dart
 void main(List<String> arguments) {
@@ -33,33 +33,38 @@ void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
   } else {
-    print(arguments);
+    print(arguments); //no debería imprimir nada ya que aun no tenemos argumentos
   }
+  print('Esto no debería imprimirse'); 
 }
 ```
 
-Sin embargo el programa debiera terminar automáticamente cuando lo corremos sin argumentos. Para ello vamos a hacer uso de la librería `dart:io` y su función `exit`: esta nos permite terminar el programa pidiéndonos un argumento: `0` si no tiene errores y `1` si tiene algún error. De esta forma, evitamos la utilización del `else` y podemos ver en nuestra línea de comando que se ejecutó pero el _output_ fue un error:
+Sin embargo el programa debiera terminar automáticamente cuando lo corremos sin argumentos. Para ello vamos a hacer uso de la librería `dart:io` y su función `exit`: esta nos permite terminar el programa pidiéndonos un argumento: `0` si no tiene errores y `1` si tiene algún error. De esta forma, evitamos la utilización del `else` y podemos ver en nuestra terminal que se ejecuta pero no imprime las ultimas dos lineas gracias a la función `exit`:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
     exit(1);
   }
   print(arguments);
+  print('Esto no debería imprimirse');
 }
 ```
 
-Finalmente podemos guardar nuestro _path_ del archivo o _input file_ y que eso sea lo que imprimamos:
+Finalmente podriamos correr nuestro programa agregando el _path_ del archivo o _input file_ y que eso sea lo que imprimamos:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
     exit(1);
   }
-  final inputFile = 
-  arguments.first;
+  final inputFile = arguments.first; //si el programa recibiera dos archivos como argumento desde la línea de comando esta variable tomaría el nombre del primero de ellos
   print(inputFile);
 }
 ```
