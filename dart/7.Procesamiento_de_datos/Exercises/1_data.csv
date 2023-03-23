@@ -1,4 +1,4 @@
-date,produce_type,quantity,price
+date,product_type,quantity,price
 2022-01-01,apple,10,2.99
 2022-01-02,banana,20,1.99
 2022-01-03,apple,15,3.49
