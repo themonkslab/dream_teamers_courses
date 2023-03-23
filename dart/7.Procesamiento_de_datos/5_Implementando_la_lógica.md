@@ -1,12 +1,14 @@
-# Implementando la lógica
+# Implementing the logic
 
-Ya que tenemos nuestro _pseudo-code_ listo, qué les parece si empezamos a escribir un poco? Vamos a ir línea por línea:
+Now that we have our _pseudo-code_ ready, what do you think if we start writing a little bit? Let's go line by line:
 
-## Removiendo la primera línea que es un header
+## Removing the first line that is a header
 
-Para ello, vamos a utilizar el método conocido de las `List`, `removeAt(index)`. Me gustaría que agreguen un `assert` para asegurarnos que hemos removido el header. 💀 Cómo podríamos hacer esto? Recuerden que hacemos todo este tipo de código para entrenar. En próximos capítulos vamos a ver cómo empezar a testear y esto les habrá sido muy útil!
+To do this, we are going to use the familiar `List` method `removeAt(index)`. I would like you to add an `assert` to make sure we have removed the header. 💀 How could we do this? Remember that we write all this kind of code for training. In the next chapters we will see how to start testing and this will have been very useful for you!
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -15,27 +17,29 @@ void main(List<String> arguments) {
   final inputFile = arguments.first;
   final contentInLines = File(inputFile).readAsLinesSync();
 
-  // remover la primera línea ya que es un header
+  // remove the first line since it's a header
   contentInLines.removeAt(0);
   assert(!contentInLines[0].contains('Score'), 'The content should have its header removed');
   
   for (var line in contentInLines) {
     print(line);
   }
-// iterar por todas las líneas
-// convertir cada línea en un listado de `String` que va a representar cada una, a una película
-// crear variable para almacenar la suma total de los puntajes
-// crear variable para almacenar el promedio de los puntajes
-// calcular el promedio
-// imprimir el promedio
+// iterate through all lines
+// convert each line into a `String` list that will represent each movie
+// create a variable to store the total sum of the scores
+// create a variable to store the average of the scores
+// calculate the average
+// print the average
 }
 ```
 
-## Iterar por todas las líneas y convertirla en un listado del tipo String
+## Iterate through all the lines and convert it into a list of String type
 
-Ahora vamos a utilizar un método que aun no conocen y que nos permite convertir un `String` en una `List<String>` según el patrón que decidamos. En este caso, como tenemos un archivo separado por comas, eso nos permite separar los valores de cada línea de manera sencilla. Para corroborarlo, imprimiremos ahora, la película o lista de `String` que representa cada película:
+Now we are going to use a method that you do not know yet and that allows us to convert a `String` in a `List<String>` according to the pattern that we decide. In this case, as we have a file separated by commas, that allows us to separate the values of each line in a simple way. To corroborate this, we will now print the `List<String>` that represents each movie:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -44,35 +48,37 @@ void main(List<String> arguments) {
   final inputFile = arguments.first;
   final contentInLines = File(inputFile).readAsLinesSync();
 
-  // remover la primera línea ya que es un header
+  // remove the first line since it's a header
   contentInLines.removeAt(0);
   assert(!contentInLines[0].contains('Score'), 'The content should have its header removed');
   
-  // iterar por todas las líneas
+  // iterate through all lines
   for (var line in contentInLines) {
-    // convertir cada línea en un listado de `String` que va a representar cada una, a una película
+    // convert each line into a `String` list that will represent each movie
     final movie = line.split(',');
     print(movie);
   }
-// crear variable para almacenar la suma total de los puntajes
-// crear variable para almacenar el promedio de los puntajes
-// calcular el promedio
-// imprimir el promedio
+// create a variable to store the total sum of the scores
+// create a variable to store the average of the scores
+// calculate the average
+// print the average
 }
 ```
 
-Suceden dos cosas extrañas en nuestro último `print`:
+Two strange things happen in our latest `print`:
 
-1. Cada valor de puntaje y título, es precedido por varios espacios, pareciera a los fines de conservar una alineación. Esto puede traernos problemas cuando queramos hacer cálculos.
-2. La última de nuestras películas es una lista vacía, posiblemente por la misma razón de utilización de espacios.
+1. Each score value and title is preceded by several spaces, apparently in order to maintain alignment. This can cause us problems when we want to make calculations.
+2. The last of our movies is an empty list, possibly for the same reason of using spaces.
 
-Vamos a solucionarlas en unos segundos!
+We will solve them in a few seconds!
 
-## Crear variables
+## Create variables
 
 💀 Algo que ya conocemos así que pueden hacerlo ustedes para practicar:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -80,31 +86,33 @@ void main(List<String> arguments) {
   }
   final inputFile = arguments.first;
   final contentInLines = File(inputFile).readAsLinesSync();
-  // crear variable para almacenar la suma total de los puntajes
-  // crear variable para almacenar el promedio de los puntajes
+  // create a variable to store the total sum of the scores
+  // create a variable to store the average of the scores
   var sumOfScores = 0.0;
   var averageScore = 0.0;
 
-  // remover la primera línea ya que es un header
+  // remove the first line since it's a header
   contentInLines.removeAt(0);
   assert(!contentInLines[0].contains('Score'), 'The content should have its header removed');
   
-  // iterar por todas las líneas
+  // iterate through all lines
   for (var line in contentInLines) {
-    // convertir cada línea en un listado de `String` que va a representar cada una, a una película
+    // convert each line into a `String` list that will represent each movie
     final movie = line.split(',');
     print(movie);
   }
-// calcular el promedio
-// imprimir el promedio
+// calculate the average
+// print the average
 }
 ```
 
-## Calcular el promedio e imprimirlo
+## Calculate the average and print it
 
-💀 Intenten hacerlo para ver qué sucede!
+💀 Give it a try to see what happens!
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -112,36 +120,37 @@ void main(List<String> arguments) {
   }
   final inputFile = arguments.first;
   final contentInLines = File(inputFile).readAsLinesSync();
-  // crear variable para almacenar la suma total de los puntajes
-  // crear variable para almacenar el promedio de los puntajes
+  // create a variable to store the total sum of the scores
+  // create a variable to store the average of the scores
   var sumOfScores = 0.0;
   var averageScore = 0.0;
 
-  // remover la primera línea ya que es un header
+  // remove the first line since it's a header
   contentInLines.removeAt(0);
   assert(!contentInLines[0].contains('Score'), 'The content should have its header removed');
   
-  // iterar por todas las líneas
+  // iterate through all lines
   for (var line in contentInLines) {
-    // convertir cada línea en un listado de `String` que va a representar cada una, a una película
+    // convert each line into a `String` list that will represent each movie
     final movie = line.split(',');
     print(movie);
-    // calcular el promedio
+    // calculate the average
     sumOfScores += double.parse(movie[1]);
   }
   
   averageScore = sumOfScores / contentInLines.length;
-  // imprimir el promedio
+  // print the average
   print('Average score: ${averageScore.toStringAsFixed(0)}');
 }
 ```
 
-Nos encontramos con esta `Exception` que nos dice que hay error de rango, ya que está intentando buscar en el `index` 1, cuando el único valor válido es el 0: `Exception has occurred.
-RangeError (RangeError (index): Invalid value: Only valid value is 0: 1)`. Por qué sucede esto? Esto quiere decir que nuestra última película no está vacía?
+We encounter this `Exception` that tells us that there is a range error, since it is trying to search in the `index` 1, when the only valid value is 0: `Exception has occurred. RangeError (RangeError (index): Invalid value: Only valid value is 0: 1)`. Why does this happen? Does this mean that our last movie is not empty?
 
-Podemos utilizar `print` para entender si la última lista o película está vacía:
+We can use `print` to understand if the last list or movie is empty:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -149,35 +158,32 @@ void main(List<String> arguments) {
   }
   final inputFile = arguments.first;
   final contentInLines = File(inputFile).readAsLinesSync();
-  // crear variable para almacenar la suma total de los puntajes
-  // crear variable para almacenar el promedio de los puntajes
+  // create a variable to store the total sum of the scores
+  // create a variable to store the average of the scores
   var sumOfScores = 0.0;
   var averageScore = 0.0;
 
-  // remover la primera línea ya que es un header
+  // remove the first line since it's a header
   contentInLines.removeAt(0);
-  assert(!contentInLines[0].contains('Score'),
-      'The content should have its header removed');
-
-  // iterar por todas las líneas
+  assert(!contentInLines[0].contains('Score'), 'The content should have its header removed');
+  
+  // iterate through all lines
   for (var line in contentInLines) {
-    // convertir cada línea en un listado de `String` que va a representar cada una, a una película
+    // convert each line into a `String` list that will represent each movie
     final movie = line.split(',');
     print(movie);
-    // calcular el promedio
+    // calculate the average
     print('last movie is empty?: ${movie.isEmpty}');
     // sumOfScores += double.parse(movie[1]);
   }
-
+  
   averageScore = sumOfScores / contentInLines.length;
-  // imprimir el promedio
+  // print the average
   print('Average score: ${averageScore.toStringAsFixed(0)}');
-// ordenar el listado de películas de mayor a menor puntaje
-// imprimir los primeros 10 títulos de nuestro listado ordenado por mayor puntaje
 }
 ```
 
-Aquí podemos comprobar que la última película no está vacía pero qué valor puede tener si cuando la imprimimos no muestra nada? 💀 Vayan a Dartpad y prueben imprimir esto:
+Here we can check that the last movie is not empty but what value can it have if when we print it it shows nothing? 💀 Go to Dartpad and try printing this:
 
 ```dart
 void main() {
@@ -187,11 +193,13 @@ void main() {
 }
 ```
 
-😳 Exacto! Resulta que el primer y único elemento de esa lista es una _empty string_ o cadena de texto vacía y es por esto que nos estaría dando el error!
+😳 Exactly! It turns out that the first and only element of that list is an _empty string_ and that's why we are getting the error!
 
-💀 Ahora entonces, procedamos a quitar el último elemento de la lista, ya que no representa ninguna película y agregarle un `assert` para asegurarnos de que lo hizo correctamente, calcular el promedio e imprimirlo. Ya tienen todos los elementos para hacerlo así que tómense el tiempo necesario y prueben solos:
+💀 Now then, let's proceed to remove the last item from the list, since it does not represent any movie and add an `assert` to make sure we did it correctly, calculate the average and print it. You already have all the elements to do this so take your time and try it on your own:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -199,29 +207,28 @@ void main(List<String> arguments) {
   }
   final inputFile = arguments.first;
   final contentInLines = File(inputFile).readAsLinesSync();
-  // crear variable para almacenar la suma total de los puntajes
-  // crear variable para almacenar el promedio de los puntajes
+  // create a variable to store the total sum of the scores
+  // create a variable to store the average of the scores
   var sumOfScores = 0.0;
   var averageScore = 0.0;
 
-  // remover la primera línea ya que es un header
+  // remove the first line since it's a header
   contentInLines.removeAt(0);
-  assert(!contentInLines[0].contains('Score'),
-      'The content should have its header removed');
+  assert(!contentInLines[0].contains('Score'), 'The content should have its header removed');
   contentInLines.removeAt(contentInLines.length - 1);
   assert(contentInLines[contentInLines.length - 1][0].isNotEmpty,
       'First item of last movie should not be empty');
-
-  // iterar por todas las líneas
+  
+  // iterate through all lines
   for (var line in contentInLines) {
-    // convertir cada línea en un listado de `String` que va a representar cada una, a una película
+    // convert each line into a `String` list that will represent each movie
     final movie = line.split(',');
-    // calcular el promedio
+    // calculate the average
     sumOfScores += double.parse(movie[1]);
   }
-
+  
   averageScore = sumOfScores / contentInLines.length;
-  // imprimir el promedio
+  // print the average
   print('Average score: ${averageScore.toStringAsFixed(0)}');
 }
 ```

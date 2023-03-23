@@ -1,12 +1,14 @@
-# Requerimientos del ejercicio
+# Exercise requirements
 
-Primero que nada, vayan a su `data_to_read.csv` para endenterlo un poco. Pueden ver que es muy sencillo y la primer línea es un _header_ o encabezado que muestra los títulos de cada columna: 'Año', 'Puntaje' y 'Título'. Qué es lo que queremos lograr? Vamos a ver los _requirements_:
+First of all, go to your `data_to_read.csv` to understand it a little bit. You can see that it is very simple and the first line is a _header_ that shows the titles of each column: 'Year', 'Score' and 'Title'. What do we want to achieve? Let's look at the _requirements_:
 
-_Requirement_: obtener y mostrar el promedio de puntaje de todas las películas.
+_Requirement_: obtain and display the average score of all movies.
 
-Como ya vimos, un buen ejercicio es empezar escribiendo lo que imaginamos podríamos hacer, de manera coloquial o corriente. Vamos a empezar escribiendo entonces, un poco de _pseudo-code_ debajo de nuestro código:
+As we have already seen, a good exercise is to start writing what we imagine we could do, in a colloquial or ordinary way. Let's start by writing some _pseudo-code_ below our code:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -17,12 +19,12 @@ void main(List<String> arguments) {
   for (var line in contentInLines) {
     print(line);
   }
-// remover la primera línea ya que es un header
-// iterar por todas las líneas
-// convertir cada línea en un listado de `String` que va a representar cada una, a una película
-// crear variable para almacenar la suma total de los puntajes
-// crear variable para almacenar el promedio de los puntajes
-// calcular el promedio
-// imprimir el promedio
+// remove the first line since it's a header
+// iterate through all lines
+// convert each line into a `String` list that will represent each movie
+// create a variable to store the total sum of the scores
+// create a variable to store the average of the scores
+// calculate the average
+// print the average
 }
 ```

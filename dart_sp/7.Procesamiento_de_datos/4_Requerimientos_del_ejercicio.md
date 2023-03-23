@@ -7,6 +7,8 @@ _Requirement_: obtener y mostrar el promedio de puntaje de todas las películas.
 Como ya vimos, un buen ejercicio es empezar escribiendo lo que imaginamos podríamos hacer, de manera coloquial o corriente. Vamos a empezar escribiendo entonces, un poco de _pseudo-code_ debajo de nuestro código:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
