@@ -59,6 +59,8 @@ void main () {
 */
 
 // Exercise 2
+
+/* 
 import 'dart:io';
 
 void main() {
@@ -101,14 +103,12 @@ void main() {
     }
   }
 }
-
-
+*/
 
 // Exercise 3
 
 /* 
 import 'dart:io';
-import 'dart:math';
 
 void main () {
 //List of all the different types of coffee the coffee shop offers
