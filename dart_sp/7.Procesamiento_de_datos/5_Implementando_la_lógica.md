@@ -7,6 +7,8 @@ Ya que tenemos nuestro _pseudo-code_ listo, qué les parece si empezamos a escri
 Para ello, vamos a utilizar el método conocido de las `List`, `removeAt(index)`. Me gustaría que agreguen un `assert` para asegurarnos que hemos removido el header. 💀 Cómo podríamos hacer esto? Recuerden que hacemos todo este tipo de código para entrenar. En próximos capítulos vamos a ver cómo empezar a testear y esto les habrá sido muy útil!
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -31,11 +33,20 @@ void main(List<String> arguments) {
 }
 ```
 
+### Nota importante
+
+Seguramente ya empezaron a probar y puede que se estén agarrando la cabeza porque el assert no salta cuando debería hacerlo.
+La razón es que si deseamos utilizar assert entonces tenemos que habilitarlo durante la ejecución, ya que sólo lo podemos utilizar en el modo de desarrollo y no en el modo de producción. Si no lo habilitamos simplemente se ignorará durante la ejecución.
+Para habilitar los asserts mientras ejecutamos un archivo dart via cmd debemos agregar antes del nombre del archivo que queremos correr el siguiente comando: `--enable-asserts`.
+En nuestro ejercicio quedaría así: `dart --enable-asserts data_processing.dart data_to_read.csv`
+
 ## Iterar por todas las líneas y convertirla en un listado del tipo String
 
 Ahora vamos a utilizar un método que aun no conocen y que nos permite convertir un `String` en una `List<String>` según el patrón que decidamos. En este caso, como tenemos un archivo separado por comas, eso nos permite separar los valores de cada línea de manera sencilla. Para corroborarlo, imprimiremos ahora, la película o lista de `String` que representa cada película:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -73,6 +84,8 @@ Vamos a solucionarlas en unos segundos!
 💀 Algo que ya conocemos así que pueden hacerlo ustedes para practicar:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -105,6 +118,8 @@ void main(List<String> arguments) {
 💀 Intenten hacerlo para ver qué sucede!
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -136,12 +151,13 @@ void main(List<String> arguments) {
 }
 ```
 
-Nos encontramos con esta `Exception` que nos dice que hay error de rango, ya que está intentando buscar en el `index` 1, cuando el único valor válido es el 0: `Exception has occurred.
-RangeError (RangeError (index): Invalid value: Only valid value is 0: 1)`. Por qué sucede esto? Esto quiere decir que nuestra última película no está vacía?
+Nos encontramos con esta `Exception` que nos dice que hay error de rango, ya que está intentando buscar en el `index` 1, cuando el único valor válido es el 0: `Exception has occurred. RangeError (RangeError (index): Invalid value: Only valid value is 0: 1)`. Por qué sucede esto? Esto quiere decir que nuestra última película no está vacía?
 
 Podemos utilizar `print` para entender si la última lista o película está vacía:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
@@ -172,8 +188,6 @@ void main(List<String> arguments) {
   averageScore = sumOfScores / contentInLines.length;
   // imprimir el promedio
   print('Average score: ${averageScore.toStringAsFixed(0)}');
-// ordenar el listado de películas de mayor a menor puntaje
-// imprimir los primeros 10 títulos de nuestro listado ordenado por mayor puntaje
 }
 ```
 
@@ -192,6 +206,8 @@ void main() {
 💀 Ahora entonces, procedamos a quitar el último elemento de la lista, ya que no representa ninguna película y agregarle un `assert` para asegurarnos de que lo hizo correctamente, calcular el promedio e imprimirlo. Ya tienen todos los elementos para hacerlo así que tómense el tiempo necesario y prueben solos:
 
 ```dart
+import 'dart:io';
+
 void main(List<String> arguments) {
   if (arguments.isEmpty) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
