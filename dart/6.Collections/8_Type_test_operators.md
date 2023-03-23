@@ -1,6 +1,6 @@
 # _Type test operators_
 
-Les había dejado una pregunta en el artículo anterior. De qué tipo era la variable `name`:
+I had left a question in the previous article. What type was the variable `name`:
 
 ```dart
 void main() {
@@ -14,8 +14,7 @@ void main() {
 }
 ```
 
-Una forma de ayudarse a decubrirlo, sería ponerle un punto a la variable y ver qué métodos nos proporciona Dart. 💀 Como imagino habrán podido ver, solamente nos ofrece cuatro métodos y no todos los que esperamos por ser una `String`. Eso es porque definimos el tipo de `value` dentro del `Map` como un `dynamic`. Sin embargo, __podríamos
-castear un objeto si sabemos de qué tipo es, utilizando el _cast operator_ `as`.__ Sería que nosotros le confirmamos a Dart que se trata de un tipo `String` en este caso, y él mismo se encarga de cambiar el tipo `dynamic` a uno del tipo `String`:
+One way to help you to discover it, would be to put a dot to the variable and see what methods Dart provides us. 💀 As I imagine you have been able to see, it only offers us four methods and not all the ones we expect for being a `String`. That is because we define the `value` type inside the `Map` as a `dynamic`. However, __we could caste an object if we know what type it is, using the _cast operator_ `as`__. This way we confirm to Dart that it is a `String` type in this case, and he takes care of changing the `dynamic` type to a `String` type himself:
 
 ```dart
 void main() {
@@ -29,7 +28,7 @@ void main() {
 }
 ```
 
-Del mismo modo podríamos utilizar el _is_ y el _is!_ y aseverar que se trata o no de un tipo, aunque solamente se los menciono aquí ya que deberíamos entender otros conceptos para ahondar:
+In the same way we could use the _is_ and _is!_ and assert that it is or is not a type, I only mention them here since we should understand other concepts to go deeper:
 
 ```dart
 void main() {
@@ -44,7 +43,7 @@ void main() {
 }
 ```
 
-En el caso anterior, vemos que funciona perfectamente y nuestro `assert` pasa de largo. Sin embargo, qué pasaría si intentáramos hacer lo mismo con el `age`? 💀
+In the above case, we see that it works perfectly and our `assert` passes by. However, what would happen if we tried to do the same with the `age`? 💀
 
 ```dart
 void main() {
@@ -53,10 +52,10 @@ void main() {
         'age': 38,
         'height': 1.65,
     };
-    final name = mau['age'];
-    assert(name is String, 'The conversion did not worked correctly');
-    print(name.toUpperCase());
+    final age = mau['age'];
+    assert(age is String, 'The conversion did not worked correctly');
+    print(age.toUpperCase());
 }
 ```
 
-Aquí ahora salta el `assert` ya que `age` es en realidad un `int`. 💀 Y los dejo solitos para que prueben qué pasa si intentan castear a un `String` ese `int`.
+Here the `assert` pops out since `age` is actually an `int`. 💀 And I leave you alone to test what happens if you try to cast to a `String` that `int`.

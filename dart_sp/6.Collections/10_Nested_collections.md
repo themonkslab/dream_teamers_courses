@@ -53,8 +53,6 @@ void main() {
     }
   ];
 }
-
-
 ```
 
 En este ejemplo podemos observar que los `rating`, son un listado de `int` dentro de cada `Map` y cada uno de ellos a su vez, pertenece a una `List`, a la que podríamos declararle el tipo así: `List<Map<String, dynamic>>`.

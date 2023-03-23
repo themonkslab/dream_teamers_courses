@@ -1,8 +1,8 @@
 # _Maps_
 
-Los mapas o también llamados _dictionaries_ (diccionarios), son __colecciones de pares de claves y valores, _key:value pairs_.__
+Maps, also called _dictionaries_, are __collections of _key:value pairs___.
 
-Supongamos que tenemos las siguientes _keys_ con sus respectivos _values_ que describen a una persona.
+Suppose we have the following _keys_ with their respective _values_ describing a person.
 
 ```dart
 // name: Mau
@@ -10,7 +10,7 @@ Supongamos que tenemos las siguientes _keys_ con sus respectivos _values_ que de
 // height: 1.65
 ```
 
-Podemos crear un mapa que lo represente, abriendo `{}`,estableciendo las claves y los valores, que dependerán del _type_ que necesitemos para representar cada caso:
+We can create a map to represent it, opening `{}`, setting the keys and values, which will depend on the _type_ we need to represent each case:
 
 ```dart
 // name: Mauro
@@ -21,14 +21,14 @@ void main() {
         'name': 'Mauro',
         'age': 38,
         'height': 1.65,
-    }
+    };
 }
 
 ```
 
-💀 Fíjense qué pasa si introducen una clave dos veces! Si bien no es un error, Dart nos avisa que __no tiene sentido tener la misma clave dos veces__.
+💀 Notice what happens if you enter a key twice! While not a bug, Dart warns us that __it doesn't make sense to have the same key twice__.
 
-Cuando declaramos un `Map` utilizando `var`, `final` y `const`, _keys_ y _values_ pueden tener el tipo que nosotros queramos; alternativamente podemos explicitar los _types_ que deseemos. Tengan en cuenta que el tipo `dynamic` nos permite poner cualquier tipo de valor. 💀 Prueben que sucede si definen el mapa como <String, String>:
+When we declare a `Map` using `var`, `final` and `const`, _keys_ and _values_ can have the type we desire; alternatively we can make explicit the _types_ we want. Note that the `dynamic` type allows us to put any type of value. 💀 Test what happens if you define the map as <String, String>:
 
 ```dart
 void main() {
@@ -36,22 +36,24 @@ void main() {
         'name': 'Mauro',
         'age': 38,
         'height': 1.65,
-    }
+    };
 }
 
 ```
 
-También pueden añadir las anotaciones de tipo a los `Map` literal como ya lo hicieron con `Set`s y `List`s que si bien no es estrictamente requerido, es una buena idea para mantener el código seguro:
+You can also add type annotations to the `Map` as you did with `Set`s and `List`s which while not strictly required, is a good idea to keep the code safe:
 
 ```dart
-final mau = <String,dynamic>{
+void main() {
+    final mau = <String,dynamic>{
     'name': 'Mauro',
     'age': 38,
     'height': 1.65,
+    };
 }
 ```
 
-Como en las listas, podemos __acceder a sus valores__ __utilizando el _subscript operator_ u operador de subíndice__ y llamando al valor no ya por índice sino __por su _key_ entre comillas__:
+As with lists, we can __access their values using the _subscript operator___ and calling the value no longer by index but __by its _key_ in quotes__:
 
 ```dart
 void main() {
@@ -62,11 +64,11 @@ void main() {
 
         final name = mau['name'];
         print(name);
-    }
+    };
 }
 ```
 
-También podemos __cambiar sus valores__ accediendo a ellos de la misma manera:
+We can also __change their values__ by accessing them in the same way:
 
 ```dart
 void main() {
@@ -82,7 +84,7 @@ void main() {
 }
 ```
 
-Y finalmente, podemos agregar nuevos valores también con el _subscript operator_:
+And last, we can add new values also with the _subscript operator_:
 
 ```dart
 void main() {
@@ -100,4 +102,4 @@ void main() {
 }
 ```
 
-Ah! Les quería dejar una pregunta: de qué tipo creen que es la variable `name` a la que le asignamos `mau['name']`? Se los respondo en el artículo siguiente! 😄
+Ah! I wanted to leave you a question: what type do you think is the variable `name` to which we assign `mau['name']`? I'll answer it in the next article! 😄
