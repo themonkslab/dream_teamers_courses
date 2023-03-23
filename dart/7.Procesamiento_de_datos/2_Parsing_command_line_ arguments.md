@@ -62,7 +62,7 @@ void main(List<String> arguments) {
     print('Usage: dart data_processing.dart <inputFile.csv>');
     exit(1);
   }
-  final inputFile = arguments.first; //if the program received two files as command line arguments this variable would take the name of the first of them
+  final inputFile = arguments.first; //if the program received two files as command line arguments this variable would take the value of the path of the first of them
   print(inputFile);
 }
 ```
