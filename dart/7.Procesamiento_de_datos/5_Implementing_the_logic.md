@@ -33,6 +33,13 @@ void main(List<String> arguments) {
 }
 ```
 
+### Important note
+
+ Surely you have already started testing and you may be scratching your head because the assert does not pop up when it should.
+The reason is that if we want to use asserts then we have to enable them during execution, since we can only use them in development mode and not in production mode. If we do not enable them then it will simply be ignored during execution.
+To enable the asserts while running a dart file via cmd we must add before the name of the file we want to run the following command: `--enable-asserts`.
+In our exercise it would look like this: `dart --enable-asserts data_processing.dart data_to_read.csv`.
+
 ## Iterate through all the lines and convert it into a list of String type
 
 Now we are going to use a method that you do not know yet and that allows us to convert a `String` in a `List<String>` according to the pattern that we decide. In this case, as we have a file separated by commas, that allows us to separate the values of each line in a simple way. To corroborate this, we will now print the `List<String>` that represents each movie:

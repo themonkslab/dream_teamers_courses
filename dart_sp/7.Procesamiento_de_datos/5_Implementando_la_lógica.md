@@ -33,6 +33,13 @@ void main(List<String> arguments) {
 }
 ```
 
+### Nota importante
+
+Seguramente ya empezaron a probar y puede que se estén agarrando la cabeza porque el assert no salta cuando debería hacerlo.
+La razón es que si deseamos utilizar assert entonces tenemos que habilitarlo durante la ejecución, ya que sólo lo podemos utilizar en el modo de desarrollo y no en el modo de producción. Si no lo habilitamos simplemente se ignorará durante la ejecución.
+Para habilitar los asserts mientras ejecutamos un archivo dart via cmd debemos agregar antes del nombre del archivo que queremos correr el siguiente comando: `--enable-asserts`.
+En nuestro ejercicio quedaría así: `dart --enable-asserts data_processing.dart data_to_read.csv`
+
 ## Iterar por todas las líneas y convertirla en un listado del tipo String
 
 Ahora vamos a utilizar un método que aun no conocen y que nos permite convertir un `String` en una `List<String>` según el patrón que decidamos. En este caso, como tenemos un archivo separado por comas, eso nos permite separar los valores de cada línea de manera sencilla. Para corroborarlo, imprimiremos ahora, la película o lista de `String` que representa cada película:
