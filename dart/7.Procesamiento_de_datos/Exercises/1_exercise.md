@@ -6,7 +6,7 @@ You are working as a data analyst for a small startup that helps local farmers s
 
 ## Requirements
 
-Your task is to create a program that can help the farmers analyze their sales data from the previous year. The program should read in a CSV file that contains information about each sale, including the date, the type of product sold, the quantity sold, and the price per unit.
+Your task is to create a program that can help the farmers analyze their sales data from the previous year. The program should read in a CSV file (`1_data.csv`)that contains information about each sale, including the date, the type of product sold, the quantity sold, and the price per unit.
 
 Your program should then do the following:
 

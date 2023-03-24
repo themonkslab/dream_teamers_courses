@@ -1,10 +1,11 @@
 // Exercise 1
 
+/* 
 import 'dart:io';
 
 void main(List<String> args) {
   if (args.isEmpty) {
-    print('Usage: dart data_processing.dart 1_data.csv');
+    print('Usage: dart file_name.dart 1_data.csv');
     exit(1);
   }
   final inputFile = args.first;
@@ -36,109 +37,168 @@ void main(List<String> args) {
     }   
   }
 
-// calculate average prices
-var appleAveragePrice = (appleRevenue/totalApple);
-var bananaAveragePrice = (bananaRevenue/totalBanana);
-var orangeAvaragePrice = (orangeRevenue/totalOrange);
+  // calculate average prices
+  var appleAveragePrice = (appleRevenue/totalApple);
+  var bananaAveragePrice = (bananaRevenue/totalBanana);
+  var orangeAvaragePrice = (orangeRevenue/totalOrange);
 
-// This block of code goes through every posibility when looking for the product with more sales. I know is a bit long, and we will do the same to search for the other requirements.
-// At the end I'll leave a shorter way, but with other features we haven't study yet.
-if (totalApple > totalOrange) {
-  if (totalApple > totalBanana) {
-    print('The product that sold the most is ${productList[0]} with a total of $totalApple');
-  }
-  else if (totalApple < totalBanana) {
-    print('The product that sold the most is ${productList[2]} with a total of $totalBanana');
-  } else {
-    print('The products that were sold the most were ${productList[2]} and ${productList[0]} with a total of $totalApple');
-  }
-} else if (totalApple == totalOrange) {
+  // This block of code goes through every posibility when looking for the product with more sales. I know is a bit long, and we will do the same to search for the other requirements.
+  // At the end I'll leave a shorter way, but with other features we haven't study yet.
+  if (totalApple > totalOrange) {
     if (totalApple > totalBanana) {
-      print('The products that were sold the most were ${productList[0]} and ${productList[1]} with a total of $totalApple');
-    } else if (totalApple == totalBanana) {
-      print('All products were sold equally for $totalApple');
+      print('The product that sold the most is ${productList[0]} with a total of $totalApple');
+    }
+    else if (totalApple < totalBanana) {
+      print('The product that sold the most is ${productList[2]} with a total of $totalBanana');
+    } else {
+      print('The products that were sold the most were ${productList[2]} and ${productList[0]} with a total of $totalApple');
+    }
+  } else if (totalApple == totalOrange) {
+      if (totalApple > totalBanana) {
+        print('The products that were sold the most were ${productList[0]} and ${productList[1]} with a total of $totalApple');
+      } else if (totalApple == totalBanana) {
+        print('All products were sold equally for $totalApple');
+      } else {
+        print('The product that sold the most is ${productList[2]} with a total of $totalBanana');
+      }
+  } else {
+    if (totalOrange > totalBanana) {
+      print('The product that sold the most is ${productList[1]} with a total of $totalOrange');
+    } else if (totalOrange == totalBanana) {
+      print('The products that were sold the most were ${productList[2]} and ${productList[1]} with a total of $totalOrange');    
     } else {
       print('The product that sold the most is ${productList[2]} with a total of $totalBanana');
     }
-} else {
-  if (totalOrange > totalBanana) {
-    print('The product that sold the most is ${productList[1]} with a total of $totalOrange');
-  } else if (totalOrange == totalBanana) {
-    print('The products that were sold the most were ${productList[2]} and ${productList[1]} with a total of $totalOrange');    
-  } else {
-    print('The product that sold the most is ${productList[2]} with a total of $totalBanana');
   }
-}
 
-// This block of code goes through every posibility when looking for the product with more revenue.
-if (appleRevenue > orangeRevenue) {
-  if (appleRevenue > bananaRevenue) {
-    print('The product that sold the most is ${productList[0]} with a total of \$${appleRevenue.toStringAsFixed(2)}');
-  }
-  else if (appleRevenue < bananaRevenue) {
-    print('The product that sold the most is ${productList[2]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
-  } else {
-    print('The products that were sold the most are ${productList[2]} and ${productList[0]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
-  }
-} else if (appleRevenue == orangeRevenue) {
+  // This block of code goes through every posibility when looking for the product with more revenue.
+  if (appleRevenue > orangeRevenue) {
     if (appleRevenue > bananaRevenue) {
-      print('The products that were sold the most are ${productList[0]} and ${productList[1]} with a total of \$${appleRevenue.toStringAsFixed(2)}');
-    } else if (appleRevenue == bananaRevenue) {
-      print('All products were sold equally for \$${appleRevenue.toStringAsFixed(2)}');
+      print('The product that sold the most is ${productList[0]} with a total of \$${appleRevenue.toStringAsFixed(2)}');
+    }
+    else if (appleRevenue < bananaRevenue) {
+      print('The product that sold the most is ${productList[2]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
+    } else {
+      print('The products that were sold the most are ${productList[2]} and ${productList[0]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
+    }
+  } else if (appleRevenue == orangeRevenue) {
+      if (appleRevenue > bananaRevenue) {
+        print('The products that were sold the most are ${productList[0]} and ${productList[1]} with a total of \$${appleRevenue.toStringAsFixed(2)}');
+      } else if (appleRevenue == bananaRevenue) {
+        print('All products were sold equally for \$${appleRevenue.toStringAsFixed(2)}');
+      } else {
+        print('The product that sold the most is ${productList[2]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
+      }
+  } else {
+    if (orangeRevenue > bananaRevenue) {
+      print('The product that sold the most is ${productList[1]} with a total of \$${orangeRevenue.toStringAsFixed(2)}');
+    } else if (orangeRevenue == bananaRevenue) {
+      print('The products that were sold the most are ${productList[2]} and ${productList[1]} with a total of \$${orangeRevenue.toStringAsFixed(2)}');    
     } else {
       print('The product that sold the most is ${productList[2]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
     }
-} else {
-  if (orangeRevenue > bananaRevenue) {
-    print('The product that sold the most is ${productList[1]} with a total of \$${orangeRevenue.toStringAsFixed(2)}');
-  } else if (orangeRevenue == bananaRevenue) {
-    print('The products that were sold the most are ${productList[2]} and ${productList[1]} with a total of \$${orangeRevenue.toStringAsFixed(2)}');    
-  } else {
-    print('The product that sold the most is ${productList[2]} with a total of \$${bananaRevenue.toStringAsFixed(2)}');
   }
-}
 
-// This block of code goes through every posibility when looking for the product with the best average price.
-if (appleAveragePrice > orangeAvaragePrice) {
-  if (appleAveragePrice > bananaAveragePrice) {
-    print('The product with the best average price is ${productList[0]} with \$${appleAveragePrice.toStringAsFixed(2)}');
-  }
-  else if (appleAveragePrice < bananaAveragePrice) {
-    print('The product with the best average price is ${productList[2]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
-  } else {
-    print('The products with the best average price are ${productList[2]} and ${productList[0]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
-  }
-} else if (appleAveragePrice == orangeAvaragePrice) {
+  // This block of code goes through every posibility when looking for the product with the best average price.
+  if (appleAveragePrice > orangeAvaragePrice) {
     if (appleAveragePrice > bananaAveragePrice) {
-      print('The products with the best average price are ${productList[0]} and ${productList[1]} with \$${appleAveragePrice.toStringAsFixed(2)}');
-    } else if (appleAveragePrice == bananaAveragePrice) {
-      print('All products had the same average price: \$${appleAveragePrice.toStringAsFixed(2)}');
+      print('The product with the best average price is ${productList[0]} with \$${appleAveragePrice.toStringAsFixed(2)}');
+    }
+    else if (appleAveragePrice < bananaAveragePrice) {
+      print('The product with the best average price is ${productList[2]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
+    } else {
+      print('The products with the best average price are ${productList[2]} and ${productList[0]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
+    }
+  } else if (appleAveragePrice == orangeAvaragePrice) {
+      if (appleAveragePrice > bananaAveragePrice) {
+        print('The products with the best average price are ${productList[0]} and ${productList[1]} with \$${appleAveragePrice.toStringAsFixed(2)}');
+      } else if (appleAveragePrice == bananaAveragePrice) {
+        print('All products had the same average price: \$${appleAveragePrice.toStringAsFixed(2)}');
+      } else {
+        print('The product with the best average price is ${productList[2]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
+      }
+  } else {
+    if (orangeAvaragePrice > bananaAveragePrice) {
+      print('The product with the best average price is ${productList[1]} with \$${orangeAvaragePrice.toStringAsFixed(2)}');
+    } else if (orangeAvaragePrice == bananaAveragePrice) {
+      print('The products with the best average price are ${productList[2]} and ${productList[1]} with \$${orangeAvaragePrice.toStringAsFixed(2)}');    
     } else {
       print('The product with the best average price is ${productList[2]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
     }
-} else {
-  if (orangeAvaragePrice > bananaAveragePrice) {
-    print('The product with the best average price is ${productList[1]} with \$${orangeAvaragePrice.toStringAsFixed(2)}');
-  } else if (orangeAvaragePrice == bananaAveragePrice) {
-    print('The products with the best average price are ${productList[2]} and ${productList[1]} with \$${orangeAvaragePrice.toStringAsFixed(2)}');    
-  } else {
-    print('The product with the best average price is ${productList[2]} with \$${bananaAveragePrice.toStringAsFixed(2)}');
   }
+
+  /* 
+  BETTER AND SHORTER WAY 
+  Map results = {'apple': [totalApple, appleRevenue, appleAveragePrice.toStringAsFixed(2)],
+                'orange': [totalOrange, orangeRevenue, orangeAvaragePrice.toStringAsFixed(2)],
+                'banana': [totalBanana, bananaRevenue, bananaAveragePrice.toStringAsFixed(2)]};              
+
+  var sortResultsByTotal = Map.fromEntries(results.entries.toList()..sort((e1,e2) => e1.value[0].compareTo(e2.value[0])));
+  print('The product with more sales is ${sortResultsByTotal.keys.last} with a total of ${sortResultsByTotal.values.last[0]}');
+
+  var sortResultsByRevenue = Map.fromEntries(results.entries.toList()..sort((e1,e2) => e1.value[1].compareTo(e2.value[1])));
+  print('The product with more revenue is ${sortResultsByRevenue.keys.last} with a total of \$${sortResultsByRevenue.values.last[1]}');
+
+  var sortResultsByAverage = Map.fromEntries(results.entries.toList()..sort((e1,e2) => e1.value[2].compareTo(e2.value[2])));
+  print('The product with best average price is ${sortResultsByTotal.keys.last}: \$${sortResultsByAverage.values.last[2].toString()}'); 
+  */
 }
-
-/* BETTER AND SHORTER WAY 
-Map results = {'apple': [totalApple, appleRevenue, appleAveragePrice.toStringAsFixed(2)],
-               'orange': [totalOrange, orangeRevenue, orangeAvaragePrice.toStringAsFixed(2)],
-               'banana': [totalBanana, bananaRevenue, bananaAveragePrice.toStringAsFixed(2)]};              
-
-var sortResultsByTotal = Map.fromEntries(results.entries.toList()..sort((e1,e2) => e1.value[0].compareTo(e2.value[0])));
-print('The product with more sales is ${sortResultsByTotal.keys.last} with a total of ${sortResultsByTotal.values.last[0]}');
-
-var sortResultsByRevenue = Map.fromEntries(results.entries.toList()..sort((e1,e2) => e1.value[1].compareTo(e2.value[1])));
-print('The product with more revenue is ${sortResultsByRevenue.keys.last} with a total of \$${sortResultsByRevenue.values.last[1]}');
-
-var sortResultsByAverage = Map.fromEntries(results.entries.toList()..sort((e1,e2) => e1.value[2].compareTo(e2.value[2])));
-print('The product with best average price is ${sortResultsByTotal.keys.last}: \$${sortResultsByAverage.values.last[2].toString()}'); 
 */
-}
+
+// Exercise 2
+
+/* 
+import 'dart:io';
+
+void main(List<String> args) {
+  if (args.isEmpty) {
+    print('Usage: file_name.dart 2_players.csv 2_teams.csv 2_matches.csv');
+    exit(1);
+  }
+  final inputPlayers = args.first;
+  final inputTeams = args.elementAt(1);
+  final inputMatches = args.last;
+
+  final playersList = File(inputPlayers).readAsLinesSync();
+  final teamsList = File(inputTeams).readAsLinesSync();
+  final matchesList = File(inputMatches).readAsLinesSync();
+
+  playersList.removeAt(0);
+  teamsList.removeAt(0);
+  matchesList.removeAt(0);
+
+  int totalAge = 0;
+  int totalPlayers = 0;
   
+  for (var player in playersList) {
+    final playerData = player.split(',');
+    totalAge += int.parse(playerData[1]);
+    totalPlayers ++;    
+  }
+
+  print('\nThe average age of all players is ${(totalAge/totalPlayers).toStringAsFixed(2)}');
+
+  final teamsWins = <String, dynamic> {};
+  for (var team in teamsList) {
+    final teamData = team.split(',');
+    teamsWins['${teamData[0]}'] = 0;
+  }
+
+  int totalScore = 0;
+  for (var match in matchesList) {
+    final matchData = match.split(',');
+    final result = matchData[3].split('-');
+    totalScore += int.parse(result[0]) + int.parse(result[1]);
+    if (int.parse(result[0]) > int.parse(result[1]) ) {
+      teamsWins['${matchData[0]}'] ++;
+    } else {
+      teamsWins['${matchData[1]}'] ++;
+    }    
+  }
+
+  var sortTeamWins = Map.fromEntries(teamsWins.entries.toList()..sort((e1,e2) => e1.value.compareTo(e2.value)));  
+  
+  print('\nThe team with more wins is ${sortTeamWins.keys.last}');
+  print('\nThe total amount of goals score is $totalScore \n');
+}
+*/
