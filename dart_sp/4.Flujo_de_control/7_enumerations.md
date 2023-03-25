@@ -119,7 +119,7 @@ Y ustedes esperaban que se imprima el nombre! Bueno, para eso (💀), simplement
 
 Pueden utilizar el `medal.name` para imprimir el nombre que le asignaron a la variable en lugar de que les imprima por ejemplo, `Medal.gold`.
 
-Además de esto, podríamos ver todos los valores de nuestro `enum` llamándolos de esta manera: `Medal.values` y hasta llamar a uno particularmente, así: `Medal.values.byName('silver'`).
+Además de esto, podríamos ver todos los valores de nuestro `enum` llamándolos de esta manera: `Medal.values` y hasta llamar a uno particularmente, así: `Medal.values.byName('silver')`.
 
 ## 💪 Calculadora versión 0.0.1
 
