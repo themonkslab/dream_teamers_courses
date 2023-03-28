@@ -301,7 +301,44 @@ Noten que en este caso, tenemos que chequear si dicho `paymentType` es
 reembolsable y luego aclararle a Dart para que sepa que se trata de un tipo
 reembolsable y así poder llamar a su método.
 
-En resúmen, quédense con los _mixin_ para agregar comportamiento y utilicen las
+## _Name collisions_
+
+Qué creen que se imprimiría en el siguiente ejemplo?
+
+```dart
+mixin Mixin1 {
+  int foo = 1;
+}
+
+mixin Mixin2 {
+  int foo = 2;
+}
+
+class Foo with Mixin1, Mixin2 {
+  void printFoo() => print(foo);
+}
+
+void main() {
+  final foo = Foo();
+  foo.printFoo();
+}
+```
+
+Lo que imprime la consola es 2! Esto significa que podemos acceder a la variable
+`foo` de `Mixin2` pero no a `foo` de `Mixin1`. En este caso parece obvio el
+problema y puede ser simplemente solucionable pero imaginen en proyectos mucho
+más grandes y complejos? Tenemos que tener mucho cuidado ya que Dart no nos
+puede proteger en estos casos.
+
+En resúmen:
+
+- Quédense con los _mixin_ para agregar comportamiento y utilicen las
 clases abstractas para definir modelos que tienen que ser extendidos o
 implementados. Utilizarlos de forma combinada nos permite tener una jerarquía
-menos profunda de clases lo que llevará a un manejo más sencillo de nuesta aplicación.
+menos profunda de clases lo que llevará a un manejo más sencillo de nuesta
+aplicación.
+- Cuiden mucho en dónde lo utilizan y presten particular atención a cómo los
+  llaman. Siempre piensen en escribir código que sea simple de mantener, que si
+  tienen que hacer cambios en el futuro, no tengan que hacerlo en toda la
+  aplicación o escribir como ya dijimos varias veces, código defensivo,
+  dificultando el que podamos cometer errores.
