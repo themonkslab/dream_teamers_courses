@@ -10,7 +10,7 @@ El juego consiste en elegir entre esos tres elementos y las reglas son:
 
 Vamos a implementar este juego de forma que cada uno de ustedes enfrente a la computadora. El programa les preguntará qué juegan, la computadora hará su movimiento y luego se determina el resultado.
 
-Aprenderemos cómo obtener _input_ desde la consola y cómo elegir números aleatorios o _random numbers_. Abajo, los _requirements_:
+Aprenderemos cómo obtener un _input_ desde la consola y cómo elegir números aleatorios o _random numbers_. Abajo, los _requirements_:
 
 ## 💪 Piedra, papel y tijeras
 

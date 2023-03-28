@@ -21,7 +21,7 @@ void main() {
         'name': 'Mauro',
         'age': 38,
         'height': 1.65,
-    }
+    };
 }
 
 ```
@@ -36,7 +36,7 @@ void main() {
         'name': 'Mauro',
         'age': 38,
         'height': 1.65,
-    }
+    };
 }
 
 ```
@@ -44,10 +44,12 @@ void main() {
 También pueden añadir las anotaciones de tipo a los `Map` literal como ya lo hicieron con `Set`s y `List`s que si bien no es estrictamente requerido, es una buena idea para mantener el código seguro:
 
 ```dart
-final mau = <String,dynamic>{
+void main() {
+    final mau = <String,dynamic>{
     'name': 'Mauro',
     'age': 38,
     'height': 1.65,
+    };
 }
 ```
 
@@ -62,7 +64,7 @@ void main() {
 
         final name = mau['name'];
         print(name);
-    }
+    };
 }
 ```
 

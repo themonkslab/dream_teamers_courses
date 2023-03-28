@@ -1,4 +1,4 @@
-# _Assertions_.
+# _Assertions_
 
 We said that we were going to learn from the beginning how to write code from the tests, from the end of the code to the beginning, in order to save us a lot of problems in the future.
 
@@ -33,8 +33,6 @@ __💀 Solutions__:
 Perfect! Now that we understand a little more, I can tell you that we can also define what we want it to say when the evaluation results in _false_. However, let's put it in context so we can see its huge usefulness.
 
 Let's suppose we are making a web page that can only be viewed by those who are of legal age. Then we could make an _assertion_ to throw an _exception_ if the user is a minor and tries to enter the page:
-
-Translated with www.DeepL.com/Translator (free version)
 
 ```dart
 void main() {

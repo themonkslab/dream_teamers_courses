@@ -1,6 +1,6 @@
 # _Switch statement_
 
-Supongamos creamos una carrera y queremos otorgar premios según la posición en la que cada competidor llegue. Podríamos hacer algo así:
+Supongamos organizamos una carrera y queremos otorgar premios según la posición en la que cada competidor llegue. Podríamos hacer algo así:
 
 ```dart
 void main() {

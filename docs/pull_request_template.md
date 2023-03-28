@@ -6,8 +6,10 @@ Add a brief description of what has been done, which will help to focus the revi
 
 ## Type
 
-- [ ] Translation
-- [ ] Enhacement
+[ ] Translation
+[ ] Enhancement
+[ ] New Article
+[ ] Exercises
 
 ## Screenshots
 

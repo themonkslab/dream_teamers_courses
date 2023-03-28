@@ -79,3 +79,23 @@ No estás tú también
 un poco sucio de letras y un poco sucio de ciudad?''');
     }
 ```
+
+## Note about `\`
+
+There are other comination with the `\` like `\t` to make a tabulation in the text. For example in the previous code we could introduce some tabulations like this:
+
+```dart
+void main() {
+    print('''\tVamos a buscar, amigo, a la virgen del aire…
+Yo sé que nos espera tras de aquellas colinas
+en la azucena del azul…
+\tYo quiero ser, amigo,
+uno, el más mínimo, de sentimientos de cristal…
+o mejor, uno, el más ligero, de sus latidos de perfume…
+\tNo estás tú también
+un poco sucio de letras y un poco sucio de ciudad?
+    ''');
+}
+```
+
+Go test what the output would be!
