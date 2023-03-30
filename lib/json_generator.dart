@@ -20,6 +20,11 @@ void main() async {
         await createCourseFromPath('dart_sp'),
       )
     ]),
+    FileCoursesGroup(group_name: 'CICD con Flutter', folder: 'flutter/cicd_sp', courses: [
+      FileCourse(title: 'Dart y TDD', path: 'cicd_es', sections: 
+        await createCourseFromPath('flutter/cicd_sp'),
+      )
+    ]),
   ];
   await generateJsonFile(coursesList: coursesSp, outputFilename: 'courses_es.json');
 }
@@ -115,7 +120,7 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
     ));
   }
 
-  sections.sort((a, b) => (a.title ?? '').compareTo(b.title ?? ''));
+  sections.sort((a, b) => orderList(a, b));
   return sections;
 }
 
