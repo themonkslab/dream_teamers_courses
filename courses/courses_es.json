@@ -17,7 +17,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/1.Introducción/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722468"
+                                "published": "2023-03-30T18:09:05.462866"
                             },
                             {
                                 "path": "1.Introducción_2_Qué_esperamos_nosotros",
@@ -25,7 +25,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/1.Introducción/2_Qué_esperamos_nosotros.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722405"
+                                "published": "2023-03-30T18:09:05.462801"
                             },
                             {
                                 "path": "1.Introducción_3_Introducción_a_Dart",
@@ -33,7 +33,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/1.Introducción/3_Introducción_a_Dart.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722538"
+                                "published": "2023-03-30T18:09:05.462902"
                             },
                             {
                                 "path": "1.Introducción_4_Introducción_a_Dartpad",
@@ -41,15 +41,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/1.Introducción/4_Introducción_a_Dartpad.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722576"
-                            },
-                            {
-                                "path": "1.Introducción_Ediciones",
-                                "title": "Ediciones",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/1.Introducción/Ediciones.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722500"
+                                "published": "2023-03-30T18:09:05.462938"
                             }
                         ]
                     },
@@ -64,79 +56,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719836"
-                            },
-                            {
-                                "path": "2.Dart_básico_10_Contiene_y_reemplazar",
-                                "title": "10.Contiene y reemplazar",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/10_Contiene_y_reemplazar.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720641"
-                            },
-                            {
-                                "path": "2.Dart_básico_11_Conversiones_entre_tipos",
-                                "title": "11.Conversiones entre tipos",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/11_Conversiones_entre_tipos.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719637"
-                            },
-                            {
-                                "path": "2.Dart_básico_12_Operaciones_aritméticas",
-                                "title": "12.Operaciones aritméticas",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/12_Operaciones_aritméticas.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719494"
-                            },
-                            {
-                                "path": "2.Dart_básico_13_Operadores_de_incremento_y_decremento",
-                                "title": "13.Operadores de incremento y decremento",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/13_Operadores_de_incremento_y_decremento.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719948"
-                            },
-                            {
-                                "path": "2.Dart_básico_14_Operadores_lógicos_,_de_igualdad_y_relaciones",
-                                "title": "14.Operadores lógicos , de igualdad y relaciones",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/14_Operadores_lógicos_,_de_igualdad_y_relaciones.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720860"
-                            },
-                            {
-                                "path": "2.Dart_básico_15_Operador_condicional",
-                                "title": "15.Operador condicional",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/15_Operador_condicional.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720216"
-                            },
-                            {
-                                "path": "2.Dart_básico_16_Comentarios",
-                                "title": "16.Comentarios",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/16_Comentarios.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719903"
-                            },
-                            {
-                                "path": "2.Dart_básico_17_Expresiones_y_declaraciones",
-                                "title": "17.Expresiones y declaraciones",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/17_Expresiones_y_declaraciones.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720396"
-                            },
-                            {
-                                "path": "2.Dart_básico_18_Afirmaciones",
-                                "title": "18.Afirmaciones",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/18_Afirmaciones.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719706"
+                                "published": "2023-03-30T18:09:05.459036"
                             },
                             {
                                 "path": "2.Dart_básico_2_Método_main",
@@ -144,7 +64,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/2_Método_main.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720814"
+                                "published": "2023-03-30T18:09:05.459918"
                             },
                             {
                                 "path": "2.Dart_básico_3_Primer_programa",
@@ -152,7 +72,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/3_Primer_programa.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719567"
+                                "published": "2023-03-30T18:09:05.458775"
                             },
                             {
                                 "path": "2.Dart_básico_4_Variables,declaración_e_inicialización",
@@ -160,7 +80,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/4_Variables,declaración_e_inicialización.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720258"
+                                "published": "2023-03-30T18:09:05.459378"
                             },
                             {
                                 "path": "2.Dart_básico_5_Tipos_básicos",
@@ -168,7 +88,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/5_Tipos_básicos.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720724"
+                                "published": "2023-03-30T18:09:05.459847"
                             },
                             {
                                 "path": "2.Dart_básico_6_Escape_caracteres",
@@ -176,7 +96,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/6_Escape_caracteres.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720682"
+                                "published": "2023-03-30T18:09:05.459792"
                             },
                             {
                                 "path": "2.Dart_básico_7_Líneas_múltiples_de_texto",
@@ -184,7 +104,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/7_Líneas_múltiples_de_texto.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720110"
+                                "published": "2023-03-30T18:09:05.459266"
                             },
                             {
                                 "path": "2.Dart_básico_8_Métodos_comunes_en_textos",
@@ -192,7 +112,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/8_Métodos_comunes_en_textos.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720329"
+                                "published": "2023-03-30T18:09:05.459449"
                             },
                             {
                                 "path": "2.Dart_básico_9_Inicialización_y_asignación",
@@ -200,15 +120,79 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/9_Inicialización_y_asignación.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720596"
+                                "published": "2023-03-30T18:09:05.459699"
                             },
                             {
-                                "path": "2.Dart_básico_Ediciones",
-                                "title": "Ediciones",
+                                "path": "2.Dart_básico_10_Contiene_y_reemplazar",
+                                "title": "10.Contiene y reemplazar",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/Ediciones.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/10_Contiene_y_reemplazar.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.720146"
+                                "published": "2023-03-30T18:09:05.459741"
+                            },
+                            {
+                                "path": "2.Dart_básico_11_Conversiones_entre_tipos",
+                                "title": "11.Conversiones entre tipos",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/11_Conversiones_entre_tipos.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.458843"
+                            },
+                            {
+                                "path": "2.Dart_básico_12_Operaciones_aritméticas",
+                                "title": "12.Operaciones aritméticas",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/12_Operaciones_aritméticas.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.458710"
+                            },
+                            {
+                                "path": "2.Dart_básico_13_Operadores_de_incremento_y_decremento",
+                                "title": "13.Operadores de incremento y decremento",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/13_Operadores_de_incremento_y_decremento.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.459137"
+                            },
+                            {
+                                "path": "2.Dart_básico_14_Operadores_lógicos_,_de_igualdad_y_relaciones",
+                                "title": "14.Operadores lógicos , de igualdad y relaciones",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/14_Operadores_lógicos_,_de_igualdad_y_relaciones.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.459984"
+                            },
+                            {
+                                "path": "2.Dart_básico_15_Operador_condicional",
+                                "title": "15.Operador condicional",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/15_Operador_condicional.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.459337"
+                            },
+                            {
+                                "path": "2.Dart_básico_16_Comentarios",
+                                "title": "16.Comentarios",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/16_Comentarios.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.459101"
+                            },
+                            {
+                                "path": "2.Dart_básico_17_Expresiones_y_declaraciones",
+                                "title": "17.Expresiones y declaraciones",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/17_Expresiones_y_declaraciones.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.459516"
+                            },
+                            {
+                                "path": "2.Dart_básico_18_Afirmaciones",
+                                "title": "18.Afirmaciones",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/2.Dart_básico/18_Afirmaciones.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.458911"
                             }
                         ]
                     },
@@ -223,7 +207,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/1_introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723622"
+                                "published": "2023-03-30T18:09:05.464098"
                             },
                             {
                                 "path": "3.Sistema_de_tipado_2_Lenguajes_estáticos_y_dinámicos",
@@ -231,7 +215,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/2_Lenguajes_estáticos_y_dinámicos.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723699"
+                                "published": "2023-03-30T18:09:05.464192"
                             },
                             {
                                 "path": "3.Sistema_de_tipado_3_Inferencia_de_tipo",
@@ -239,7 +223,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/3_Inferencia_de_tipo.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723553"
+                                "published": "2023-03-30T18:09:05.463984"
                             },
                             {
                                 "path": "3.Sistema_de_tipado_4_final_keyword",
@@ -247,7 +231,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/4_final_keyword.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723657"
+                                "published": "2023-03-30T18:09:05.464136"
                             },
                             {
                                 "path": "3.Sistema_de_tipado_5_const_keyword",
@@ -255,7 +239,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/5_const_keyword.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723766"
+                                "published": "2023-03-30T18:09:05.464229"
                             },
                             {
                                 "path": "3.Sistema_de_tipado_6_dynamic_keyword",
@@ -263,15 +247,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/6_dynamic_keyword.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723512"
-                            },
-                            {
-                                "path": "3.Sistema_de_tipado_Ediciones",
-                                "title": "Ediciones",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/3.Sistema_de_tipado/Ediciones.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723732"
+                                "published": "2023-03-30T18:09:05.463949"
                             }
                         ]
                     },
@@ -286,7 +262,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/1_introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724122"
+                                "published": "2023-03-30T18:09:05.464494"
                             },
                             {
                                 "path": "4.Flujo_de_control_2_if_else",
@@ -294,7 +270,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/2_if_else.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724275"
+                                "published": "2023-03-30T18:09:05.464627"
                             },
                             {
                                 "path": "4.Flujo_de_control_3_while_loop",
@@ -302,7 +278,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/3_while_loop.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724444"
+                                "published": "2023-03-30T18:09:05.464730"
                             },
                             {
                                 "path": "4.Flujo_de_control_4_for_loop",
@@ -310,7 +286,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/4_for_loop.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724160"
+                                "published": "2023-03-30T18:09:05.464527"
                             },
                             {
                                 "path": "4.Flujo_de_control_5_break_continue",
@@ -318,7 +294,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/5_break_continue.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724204"
+                                "published": "2023-03-30T18:09:05.464562"
                             },
                             {
                                 "path": "4.Flujo_de_control_6_switch",
@@ -326,7 +302,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/6_switch.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724409"
+                                "published": "2023-03-30T18:09:05.464695"
                             },
                             {
                                 "path": "4.Flujo_de_control_7_enumerations",
@@ -334,7 +310,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/4.Flujo_de_control/7_enumerations.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724369"
+                                "published": "2023-03-30T18:09:05.464661"
                             }
                         ]
                     },
@@ -349,7 +325,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721913"
+                                "published": "2023-03-30T18:09:05.462308"
                             },
                             {
                                 "path": "5.App_linea_comando_2_Dart_sdk",
@@ -357,7 +333,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/2_Dart_sdk.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721825"
+                                "published": "2023-03-30T18:09:05.462217"
                             },
                             {
                                 "path": "5.App_linea_comando_3_Crear,_correr_y_debuggear_en_VS_Code",
@@ -365,7 +341,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/3_Crear,_correr_y_debuggear_en_VS_Code.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721993"
+                                "published": "2023-03-30T18:09:05.462370"
                             },
                             {
                                 "path": "5.App_linea_comando_4_Resúmen_del_juego",
@@ -373,7 +349,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/4_Resúmen_del_juego.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721729"
+                                "published": "2023-03-30T18:09:05.462125"
                             },
                             {
                                 "path": "5.App_linea_comando_5_Creando_una_app_en_línea_de_comando",
@@ -381,7 +357,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/5_Creando_una_app_en_línea_de_comando.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722183"
+                                "published": "2023-03-30T18:09:05.462563"
                             },
                             {
                                 "path": "5.App_linea_comando_6_pseudo_code_del_juego",
@@ -389,7 +365,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/6_pseudo_code_del_juego.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722119"
+                                "published": "2023-03-30T18:09:05.462497"
                             },
                             {
                                 "path": "5.App_linea_comando_7_Obteniendo_user_input",
@@ -397,7 +373,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/7_Obteniendo_user_input.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721690"
+                                "published": "2023-03-30T18:09:05.462089"
                             },
                             {
                                 "path": "5.App_linea_comando_8_Implementando_el_loop",
@@ -405,7 +381,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/8_Implementando_el_loop.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721765"
+                                "published": "2023-03-30T18:09:05.462157"
                             },
                             {
                                 "path": "5.App_linea_comando_9_Implementando_la_lógica_del_juego",
@@ -413,7 +389,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/5.App_linea_comando/9_Implementando_la_lógica_del_juego.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722032"
+                                "published": "2023-03-30T18:09:05.462407"
                             }
                         ]
                     },
@@ -428,31 +404,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727259"
-                            },
-                            {
-                                "path": "6.Collections_10_Nested_collections",
-                                "title": "10.Nested collections",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/10_Nested_collections.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727458"
-                            },
-                            {
-                                "path": "6.Collections_11_Nuevos_operadores_y_statements",
-                                "title": "11.Nuevos operadores y statements",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/11_Nuevos_operadores_y_statements.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727221"
-                            },
-                            {
-                                "path": "6.Collections_12_Copiando_colecciones",
-                                "title": "12.Copiando colecciones",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/12_Copiando_colecciones.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727357"
+                                "published": "2023-03-30T18:09:05.467656"
                             },
                             {
                                 "path": "6.Collections_2_Lists",
@@ -460,7 +412,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/2_Lists.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727084"
+                                "published": "2023-03-30T18:09:05.467407"
                             },
                             {
                                 "path": "6.Collections_3_List_methods",
@@ -468,7 +420,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/3_List_methods.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727119"
+                                "published": "2023-03-30T18:09:05.467452"
                             },
                             {
                                 "path": "6.Collections_4_Type_annotations",
@@ -476,7 +428,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/4_Type_annotations.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727291"
+                                "published": "2023-03-30T18:09:05.467702"
                             },
                             {
                                 "path": "6.Collections_5_var_final_const_with_lists",
@@ -484,7 +436,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/5_var_final_const_with_lists.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727393"
+                                "published": "2023-03-30T18:09:05.467810"
                             },
                             {
                                 "path": "6.Collections_6_Sets",
@@ -492,7 +444,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/6_Sets.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727425"
+                                "published": "2023-03-30T18:09:05.467845"
                             },
                             {
                                 "path": "6.Collections_7_Maps",
@@ -500,7 +452,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/7_Maps.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727155"
+                                "published": "2023-03-30T18:09:05.467489"
                             },
                             {
                                 "path": "6.Collections_8_Type_test_operators",
@@ -508,7 +460,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/8_Type_test_operators.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727188"
+                                "published": "2023-03-30T18:09:05.467528"
                             },
                             {
                                 "path": "6.Collections_9_Iterating_on_maps",
@@ -516,7 +468,31 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/9_Iterating_on_maps.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727325"
+                                "published": "2023-03-30T18:09:05.467738"
+                            },
+                            {
+                                "path": "6.Collections_10_Nested_collections",
+                                "title": "10.Nested collections",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/10_Nested_collections.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.467923"
+                            },
+                            {
+                                "path": "6.Collections_11_Nuevos_operadores_y_statements",
+                                "title": "11.Nuevos operadores y statements",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/11_Nuevos_operadores_y_statements.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.467569"
+                            },
+                            {
+                                "path": "6.Collections_12_Copiando_colecciones",
+                                "title": "12.Copiando colecciones",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/6.Collections/12_Copiando_colecciones.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.467775"
                             }
                         ]
                     },
@@ -531,7 +507,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/7.Procesamiento_de_datos/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719016"
+                                "published": "2023-03-30T18:09:05.458190"
                             },
                             {
                                 "path": "7.Procesamiento_de_datos_2_Parseando_argumentos_desde_línea_de_comando",
@@ -539,7 +515,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/7.Procesamiento_de_datos/2_Parseando_argumentos_desde_línea_de_comando.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719157"
+                                "published": "2023-03-30T18:09:05.458387"
                             },
                             {
                                 "path": "7.Procesamiento_de_datos_3_Leyendo_archivos_línea_a_línea",
@@ -547,7 +523,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/7.Procesamiento_de_datos/3_Leyendo_archivos_línea_a_línea.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.718943"
+                                "published": "2023-03-30T18:09:05.458111"
                             },
                             {
                                 "path": "7.Procesamiento_de_datos_4_Requerimientos_del_ejercicio",
@@ -555,7 +531,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/7.Procesamiento_de_datos/4_Requerimientos_del_ejercicio.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.718779"
+                                "published": "2023-03-30T18:09:05.458001"
                             },
                             {
                                 "path": "7.Procesamiento_de_datos_5_Implementando_la_lógica",
@@ -563,7 +539,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/7.Procesamiento_de_datos/5_Implementando_la_lógica.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.719213"
+                                "published": "2023-03-30T18:09:05.458437"
                             }
                         ]
                     },
@@ -578,7 +554,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/8.Null_safety/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721236"
+                                "published": "2023-03-30T18:09:05.460511"
                             },
                             {
                                 "path": "8.Null_safety_2_Nullable_and_non_nullable_variables",
@@ -586,7 +562,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/8.Null_safety/2_Nullable_and_non_nullable_variables.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721166"
+                                "published": "2023-03-30T18:09:05.460422"
                             },
                             {
                                 "path": "8.Null_safety_3_Flow_analysis",
@@ -594,7 +570,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/8.Null_safety/3_Flow_analysis.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721272"
+                                "published": "2023-03-30T18:09:05.460551"
                             },
                             {
                                 "path": "8.Null_safety_4_jerarquías",
@@ -602,7 +578,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/8.Null_safety/4_jerarquías.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721074"
+                                "published": "2023-03-30T18:09:05.460316"
                             },
                             {
                                 "path": "8.Null_safety_5_Assertion_operator",
@@ -610,7 +586,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/8.Null_safety/5_Assertion_operator.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721198"
+                                "published": "2023-03-30T18:09:05.460463"
                             }
                         ]
                     },
@@ -625,47 +601,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723163"
-                            },
-                            {
-                                "path": "9.Functions_10_Function_types",
-                                "title": "10.Function types",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/10_Function_types.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722989"
-                            },
-                            {
-                                "path": "9.Functions_11_New_methods_on_collections",
-                                "title": "11.New methods on collections",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/11_New_methods_on_collections.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723123"
-                            },
-                            {
-                                "path": "9.Functions_12_Code_reusability",
-                                "title": "12.Code reusability",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/12_Code_reusability.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723195"
-                            },
-                            {
-                                "path": "9.Functions_13_New_methods_part_two",
-                                "title": "13.New methods part two",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/13_New_methods_part_two.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722797"
-                            },
-                            {
-                                "path": "9.Functions_14_Functional_vs_Imperative_Programming",
-                                "title": "14.Functional vs Imperative Programming",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/14_Functional_vs_Imperative_Programming.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723084"
+                                "published": "2023-03-30T18:09:05.463504"
                             },
                             {
                                 "path": "9.Functions_2_Primeras_funciones",
@@ -673,7 +609,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/2_Primeras_funciones.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722743"
+                                "published": "2023-03-30T18:09:05.463087"
                             },
                             {
                                 "path": "9.Functions_3_Function_arguments",
@@ -681,7 +617,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/3_Function_arguments.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723230"
+                                "published": "2023-03-30T18:09:05.463591"
                             },
                             {
                                 "path": "9.Functions_4_Valor_de_retorno",
@@ -689,7 +625,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/4_Valor_de_retorno.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723301"
+                                "published": "2023-03-30T18:09:05.463676"
                             },
                             {
                                 "path": "9.Functions_5_Argumentos_posicionales_y_nombrados",
@@ -697,7 +633,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/5_Argumentos_posicionales_y_nombrados.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722839"
+                                "published": "2023-03-30T18:09:05.463152"
                             },
                             {
                                 "path": "9.Functions_6_Fat_arrow_notation",
@@ -705,7 +641,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/6_Fat_arrow_notation.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723042"
+                                "published": "2023-03-30T18:09:05.463278"
                             },
                             {
                                 "path": "9.Functions_7_Lexical_scope",
@@ -713,7 +649,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/7_Lexical_scope.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722890"
+                                "published": "2023-03-30T18:09:05.463183"
                             },
                             {
                                 "path": "9.Functions_8_Pure_functions",
@@ -721,7 +657,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/8_Pure_functions.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.723266"
+                                "published": "2023-03-30T18:09:05.463633"
                             },
                             {
                                 "path": "9.Functions_9_Anonymous_functions",
@@ -729,7 +665,47 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/9_Anonymous_functions.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.722926"
+                                "published": "2023-03-30T18:09:05.463216"
+                            },
+                            {
+                                "path": "9.Functions_10_Function_types",
+                                "title": "10.Function types",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/10_Function_types.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.463248"
+                            },
+                            {
+                                "path": "9.Functions_11_New_methods_on_collections",
+                                "title": "11.New methods on collections",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/11_New_methods_on_collections.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.463446"
+                            },
+                            {
+                                "path": "9.Functions_12_Code_reusability",
+                                "title": "12.Code reusability",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/12_Code_reusability.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.463547"
+                            },
+                            {
+                                "path": "9.Functions_13_New_methods_part_two",
+                                "title": "13.New methods part two",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/13_New_methods_part_two.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.463119"
+                            },
+                            {
+                                "path": "9.Functions_14_Functional_vs_Imperative_Programming",
+                                "title": "14.Functional vs Imperative Programming",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/9.Functions/14_Functional_vs_Imperative_Programming.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.463310"
                             }
                         ]
                     },
@@ -744,7 +720,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/10.Classes/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726696"
+                                "published": "2023-03-30T18:09:05.465051"
                             },
                             {
                                 "path": "10.Classes_2_Introducción_a_Classes",
@@ -752,7 +728,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/10.Classes/2_Introducción_a_Classes.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726661"
+                                "published": "2023-03-30T18:09:05.465012"
                             },
                             {
                                 "path": "10.Classes_3_Instance_methods",
@@ -760,7 +736,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/10.Classes/3_Instance_methods.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726828"
+                                "published": "2023-03-30T18:09:05.465266"
                             },
                             {
                                 "path": "10.Classes_4_Class_constructors",
@@ -768,7 +744,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/10.Classes/4_Class_constructors.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726754"
+                                "published": "2023-03-30T18:09:05.465147"
                             },
                             {
                                 "path": "10.Classes_5_Getters_y_setters",
@@ -776,7 +752,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/10.Classes/5_Getters_y_setters.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726620"
+                                "published": "2023-03-30T18:09:05.464968"
                             },
                             {
                                 "path": "10.Classes_6_Más_sobre_variables_y_methods",
@@ -784,94 +760,94 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/10.Classes/6_Más_sobre_variables_y_methods.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726792"
+                                "published": "2023-03-30T18:09:05.465203"
                             }
                         ]
                     },
                     {
-                        "path": "11.Dart_medio",
-                        "title": "11.Dart medio",
+                        "path": "11.Test_&_debug",
+                        "title": "11.Test & debug",
                         "description": "",
                         "articles": [
                             {
-                                "path": "11.Dart_medio_1_Introducción",
+                                "path": "11.Test_&_debug_1_Introducción",
                                 "title": "1.Introducción",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/1_Introducción.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.725748"
+                                "published": "2023-03-30T18:09:05.466394"
                             },
                             {
-                                "path": "11.Dart_medio_10_Paquetes,_grupos_y_late_en_tests",
-                                "title": "10.Paquetes, grupos y late en tests",
-                                "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/10_Paquetes,_grupos_y_late_en_tests.md",
-                                "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724965"
-                            },
-                            {
-                                "path": "11.Dart_medio_2_La_terminal",
+                                "path": "11.Test_&_debug_2_La_terminal",
                                 "title": "2.La terminal",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/2_La_terminal.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/2_La_terminal.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726367"
+                                "published": "2023-03-30T18:09:05.467106"
                             },
                             {
-                                "path": "11.Dart_medio_3_Crear_y_correr_un_proyecto",
+                                "path": "11.Test_&_debug_3_Crear_y_correr_un_proyecto",
                                 "title": "3.Crear y correr un proyecto",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/3_Crear_y_correr_un_proyecto.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/3_Crear_y_correr_un_proyecto.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726085"
+                                "published": "2023-03-30T18:09:05.466762"
                             },
                             {
-                                "path": "11.Dart_medio_4_Debuggear_un_proyecto",
+                                "path": "11.Test_&_debug_4_Debuggear_un_proyecto",
                                 "title": "4.Debuggear un proyecto",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/4_Debuggear_un_proyecto.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/4_Debuggear_un_proyecto.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726324"
+                                "published": "2023-03-30T18:09:05.467071"
                             },
                             {
-                                "path": "11.Dart_medio_5_Componentes_de_un_proyecto",
+                                "path": "11.Test_&_debug_5_Componentes_de_un_proyecto",
                                 "title": "5.Componentes de un proyecto",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/5_Componentes_de_un_proyecto.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/5_Componentes_de_un_proyecto.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.725503"
+                                "published": "2023-03-30T18:09:05.466148"
                             },
                             {
-                                "path": "11.Dart_medio_6_Paquetes_en_detalle",
+                                "path": "11.Test_&_debug_6_Paquetes_en_detalle",
                                 "title": "6.Paquetes en detalle",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/6_Paquetes_en_detalle.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/6_Paquetes_en_detalle.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.725681"
+                                "published": "2023-03-30T18:09:05.466320"
                             },
                             {
-                                "path": "11.Dart_medio_7_Dart_Dev_Tools",
+                                "path": "11.Test_&_debug_7_Dart_Dev_Tools",
                                 "title": "7.Dart Dev Tools",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/7_Dart_Dev_Tools.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/7_Dart_Dev_Tools.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.724690"
+                                "published": "2023-03-30T18:09:05.465675"
                             },
                             {
-                                "path": "11.Dart_medio_8_Dart_tests,_introducción",
+                                "path": "11.Test_&_debug_8_Dart_tests,_introducción",
                                 "title": "8.Dart tests, introducción",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/8_Dart_tests,_introducción.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/8_Dart_tests,_introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.726047"
+                                "published": "2023-03-30T18:09:05.466612"
                             },
                             {
-                                "path": "11.Dart_medio_9_Test_driven_development",
+                                "path": "11.Test_&_debug_9_Test_driven_development",
                                 "title": "9.Test driven development",
                                 "description": "",
-                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Dart_medio/9_Test_driven_development.md",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/9_Test_driven_development.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.725577"
+                                "published": "2023-03-30T18:09:05.466215"
+                            },
+                            {
+                                "path": "11.Test_&_debug_10_Paquetes,_grupos_y_late_en_tests",
+                                "title": "10.Paquetes, grupos y late en tests",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/11.Test_&_debug/10_Paquetes,_grupos_y_late_en_tests.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.465794"
                             }
                         ]
                     },
@@ -886,7 +862,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721426"
+                                "published": "2023-03-30T18:09:05.461248"
                             },
                             {
                                 "path": "12.Classes_avanzado_2_Inheritance",
@@ -894,7 +870,95 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/2_Inheritance.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.721460"
+                                "published": "2023-03-30T18:09:05.461754"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_3_Super_constructor",
+                                "title": "3.Super constructor",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/3_Super_constructor.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461602"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_4_override",
+                                "title": "4.override",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/4_override.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461656"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_5_abstract_classes",
+                                "title": "5.abstract classes",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/5_abstract_classes.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461209"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_6_extends_and_implements",
+                                "title": "6.extends and implements",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/6_extends_and_implements.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461282"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_7_Heredando_de_Object",
+                                "title": "7.Heredando de Object",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/7_Heredando_de_Object.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461415"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_8_Classes_with_generics",
+                                "title": "8.Classes with generics",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/8_Classes_with_generics.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461690"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_9_factory_constructors",
+                                "title": "9.factory constructors",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/9_factory_constructors.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461168"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_10_JSON_y_factory_constructors",
+                                "title": "10.JSON y factory constructors",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/10_JSON_y_factory_constructors.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.460967"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_11_Mutabilidad_e_Inmutabilidad",
+                                "title": "11.Mutabilidad e Inmutabilidad",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/11_Mutabilidad_e_Inmutabilidad.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461119"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_12_Mixins",
+                                "title": "12.Mixins",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/12_Mixins.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461722"
+                            },
+                            {
+                                "path": "12.Classes_avanzado_13_Extensions",
+                                "title": "13.Extensions",
+                                "description": "",
+                                "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/dart_sp/12.Classes_avanzado/13_Extensions.md",
+                                "author": "The Monkslab",
+                                "published": "2023-03-30T18:09:05.461485"
                             }
                         ]
                     }
@@ -921,7 +985,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/flutter/cicd_sp/1.Introducción/1_Introducción.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.728105"
+                                "published": "2023-03-30T18:09:05.468827"
                             }
                         ]
                     },
@@ -936,7 +1000,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/flutter/cicd_sp/2.Github_Actions/3_GitHub_Actions_Externas.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.728578"
+                                "published": "2023-03-30T18:09:05.469294"
                             },
                             {
                                 "path": "2.Github_Actions_4_Primera_acción_con_flutter",
@@ -944,7 +1008,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/flutter/cicd_sp/2.Github_Actions/4_Primera_acción_con_flutter.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.728642"
+                                "published": "2023-03-30T18:09:05.469372"
                             }
                         ]
                     },
@@ -959,7 +1023,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/flutter/cicd_sp/3.Nektos_act/1_Ejecutando_acciones_en_localhost.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.728251"
+                                "published": "2023-03-30T18:09:05.468964"
                             }
                         ]
                     },
@@ -974,7 +1038,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/flutter/cicd_sp/4.Bonus_track/1_Bonus_track.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.727922"
+                                "published": "2023-03-30T18:09:05.468624"
                             }
                         ]
                     },
@@ -989,7 +1053,7 @@
                                 "description": "",
                                 "contentUrl": "https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main/flutter/cicd_sp/5.Challenge/1_Challenge.md",
                                 "author": "The Monkslab",
-                                "published": "2023-03-30T08:50:10.728813"
+                                "published": "2023-03-30T18:09:05.469574"
                             }
                         ]
                     }
