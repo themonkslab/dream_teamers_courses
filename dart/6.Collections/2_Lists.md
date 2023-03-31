@@ -1,4 +1,4 @@
-# _Lists_
+# Lists
 
 Also known as _arrays_ in other languages, they serve to represent a __collection of values__. We can initialize it as an empty _list literal_, (`[]`), fill it with values and print it as follows:
 

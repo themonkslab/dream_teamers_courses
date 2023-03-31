@@ -1,4 +1,4 @@
-# `Var`, `final` y `const` _with lists_
+# `Var`, `final` y `const` with lists
 
 We can use to declare our lists `var`, `final` and `const`, letting Dart infer their type or making explicit their type like this: `<String>[...]`.
 
