@@ -1,6 +1,6 @@
-# _Nullable and non nullable variables_
+# Nullable and non nullable variables
 
-Recuerdan en la introducción de esta sección que todos los valores por defecto no pueden ser nulos y les daba el siguiente ejemplo:
+Do you remember in the introduction of this section that by default all values cannot be null and I gave you the following example
 
 ```dart
 void main() {
@@ -8,7 +8,7 @@ void main() {
 }
 ```
 
-Ahora... cómo podemos volver a ese valor _nulleable_ o lo que es lo mismo que decir, que puede recibir _null_ como valor? Muy simple: agregando un signo de preguntas luego del tipo en el momento de declararla. Con ello, ya podemos asignarle _null_ a nuestra variable `x`.
+Now... how can we make that value _nullable_, or in other words, able to receive _null_ as a value? Very simple: by adding a question mark after the type at the time of declaration. With that, we can already assign _null_ to our variable `x`.
 
 ```dart
 void main() {
@@ -16,7 +16,7 @@ void main() {
 }
 ```
 
-Supongamos que ahora agregamos otra variable y queremos sumar ambas. 💀 Qué sucedería y por qué?
+Let's suppose we add another variable now and we want to sum both. 💀 What would happen and why?
 
 ```dart
 void main() {
@@ -26,4 +26,4 @@ void main() {
 }
 ```
 
-_The operator '+' can't be unconditionally invoked because the receiver can be 'null'._ Nos dice que el operador no puede ser invocado porque quien lo recibe puede ser nulo, ya que en ese momento de la ejecución de nuestro programa `x` puede seguir siendo nulo (y de hecho lo es) por lo que Dart salva nuestras vidas, avisándonos y lanzando un error antes de que podamos cometer cualquier atrocidad con él! 🤣
+_The operator '+' can't be unconditionally invoked because the receiver can be 'null'._ It tells us that the operator cannot be invoked since at that point in the execution of our program, `x` may still be null (and in fact it is), so Dart saves our lives by notifying us and throwing an error before we can commit any atrocity with it! 🤣
