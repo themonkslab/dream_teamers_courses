@@ -1,4 +1,4 @@
-# _Function arguments_
+# Function arguments
 
 Let's continue with the previous example and since we are in a bakery, I might know almost all the customers, so I want to greet them by name:
 
