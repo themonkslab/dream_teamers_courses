@@ -1,6 +1,6 @@
-# New operators and _statement_
+# New operators and statement
 
-## _Collection-if_
+## Collection-if
 
 Suppose we want to add something conditionally to a list. We could do it like this:
 
@@ -51,7 +51,7 @@ void main() {
 
 Note that it is not an `if` _statement_ since you could not apply it here (in the list initialization), but a new type of _statement_!
 
-## _Collection-for_
+## Collection-for
 
 Let's start by cleaning up the previous code and suppose that we would like to add the values of another color list to the previous one:
 
@@ -106,7 +106,7 @@ void main() {
 }
 ```
 
-## _Spread operator_
+## Spread operator
 
 Wouldn't it be nice to be able to put instead of that _Collection-for_ directly the variable `extraColors`? It happens that if we do that, we would be adding the list and not its elements. In order to do that, we have to use this operator: `...`. __The _spread operator_ allows us to return all the elements of the list but as independent values__:
 
@@ -126,7 +126,7 @@ void main() {
 }
 ```
 
-## _Composable_
+## Composable
 
 All the operators and statements we have seen in this article, __are _composable_, meaning that they can be combined:__
 

@@ -1,4 +1,4 @@
-# _Escaping_
+# Escaping
 
 When we saw _interpolation_ we said that we could use _single-quotes_ ('') and _double-quotes_ ("") to do it. What difference would it make?
 
@@ -9,7 +9,7 @@ What happened? Did you try to represent it like this: `print('I'm Mauro');`. If 
 One way to solve this would be instead of using single-quotes to wrap the whole text string, to use double-quotes. 💀 Try it yourself first! It would look something like this: `print("I'm Mauro");`.
 Now you can see that we no longer have errors in the console and it prints correctly. However, we have another way to solve it: _String escaping_.
 
-## `String` _escaping_
+## `String` escaping
 
 There are special values in Dart and in this case, special values when interpolating. Do you remember that we used the sign \$ to perform operations or to print the value of a variable within an interpolation? What if we want to print something like _'I have $50'_. In that case, does it help to wrap the `String` with _double-quotes_? 💀 Try it!
 

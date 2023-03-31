@@ -1,4 +1,4 @@
-# _Arithmetic operations_
+# Arithmetic operations
 
 These are the most known operations to which we add a couple that we don't use so often:
 
@@ -9,7 +9,7 @@ These are the most known operations to which we add a couple that we don't use s
 - Division of integers: __`~/`__ `print(5/2)`
 - Modulo: __`%`__ `print(5%2)`
 
-## _Assignment operators_
+## Assignment operators
 
 As you saw, you can assign a value using the _assignment operator_, `=`. Now let's add the `??=` _operator_, which is used to assign a value only if the variable we are trying to assign it to is empty, otherwise the variable keeps its value. Let's see it:
 
@@ -41,7 +41,7 @@ However, in this last case, we discover a new underline to the previous ones (re
 
 ![Subrayado amarillo](https://raw.githubusercontent.com/themonkslab/courses/main/dart/2.Dart_b%C3%A1sico/12.1_subrayado_amarillo.png)
 
-### Combining the above with _compound assignment operators_
+### Combining the above with compound assignment operators
 
 If we wanted to assign to a variable the result of adding itself with another variable or number, we would probably do something like this:
 
@@ -74,7 +74,7 @@ void main() {
 }
 ```
 
-## _Operators precedence_
+## Operators precedence
 
 It is the order in which the operators are going to be executed. What do you think will be the result of this `print(10 - 2 * 5);`? 💀 Put your mathematical skills to the test! 🤣
 
@@ -94,7 +94,7 @@ void main() {
 }
 ```
 
-## 💪 From _cm_ to _ft_
+## 💪 From cm to ft
 
 __Requirement__:
 

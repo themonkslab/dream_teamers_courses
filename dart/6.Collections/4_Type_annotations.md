@@ -1,4 +1,4 @@
-# _Type annotations_
+# Type annotations
 
 So far, we declared lists as `var`. Would that let us do something like the following? 🤔 ... 💀
 

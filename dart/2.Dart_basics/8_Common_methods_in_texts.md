@@ -19,7 +19,7 @@ If we then enter the word _'to'_, we will see that the list of operations is red
 
 There we just go down with the arrow to where it says _toUpperCase_ and press the 'tab' key or the 'enter' key to autocomplete. So we have an expression that converts every character in the contents of the variable `title`, to uppercase. Try running the code to see if it works!
 
-## _Methods_
+## Methods
 
 Looking at the expression `print(title.toUpperCase())` in detail, we know that `title`, is a variable that stores a `String`. What is `toUpperCase` then? A method!
 

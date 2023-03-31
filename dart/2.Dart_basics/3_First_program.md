@@ -10,7 +10,7 @@ What are they? They are a list of statements (or just one of them) that says wha
 
 For now, we are taking one step at a time, greeting this new world we are embarking on!
 
-## _Hello world_
+## Hello world
 
 This is the simplest program of all and it is almost a _convention_ to start with it: print on the screen "Hello world!" and here is our requirement first:
 

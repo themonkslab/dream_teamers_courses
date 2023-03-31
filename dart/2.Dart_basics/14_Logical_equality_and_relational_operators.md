@@ -13,7 +13,7 @@ In this case, we use _literals_ `int` but note that we can use any expressions w
 
 However, how would you do this if you wanted to compare multiple expressions?
 
-## _Logical operators_
+## Logical operators
 
 They can be used to invert or combine _boolean expressions_ (they result in `true` or `false`):
 

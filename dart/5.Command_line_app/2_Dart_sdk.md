@@ -1,4 +1,4 @@
-# Dart _SDK_
+# Dart SDK
 
 _SDK_ o _software development kit_ es una serie de __herramientas que utilizamos para escribir software o programas.__ Por lo general, contienen:
 
