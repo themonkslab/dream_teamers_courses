@@ -1,4 +1,4 @@
-# _Assertions_
+# Assertions
 
 We said that we were going to learn from the beginning how to write code from the tests, from the end of the code to the beginning, in order to save us a lot of problems in the future.
 
