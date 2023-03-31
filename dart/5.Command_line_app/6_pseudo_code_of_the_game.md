@@ -1,4 +1,4 @@
-# _Pseudo code_ for the game
+# Pseudo code for the game
 
 As we have been doing, let's write what we need to do in a colloquial way according to the requirements:
 

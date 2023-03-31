@@ -1,4 +1,4 @@
-# _Dynamic keyword_
+# Dynamic keyword
 
 It is a keyword that __allows us to get out of the _type safety_ proposed by Dart; it allows us to declare a variable that can be of any type at any time__. Let's first see how it is used and then understand why, in very specific cases, it can be useful:
 

@@ -1,4 +1,4 @@
-# _Final keyword_
+# Final keyword
 
 We have just discussed how Dart can infer the type of the variable according to what value we assign to it when we declare the variable and for this we use the `var` keyword in its declaration. This would allow us to assign it a new value in the future as long as it respects the initial _type_.
 

@@ -1,4 +1,4 @@
-# _Enumerations_
+# Enumerations
 
 Let us recall the previous example of the race:
 

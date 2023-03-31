@@ -1,4 +1,4 @@
-# _Switch statement_
+# Switch statement
 
 Suppose we organize a race and we want to award prizes according to the position in which each competitor arrives. We could do something like this:
 

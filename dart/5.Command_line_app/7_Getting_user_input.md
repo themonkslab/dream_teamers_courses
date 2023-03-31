@@ -1,4 +1,4 @@
-# Getting _user input_
+# Getting user input
 
 Let's start by __changing the first thing the user will see__ in our program:
 
@@ -25,7 +25,7 @@ void main() {
 
 After that, we need to get what the user enters and for that we are going to make use of a function inside a _package_, which is something we will use often.
 
-## _Packages_
+## Packages
 
 They are __libraries of functions and utilities that we can make use of, without having to write them ourselves__. To do this, we need to import these libraries.
 
