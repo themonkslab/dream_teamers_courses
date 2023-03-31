@@ -18,7 +18,7 @@ Si permitiéramos que el valor nulo se mueva por otros tipos que no es el suyo, 
 
 Cómo arregló esto _null safety_? Cambiando la jerarquía.
 
-## Nueva jerarquía desde _null safety_
+## Nueva jerarquía desde null safety
 
 __Ahora el `Null` _type_ existe pero ya no es un hijo de todos los tipos anteriores.__
 

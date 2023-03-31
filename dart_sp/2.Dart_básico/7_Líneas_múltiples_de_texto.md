@@ -32,7 +32,7 @@ void main() {
 
 Se pronuncia como 'drai' y dicha [sigla](https://www.upb.edu.co/es/central-blogs/ortografia/diferencias-entre-sigla-acronimo) refiere a los términos _Don't repeat yourself_ o no te repitas a vos mismo. Es una filosofía de definición de procesos que intenta __reducir la repetición mediante patrones, evitando la dificultad para mantener el código y mejorarlo__.
 
-En el caso anterior vemos que no hacemos más que repetir el método `print`. Tendríamos alguna forma de mejorarlo? _Again_ (otra vez), 💀 dedíquenle un tiempo a probar cómo harían para imprimir ese texto pero utilizando solamente un método print.
+En el caso anterior vemos que no hacemos más que repetir el método `print`. Tendríamos alguna forma de mejorarlo? _Again_ (otra vez), 💀 dedíquenle un tiempo a probar cómo harían para imprimir ese texto pero utilizando solamente un método `print`.
 
 La siguiente, podría parecer una solución:
 
@@ -49,7 +49,7 @@ void main() {
 }
 ```
 
-Qué sucede sin embargo en la consola? 🫠 Se imprime todo en una sola línea, una práctica poco ortodoxa para representar poesía.
+Qué sucede sin embargo en la consola? Se imprime todo en una sola línea, una práctica poco ortodoxa para representar poesía.
 
 Lo que podríamos hacer para solucionarlo, es introducir saltos de línea, utilizando el _backslash_ que ya conocemos más la letra 'n' de _new line_ o nueva línea donde querríamos que salte y _wrappear_ o envolver todas las líneas en un solo juego de _single-quotes_. Algo así:
 
@@ -63,7 +63,7 @@ Ahora sí podemos ver en la consola lo que intentamos desde un principio aunque 
 
 ## _Multilines_, implementación
 
-Ya mencionamos que teníamos tres maneras de darle valor a una `String`: _single-quotes_, _double-quotes_ y _multilines_, pero posiblemente no recordemos este último. Básicamente nos permite representar el texto tal como lo escribimos, incluyéndose de forma automática, los saltos de líneas. Lo único que teníamos que hacer era rodearlo con tres comillas simples o dobles al principio y tres al final. 💀 Hacen un intento de solucionar el problema anterior con líneas múltiples?
+Ya mencionamos que teníamos tres maneras de darle valor a una `String`: _single-quotes_, _double-quotes_ y _multilines_, pero posiblemente no recordemos este último. Básicamente nos permite representar el texto tal como lo escribimos, incluyéndose de forma automática, los saltos de líneas. Lo único que tenemos que hacer es rodearlo con tres comillas simples o dobles al principio y tres al final. 💀 Hacen un intento de solucionar el problema anterior con líneas múltiples?
 
 La solución sería algo así y díganme si no es mucho más fácil de leer:
 
@@ -76,8 +76,7 @@ Yo quiero ser, amigo,
 uno, el más mínimo, de sentimientos de cristal…
 o mejor, uno, el más ligero, de sus latidos de perfume…
 No estás tú también
-un poco sucio de letras y un poco sucio de ciudad?
-    ''');
+un poco sucio de letras y un poco sucio de ciudad?''');
 }
 ```
 
@@ -95,7 +94,7 @@ uno, el más mínimo, de sentimientos de cristal…
 o mejor, uno, el más ligero, de sus latidos de perfume…
 \tNo estás tú también
 un poco sucio de letras y un poco sucio de ciudad?
-    ''');
+''');
 }
 ```
 

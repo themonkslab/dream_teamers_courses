@@ -1,4 +1,4 @@
-# _Const keyword_
+# Const keyword
 
 Ya vimos que `var` nos permite cambiar el contenido de una variable e inferir automáticamente su tipo; `final` nos permite setear una variable también infiriendo su tipo pero que sería de solo lectura y calculada mientras ejecutamos un programa. Para qué queremos una palabra clave más?
 
@@ -14,8 +14,8 @@ Podemos declarar esa variable como `const` porque la inicializamos con un `Strin
 
 ```dart
 void main() {
-    const independenceDay = '9 de Julio';
-    final independenceDayUpperCase = independenceDay.toUpperCase();
+    final independenceDay = '9 de Julio';
+    const independenceDayUpperCase = independenceDay.toUpperCase();
 }
 ```
 

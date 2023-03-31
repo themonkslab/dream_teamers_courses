@@ -1,4 +1,4 @@
-# _Const keyword_
+# Const keyword
 
 We have already seen that `var` allows us to change the content of a variable and automatically infer its type; `final` allows us to set a variable also inferring its type but that would be read-only and calculated while executing a program. Why do we want one more keyword?
 
@@ -37,7 +37,7 @@ For this reason, __Dart prefers this type of variables__ as it allows you to gre
 
 Ah, before we continue I would like to show you that this is correct but not necessary since Dart infers the type without us having to tell it: `const String myName = 'Mauro';`.
 
-## 💪 _final_, _const_ or _var_?
+## 💪 final, const or var?
 
 __Requirement__: Analyze the following code and determine which variable can be declared with `const`, `final` or `var` and still result in a valid program.
 

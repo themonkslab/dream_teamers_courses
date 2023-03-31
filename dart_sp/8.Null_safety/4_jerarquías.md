@@ -12,7 +12,7 @@ Pero qué significa que son padres e hijos? Ya veremos herencia pero simplemente
 
 Supongamos que nos encontramos a Superman con su hijo y a Batman con el suyo: el hijo de Superman hereda la posibilidad de volar, tirar rayos con los ojos y su marcada reticencia a la kryptonita. Mientras que el hijo de Batman solo hereda fortunas! 🤣
 
-__La serie de operaciones que se permiten en algunas expresiones son definidas por su tipo.__ Repito porque esto es muy importante: La serie de operaciones que se permiten en algunas expresiones son definidas por su tipo. Si el tipo es una `List`, podemos llamar a `.add()` como ya lo vimos o si es `int` podemos utilizar el `+` pero el valor nulo, no tiene ninguno de esos métodos aunque porqué podemos imprimirlo? Porque de los únicos tres métodos con los que cuenta, uno es el `toString()`, que le permite mostrarse como si fuera una cadena de texto.
+__La serie de operaciones que se permiten en algunas expresiones son definidas por su tipo.__ Repito porque esto es muy importante: La serie de operaciones que se permiten en algunas expresiones son definidas por su tipo. Si el tipo es una `List`, podemos llamar a `.add()` como ya lo vimos o si es `int` podemos utilizar el `+`, pero el valor nulo, no tiene ninguno de esos métodos. Entonces por qué podemos imprimirlo? Porque de los únicos tres métodos con los que cuenta, uno es el `toString()`, que le permite mostrarse como si fuera una cadena de texto.
 
 Si permitiéramos que el valor nulo se mueva por otros tipos que no es el suyo, va a fallar. Y esta es __la clave de todo _null safety_: cada fallo proviene de tratar de acceder a un método o propiedad que `null` no contiene.__
 
@@ -43,7 +43,7 @@ void main() {
 
 Aquí ya respondimos la mitad en los párrafos anteriores: imprime el valor nulo porque este sí tiene dentro de sus únicos tres métodos, uno llamado `toString()` que nos permite pasar a cadena de texto su valor y por ende imprimirlo.
 
-Por el otro, nos permite acceder al método `toUpperCase()`? La gente de Dart hizo que el tipo nulleable, en este caso el `String?`, sea padre de los tipos `String` y `Null` de forma tal que pueda recibir ambas formas. En nuestro ejemplo, el _static check_ sabe que el valor es una `String` y eso es lo que recibe el padre pudiendo aplicar sus métodos, en este caso el `toUpperCase()`.
+En la otra mitad, por qué nos permite acceder al método `toUpperCase()`? La gente de Dart hizo que el tipo nulleable, en este caso el `String?`, sea padre de los tipos `String` y `Null` de forma tal que pueda recibir ambas formas. En nuestro ejemplo, el _static check_ sabe que el valor es una `String` y eso es lo que recibe el padre pudiendo aplicar sus métodos, en este caso el `toUpperCase()`.
 
 De esta forma, la jerarquía quedaría algo así, teniendo debajo de todo, una clase `Never` que no veremos por ahora y permite detener la ejecución de la aplicación y lanzar una excepción.
 

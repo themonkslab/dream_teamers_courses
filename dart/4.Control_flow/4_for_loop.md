@@ -1,4 +1,4 @@
-# _For loop_
+# For loop
 
 This type of loop is used to achieve the same thing as the _while loop_ but in a more precise way.
 

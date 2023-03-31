@@ -1,4 +1,4 @@
-# _Conditional operator_
+# Conditional operator
 
 Let's say we want to write a program that allows us to enter our age and determine whether we are over or under age. We would do something like this, from end to beginning:
 
@@ -45,7 +45,7 @@ You should already be testing it!
 
 It returns a `bool`! But we want to print some more _user friendly_ message on the console, instead of telling them _true_ or _false_. Ah, if only we had....
 
-## _Conditional operator_ or _Ternary operator_
+## Conditional operator or Ternary operator
 
 It allows us to __evaluate an expression as true or false and return the expression we want__ , as long as they are of the same type. We would see something like this:
 

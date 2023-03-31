@@ -1,4 +1,4 @@
-# _Basic types_
+# Basic types
 
 When we say basic types, we refer to the different boxes we have to store values, but specifically, to the simplest ones to use.
 

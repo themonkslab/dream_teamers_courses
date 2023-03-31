@@ -26,7 +26,7 @@ void main() {}
 
 __Al utilizar tres barras (`///`), Dart genera automáticamente una documentación__ que en Dartpad ven en ese lugar pero en escritores de código podrán ver si se paran encima, lo cual es __sumamente útil para quienes lean nuestro código o para cuando nosotros estemos leyendo códigos de otros desarrolladores__ generosos que se encargaron de explicarnos cómo está escrito su código y por qué!
 
-Por otro lado, es __muy común utilizar las dobles barras para notas a nosotros mismos o _TODOs_ (a hacer)__ e incluso en ese caso, Dartpad también los reconoce y nos recuerda de esas tareas:
+Por otro lado, es __muy común utilizar las dobles barras para notas a nosotros mismos o _TODO_ (a hacer en ingles, _to do_)__ para tareas que debemos realizar y en ese caso, Dartpad también lo reconoce y nos recuerda de esas tareas:
 
 ```dart
 /// entry point of a Dart program
@@ -50,7 +50,7 @@ void main() {
 }
 ```
 
-## _Multi-lines comment_
+## Multi-lines comments
 
 Los comentarios de líneas múltiples son __utilizados cuando aquello que queremos dejar como comentario, es de mayor tamaño.__ Para ello, empezamos el bloque de texto con `/*`, introducimos nuestro gran comentario y luego lo cerramos con `*/`. Noten que para mantener una alineación, utilizamos `*` al comienzo de cada línea del bloque pero no es necesario hacerlo:
 

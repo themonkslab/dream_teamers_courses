@@ -1,4 +1,4 @@
-# _Nested collections_
+# Nested collections
 
 Now that we understand about collections, we can learn about more complex organizations of them. _Nested_ refers to __collections that are inside other collections__.
 

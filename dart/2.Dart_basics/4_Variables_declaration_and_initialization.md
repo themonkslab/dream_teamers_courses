@@ -117,7 +117,7 @@ Now we do meet all the necessary requirements :muscle: :
 
 Let's say that in this program we are building we want to store in addition, our middle name, _in case we have one_. What happens with those who do not have a middle name? How is the application going to store something that might not exist or be... null? 😳
 
-#### _Null value_
+#### Null value
 
 It's a __value used to represent something that has no value.__
 Such a value in _Dart_ is called _null_, a special type of value that we will talk about quite a bit and quite a few headaches we are going to save ourselves if we learn about it from the beginning!
@@ -132,7 +132,7 @@ void main() {
 }
 ```
 
-## _Concatenation_ and _Interpolation_
+## Concatenation and Interpolation
 
 Good! Notice that we introduced something new and that is the possibility to _concatenate_ text values with a '+'. However, you could already see that when printing, the space between the two names is missing and they are overlapping. We are going to create that space just by adding a space:
 
