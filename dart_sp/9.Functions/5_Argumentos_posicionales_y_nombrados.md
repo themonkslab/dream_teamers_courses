@@ -24,7 +24,7 @@ Cuando llamamos a `describe`, fíjense que le pasamos el nombre, la edad y final
 
 Hasta acá, todo perfecto! Pero __qué sucedería si tuvieran más argumentos? O si esta función se encontrara en otro archivo?__ Tendrían que ir y venir cada vez para asegurarse que estén en el orden correcto y eso es muy _prone to error_ o susceptible de que cometamos un error. Por ello, Dart agrega los _named parameters_ o parámetros nombrados.
 
-## _Named parameters_
+## Named parameters
 
 Para crear este tipo de argumentos, solo tenemos que rodear los posicionales que ya tenemos, con `{}` y listo: `String describe({String friendName, int age, String sport}) {}`. Sin embargo, observen qué sucede si solamente cambiamos la declaración de la función y no el llamado:
 
@@ -72,9 +72,9 @@ String describe({String friendName, int age, String sport}) {
 
 Pero qué pasó!? 😭 Sigue dando errores! Y es porque Dart no está seguro de que esos valores lleguen cada vez que llamamos a la función! Cómo hacemos esto!?
 
-## _Required_ y _default values_
+## Required y default values
 
-Como declaramos nuestros parámetros en el ejemplo anterior, esto es con _named parameters_, le estamos por diciendo a Dart que por defecto esos valores no son pedidos de forma obligatoria. Para ello, debemos agregar una palabrita: _required_:
+Como declaramos nuestros parámetros en el ejemplo anterior, esto es con _named parameters_, le estamos diciendo a Dart que por defecto esos valores no son pedidos de forma obligatoria. Para ello, debemos agregar una palabrita: _required_:
 
 ```dart
 void main() {
@@ -123,7 +123,7 @@ String describe({required String friendName,required int age, String? sport}) {
 
 En este último caso nos permitimos chequear si el valor que le pasamos es nulo y cambiamos nuestra descripción en concordancia. Y qué pasaría si Julia fuera Argentina que ganó la tercera copa del mundo, lo que hizo que cada persona Argentina viva ame el fútbol? A lo mejor ella lo dice cuando se describe, o a lo mejor quiere mencionar otro deporte pero seguro seguro seguro, el fútbol será uno de los deportes favoritos. Y si no pone nada pero igual ya sabemos esto del fútbol? Qué podemos hacer?
 
-## _Default values_
+## Default values
 
 Podemos poner un valor por defecto: si ella no menciona ninguno, el valor por defecto será `soccer` y si lo hace, será aquél que ella mencione. Se hace simplemente sacándole el tipo nulleable (ya que jamás será nulo) y poniendo un signo `=` con el valor por defecto luego. 💀 Sin embargo, van a tener una advertencia. Por qué?:
 
@@ -173,7 +173,7 @@ String describe(
 }
 ```
 
-Finalmente también podemos declarar valores posicionales opcionales y hasta darles un valor por defecto. Para hacerlos opcionales, los rodeamos con `[]` y agregamos el `?`:
+Finalmente también podemos declarar argumentos posicionales opcionales y hasta darles un valor por defecto. Para hacerlos opcionales, los rodeamos con `[]` y agregamos el `?`:
 
 ```dart
 void main() {
@@ -197,7 +197,7 @@ String describe(
 }
 ```
 
-Y  para declarar  _default values_ lo hacen igual que en los casos anteriores, solamente que siguen rodeando al valor con `[]`:
+Y para declarar  _default values_ lo hacen igual que en los casos anteriores, solamente que siguen rodeando al valor con `[]`:
 
 ```dart
 void main() {
