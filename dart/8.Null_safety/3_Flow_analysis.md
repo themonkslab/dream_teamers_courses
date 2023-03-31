@@ -25,7 +25,7 @@ As you can see, Dart no longer notifies us of anything, and when we run, we have
 
 Pero esto puede hacerlo de forma aun más inteligente y decidir el cambio de tipo de una variable! 🤨 Cómo?
 
-## _Promotion_
+## Promotion
 
 But this, Dart can do even smarter and decide to change the type of a variable! 🤨 How?
 
@@ -45,7 +45,7 @@ In this case, Dart is smart enough to realize that we have foreseen that `x` can
 
 And it goes on!
 
-## _Definite assignment_
+## Definite assignment
 
 Let's suppose we are at the entrance of a virtual disco (in Argentina they are called 'boliches') and we want to answer to whoever wants to enter, if he/she can or cannot do it depending on whether he/she is of legal age or not. How would we do it? 💀 What would happen with the following example?
 
@@ -156,7 +156,7 @@ void main() {
 
 To be honest, I never had any real desire to finish this article! We could even make that previous code more beautiful and simple! How? by using the...
 
-## _Conditional access operator_
+## Conditional access operator
 
 This _conditional access operator_, allows us to call a function, method or property of a value only if the value is not null and again we use our beloved `?`, in this way:
 

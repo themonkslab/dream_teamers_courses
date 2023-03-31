@@ -1,4 +1,4 @@
-# _Assertion operator_
+# Assertion operator
 
 Suppose we have an online store and we want to give a bonus to those who buy over $5000. We could represent it with the following code:
 
@@ -31,7 +31,7 @@ const cart = 5001;
 
 How would you do the same exercise but now with a little more grace? Note that Dartpad is making a recommendation: prefer to use _if-null_ operators.
 
-## _if-null operator_
+## if-null operator
 
 Basically it says that if the value that we put before this operator is null then we use another value that we provide later. Try the exercise with this hint: we saw it as a teaser in a previous lesson (2.Dart basic / 4. Variables, declaration and initialization): `??`. 💀 Go review and try it!
 
@@ -52,7 +52,7 @@ In this case, we first use the _if-null operator_ (`??`): if `maybeBonus` is not
 
 Now, this seems like a lot of hassle if we are sure that the purchase has been over 5000, which is something that in many instances will happen to us: we will have done the necessary checks and tests to have that security in place. Do we then have to write all this code or can we do something else?
 
-## Now yes, the _Assertion operator_
+## Now yes, the Assertion operator
 
 Of course we can and it is about using the _assertion operator_ (`!`), which allows us to assign a nullable value to a non-nullable variable. It would look totally the same as the first case only with one addition:
 
@@ -77,7 +77,7 @@ And what happens when we think we are absolutely sure but it turns out that some
 
 The idea is that you use the `??` if you have a default or alternative value in case the value is null and use the `!` only if you are one hundred percent sure that at _runtime_, that value will not be null.
 
-## _Augmented assignment if-null operator_
+## Augmented assignment if-null operator
 
 Whaaaat!? 🤣 It sounds very complex and fancy but it is actually very simple: it serves to assign a value only if that value is null.
 

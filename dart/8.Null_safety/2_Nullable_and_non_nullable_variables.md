@@ -1,4 +1,4 @@
-# _Nullable and non nullable variables_
+# Nullable and non nullable variables
 
 Do you remember in the introduction of this section that by default all values cannot be null and I gave you the following example
 

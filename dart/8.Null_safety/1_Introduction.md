@@ -12,7 +12,7 @@ Remember we talked about two stages of an app? __If our error was detected__ in 
 
 Wouldn't it be much better to be able to discover these errors when we are writing the code? Yes, that's why _Sound null safety_ was created in Dart! 😍
 
-## _Sound null safety_
+## Sound null safety
 
 It is a _feature_ of Dart that says that any value cannot be null unless we make it explicit otherwise. What would this look like? 💀 Just try typing the following code in Dartpad and try to understand the error:
 

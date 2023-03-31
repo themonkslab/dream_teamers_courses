@@ -18,7 +18,7 @@ If we were to allow the null value to move through types other than its own, it 
 
 How did _null safety_ to fix this ? By changing the hierarchy.
 
-## New hierarchy since _null safety_
+## New hierarchy since null safety
 
 __Now the `Null` _type_ exists but is no longer a child of all previous types__.
 
