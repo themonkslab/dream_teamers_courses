@@ -1,6 +1,6 @@
 # Assertion operator
 
-Supongamos que tenemos una tienda en línea y queremos dar un bono a aquellos que compren por encima de $5000. Podríamos representarlo con el siguiente código:
+Suppose we have an online store and we want to give a bonus to those who buy over $5000. We could represent it with the following code:
 
 ```dart
 void main() {
@@ -14,7 +14,7 @@ void main() {
 }
 ```
 
-Qué sucede con `maybeBonus` (talvez bonus)? Como Dart no puede calcularlo con _static type_ antes de compilar, no puede saber si `maybeBonus` será nulo al momento de querer asignarlo a `bonus` por lo que nos dice que un valor del tipo `double?` (un `double` nulleable) no puede ser asignado a un `double` (un `double` no nulleable). 💀 Para solucionarlo, qué podrían hacer? Tienen todos los elementos!
+What happens with `maybeBonus`? As Dart cannot calculate it with _static type_ before compiling, it cannot know if `maybeBonus` will be null while assigning it to `bonus` so it tells us that a value of type `double?` (a nullable `double`) cannot be assigned to a `double` (a non-nullable `double`). 💀 To solve this, what could you do? You have all the elements!
 
 ```dart
 void main() {
@@ -29,11 +29,11 @@ const cart = 5001;
 }
 ```
 
-Cómo harían hacer el mismo ejercicio pero ahora con un poquito más de gracia? Fíjense que Dartpad les está haciendo una recomendación: prefieran utilizar operadores _if-null_.
+How would you do the same exercise but now with a little more grace? Note that Dartpad is making a recommendation: prefer to use _if-null_ operators.
 
 ## if-null operator
 
-Básicamente dice que si el valor que le anteponemos a este operador es nulo entonces utilicemos otro que le proveemos luego. Prueben el ejercicio con esta pista: lo vimos como un adelanto en una lección previa (2.Dart básico / 4. Variables, declaración e inicialización): `??`. 💀 Vayan a repasar e intenten hacerlo!
+Basically it says that if the value that we put before this operator is null then we use another value that we provide later. Try the exercise with this hint: we saw it as a teaser in a previous lesson (2.Dart basic / 4. Variables, declaration and initialization): `??`. 💀 Go review and try it!
 
 ```dart
 void main() {
@@ -48,13 +48,13 @@ const cart = 5001;
 }
 ```
 
-En este caso, utilizamos primero el _if-null operator_ u operador si es nulo (`??`): si `maybeBonus` no es nulo, entonces su valor es utilizado; si es nulo, entonces utiliza el valor que ponemos a su derecha, `0` en este caso. Luego de ello, chequeamos si `bonus` es igual a `0` o no para imprimir distintos mensajes.
+In this case, we first use the _if-null operator_ (`??`): if `maybeBonus` is not null, then its value is used; if it is null, then it uses the value we put to its right, `0` in this case. After that, we check if `bonus` is equal to `0` or not to print different messages.
 
-Ahora bien, esto parece mucho embrollo si estamos seguros de que la compra ha sido mayor a 5000, que es algo que en muchas instancias nos va a suceder: habremos hechos los chequeos y tests necesarios para tener esa seguridad en dicho lugar. Tenemos entonces que escribir todo este código o podemos hacer algo distinto?
+Now, this seems like a lot of hassle if we are sure that the purchase has been over 5000, which is something that in many instances will happen to us: we will have done the necessary checks and tests to have that security in place. Do we then have to write all this code or can we do something else?
 
-## Ahora sí, el Assertion operator
+## Now yes, the Assertion operator
 
-Claro que podemos y se trata de utilizar el _assertion operator_ u operador de afirmación (`!`), que nos permite asignar un valor nulleable a una variable no nulleable. Se vería totalmente igual al primer caso solo con un agregado:
+Of course we can and it is about using the _assertion operator_ (`!`), which allows us to assign a nullable value to a non-nullable variable. It would look totally the same as the first case only with one addition:
 
 ```dart
 void main() {
@@ -64,24 +64,24 @@ void main() {
     maybeBonus = 500;
   }
   double bonus =
-      maybeBonus!; // 💃🏼 nota de atención para que vean el agregado 🤣
+      maybeBonus!; // 💃🏼 note of attention to see the aggregate 🤣
   print('You have a bonus of $bonus');
 }
 ```
 
-Ya verán que en este caso, no nos salta ningún tipo de error y esto es porque nosotros le dijimos a Dart 'quedate tranquilo que sabemos lo que hacemos'. Debido a que en este caso somos nosotros los que estamos en control, realmente tienen que estar seguros de lo que hacen!
+You will see that in this case, we do not get any kind of error and this is because we told Dart 'rest assured that we know what we are doing'. Since in this case we are the ones in control, we really have to be sure of what we are doing!
 
-Y qué sucede cuando creen uno está absolutamente seguro pero resulta que algo en el proceso no era exactamente como lo previmos y llega a ese lugar y el valor resulta ser nulo? 💥 Baaaang! Explota todo! 🤣 Y por esta razón es que a este operador también se lo llama el _bang operator_!
+And what happens when we think we are absolutely sure but it turns out that something in the process was not exactly as we predicted and it gets to that place and the value turns out to be null? 💥 Baaaang! It blows everything up! 🤣 And this is why this operator is also called the _bang operator_!
 
-## Cuándo utilizar ! y cuando ??
+## When to use ! and when ??
 
-La idea es que utilicen el `??` si tienen un valor por defecto o alternativo en caso de que el valor sea nulo y utilicen el `!` solamente si están ciento por ciento seguros de que a _runtime_, ese valor no será nulo.
+The idea is that you use the `??` if you have a default or alternative value in case the value is null and use the `!` only if you are one hundred percent sure that at _runtime_, that value will not be null.
 
 ## Augmented assignment if-null operator
 
-Whaaaat!? 🤣 Suena muy complejo y _fancy_ (elegante) pero en realidad es muy simple: sirve para asignar un valor solo si ese valor es nulo.
+Whaaaat!? 🤣 It sounds very complex and fancy but it is actually very simple: it serves to assign a value only if that value is null.
 
-Supongamos que en el ejemplo que venimos trabajando queremos corregir el valor del bono una vez que pueda haber sido asignado. 😒 Sí, entiendo que es un poco rebuscado pero en sus propios programas encontrarán mejores casos de uso 😂! Podríamos hacer algo así:
+Suppose that in the example we have been working on we want to correct the value of the bonus once it may have already been assigned. 😒 Yes, I understand it's a bit far-fetched but in your own programs you will find better use cases 😂! We could do something like this:
 
 ```dart
 void main() {
@@ -97,7 +97,7 @@ void main() {
 }
 ```
 
-Ahora y para finalizar, van a ver que Dartpad les muestra un _warning_ o advertencia diciendo que `maybeBonus` no puede ser nulo jamás ya que lo hemos asignado con anterioridad! Muy inteligente y útil! Así que el ejemplo sin _warnings_ sería el siguiente:
+Now and to finish, you will see that Dartpad shows you a _warning_ or saying that `maybeBonus` can never be null since we have assigned it before! Very clever and useful! So the example without _warnings_ would be as follows:
 
 ```dart
 void main() {
@@ -108,7 +108,7 @@ void main() {
   }
   maybeBonus ??= 1000;
   double bonus =
-      maybeBonus; // 💃🏼 nota de atención otra vez! 🤣
+      maybeBonus; // 💃🏼 attention note again! 🤣
   print('You have a bonus of $bonus');
 }
 ```

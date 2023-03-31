@@ -1,10 +1,10 @@
-# Afirmaciones o _assertions_
+# Afirmaciones o assertions
 
 Dijimos que íbamos a aprender desde el principio cómo escribir código desde los tests, desde el final del código al principio, con el objetivo de ahorrarnos muchos problemas a futuro.
 
 A medida que avanzamos en el curso, no solamente tratamos de instalar en nuestras mentes la forma de hacerlo sino que vamos aprendiendo herramientas nuevas que nos permiten hacerlo mejor y este es el caso de las _assertions_.
 
-Las _assertions_, __son un _statement_,__ una pieza de código que va a hacer algo. Lo que hace es __evaluar una condición__ y arrojando si dicha condición es __verdadera o falsa__: __si es falsa, corta la execución del programa__ y lanza una excepción o _exception_ (errores que indican que sucedió algo que no esperábamos sucediera).
+Las _assertions_, __son un _statement_,__ una pieza de código que va a hacer algo. Lo que hace es __evaluar una condición__ y arrojando si dicha condición es __verdadera o falsa__: __si es falsa, corta la execución del programa__ y lanza una excepción o _exception_ (errores que indican que sucedió algo que no esperábamos sucediera). Y si la condición es __verdadera__?
 
 Qué creen que sucederá con las siguientes líneas? 💀 Se animan a preveer cuáles van a lanzar excepciones?
 

@@ -9,7 +9,7 @@ Supongamos que el ajo no me hace muy bien y __quiero elaborar una app__ que lea 
 5. Asignar la respuesta del chequeo del paso previo a nuestra variable que nos dice si tiene ajo o no.
 6. Imprimir en consola el resultado de comprobar si la receta tiene ajo o no, segun la variable creada.
 
-Esto que acabamos de hacer recibe el nombre de __Pseudo code__ y es una metodología que nos permite __representar los pasos__ para crear un algoritmo o solucionar un problema, __de forma coloquial o corriente__. Desde aquí, lo único que tenemos que hacer, es traducirlo a código! Vamos a ir haciendo esa conversión de a poquito y yendo de atrás hacia adelante, siguiendo nuestra __estrategia de crear desde los tests o desde qué deberíamos tener cuando nuestro programa esté terminado__.
+Esto que acabamos de hacer recibe el nombre de __Pseudo code__ y es una metodología que nos permite __representar los pasos__ para crear un algoritmo o solucionar un problema, __de forma coloquial o corriente__. Desde aquí, lo único que tenemos que hacer, es traducirlo a código! Vamos a ir haciendo esa conversión de a poquito y yendo de fin a principio, siguiendo nuestra __estrategia de crear desde los tests o desde qué deberíamos tener cuando nuestro programa esté terminado__.
 
 El objetivo final es '6. Imprimir en consola el resultado de comprobar si la receta tiene ajo o no, según la variable creada'. Se vería algo así:
 
@@ -18,8 +18,9 @@ void main() {
     print('Contains \'garlic\': $containsGarlic');
 }
 ```
+Notaron como usamos el caracter de escape?
 
-Como ya vieron, esto nos da un error porque la variable _containsGarlic_ (contieneAjo),  aun no ha sido declarada ni inicializada y esta es la forma en la que vamos creando desde el final: sabemos que nuestro paso entonces es crear dicha variable.
+Bien, entonces como ya vieron, esto nos da un error porque la variable _containsGarlic_ (contieneAjo),  aun no ha sido declarada ni inicializada y esta es la forma en la que vamos creando desde el final: sabemos que nuestro paso entonces es crear dicha variable.
 
 ```dart
 void main() {
@@ -28,7 +29,7 @@ void main() {
 }
 ```
 
-Ahora nos tira otro error: _'The non-nullable local variable 'containsGarlic' must be assigned before it can be used.'_ Dice que la variable local no nulleable (no puede estar vacía) debe estar asignada antes de ser utilizada. Sin embargo, antes de asignarle un valor, tenemos que chequear si la receta contiene o no ajo. Observen cómo __de esta forma, es más bien Dart que nos va guiando qué código escribir__.
+Ahora nos tira otro error: _'Non-nullable local variable 'containsGarlic' must be assigned before it can be used.'_ Dice que la variable local no nulleable (no puede estar vacía) debe estar asignada antes de ser utilizada (recuerden: _sound null safety_). Sin embargo, antes de asignarle un valor, tenemos que chequear si la receta contiene o no ajo. Observen cómo __de esta forma, es más bien Dart que nos va guiando qué código escribir__.
 
 ## _Contains_ o contiene
 
@@ -49,7 +50,7 @@ Olive oil
 }
 ```
 
-Sigue quejándose de la misma forma así que vamos a resolverlo utilizando el método _contains_. Este método __se encarga de buscar dentro de nuestras cadenas de texto el patrón que decidamos y nos devuelve o retorna un valor booleano__: es verdadero o falso que nuestro texto contiene dicho patrón. En el siguiente caso, si solamente tuviéramos la receta, sería algo así:
+Sigue quejándose de la misma forma así que vamos a resolverlo utilizando el método _contains_. Este método __se encarga de buscar dentro de nuestras cadenas de texto el patrón que decidamos y nos devuelve o retorna un valor booleano__: es verdadero o falso que nuestro texto contiene dicho patrón. En el siguiente caso, si solamente tuviéramos la receta, sería algo así (presten atención a como utilizamos el método al añadir luego de la variable el punto):
 
 ```dart
 void main() {
@@ -88,7 +89,7 @@ De esta manera, nuestro código se entiende sin tener que explicar cómo está e
 
 ## El operador || (OR)
 
-Va a retornar el primer _true_ que encuentre. Si de analizar la primer operación resulta un _true_, ya no continua y retorna ese valor; si la primera da _false_, continua a la siguiente y solamente retorna _false_ si todas dieron como resultado _false_. No se preocupen que esto lo veremos luego, aunque me gusta ir mostrándole estas cosas de apoquito, con el uso.
+Es un operar que va a retornar _true_ o _false_ cuando analice dos o mas operaciones. Si de analizar la primer operación resulta un _true_, ya no continua y retorna ese valor; si la primera da _false_, continua a la siguiente y el operador solamente retorna _false_ si todas dieron como resultado _false_. No se preocupen que esto lo veremos luego, aunque me gusta ir mostrándole estas cosas de apoquito, con el uso.
 
 ```dart
 void main() {
