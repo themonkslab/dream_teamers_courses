@@ -25,7 +25,7 @@ Viendo la expresión `print(title.toUpperCase())` con detalle, sabemos que `titl
 
 Un método es __una o varias operaciones que pueden realizarse sobre una determinada _variable_ u _object_ (objeto)__. Para _llamarlo_ utilizamos '.' o _dot operator_ y para _ejecutarlo_, los '()': __Object.method()__.
 
-Por otro lado, también podemos observar que `print(...)` realiza una operación y es llamado con paréntesis. Además van a escuchar llamarlo 'método' aunque sin embargo, se trata de una _function_ o función.
+Por otro lado, también podemos observar que `print(...)` realiza una operación y es llamado con paréntesis. Si bien van a escuchar llamarlo 'método', se trata de una _function_ o función.
 
 Finalmente, el método _toUpperCase_ puede aplicarse a todas las `String`. En el caso anterior lo aplicamos a una variable pero también podría hacerse sobre una _string literal_ o cadena literal de texto: `title = 'Dart course'.toUpperCase()`. De esta manera, la variable contendría ya el texto en mayúsculas.
 

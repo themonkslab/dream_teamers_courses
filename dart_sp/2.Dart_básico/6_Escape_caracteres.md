@@ -30,7 +30,7 @@ void main() {
 }
 ```
 
-Y cuando les dije finalmente, me olvidaba de lo siguiente: qué sucede si queremos imprimir un _path_ del sistema operativo Windows: ' C:\Windows\System32\AnotherFolder\AndAnother\And\So\On'? Deberían escapar cada una de esas barras inversas invertidas (_backslash_)! Una pesadilla! 😵‍💫 Por suerte, tenemos una forma más de expresar `String`s, y es definiéndola como una `String` cruda o _raw_ agregándole una 'r' antes del _String delimiter_ o delimitador de la cadena de texto.
+Y cuando les dije finalmente, me olvidaba de lo siguiente: qué sucede si queremos imprimir un _path_ del sistema operativo Windows: 'C:\Windows\System32\AnotherFolder\AndAnother\And\So\On'? Deberían escapar cada una de esas barras inversas invertidas (_backslash_)! Una pesadilla! 😵‍💫 Por suerte, tenemos una forma más de expresar `String`, y es definiéndola como una `String` cruda o _raw_ agregándole una 'r' antes del _String delimiter_ o delimitador de la cadena de texto.
 
 ```dart
 void main() {

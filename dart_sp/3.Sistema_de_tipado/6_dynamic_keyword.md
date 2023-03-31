@@ -1,4 +1,4 @@
-# _Dynamic keyword_
+# Dynamic keyword
 
 Es una palabra clave que __nos permite salirnos del _type safety_ (seguridad de tipo) que nos propone Dart; nos permite declarar una variable que puede ser de cualquier tipo en cualquier momento__. Veamos primero cómo se utiliza y luego entendamos el por qué en casos muy específicos, puede sernos de utilidad:
 

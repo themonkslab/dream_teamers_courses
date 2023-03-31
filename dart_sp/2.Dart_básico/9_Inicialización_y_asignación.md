@@ -16,7 +16,7 @@ void main() {
 
 💀 Quiero que me digan, qué se imaginan que sucedería si la _function_ `print`, se utilizara antes de haberle asignado un valor a la _variable_ `myFirstName`.
 
-1. Me señalaría con un señalado azul que puede mejorarse el código.
+1. Me señalaría con azul que puede mejorarse el código.
 2. Me señalaría un error con rojo diciendo que la variable tiene que _asignarse_ antes de ser utilizada.
 3. No me señalaría nada.
 
