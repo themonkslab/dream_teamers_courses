@@ -1,4 +1,4 @@
-# _Final keyword_
+# Final keyword
 
 Recién comentamos como Dart puede inferir el tipo de variable según qué valor le asignemos cuando declaramos dicha variable y para ello utilizamos la palabra clave `var` en su declaración. Esto nos permitiría asignarle un valor nuevo en el futuro siempre que respete el _type_ inicial.
 
@@ -14,7 +14,7 @@ void main() {
 }
 ```
 
-Aquí podemos ver que la variable `dayOfTheWeek` necesita cambiar su contenido o _value_ a medida que avanza la semana pero __qué pasaría__ en el caso siguiente: estamos midiendo el resultado de un entrenamiento, __vamos a ir calculando__ el contenido de cada día __a medida que el programa avance__ (no lo sabemos antes de empezar el programa) __pero queremos que los resultados no cambien__ ni se le pueden asignar nuevos valores.
+Aquí podemos ver que la variable `dayOfTheWeek` necesita cambiar su contenido o _value_ a medida que avanza la semana. Sin embargo, __qué pasaría__ en el caso siguiente: estamos midiendo el resultado de un entrenamiento y __vamos a ir anotando las mediciones de cada día a medida que el programa avance__ (no lo sabemos antes de empezar el programa) __pero queremos que los resultados no cambien__ ni se le pueden asignar nuevos valores.
 
 __La palabra clave _final_ nos permite declarar una variable que va a ser de solo lectura__, no podremos asignarle un nuevo valor en el futuro:
 

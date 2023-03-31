@@ -1,9 +1,9 @@
-# _Conditional operator_ u operador condicional
+# Conditional operator u operador condicional
 
 Supongamos que queremos escribir un programa que nos permita introducir la edad que tenemos y determinar si somos mayores o menores de edad. Haríamos algo así, de atrás para adelante:
 
 - Imprimir en pantalla si somos mayores o menores de edad.
-- Calcular una variable con nuestra edad, si somos mayores o menores de edad y retornarlo.
+- Calcular en una variable si somos mayores o menores de edad y retornarlo.
 - Crear una variable para almacenar el resultado de la operación que haremos.
 - Guardar la variable de nuestra edad.
 
@@ -63,7 +63,7 @@ void main() {
 
 Como verán, tenemos el programa listo... o ... casi listo! 🧐 Si nos ponemos meticulosos, la variable que almacena el resultado es `isUnderAge` que significa si está por debajo del límite de edad pero en realidad, cuando iba escribiendo el `print` me di cuenta que quería expresar si era un adulto o un niño y preguntarlo tal como lo hice. Para poder probarlo, avancé pero sabiendo que tendría que cambiar luego la variable `isUnderAge` por otra como `isAndAdult`.
 
-Este tipo de comportamiento que todos tenemos con el objetivo de movernos más rápido, no suele ser eficaz el grueso de las veces. Ahora, el programa no falló y estamos próximos de aquello que queremos cambiar. No obstante, no es siempre el caso, nos enredamos en complicaciones y nos olvidamos de aquello que debíamos cambiar. Aun sin lograrlo la mayor parte del tiempo, sigo recomendado esta forma.
+Este tipo de comportamiento que todos tenemos con el objetivo de movernos más rápido, no suele ser eficaz el grueso de las veces. Ahora, el programa no falló y estamos próximos de aquello que queremos cambiar. No obstante, no es siempre el caso, nos enredamos en complicaciones y nos olvidamos de aquello que debíamos cambiar. Aun sin lograrlo yo mismo la mayor parte del tiempo, sigo recomendado esta forma.
 
 ```dart
 void main() {

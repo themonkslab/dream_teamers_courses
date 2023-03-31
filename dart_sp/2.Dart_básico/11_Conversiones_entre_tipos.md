@@ -84,8 +84,6 @@ void main() {
     double y = x; // en rojo van a ver un error:
                   // un valor del tipo `int` no puede
                   // asignarse a un valor del tipo `double`
-                  // salvo que le agreguen un decimal
-                  // que en este caso sería: 10.0
 }
 ```
 
@@ -100,9 +98,9 @@ void main() {
 
 ```dart
 void main() {
-    int x = 10;
     double y = 20; // double promotion 👆
-                   // o como escribir 20.0
+                   // No necesitamos escribir los
+                   // decimales para que sea un double
 }
 ```
 
@@ -110,7 +108,8 @@ void main() {
 
 ```dart
 void main() {
-    int x = 10;
     int y = 20.6.round(); // 21 (redondeo ⭕️)
 }
 ```
+
+Recuerden que pueden ver si funcionó agregando un `Print` al final del código.
