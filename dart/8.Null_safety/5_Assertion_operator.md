@@ -1,4 +1,4 @@
-# _Assertion operator_
+# Assertion operator
 
 Supongamos que tenemos una tienda en línea y queremos dar un bono a aquellos que compren por encima de $5000. Podríamos representarlo con el siguiente código:
 
@@ -31,7 +31,7 @@ const cart = 5001;
 
 Cómo harían hacer el mismo ejercicio pero ahora con un poquito más de gracia? Fíjense que Dartpad les está haciendo una recomendación: prefieran utilizar operadores _if-null_.
 
-## _if-null operator_
+## if-null operator
 
 Básicamente dice que si el valor que le anteponemos a este operador es nulo entonces utilicemos otro que le proveemos luego. Prueben el ejercicio con esta pista: lo vimos como un adelanto en una lección previa (2.Dart básico / 4. Variables, declaración e inicialización): `??`. 💀 Vayan a repasar e intenten hacerlo!
 
@@ -52,7 +52,7 @@ En este caso, utilizamos primero el _if-null operator_ u operador si es nulo (`?
 
 Ahora bien, esto parece mucho embrollo si estamos seguros de que la compra ha sido mayor a 5000, que es algo que en muchas instancias nos va a suceder: habremos hechos los chequeos y tests necesarios para tener esa seguridad en dicho lugar. Tenemos entonces que escribir todo este código o podemos hacer algo distinto?
 
-## Ahora sí, el  _Assertion operator_
+## Ahora sí, el Assertion operator
 
 Claro que podemos y se trata de utilizar el _assertion operator_ u operador de afirmación (`!`), que nos permite asignar un valor nulleable a una variable no nulleable. Se vería totalmente igual al primer caso solo con un agregado:
 
@@ -77,7 +77,7 @@ Y qué sucede cuando creen uno está absolutamente seguro pero resulta que algo 
 
 La idea es que utilicen el `??` si tienen un valor por defecto o alternativo en caso de que el valor sea nulo y utilicen el `!` solamente si están ciento por ciento seguros de que a _runtime_, ese valor no será nulo.
 
-## _Augmented assignment if-null operator_
+## Augmented assignment if-null operator
 
 Whaaaat!? 🤣 Suena muy complejo y _fancy_ (elegante) pero en realidad es muy simple: sirve para asignar un valor solo si ese valor es nulo.
 

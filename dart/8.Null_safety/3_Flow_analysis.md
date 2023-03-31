@@ -25,7 +25,7 @@ Como pueden ver, ya Dart no nos avisa nada y cuando ejecutamos, no tenemos ning�
 
 Pero esto puede hacerlo de forma aun más inteligente y decidir el cambio de tipo de una variable! 🤨 Cómo?
 
-## _Promotion_
+## Promotion
 
 Vamos a imprimir la suma solamente si `x` no es nulo; caso contrario avisaremos con un `print` al usuario de que `x` es `null`:
 
@@ -45,7 +45,7 @@ En este caso, Dart es lo suficientemente inteligente para darse cuenta que hemos
 
 Y esto sigue!
 
-## _Definite assignment_
+## Definite assignment
 
 Supongamos que estamos en la entrada de una disco virtual (en Argentina se les llama 'boliches') y queremos responder a quien quiere entrar, si puede o no hacerlo en función de si es mayor o no de edad. Cómo lo haríamos? 💀 Qué pasaría con el siguiente ejemplo?
 
@@ -156,7 +156,7 @@ void main() {
 
 Aunque para serles sinceros, nunca tuve el deseo real de terminar este artículo! Aun podríamos hacer ese código anterior más bello y simple! Cómo? Utilizando el...
 
-## _Conditional access operator_
+## Conditional access operator
 
 Este operador de acceso condicional, nos permite llamar a una función, método o propiedad de un valor solo si el valor no es nulo y nuevamente utilizamos nuestro querido `?`, de esta manera:
 

@@ -1,4 +1,4 @@
-# _Nullable and non nullable variables_
+# Nullable and non nullable variables
 
 Recuerdan en la introducción de esta sección que todos los valores por defecto no pueden ser nulos y les daba el siguiente ejemplo:
 
