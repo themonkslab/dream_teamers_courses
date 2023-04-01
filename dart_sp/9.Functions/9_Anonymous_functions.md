@@ -23,7 +23,7 @@ void main() {
 
 Sí, sí... van a tener una sugerencia en Dartpad ya que esta no es una buena práctica pero simplemente quería mostrárselas porque luego las verán mucho en lugares donde sí es una buena práctica!
 
-Y para continuar con malas prácticas que serán buenas luego... 😛 También podemos pasar las funciones como argumentos de otras funciones. Por ejemplo, podemos crear una nueva función `welcome` que reciba a nuestra función anterior como argumento, reciba también una `String name` como otro argumento (que require nuestra función `sayHey`) y haga algo más ella solita:
+Y para continuar con malas prácticas que serán buenas luego... 😛 También podemos pasar las funciones como argumentos de otras funciones. Por ejemplo, podemos crear una nueva función `welcome` que reciba a nuestra función anterior como argumento, reciba también una `String name` como otro argumento (el que requiere nuestra función `sayHey`) y haga algo más ella solita:
 
 ```dart
 void main() {
@@ -37,7 +37,7 @@ void welcome(String Function(String) sayHey, String name) {
 }
 ```
 
-Notaron cómo especificamos el tipo de función que esperamos como primer argumento de `welcome`? Primero ponemos lo que va retornar, un `String`. Luego, lo que es, una `Function` y allí mismo, el tipo de parámetro que esa función recibe entre `(String)`. Finalmente, el nombre que le ponemos al argumento. Para que lo entiendan más rápidamente, lo nombré igual que la función que teníamos antes pero podríamos haberle puesto otro nombre, así:
+Notaron cómo especificamos el tipo de función que esperamos como primer argumento de `welcome`? Primero ponemos lo que va retornar, un `String`. Luego, lo que es, una `Function` y allí mismo, el tipo de parámetro que esa función recibe dentro de los `()`, en este caso `(String)`. Finalmente, el nombre que le ponemos al argumento. Para que lo entiendan más rápidamente, lo nombré igual que la función que teníamos antes pero podríamos haberle puesto otro nombre, así:
 
 ```dart
 void main() {
