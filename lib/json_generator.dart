@@ -13,30 +13,33 @@ void main() async {
       )
     ]),
   ];
-  await generateJsonFile(
-      coursesList: coursesEn, outputFilename: 'courses_en.json');
+  await generateJsonFile(coursesList: coursesEn, outputFilename: 'courses_en.json');
 
   final List<FileCoursesGroup> coursesSp = [
-    FileCoursesGroup(group_name: 'Learning Path', folder: 'dart_sp', courses: [
-      FileCourse(
-        title: 'Dart y TDD',
-        path: 'dart_y_tdd_es',
-        sections: await createCourseFromPath('dart_sp'),
-      )
-    ]),
     FileCoursesGroup(
-        group_name: 'CICD con Flutter',
-        folder: 'flutter/cicd_sp',
-        courses: [
-          FileCourse(
-            title: 'Dart y TDD',
-            path: 'cicd_es',
-            sections: await createCourseFromPath('flutter/cicd_sp'),
-          )
-        ]),
+      group_name: 'Learning Path',
+      folder: 'dart_sp',
+      courses: [
+        FileCourse(
+          title: 'Dart y TDD',
+          path: 'dart_y_tdd_es',
+          sections: await createCourseFromPath('dart_sp'),
+        ),
+      ],
+    ),
+    FileCoursesGroup(
+      group_name: 'Flutter Avanzado',
+      folder: 'flutter/cicd_sp',
+      courses: [
+        FileCourse(
+          title: 'CICD con Github',
+          path: 'cicd_es',
+          sections: await createCourseFromPath('flutter/cicd_sp'),
+        ),
+      ],
+    ),
   ];
-  await generateJsonFile(
-      coursesList: coursesSp, outputFilename: 'courses_es.json');
+  await generateJsonFile(coursesList: coursesSp, outputFilename: 'courses_es.json');
 }
 
 Future<void> generateJsonFile({
@@ -52,8 +55,7 @@ Future<void> generateJsonFile({
   await File(filename).writeAsString(jsonCourse);
 }
 
-String coursesToJson(List<FileCoursesGroup> data) =>
-    json.encode(List<dynamic>.from(data.map((x) => x.toMap())));
+String coursesToJson(List<FileCoursesGroup> data) => json.encode(List<dynamic>.from(data.map((x) => x.toMap())));
 
 Future<List<FileSection>> createCourseFromPath(String path) async {
   // Save directories as Directory in List, without 'assets' directory
@@ -63,8 +65,7 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
   final List<FileSystemEntity> entities = await dir.list().toList();
   for (var entity in entities) {
     if (await FileSystemEntity.isDirectory(entity.path)) {
-      if (!(entity.path.substring(entity.path.lastIndexOf('/') + 1) ==
-          'assets')) {
+      if (!(entity.path.substring(entity.path.lastIndexOf('/') + 1) == 'assets')) {
         directories.add(entity as Directory);
       }
     }
@@ -74,10 +75,8 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
   final List<FileSection> sections = [];
   for (var directory in directories) {
     final List<FileArticle> articles = [];
-    final directoryNameWithUnderscore =
-        (directory.path.replaceAll('./$path/', ''));
-    final directoryName =
-        (directory.path.replaceAll('./$path/', '')).replaceAll('_', ' ');
+    final directoryNameWithUnderscore = (directory.path.replaceAll('./$path/', ''));
+    final directoryName = (directory.path.replaceAll('./$path/', '')).replaceAll('_', ' ');
 
     final List<FileSystemEntity> subEntities = await directory.list().toList();
     for (var entity in subEntities) {
@@ -95,14 +94,10 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
               .replaceFirst(' ', '.')
               .replaceAll('.md', ''));
 
-          final baseContentUrl =
-              'https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main';
+          final baseContentUrl = 'https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main';
 
           final contentUrl = entity.path.replaceFirst('.', baseContentUrl);
-          final articlePath = entity.path
-              .replaceFirst('./$path/', '')
-              .replaceAll('/', '_')
-              .replaceAll('.md', '');
+          final articlePath = entity.path.replaceFirst('./$path/', '').replaceAll('/', '_').replaceAll('.md', '');
 
           articles.add(
             FileArticle(
