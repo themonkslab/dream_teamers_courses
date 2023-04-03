@@ -82,7 +82,7 @@ void main() {
 }
 ```
 
-What did we do here? Let's first concentrate on `(lastname) => '$prefix $lastname'`. 💀 No repeating and no blowing: what would that piece of code be? Yes, take your time! Although... a hint is that you saw it very, very recently...
+What did we do here? Let's first concentrate on `(lastname) => '$prefix $lastname'`. 💀 No cheating: what would that piece of code be? Yes, take your time! Although... a hint is that you saw it very, very recently...
 
 Yes! very good! (😄 You see how I always think the best of you? 🤣). This is an anonymous function although for you to understand it better we are going to take out the _arrow function_ and explain before the `map` method that you will soon see: basically what it does is to go through a list and execute a function that we pass it in each one of its elements (yes, that _anonymous function_ that you just discovered):
 

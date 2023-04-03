@@ -1,4 +1,4 @@
-# _New methods on collections_
+# New methods on collections
 
 Ahora que ya tenemos un conocimiento más profundo sobre funciones, podemos explorar nuevos métodos para nuestras colecciones.
 
@@ -15,7 +15,7 @@ void main() {
 
 La verdad solo se los mostré porque pueden verlo por ahí pero prueben escribir este ejemplo en Dartpad y vean qué sucede. 💀 Tómense su debido tiempo!
 
-_Avoid using `forEach` with a function literal._ Dice que evitemos utilizar el `forEach` en una función literal. Qué es aquello que le pasamos al `forEach`? Esta parte: `(person) => print(person)`? 💀 Nuevamente, piensen.
+_Function literals should not be passed to `forEach`._ Dice que evitemos utilizar el `forEach` en una función literal. Qué es aquello que le pasamos al `forEach`? Esta parte: `(person) => print(person)`? 💀 Nuevamente, piensen.
 
 Y noten que van a encontrar más 💀 a medida avancemos ya que vamos a ir complicando más la cuestión ahora que están hechos unos y unas ninjas! 🥷
 
@@ -33,7 +33,7 @@ void main() {
  Sin embargo, __recuerdan que podemos pasar una función como parámetro de otra función si ambas tienen la misma firma o son declaradas esperando los mismos retornos y argumentos?__
 
 Resulta que en este caso, nuestro `forEach` tiene esta declaración:
-`void Function(String))` y el ya conocido `print` tiene la siguiente: `void print(Object?)`. Aun nos faltan cosas para entenderlo un poco más pero básicamente:
+`void Function(String)` y el ya conocido `print` tiene la siguiente: `void print(Object?)`. Aun nos faltan cosas para entenderlo un poco más pero básicamente:
 
 - Ambos retornan `void` o vacío.
 - Ambos reciben un `Object?` como argumento ya que el `Object?` puede contener un `Object` y el `String` es un `Object`.
@@ -47,9 +47,9 @@ void main() {
 }
 ```
 
-En este caso, el parámetro al `print` se pasa de forma implícita desde el `forEach`.
+En este caso, el parámetro `print` se pasa de forma implícita desde el `forEach`.
 
-## `map` _operator_
+## `map` operator
 
 Este operador nos permite __tomar una colección, transformar como queramos cada uno de sus elementos y retornar con todos ellos, una nueva colección__.
 
