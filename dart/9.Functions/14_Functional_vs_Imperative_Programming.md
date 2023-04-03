@@ -1,16 +1,16 @@
-# _Functional vs Imperative Programming_
+# Functional vs Imperative Programming
 
-Cuando empezamos a programar, nuestra meta principal es hacer que las cosas funcionen, como sea. __A medida que vamos ganando mayor experiencia, empezamos a utilizar paquetes o librerías que son conjuntos de funciones que nos ahorran tiempo y hacen nuestro código más simple.__ Y también nuestra vida! 😂
+When we start programming, our main goal is to make things work, however we can. __As we gain more experience, we start using packages or libraries which are sets of functions that save us time and make our code simpler.__ And also our life! 😂
 
-Esto __nos permite reducir la complejidad sin saber muchas veces, qué sucede dentro de esas librerías__. Cada librería es una especie de caja negra en donde uno interactúa con las partes que el desarrollador de la librería expuso (comunmente es llamado _API, application programmer interface_ o interface de programación de aplicaciones), sin tener mucha idea de qué pasa dentro.
+This __allows us to reduce the complexity without knowing many times, what happens inside those libraries__. Each library is a kind of black box where you interact with the parts that the developer of the library exposed (commonly called _API, application programmer interface_), without having much idea of what is going on inside.
 
-__Este mecanismo se llama _Composability_ o componibilidad y consiste en crear funciones o clases (ya veremos qué son), que se pueden combinar fácilmente.__ Así, si creamos una función A, podemos luego aplicarle a ella una función B y no necesariamente tenemos que saber qué hace una o la otra sino, conocer cuáles son sus argumentos requeridos y sus retornos.
+This mechanism is called _Composability_ and consists of creating functions or classes (we will see what they are), which can be easily combined. Thus, if we create a function A, we can then apply a function B to it and we do not necessarily have to know what one or the other does, but rather, know what their required arguments and returns are.
 
-A su vez, el utilizar este tipo de enfoque sería solamente decirle a la máquina mediante nuestro código y funciones, aquello que nos importa en lugar de hacerlo paso a paso. __Nos estaríamos concentrando en el qué y no en el cómo. Esto sería _Functional programming_ o programación funcional.__
+In turn, using this type of approach would only be telling the machine, through our code and functions, what we care about instead of doing it step by step. We would be concentrating on the what and not the how. This would be _Functional programming_.
 
-Por el otro lado, __el paradigma imperativo de programación o _Imperative Programming_, se encarga de decirle paso a paso a la máquina lo que tiene que hacer, sería concentrarse en el cómo.__
+On the other hand, __the _Imperative Programming_ paradigm is in charge of telling the machine step by step what it has to do, it would be concentrating on the how__.
 
-Veámoslo más claramente en un ejemplo! Recuerdan la función `reduce` que vimos en el capítulo anterior? Eso sería hacer programación funcional ya que no nos preocupamos por lo que dicha función hace _under the hood_ (dentro de su código), sino por lo que nos permite hacer y qué necesitamos para hacerla.
+Let's see it more clearly in an example! Remember the `reduce` function we saw in the previous chapter? That would be doing functional programming since we don't care about what that function does _under the hood_ (inside its code), but what it allows us to do and what we need to do to call it.
 
 ```dart
 void main() {
@@ -22,7 +22,7 @@ void main() {
 }
 ```
 
-Si nosotros tuviéramos que hacerlo de forma declarativa, haríamos algo así:
+If we had to do it declaratively, we would do something like this:
 
 ```dart
 void main() {
@@ -35,9 +35,9 @@ void main() {
 }
 ```
 
-Hasta aquí podemos ver que en el primer ejemplo, la complejidad es mucho menor pero fíjense qué sucede cuando queremos sumar complejidad, en uno y otro caso.
+So far we can see that in the first example, the complexity is much lower, but notice what happens when we want to add complexity in both cases.
 
-Ahora vamos a querer sumar solamente los números que son mayores a 2:
+Now we want to add only the numbers that are greater than 2:
 
 ```dart
 void main() {
@@ -49,9 +49,9 @@ void main() {
 }
 ```
 
-Fíjense qué bello y simple: ahora apilamos las funciones mediante la utilización de `.`: como cada método retorna una lista entonces primero filtrando los números mayores a 2 y luego sobre la nueva lista, aplicamos el reduce. Así, la lista original no se altera y logramos todo con unos caracteres más.
+Notice how beautiful and simple: now we stack the functions by using `.`: as each method returns a list, first filtering the numbers greater than 2 and then on the new list, we apply the `reduce`. Thus, the original list is not altered and we achieve everything with a few more characters.
 
-Cómo haríamos esto de forma declarativa?
+How would we do this declaratively?
 
 ```dart
 void main() {
@@ -66,14 +66,14 @@ void main() {
 }
 ```
 
-Lo importante a notar en este caso, no es solamente que el segundo ejemplo tiene más líneas de código sino que nos vimos obligados a tener que entender la lógica interna del bucle _for_ para agregarle el condicional.
+The important thing to note in this case is not only that the second example has more lines of code, but that we were forced to understand the internal logic of the _for_ loop to add the conditional.
 
-En el ejemplo funcional, solamente agregamos una función antes de la función previa sin tener que pensar en su implementación interna. Esto es programación funcional.
+In the functional example, we just added a function before the previous function without having to think about its internal implementation. This is functional programming.
 
-## Por qué una mixtura de ambos
+## Why a mixture of both
 
-Como habrán podido ver, escribir código solamente declarativo vuelve nuestro código más engorroso, difícil de mantener, imposible de componer y al final de cuentas, una experiencia de programación menos deseada.
+As you may have seen, writing only declarative code makes our code more complicated, difficult to maintain, impossible to compose and at the end of the day, a less desirable programming experience.
 
-Ahora que conocen sobre funciones, pueden empezar desde las bases, inclinándose a un tipo de programación funcional, en donde cuiden la pureza de las funciones y utilicen métodos como `map`, `where` o los que vayan conociendo para hacer su código más simple y componible.
+Now that you know about functions, you can start from the basics, leaning towards a functional type of programming, where you take care of the purity of the functions and use methods like `map`, `where` or the ones you get to know to make your code simpler and composable.
 
-Existen diferentes paquetes que facilitan este tipo de paradigma pero por el momento nos vamos a concentrar en las herramientas que Dart tiene para darnos y con ellas, hasta el infinito! ♾️
+There are different packages that facilitate this type of paradigm but for the moment we are going to concentrate on the tools that Dart has to give us and with them, to infinity! ♾️

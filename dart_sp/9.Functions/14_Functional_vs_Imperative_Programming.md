@@ -1,4 +1,4 @@
-# _Functional vs Imperative Programming_
+# Functional vs Imperative Programming
 
 Cuando empezamos a programar, nuestra meta principal es hacer que las cosas funcionen, como sea. __A medida que vamos ganando mayor experiencia, empezamos a utilizar paquetes o librerías que son conjuntos de funciones que nos ahorran tiempo y hacen nuestro código más simple.__ Y también nuestra vida! 😂
 
