@@ -149,6 +149,6 @@ Now, our `transform` function receives the generic types `T` and `S` and then us
 
 I know it may sound quite complicated or convoluted but if you write it down a couple of times, you will get the hang of it.
 
-## Aclaración final
+## Final clarification
 
 I would like to make a clarification: __reusing code is not the same as beautifying__: sometimes we tend to write code just to make the previous code prettier, more readable. The idea would be to write that code the first time! 😂 If we are just adding a function to make something we already did in another one look prettier, let's avoid it and improve the previous one! If we are doing it to say prettier Dart's own functions, let's avoid it again as you will see that by making much use of them, you will find them pretty enough to leave them as they are and you will avoid forgetting about the language.
