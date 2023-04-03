@@ -1,8 +1,8 @@
-# _New methods part two_
+# New methods part two
 
 Ya que conocemos sobre funciones anónimas, podemos conocer otros métodos útiles para seguir agregando a nuestra lista.
 
-## _Where_
+## Where
 
 El método _where_ o 'donde', __nos permite analizar una _collection_ valor por valor mediante una función anónima que le pasemos. Va a retornar un `Iterable` con todos aquellos valores que han retornado `true` según la función anónima que le hayamos pasado.__
 
@@ -16,7 +16,7 @@ void main() {
 }
 ```
 
-## _First where_
+## First where
 
 Este método __también recibe una función anónima como primer parámetro solo que retorna el primer valor que habiendo sido analizado por la función que le pasemos, retorne `true`__. Veamos un ejemplo en donde el número `2` se repite varias veces:
 
@@ -148,7 +148,7 @@ List<T> where<T>(List<T> items, bool Function(T value) check) {
 }
 ```
 
-## _Reduce_
+## Reduce
 
 Este método nos permite combinar todos los elementos en una lista y producir un resultado único. El ejemplo más común es sumar todos los elementos de una lista y evitar tener que usar un _for-in_. Veámoslo con un ejemplo.
 
