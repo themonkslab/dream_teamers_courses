@@ -1,11 +1,11 @@
-# _Function types_
+# Function types
 
-Retomemos un poquito el ejemplo anterior y vamos a ir dándole utilidad de vida real a esos ejemplos.
+Let's go back a little bit to the previous exercise and give some real life utility to these examples.
 
-En el último, veíamos que creábamos una función llamada `welcome` y que esa función era de un tipo específico ya que retornaba un `String` y pedía otro como argumento. __Qué tal si pudiéramos definir una especie de _alias_ o nombre para ese tipo y poder lograr que cada vez que tengamos que llamarlo, no tengamos que escribir todo:__ `String Function(String)`?
+In the last one, we saw that we created a function called `welcome` and that this function was of a specific type since it returned a `String` and it asked for another `String` as argument. __What if we could define a kind of _alias_ or name for that type so that every time we have to call it, we don't have to write everything:__ `String Function(String)`?
 
 ```dart
-// Aquí aparecerá el código mágico 🧙🏼‍♀️
+// The magic code will appear here 🧙🏼‍♀️
 typedef SayHi = String Function(String);
 //
 
@@ -14,9 +14,9 @@ void main() {
   welcome(sayHey, 'Mau');
 }
 
-// Y lo usaremos aquí en el argumento
-// para reemplazar ese gran llamado
-// y lo dejo como comentario para que puedan comparar
+// And we'll use it here in the argument
+// to replace that big call
+// and I'll leave it as a comment so that you can compare
 // void welcome(String Function(String) hi, String name) {
 void welcome(SayHi hi, String name) { 
   print(hi(name));
@@ -24,11 +24,11 @@ void welcome(SayHi hi, String name) {
 }
 ```
 
-Díganme si no es mucho más bello? En este caso, solo lo utilizamos una vez pero imaginen un código lleno de `SayHi` _functions_! Cuánto tiempo nos ahorraríamos y cuánto más bello se vería?
+Tell me if it is not much more beautiful? In this case, we only use it once but imagine a code full of `SayHi` _functions_! How much time would we save and how much prettier would it look?
 
-Como buenos _Monks_, habrán observado que ese nombre nada tiene para decirnos sobre el tipo de función que creamos pero está escrito a los fines de que se pueda seguir el hilo ahora que las cosas se van poniendo más complicadas! Aunque podríamos darle alguna utilidad 🧐...
+As good _Monks_, you may have noticed that the name has nothing to tell us about the type of function we create but it is written for the purposes of keeping track of the thread now that things are getting more complicated! Although we could give it some use 🧐...
 
-Qué tal si queremos saludar en diferentes idiomas? Podríamos crear esas funciones y pasárselas a la función `welcome` ya que coinciden con nuestro tipo definido:
+What if we want to say hello in different languages? We could create those functions and pass them to the `welcome` function since they match our defined type:
 
 ```dart
 typedef SayHi = String Function(String);
@@ -47,12 +47,12 @@ void welcome(SayHi hi, String name) {
 }
 ```
 
-Y finalmente, __existe otra forma para definir el tipo de una función__ y aunque yo prefiero la primera, quiero mostrárselas:
+And finally, __there is another way to define the type of a function__ and although I prefer the first one, I want to show them to you:
 
 ```dart
-// forma preferida
+// preferred form
 // typedef SayHi = String Function(String);
-// forma abreviada
+// abbreviated form
 typedef String SayHi(String name);
 String sayHola(String name) => 'Hola $name!';
 String sayBonjour(String name) => 'Bonjour $name!';
@@ -69,9 +69,9 @@ void welcome(SayHi hi, String name) {
 }
 ```
 
-## _Closures_
+## Closures
 
-La palabra significa 'cerramiento' y quiero que la vean en el siguiente ejemplo:
+I want you to see it in the following example:
 
 ```dart
 void main() {
@@ -82,9 +82,9 @@ void main() {
 }
 ```
 
-Qué hicimos aquí? Concentrémosnos primero en `(lastname) => '$prefix $lastname'`. 💀 Sin repetir y sin soplar: qué sería ese pedazo de código? Sí, tómense su tiempo! Aunque... una pista es que lo vieron hace muuuuuy poquito...
+What did we do here? Let's first concentrate on `(lastname) => '$prefix $lastname'`. 💀 No repeating and no blowing: what would that piece of code be? Yes, take your time! Although... a hint is that you saw it very, very recently...
 
-Sí! Muy bien! (😄 Ven cómo siempre pienso lo mejor de ustedes!? 🤣). Se trata de una función anónima aunque para que lo entiendan mejor vamos a sacarle el _arrow function_ y explicarles antes que el método `map` que ya verán, básicamente lo que hace es recorrer una lista y ejecutar una función que le pasemos en cada elemento de ella (sí, esa _anonymous function_ que acaban de descubrir):
+Yes! very good! (😄 You see how I always think the best of you? 🤣). This is an anonymous function although for you to understand it better we are going to take out the _arrow function_ and explain before the `map` method that you will soon see: basically what it does is to go through a list and execute a function that we pass it in each one of its elements (yes, that _anonymous function_ that you just discovered):
 
 ```dart
 void main() {
@@ -97,4 +97,4 @@ void main() {
 }
 ```
 
-Lo ven más claramente? Súper! Ahora bien, ya que nos estamos poniendo un poco más detallistas, en realidad no es una _anonymous function_ sino que __se trata de una _closure_. Cuál es su diferencia? Que utiliza dentro, una variable definida fuera de__ su... a ver cómo anda su memoria?... dentro de __su _scope_ o ámbito__. Se trata del `prefix`. Y por esto es una _closure_.
+Can you see it more clearly? Super! Now, since we are getting a little more detailed, it is not really an _anonymous function_ but a _closure_. __What is its difference? That it uses inside, a variable defined outside of .... let's see how your memory is?.... outside of its _scope___  This is the `prefix`. And this is why it is a _closure_.
