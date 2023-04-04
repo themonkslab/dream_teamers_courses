@@ -1,10 +1,10 @@
-# Dart _SDK_
+# Dart SDK
 
 _SDK_ o _software development kit_ es una serie de __herramientas que utilizamos para escribir software o programas.__ Por lo general, contienen:
 
 - Compiladores
 - Analizadores
-- Debuggers o herramientas para detectar _bugs_ o errores)
+- Debuggers o herramientas para detectar _bugs_ o errores
 - Librerías
 - Framework
 
@@ -20,9 +20,26 @@ Dijimos estables y esto también aplica a Dart. Qué significa? Estamos hablando
 - __Beta__ está creado para testear características que están a punto de salir a producción o al _stable channel_ (canal estable). Se actualiza una vez por mes.
 - __Dev__ es en donde se crean cosas nuevas, muchas de ellas aun rotas y no tiene ningún tipo de soporte. Se actualiza generalmente dos veces por semana.
 
-TP Nahuel > usar: https://www.youtube.com/watch?v=WIO5iAeNaOU&list=PLptHs0ZDJKt_fLp8ImPQVc1obUJKDSQL7&index=3
-
 ### En Windows
+
+Para esta instalación lo primero que haremos será instalar el [chocolatey package manager](https://chocolatey.org/install) y para ello utilizaremos  _Windows PowerShell_.
+
+Ejecuten el _Power Shell_ como administradores y tal como indica la web de _chocolatey_ ejecuten el siguiente comando:`Get-ExecutionPolicy` y si les devuelve _Restricted_ ejecuten además `Set-ExecutionPolicy AllSigned` y digan que si a todo.
+
+Luego ejececuten el comando:
+`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
+
+ACA LA IMAGEN
+
+Listo! ya instalamos el _chocolatey package manager_ y estamos listos para instalar el __Dart SDK__. Para ello iremos al este [link](https://community.chocolatey.org/packages) y buscaremos el paquete de Dart SDK en su versión mas estable.
+
+ACA LA IMAGEN
+
+Cierren el _Windows PowerShell_ y vuelvan a ejecutarlo como administrador y ahora ejecuten el comando: `choco install dart-sdk` y esperen unos minutos. Cuando haya terminado, cierren, vuelvan a abir y si ejecutan el comando `dart` les debería de aparecer lo siguiente:
+
+ACA LA IMAGEN
+
+Listo! 👍 el Dart SDK ya está instalado en Windows.
 
 ### En Mac
 
