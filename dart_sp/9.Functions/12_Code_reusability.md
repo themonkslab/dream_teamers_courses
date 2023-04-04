@@ -1,4 +1,4 @@
-# _Code reusability_
+# Code reusability
 
 Ya hemos citado muchas veces el porqué tratar de evitar la repetición de código (_DRY_) pero es algo que siempre tenemos que tener presente ya que nos ahorra toneladas de energía. __Si reutilizamos código de forma correcta, evitamos tener que mantener código y solucionar bugs producto de código repetido que no actualizamos__.
 
@@ -74,7 +74,7 @@ Fíjense lo que hicimos:
 
 Así podemos observar todo el poder que tiene esta función que recibe otra función anónima como argumento y cada vez que se ejecute va a retornar el mismo resultado con los mismos argumentos, lo cual es requisito para que sea una función pura. Al mismo tiempo, cumple con una sola función, la de retornar una `List<String>` performando la operación que le pasemos. Una verdadera ganga! 🤣
 
-## _Generics_
+## Generics
 
 Estuvimos viendo que podíamos hacer funciones que reciban funciones como parámetros pero siempre recibían y retornaban el mismo tipo de variable. Qué sucede si queremos hacer una función que sirva para varios tipos? Veámoslo con un ejemplo bien sencillo: supongamos que tenemos una lista de `int` y queremos tener una función que nos permita ejecutar distintas operaciones en ellos. Crearemos entonces una función que reciba otra como argumento:
 
@@ -107,7 +107,7 @@ List<int> transform(List<int> list, int Function(int) operation) {
 
 _'The return type 'double' isn't a 'int', as required by the closure's context.'_ Dice que el tipo de retorno `double` no es un `int` como require el contexto de nuestra _closure_. Recuerdan que una _closure_ es una función anónima pero que utiliza una variable que está fuera de su _scope_ y en este caso, está hablando de la `operation` que le pasamos a nuestro `transform`: dicha `operation` retorna un `int` pero si le pedimos que divida, vamos necesariamente a estar retornando un `double` por lo que no coincide con el tipo especificado. Cómo podemos hacer entonces? Utilizando genéricos!
 
-__Los genéricos o _generics_ son tipos que pueden tener otros tipos formales como parámetros__, o algo así como pasa en las funciones: una función recibe argumentos que luego puede utilizar; en el caso de los tipos, estos pueden recibir como parámetros otros tipos para utilizar. Cómo haríamos esto? En lugar del tipo ya conocido, por ejemplo `List<int>`, ponemos una letra mayúscula para representar lo que esperamos reciba, como convención nemotécnica. Dart sin embargo, cuenta ya con las siguientes convenciones:
+__Los genéricos o _generics_ son tipos que pueden tener otros tipos formales como parámetros__. Algo así sucede en las funciones: una función recibe argumentos que luego puede utilizar;  en el caso de los tipos genéricos , estos pueden recibir como parámetros otros tipos para utilizar. Cómo haríamos esto? En lugar del tipo ya conocido, por ejemplo `List<int>`, ponemos una letra mayúscula para representar lo que esperamos reciba, como convención nemotécnica. Dart sin embargo, cuenta ya con las siguientes convenciones:
 
 - `E` para elemento.
 - `K` y `V` para key y value respectivamente.

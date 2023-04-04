@@ -1,6 +1,6 @@
-# _Fat arrow notation_
+# Fat arrow notation
 
-Supongamos que tenemos una función bien simple que lo único que hace es calcular la suma de dos valores, algo así:
+Suppose we have a very simple function that does nothing more than calculate the sum of two values, something like this:
 
 ```dart
 void main() {
@@ -13,7 +13,7 @@ int sum(int a, int b) {
 }
 ```
 
-Podríamos hacer __mucho más concisa la función utilizando _fat arrow notation_ o algo así como una anotación de flecha gorda__: esta forma nos retorna automáticamente sin tener que explicitar el `return` y reemplaza los `{ }` y el `return` por `=>`, de allí su nombre:
+We could make the function __much more concise by using _fat arrow notation_:__ in this form the return is automatically without having to make it explicit and replaces the `{ }` and the `return` by `=>`, hence its name:
 
 ```dart
 void main() {
@@ -24,7 +24,7 @@ void main() {
 int sum(int a, int b) => a + b;
 ```
 
-Esto sirve para funciones que tengan un solo _statement_ y también puede utilizarse sin tener que retornar nada:
+This is useful for functions that have a single _statement_ and can also be used without having to return anything:
 
 ```dart
 void main() {

@@ -1,84 +1,84 @@
-# _Lexical Scope_
+# Lexical Scope
 
-_Scope_ significa ámbito y _lexical scope_ se refiere al ámbito léxico, a los __diferentes lugares de nuestro código y el acceso que tendremos a ellos.__ Así encontramos dos tipos de _scope_.
+_Lexical scope_ refers to the __different places in our code and the access we will have to them.__ Thus we find two types of _scope_.
 
-## _Inner scope_
+## Inner scope
 
-Es el ámbito interno. Interno de qué? De aquel que definimos mediante `{ ... inner scope ... }`. Es el bloque de código dentro de un par de llaves. Vamos a verlo con un ejemplo.
+It is the internal area. Internal of what? The one we define by `{ ... inner scope ... }`. It is the block of code inside a pair of braces. Let's see it with an example.
 
-Supongamos que declaramos e inicializamos la variable `a` con un valor de `'dentro del scope de main'`. Podemos imprimir esa variable dentro del `main` pero qué sucede si intentamos declarar otra variable por fuera utilizándola?
+Suppose we declare and initialize the variable `a` with a value of `'a: Inside the main scope'`. We can print that variable inside the `main` but what happens if we try to declare another variable outside using it?
 
 ```dart
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
 }
 
 const b = a; // Undefined name 'a'.
 ```
 
-Exacto! Nos dice que esa variable no está definida ya que lo hicimos dentro del _scope_ del `main`. Podríamos sin embargo, utilizarla dentro de un _scope_ interno a su vez, del `main`:
+Exactly! It tells us that this variable is not defined because we did it inside the `main` _scope_. We could, however, use it within an internal _scope_ of the `main`:
 
 ```dart
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+  if (a.contains('Inside')) {
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
   }
 }
 ```
 
-Sin embargo qué pasaría si intentáramos utilizar `b` fuera del if? 💀 Vayan a probarlo! Ah! Una aclaración: a veces en Monkslab, utilizamos emojis en ciertos `print` ya que nos permite diferenciar rápido entre valores parecidos!
+However, what would happen if we tried to use `b` outside the if? 💀 Go try it! Oh, a clarification: sometimes in Monkslab, we use emojis in certain `print` because it allows us to quickly differentiate between similar values!
 
 ```dart
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+  if (a.contains('Inside')) {
+    const b = 'b: $a Inside the main and inside the if. 🍉';
   }
   print(b); // Undefined name 'b'.
 }
 ```
 
-Nuevamente exacto: `b` no está definido sino dentro del _scope_ del `if` y por lo tanto no podemos utilizarlo! Y qué sucedería si intentáramos, dentro del `if`, __volver a crear otra variable con el mismo nombre que una que tenemos en un _scope_ exterior?__
+Again exactly: `b` is not defined but inside the _scope_ of the `if` and therefore we cannot use it! And what would happen if we tried, inside the `if`, to __create another variable with the same name as one we have in an external _scope_?__
 
-## _Shadow variables_
+## Shadow variables
 
-Son variables con el __mismo nombre pero distinto ámbito.__ Es como si pisáramos solamente dentro de ese _scope_, el valor inicial, aunque si también imprimimos fuera del `if` ese valor, van a ver que contiene el valor que le asignamos al principio porque en realiadad son variables distintas:
+They are variables with the __same name but different scope.__ It is as if we step the initial value only inside that _scope_, and if we also print that value outside the `if`, you will see that it contains the value that we assigned at the beginning because in reality they are different variables:
 
 ```dart
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const a = 'new a: Dentro del main y dentro del if. 🚧';
+  if (a.contains('Inside')) {
+    const a = 'new a: Inside the main and inside the if. 🚧';
     print(a);
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
   }
   print(a);
 }
 ```
 
-Y podríamos definir una variable fuera del `main`? Así es y se trataría del _global scope_.
+And could we define a variable outside the `main`? Yes, and it would be the _global scope_.
 
-## _Global scope_
+## Global scope
 
-O ámbito global y está al acceso de cualquier bloque interno de código:
+Is accessible to any internal block of code:
 
 ```dart
-const c = 'c: ☺️ Scope global. Todos me pueden utilizar!';
+const c = 'c: ☺️ Global scope. Everyone can use me!';
 
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const a = 'new a: Dentro del main y dentro del if. 🚧';
+  if (a.contains('Inside')) {
+    const a = 'new a: Inside the main and inside the if. 🚧';
     print(a);
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
     print(c);
   }
@@ -86,22 +86,22 @@ void main() {
 }
 ```
 
-Y obviamente, también podemos crear una nueva variable con el mismo nombre en un ámbito local y que quede 'opacada' nuestra variable original:
+And obviously, we can also create a new variable with the same name in a local scope and have it 'overshadow' our original variable:
 
 ```dart
-const c = 'c: ☺️ Scope global. Todos me pueden utilizar!';
+const c = 'c: ☺️ Global scope . Everyone can use me!';
 
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const a = 'new a: Dentro del main y dentro del if. 🚧';
+  if (a.contains('Inside')) {
+    const a = 'new a: Inside the main and inside the if. 🚧';
     print(a);
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
     print(c);
     if(c.contains('c:')) {
-      const c = 'new c: c ha sido opacada. 👤';
+      const c = 'new c: c has been overshadowed. 👤';
       print(c);
     }
   }
@@ -109,97 +109,98 @@ void main() {
 }
 ```
 
-Será que también sucede lo mismo con funciones? Yes! Y se llaman _Inner functions_
+Does the same thing happen with functions? Yes, and they are called _Inner functions_.
 
-## _Inner functions_
+## Inner functions
 
-Hasta ahora siempre declaramos las funciones fuera del `main`, sin embargo, también podríamos hacerlo dentro. Son funciones internas  y tienen los mismos comportamientos que estuvimos aprendiendo en este artículo:
+So far we have always declared functions outside the `main`, however, we could also do it inside. They are internal functions and have the same behaviors that we were learning in this article:
 
 ```dart
-const c = 'c: ☺️ Scope global. Todos me pueden utilizar!';
+const c = 'c: ☺️ Global scope . Everyone can use me!';
 
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+  if (a.contains('Inside')) {
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
   }
-  // Function declaration: declarando la función
+  // Function declaration
   void anInnerFunction() {
-    print('Esto es una función interna!');
+    print('This is an inner function!');
   }
 
-  // Function call: llamando a la función ya declarada
+  // Function call
   anInnerFunction();
 }
 ```
 
-Y qué sucede en el caso siguiente:
+And what happens in the following case:
 
 ```dart
-const c = 'c: ☺️ Scope global. Todos me pueden utilizar!';
+const c = 'c: ☺️ Global scope . Everyone can use me!';
 
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+  if (a.contains('Inside')) {
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
   }
-  // Function declaration: declarando la función
+  // Function declaration
   void anInnerFunction() {
-    print('Esto es una inner function!');
+    print('This is an inner function!');
     print(b); // Undefined name 'b'
   }
 
-  // Function call: llamando a la función ya declarada
+  // Function call
   anInnerFunction();
 }
 ```
 
-Como `b` está declarada dentro del `if` entonces, la función que declaramos y a su vez declara otro _scope_, no lo conoce por lo que no lo puede llamar. Sería distinto el caso, si hubiéramos declarado esa función dentro del `if`:
+As `b` is declared inside the `if` then, the function that we declare and at the same time declares another _scope_, does not know it so it cannot call it. It would be a different case if we had declared that function inside the `if`:
 
 ```dart
-const c = 'c: ☺️ Scope global. Todos me pueden utilizar!';
+const c = 'c: ☺️ Global scope . Everyone can use me!';
 
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  if (a.contains('Dentro')) {
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+  if (a.contains('Inside')) {
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
-    // Function declaration: declarando la función
+    // Function declaration
     void anInnerFunction() {
-      print('Esto es una inner function!');
+      print('This is an inner function!');
+      print(b);
     }
 
-    // Function call: llamando a la función ya declarada
-    anInnerFunction();
-  }
+     // Function call
+  anInnerFunction();
+  } 
 }
 ```
 
-Y me dieron ganas de complicarla un poco! Qué pasará ahora?
+And I just felt like making it a bit more complicated! What will happen now?
 
 ```dart
-const c = 'c: ☺️ Scope global. Todos me pueden utilizar!';
+const c = 'c: ☺️ Global scope . Everyone can use me!';
 
 void main() {
-  const a = 'a: Dentro del scope de main. 💃🏼';
+  const a = 'a: Inside the main scope. 💃🏼';
   print(a);
-  // Function declaration: declarando la función
+  // Function declaration
   void anInnerFunction(String b) {
     print(b);
   }
 
-  if (a.contains('Dentro')) {
-    const b = 'b: $a Dentro del main y dentro del if. 🍉';
+  if (a.contains('Inside')) {
+    const b = 'b: $a Inside the main and inside the if. 🍉';
     print(b);
-    // Function call: llamando a la función ya declarada
+    // Function call
     anInnerFunction(b);
   }
 }
 ```
 
-En este caso, declaramos la función por fuera del `if` en donde se define `b` pero a esa función le requerimos un argumento llamado `b`. Luego la llamamos dentro del `if` que declara `b` y puede usarse tranquilamente. Debo aclarar que solamente utilicé `b` como nombre del argumento en la función para confundirlos pero podríamos haberla llamado de cualquier manera! 😂
+In this case, we declare the function outside the `if` where `b` is defined but we require an argument called `b` to that function. Then we call it inside the `if` that declares `b` and it can be used without any problems. I should clarify that I only used `b` as the argument name in the function to confuse you but we could have called it either way! 😂

@@ -1,6 +1,6 @@
 # _Function arguments_
 
-Vamos a cambiar continuar con el ejemplo anterior y ya que estamos en una panadería, podría conocer a casi todos los clientes, por lo que quiero saludarlos con su nombre:
+Vamos a continuar con el ejemplo anterior y ya que estamos en una panadería, podría conocer a casi todos los clientes, por lo que quiero saludarlos con su nombre:
 
 ```dart
 void main() {

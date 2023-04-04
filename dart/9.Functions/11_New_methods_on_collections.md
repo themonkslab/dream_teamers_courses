@@ -1,10 +1,10 @@
-# _New methods on collections_
+# New methods on collections
 
-Ahora que ya tenemos un conocimiento más profundo sobre funciones, podemos explorar nuevos métodos para nuestras colecciones.
+Now that we have a deeper understanding of functions, we can explore new methods for our collections.
 
-## `forEach` _method_
+## `forEach` method
 
-Ya vimos cómo iterar con un bucle _for-in_ en una colección. Pero podemos hacerlo de forma más suscinta:
+We already saw how to iterate with a _for-in_ loop in a collection. But we can do it in a more succinct way:
 
 ```dart
 void main() {
@@ -13,13 +13,13 @@ void main() {
 }
 ```
 
-La verdad solo se los mostré porque pueden verlo por ahí pero prueben escribir este ejemplo en Dartpad y vean qué sucede. 💀 Tómense su debido tiempo!
+I really only showed it to you because you can see it out there but try typing this example in Dartpad and see what happens. 💀 Take your time!
 
-_Avoid using `forEach` with a function literal._ Dice que evitemos utilizar el `forEach` en una función literal. Qué es aquello que le pasamos al `forEach`? Esta parte: `(person) => print(person)`? 💀 Nuevamente, piensen.
+_Function literals should not be passed to `forEach`._ It says to avoid using the `forEach` in a function literal. What is it that we pass to the `forEach`? This part: `(person) => print(person)`? 💀 Again, think.
 
-Y noten que van a encontrar más 💀 a medida avancemos ya que vamos a ir complicando más la cuestión ahora que están hechos unos y unas ninjas! 🥷
+And note that you will find more 💀 as we progress because we are going to make the matter more complicated now that you are all ninja masters! 🥷
 
-Esta parte que les preguntaba, es una función nueva, una anónima, aquella que conocimos hace poco y Dart nos pide que no lo hagamos de esa forma sino que utilicemos el ya conocido _for-in_:
+This part I was asking you about, is a new function, an anonymous one, the one we learn recently and Dart asks us not to do it that way but to use the already known _for-in_:
 
 ```dart
 void main() {
@@ -30,15 +30,15 @@ void main() {
 }
 ```
 
- Sin embargo, __recuerdan que podemos pasar una función como parámetro de otra función si ambas tienen la misma firma o son declaradas esperando los mismos retornos y argumentos?__
+However, __remember that we can pass a function as a parameter to another function if both have the same signature or are declared expecting the same returns and arguments?__.
 
-Resulta que en este caso, nuestro `forEach` tiene esta declaración:
-`void Function(String))` y el ya conocido `print` tiene la siguiente: `void print(Object?)`. Aun nos faltan cosas para entenderlo un poco más pero básicamente:
+It turns out that in this case, our `forEach` has this declaration:
+`void Function(String)` and the already known `print` has the following: `void print(Object?)`. We are still missing some things to understand it a little more but basically:
 
-- Ambos retornan `void` o vacío.
-- Ambos reciben un `Object?` como argumento ya que el `Object?` puede contener un `Object` y el `String` es un `Object`.
+- Both return `void`.
+- Both receive an `Object` as argument since the `Object` can contain an `Object` and the `String` is an `Object`.
 
-Por ende, sí podemos hacer nuestra función más suscinta si se trata de utilizar una función nombrada con anterioridad, como es el caso de `print`:
+Therefore, we can make our function more concise if we are using a previously named function, as in the case of `print`:
 
 ```dart
 void main() {
@@ -47,13 +47,13 @@ void main() {
 }
 ```
 
-En este caso, el parámetro al `print` se pasa de forma implícita desde el `forEach`.
+In this case, the `print` parameter is passed implicitly from the `forEach`.
 
-## `map` _operator_
+## `map` operator
 
-Este operador nos permite __tomar una colección, transformar como queramos cada uno de sus elementos y retornar con todos ellos, una nueva colección__.
+This operator allows us to __take a collection, transform each of its elements as we wish and return with all of them, a new collection__.
 
-Supongamos que tenemos la misma lista de personas del ejemplo anterior, y una vez más, queremos sumar un sufijo a sus nombres. Vamos a hacerlo primero con nuestro conocido _for-in_ y luego con `map`. Miren qué bello y simple se vuelve con este último:
+Suppose we have the same list of people from the previous example, and once again, we want to add a suffix to their names. Let's do it first with our familiar _for-in_ and then with `map`. Look how beautiful and simple it gets with the latter:
 
 ```dart
 void main() {
@@ -74,21 +74,21 @@ void main() {
 }
 ```
 
-Ahora... notan alguna diferencia en la variable resultante `peopleWithTitle` en un caso y en el otro? 💀 Vayan a investigar!
+Now... do you notice any difference in the resulting `peopleWithTitle` variable in one case and in the other? 💀 Go investigate!
 
-Fíjense que en el primer caso imprime '[Dr. Jack, Dr. Justin, ...]' y en el segundo '(Dr. Jack, Dr. Justin, ...)'. Esto es porque __nuestro `map` retorna un `Iterable` que si recuerdan, era el padre de las `List` y de `Map` y representa una colección de elementos a los que se puede acceder de forma secuencial.__
+Notice that in the first case it prints '[Dr. Jack, Dr. Justin, ...]' and in the second '(Dr. Jack, Dr. Justin, ...)'. This is because __our `map` returns an `Iterable` which if you recall, was the parent of the `List` and `Map` and represents a collection of elements that can be accessed sequentially.__
 
-Si nos ponemos a ver más en detalle su firma y la docu de Dartpad, vamos a ver varias cosas nuevas:
+If we take a closer look at his signature and the Dartpad documentation, we will see several new things:
 
 - `Iterable<T> map<T>(T Function(String) toElement)`.
 
-`T` refiere a una tipo especial, el genérico, que ya vamos a ver.
+`T` refers to a special type, the generic one, which we are about to see.
 
 - _'The returned iterable is lazy, so it won't iterate the elements of this iterable until it is itself iterated'_
 
-Dice que lo que retorna es un _lazy_ (flojo) _iterable_: esto quiere decir que hasta que no utilicemos ese resultado, no se va a llamar a la función anónima dentro del `map` y esto es una optimización de performance.
+Yhis means that until we use that result, the anonymous function inside the `map` is not going to be called and this is a performance optimization.
 
-Y qué pasa si queremos tener como retorno específicamente una `List` en lugar de un `Iterable`? Podemos agregarle al `map` al final el método `toList()` de la siguiente manera:
+And what if we want to have as return specifically a `List` instead of an `Iterable`? We can add to the `map` at the end the `toList()` method as follows:
 
 ```dart
 void main() {

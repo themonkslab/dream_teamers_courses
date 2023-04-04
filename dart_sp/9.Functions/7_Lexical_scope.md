@@ -1,12 +1,12 @@
-# _Lexical Scope_
+# Lexical Scope
 
 _Scope_ significa ámbito y _lexical scope_ se refiere al ámbito léxico, a los __diferentes lugares de nuestro código y el acceso que tendremos a ellos.__ Así encontramos dos tipos de _scope_.
 
-## _Inner scope_
+## Inner scope
 
 Es el ámbito interno. Interno de qué? De aquel que definimos mediante `{ ... inner scope ... }`. Es el bloque de código dentro de un par de llaves. Vamos a verlo con un ejemplo.
 
-Supongamos que declaramos e inicializamos la variable `a` con un valor de `'dentro del scope de main'`. Podemos imprimir esa variable dentro del `main` pero qué sucede si intentamos declarar otra variable por fuera utilizándola?
+Supongamos que declaramos e inicializamos la variable `a` con un valor de `'a: dentro del scope de main'`. Podemos imprimir esa variable dentro del `main` pero qué sucede si intentamos declarar otra variable por fuera utilizándola?
 
 ```dart
 void main() {
@@ -45,7 +45,7 @@ void main() {
 
 Nuevamente exacto: `b` no está definido sino dentro del _scope_ del `if` y por lo tanto no podemos utilizarlo! Y qué sucedería si intentáramos, dentro del `if`, __volver a crear otra variable con el mismo nombre que una que tenemos en un _scope_ exterior?__
 
-## _Shadow variables_
+## Shadow variables
 
 Son variables con el __mismo nombre pero distinto ámbito.__ Es como si pisáramos solamente dentro de ese _scope_, el valor inicial, aunque si también imprimimos fuera del `if` ese valor, van a ver que contiene el valor que le asignamos al principio porque en realiadad son variables distintas:
 
@@ -65,7 +65,7 @@ void main() {
 
 Y podríamos definir una variable fuera del `main`? Así es y se trataría del _global scope_.
 
-## _Global scope_
+## Global scope
 
 O ámbito global y está al acceso de cualquier bloque interno de código:
 
@@ -111,7 +111,7 @@ void main() {
 
 Será que también sucede lo mismo con funciones? Yes! Y se llaman _Inner functions_
 
-## _Inner functions_
+## Inner functions
 
 Hasta ahora siempre declaramos las funciones fuera del `main`, sin embargo, también podríamos hacerlo dentro. Son funciones internas  y tienen los mismos comportamientos que estuvimos aprendiendo en este artículo:
 
@@ -172,6 +172,7 @@ void main() {
     // Function declaration: declarando la función
     void anInnerFunction() {
       print('Esto es una inner function!');
+      print(b);
     }
 
     // Function call: llamando a la función ya declarada

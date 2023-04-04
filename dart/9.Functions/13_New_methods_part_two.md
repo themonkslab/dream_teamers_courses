@@ -1,12 +1,12 @@
-# _New methods part two_
+# New methods part two
 
-Ya que conocemos sobre funciones anónimas, podemos conocer otros métodos útiles para seguir agregando a nuestra lista.
+Now that we know about anonymous functions, we can learn about other useful methods to keep adding to our list.
 
-## _Where_
+## Where
 
-El método _where_ o 'donde', __nos permite analizar una _collection_ valor por valor mediante una función anónima que le pasemos. Va a retornar un `Iterable` con todos aquellos valores que han retornado `true` según la función anónima que le hayamos pasado.__
+The _where_ method, __allows us to analyze a _collection_ value by value using an anonymous function that we pass to it. It will return an `Iterable` with all those values that have returned `true` according to the anonymous function that we have passed it.__
 
-Supongamos que tenemos una lista de números y queremos retornar solo los números pares. Sabemos que los pares son aquellos que divididos por dos, tienen un resto de 0. Entonces, podemos pasarle al `where` una función que utilice el `%` para dividir por `2` y si su resultado es `0`, habrá dado `true` por lo que significa que se trata de un número par:
+Suppose we have a list of numbers and we want to return only the even numbers. We know that the even numbers are those that divided by two, have a remainder of 0. Then, we can pass to the `where` a function that uses the `%` to divide by `2` and if its result is `0`, it will have given `true` so it means that it is an even number:
 
 ```dart
 void main() {
@@ -16,9 +16,9 @@ void main() {
 }
 ```
 
-## _First where_
+## First where
 
-Este método __también recibe una función anónima como primer parámetro solo que retorna el primer valor que habiendo sido analizado por la función que le pasemos, retorne `true`__. Veamos un ejemplo en donde el número `2` se repite varias veces:
+This method __also receives an anonymous function as first parameter only that returns the first value that having been parsed by the function we pass it, returns `true`__. Let's see an example where the number `2` is repeated several times:
 
 ```dart
 void main() {
@@ -30,9 +30,9 @@ void main() {
 }
 ```
 
-Este método a su vez, __nos permite en su segundo parámetro nombrado (`orElse`), recibir otra función anónima que se ejecutará solo si en ninguna de las iteraciones o vueltas, la función que le hayamos pasado retorna `true`.__
+This method at the same time, __allows us in its second named parameter (`orElse`), to receive another anonymous function that will be executed only if in none of the iterations, the function that we have passed it returns `true`__.
 
-Por ejemplo, queremos retornar el valor que multiplicado por `10` sea igual a 100. Como ningún número de la lista nos dará dicho resultado, vamos a retornar un `-1`:
+For example, we want to return the value that multiplied by `10` equals 100. Since no number in the list will give us such a result, we will return a `-1`:
 
 ```dart
 void main() {
@@ -47,9 +47,9 @@ void main() {
 }
 ```
 
-## 💪 Encontrando el precio
+## 💪 Finding the price
 
-__Requirement__: dado el siguiente texto, creen una función que reciba dicho texto, lo separe en oraciones a través de sus puntos y retornen un listado de todas las oraciones que contienen la palabra _price_. Imprímanlo para corroborarlo.
+__Requirement__: given the following text, create a function that receives the text, separates it into sentences by their dots, and returns a list of all sentences containing the word _price_. Print it to corroborate it.
 
 ```dart
   const airpodsArticle = '''
@@ -80,7 +80,7 @@ A new earbud falling between the one-size-fits-all AirPods and the premium Air
 
 ---
 
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {
@@ -121,13 +121,11 @@ List<String> findPrice(String rawDocument) {
 
 ```
 
-## 💪 Implementando nosotros mismos el _where_
+## 💪 Implementing the _where_ ourselves
 
-__Requirement__: implementar la función `where` como si no estuviera escrita. Es un método que tiene que recibir una lista de items y una función que evalúe cada item de dicha lista para luego retornar todos aquellos valores que hayan cumplido con la condición pedida en la función. Utilizar genéricos para que sirva con listas de cualquier tipo y demostrar su funcionamiento pasándole a su nueva función `where` la lista `[1,2,3,4,5,6]` y una función como parámetro que devuelva los números impares. El resultado debiera ser `[1, 3, 5]`.
+__Requirement__: implement the `where` function as if it were not written. It is a method that has to receive a list of items and a function that evaluates each item of this list and then returns all those values that have fulfilled the condition requested in the function. Use generics so that it works with lists of any type and demostrate its functionality passing to your new function `where` the list `[1,2,3,4,5,6]` and a function as parameter that returns the odd numbers. The result should be `[1, 3, 5]`.
 
----
-
-__💀 Solución__:
+__💀 Solution__:
 
 ```dart
 void main() {
@@ -148,11 +146,11 @@ List<T> where<T>(List<T> items, bool Function(T value) check) {
 }
 ```
 
-## _Reduce_
+## Reduce
 
-Este método nos permite combinar todos los elementos en una lista y producir un resultado único. El ejemplo más común es sumar todos los elementos de una lista y evitar tener que usar un _for-in_. Veámoslo con un ejemplo.
+This method allows us to combine all the elements in a list and produce a unique result. The most common example is to add all the elements of a list and avoid having to use a _for-in_. Let's see it with an example.
 
-Supongamos que tenemos una lista de `int` y queremos sumar todos sus items. Vamos a llamar al método `reduce` en dicha lista y éste va a recibir una función que va a retornar un `int` y va a tomar dos valores como argumentos, ambos `int` y va a ejecutar dicha función de forma iterativa, como les muestro en los comentarios:
+Suppose we have an `int` list and we want to sum all its items. We are going to call the `reduce` method in this list and it is going to receive a function that is going to return an `int` and it is going to take two values as arguments, both `int` and it is going to execute this function in an iterative way, as I show you in the comments:
 
 ```dart
 void main() {
@@ -164,4 +162,4 @@ void main() {
 }
 ```
 
-En la primera iteración, el `value` es nuestro primer item en la lista, y nuestro segundo item, el `element`. Efectúa la operación y se mueve a la siguiente iteración. El `value` ahora habrá sido actualizado con el resultado de la primer suma, de la iteración previa y el `element` ahora será el tercer item. Finalmente en la última iteración, el `value` es el resultado de la suma de la iteración anterior y el `element` nuestro último item de la lista. Lo que retorna al final es el último valor alcanzado por el `value`.
+In the first iteration, the `value` is our first item in the list, and our second item, the `element`. It performs the operation and moves to the next iteration. The `value` will now have been updated with the result of the first addition, from the previous iteration, and the `element` will now be the third item. Finally in the last iteration, the `value` is the result of the sum of the previous iteration and the `element` is our last item in the list. What returns at the end is the last result reached by the `value`.

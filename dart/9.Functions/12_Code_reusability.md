@@ -1,12 +1,12 @@
-# _Code reusability_
+# Code reusability
 
-Ya hemos citado muchas veces el porqué tratar de evitar la repetición de código (_DRY_) pero es algo que siempre tenemos que tener presente ya que nos ahorra toneladas de energía. __Si reutilizamos código de forma correcta, evitamos tener que mantener código y solucionar bugs producto de código repetido que no actualizamos__.
+We have already mentioned many times why we try to avoid code repetition (_DRY_) but it is something we always have to keep in mind as it saves us tons of energy. __If we reuse code correctly, we avoid having to maintain code and fix bugs resulting from repeated code that we don't update.__
 
-Vamos entonces a ver cómo podemos utilizar lo que aprendimos de funciones para lograr un mejor código.
+So let's see how we can use what we learned about functions to make better code.
 
-## Funciones como argumentos
+## Functions as arguments
 
-Recordemos el último ejemplo:
+Recall the last example:
 
 ```dart
 void main() {
@@ -16,7 +16,7 @@ void main() {
 }
 ```
 
-Supongamos que no es el único lugar en el que queremos agregarle el prefijo a un listado de profesionales o que necesitamos hacerlo varias veces con distintas listas de profesionales o bien que podría tratarse de personas de distintas profesiones y necesitaríamos cambiar el prefijo cada vez. Qué tal si extraemos la utilidad en una función? 💀 No me quedan dudas que tienen ganas de ir a probarlo ustedes y lo pueden hacer perfectamente!
+Suppose this is not the only place we want to add the prefix to a list of professionals, or we need to do it several times with different lists of professionals, or it could be people from different professions and we need to change the prefix each time. How about extracting the utility into a function? 💀 I have no doubt that you feel like trying it yourself and you can do it perfectly!
 
 ```dart
 void main() {
@@ -35,7 +35,7 @@ List<String> addPrefix(
 }
 ```
 
-Súper! Ya mejoramos bastante nuestro código teniendo una sola función que mantener o testear en el futuro. Pero __qué pasa si queremos que esta función pueda agregar un título a veces y otras un sufijo? Y aun así seguir siendo una función pura, lo que significa que tiene una sola razón de existir y con los mismos argumentos arroja los mismos resultados?__ Podemos pedir en nuestra función, una función anónima como argumento!
+Super! We have already improved our code by having only one function to maintain or test in the future. But __what if we want this function to be able to add a title sometimes and a suffix sometimes? And still remain a pure function, which means that it has only one reason to exist and with the same arguments yields the same results?__ We can ask in our function, an anonymous function as an argument!
 
 ```dart
 void main() {
@@ -65,18 +65,18 @@ List<String> giveTitles({
 }
 ```
 
-Fíjense lo que hicimos:
+Look at what we did:
 
-1. Renombramos la función que habíamos extraído para que sea más representativa.
-2. Suplantamos el segundo argumento, por una función que va a retornar un `String` y pide un `String` como argumento.
-3. Dentro del `map`, insertamos nuestra función. Tengamos en cuenta que nos permite hacerlo ya que el `map` toma un `String` como argumento (debido a que aplicamos un `map` en una lista de `String`) y luego efectúa una operación en él para retornar un valor, lo mismo que la función que le pasamos.
-4. Llamamos dos veces a esta función, con dos funciones anónimas distintas pero que ambas respetan la firma que pedimos en nuestro argumento, la primera para agregar un prefijo y la segunda un sufijo.
+1. We rename the function that we had extracted so that it is more representative.
+2. We replace the second argument, by a function that is going to return a `String` and asks for a `String` as argument.
+3. Inside the `map`, we insert our function. Note that it allows us to do this because the `map` takes a `String` as an argument (because we apply a `map` on a list of `String`) and then performs an operation on it to return a value, the same as the function we pass it.
+4. We call this function twice, with two different anonymous functions but both respecting the signature we ask for in our argument, the first one to add a prefix and the second one a suffix.
 
-Así podemos observar todo el poder que tiene esta función que recibe otra función anónima como argumento y cada vez que se ejecute va a retornar el mismo resultado con los mismos argumentos, lo cual es requisito para que sea una función pura. Al mismo tiempo, cumple con una sola función, la de retornar una `List<String>` performando la operación que le pasemos. Una verdadera ganga! 🤣
+Thus we can observe all the power that has this function that receives another anonymous function as argument and every time it is executed it will return the same result with the same arguments, which is a requirement for it to be a pure function. At the same time, it fulfills only one function, that of returning a `List<String>` performing the operation that we pass it. A real bargain! 🤣
 
-## _Generics_
+## Generics
 
-Estuvimos viendo que podíamos hacer funciones que reciban funciones como parámetros pero siempre recibían y retornaban el mismo tipo de variable. Qué sucede si queremos hacer una función que sirva para varios tipos? Veámoslo con un ejemplo bien sencillo: supongamos que tenemos una lista de `int` y queremos tener una función que nos permita ejecutar distintas operaciones en ellos. Crearemos entonces una función que reciba otra como argumento:
+We were seeing that we could make functions that receive functions as parameters but always received and returned the same type of variable. What happens if we want to make a function that works for several types? Let us see it with a very simple example: suppose we have a list of `int` and we want to have a function that allows us to execute different operations on them. We will then create a function that receives another one as argument:
 
 ```dart
 void main() {
@@ -90,14 +90,14 @@ List<int> transform(List<int> list, int Function(int) operation) {
 }
 ```
 
-Fíjense que hasta aquí funciona perfecto: podemos ejecutar dos operaciones distintas en nuestra lista original, primero multiplicar los valores originales por 2 y luego por 10. Qué sucede sin embargo si quisieran hacer lo siguiente?
+Notice that up to this point it works perfectly: we can perform two different operations on our original list, first multiplying the original values by 2 and then by 10. What happens however if you wanted to do the following?
 
 ```dart
 void main() {
   const list = [1, 2, 3];
   print(transform(list, (x) => x * 2));
   print(transform(list, (x) => x * 10));
-  print(transform(list, (x) => x / 2)); // 👁️ aquí aparece un problema
+  print(transform(list, (x) => x / 2)); // 👁️ a problem arises here
 }
 
 List<int> transform(List<int> list, int Function(int) operation) {
@@ -105,24 +105,24 @@ List<int> transform(List<int> list, int Function(int) operation) {
 }
 ```
 
-_'The return type 'double' isn't a 'int', as required by the closure's context.'_ Dice que el tipo de retorno `double` no es un `int` como require el contexto de nuestra _closure_. Recuerdan que una _closure_ es una función anónima pero que utiliza una variable que está fuera de su _scope_ y en este caso, está hablando de la `operation` que le pasamos a nuestro `transform`: dicha `operation` retorna un `int` pero si le pedimos que divida, vamos necesariamente a estar retornando un `double` por lo que no coincide con el tipo especificado. Cómo podemos hacer entonces? Utilizando genéricos!
+_'The return type 'double' isn't a 'int', as required by the closure's context.'_. Remember that a _closure_ is an anonymous function but it uses a variable that is outside its _scope_ and in this case, we are talking about the `operation` that we pass to our `transform`: this `operation` returns an `int` but if we ask it to divide, it will necessarily return a `double` so it does not match the specified type. How can we do then? Using generics!
 
-__Los genéricos o _generics_ son tipos que pueden tener otros tipos formales como parámetros__, o algo así como pasa en las funciones: una función recibe argumentos que luego puede utilizar; en el caso de los tipos, estos pueden recibir como parámetros otros tipos para utilizar. Cómo haríamos esto? En lugar del tipo ya conocido, por ejemplo `List<int>`, ponemos una letra mayúscula para representar lo que esperamos reciba, como convención nemotécnica. Dart sin embargo, cuenta ya con las siguientes convenciones:
+___Generics_ are types that can have other formal types as parameters__. Something like this happens in functions: a function receives arguments that it can then use; in the case of generic types, they can receive as parameters other types to use. How would we do this? Instead of the familiar type, for example `List<int>`, we put a capital letter to represent what we expect to receive, as a mnemonic convention. Dart however, already has the following conventions:
 
-- `E` para elemento.
-- `K` y `V` para key y value respectivamente.
-- `R` para un tipo de retorno.
-- `T`, `S` y `U` para tipos genéricos.
-- Si ninguno de los tipos anteriores sirvió a nuestros fines, cualquier letra mayúscula puede servir.
+- `E` for element.
+- `K` and `V` for key and value respectively.
+- `R` for a return type.
+- `T`, `S` and `U` for generic types.
+- If none of the above types served our purposes, any uppercase letter will do.
 
-Cómo haríamos con nuestro ejemplo anterior? Podríamos decirle a nuestra `transform` que reciba un parámetro de un tipo genérico en lugar de `int` para que pueda luego retornar también un `double`. Para esto, cuando declaramos la función, tenemos que ponerle dentro de `<...>` aquella letra que represente el genérico. Vamos a utilizar `T`:
+How would we do with our previous example? We could tell our `transform` to receive a parameter of a generic type instead of `int` so that it can then also return a `double`. For this, when we declare the function, we have to put inside `<...>` that letter that represents the generic. We are going to use `T`:
 
 ```dart
 void main() {
   const list = [1, 2, 3];
   print(transform(list, (x) => x * 2));
   print(transform(list, (x) => x * 10));
-  print(transform(list, (x) => x / 2)); // 👁️ aquí sigue nuestro problema
+  print(transform(list, (x) => x / 2)); // 👁️ our problem continues here
 }
 
 List<T> transform<T>(List<T> list, T Function(T) operation) {
@@ -130,7 +130,7 @@ List<T> transform<T>(List<T> list, T Function(T) operation) {
 }
 ```
 
-Ya agregamos nuestro tipo genérico pero sin embargo continua fallando! Qué sucede? Que estamos especificando un tipo genérico como parámetro de valor de entrada y salida cuando lo que queremos es que podamos introducir un tipo para la entrada y otro diferente para la salida, pudiendo así tener una lista de `int` que retorne un `double`. Cómo hacemos esto? Como con las funciones: les pasamos otro tipo genérico como parámetro, ahora llamado `S`:
+We have already added our generic type but it keeps crashing! What happens? We are specifying a generic type as input and output value parameter when what we want is that we can enter one type for the input and a different one for the output, so we can have an `int` list that returns a `double`. How do we do this? As with functions: we pass them another generic type as a parameter, now called `S`:
 
 ```dart
 void main() {
@@ -145,10 +145,10 @@ List<S> transform<T, S>(List<T> list, S Function(T) operation) {
 }
 ```
 
-Ahora, nuestra función `transform` recibe los tipos genéricos `T` y `S` y luego los utiliza de la siguiente manera: la lista que esperamos es de tipo `T` (`int` en nuestro caso). Luego `operation` retorna un tipo `S` (`double`) pero espera un tipo `T` como parámetro (el `int` para coincidir con la lista anterior) y el retorno total de nuestra función es del tipo `S` coincidiendo con la de nuestra `operation`.
+Now, our `transform` function receives the generic types `T` and `S` and then uses them as follows: the list we expect is of type `T` (`int` in our case). Then `operation` returns a type `S` (`double`) but expects a type `T` as a parameter (the `int` to match the above list) and the total return of our function is of type `S` matching that of our `operation`.
 
-Sé que puede sonar bastante complicado o enrevesado pero si lo escriben un par de veces, van a ir entendiendo cómo viene la mano.
+I know it may sound quite complicated or convoluted but if you write it down a couple of times, you will get the hang of it.
 
-## Aclaración final
+## Final clarification
 
-Me gustaría hacer una aclaración: __reusar o reutilizar código no es lo mismo que embellecer__: a veces tenemos la tendencia a escribir código solamente para hacer el código anterior más bonito, más legible. La idea sería escribir ese código la primera vez! 😂 Si solamente estamos agregando una función para que se vea más lindo algo que ya hicimos en otra, evitémoslo y mejoremos la anterior! Si lo hacemos para decir más lindo funciones propias de Dart, evitémoslo nuevamente ya que van a ver que al hacer mucho uso de ellas, les parecerán lo suficientemente bellas para dejarlas como están y van a evitar de esta manera, olvidarse del lenguaje.
+I would like to make a clarification: __reusing code is not the same as beautifying__: sometimes we tend to write code just to make the previous code prettier, more readable. The idea would be to write that code the first time! 😂 If we are just adding a function to make something we already did in another one look prettier, let's avoid it and improve the previous one! If we are doing it to say prettier Dart's own functions, let's avoid it again as you will see that by making much use of them, you will find them pretty enough to leave them as they are and you will avoid forgetting about the language.

@@ -1,6 +1,6 @@
-# _Function arguments_
+# Function arguments
 
-Vamos a cambiar continuar con el ejemplo anterior y ya que estamos en una panadería, podría conocer a casi todos los clientes, por lo que quiero saludarlos con su nombre:
+Let's continue with the previous example and since we are in a bakery, I might know almost all the customers, so I want to greet them by name:
 
 ```dart
 void main() {
@@ -14,11 +14,11 @@ void main() {
   print('Hi $client3! 😄 How are you feeling today?');
   print('Hi $client4! 😄 How are you feeling today?');
   print('Hi $client5! 😄 How are you feeling today?');
-  // Again, hasta el inifinito! 😅
+  // Again, to the infinite! 😅
 }
 ```
 
-Vamos a definir una función que nos permite ahorrarnos esas repeticiones:
+We are going to define a function that allows us to avoid these repetitions:
 
 ```dart
 void main() {
@@ -39,9 +39,9 @@ void greetings() {
 }
 ```
 
-Qué sucede? Dentro de nuestra función tenemos un error que nos dice que `client1` no está definido. Por qué? Porque `void greetings(){}` no sabe nada de lo que sucede dentro de `void main() {}`; lo que sucede dentro de los `{}` queda dentro de los `{}` 😂!
+What happens? Inside our function we have an error telling us that `client1` is not defined. Why? Because `void greetings(){}` doesn't know anything about what happens inside `void main() {}`; what happens inside the `{}` stays inside the `{}` 😂!
 
-Y cómo hacemos para hacerle llegar el nombre de cada cliente? Muy sencillo: pasándole argumentos:
+And how do we get the name of each client to him? Very simple: by passing arguments to them:
 
 ```dart
 void main() {
@@ -62,9 +62,9 @@ void greetings(String name) {
 }
 ```
 
-Ahora podemos ver que ahorramos varios caracteres ya que dentro de `greetings`, la variable `name` dentro del `print`, es 'llenada' por el argumento `name` que recibe. Fíjense que establecemos qué tipo de valor vamos a querer recibir en dicha función. Luego, cada vez que la llamamos, nuestro contenedor `name` va a llenarse con el que le pasemos, en este caso, el nombre de nuestro primer cliente, luego el segundo y luego el tercero y así! No es una maravilla?
+Now we can see that we save several characters since inside `greetings`, the variable `name` inside the `print`, is filled by the `name` argument it receives. Notice that we set what kind of value we want to receive in this function. Then, every time we call it, our `name` container is going to be filled with the one we pass it, in this case, the name of our first client, then the second and then the third and so on! Isn't it wonderful?
 
-Y supongamos que justo hoy tenemos una promoción y queremos ofrecerla a cada cliente! Con nuestras funciones funcionando (😂), no tenemos más que actualizar la función `greetings`:
+And imagine that just today we have a promotion and we want to offer it to every customer! With our functions working (😂), we just have to update the `greetings` function:
 
 ```dart
 void main() {
@@ -85,11 +85,11 @@ void greetings(String name) {
 }
 ```
 
-Díganme si no es una belleza total? Imagínense todo el trabajo que habría sido teniendo `print` por cada saludo! Una verdadera pesadilla! E imaginen en aplicaciones reales de miles de líneas de código... Imposible! Por esto, _DRY (don't repeat yourself)_ o no se repitan y utilicen funciones para no hacerlo! Ah! Noten que utilizamos `\n` para hacer un salto a la línea siguiente!
+Tell me if it is not a total beauty? Imagine all the work it would have been to have `print` for every greeting! A real nightmare! And imagine in real applications with thousands of lines of code? Impossible! So, _DRY (don't repeat yourself)_ and use functions not to do it! Ah! notice that we use `\n` to make a jump to the next line!
 
-Y me gustaría contarles, que no importa si a la función le pasan como argumento una `variable` como en el ejemplo, una expresión o un _literal_, siempre y cuando respeten el orden y el tipo. Veamos:
+And I would like to tell you, that it does not matter if the function is passed as argument a `variable` as in the example, an expression or a _literal_, as long as you respect the order and type. Let's see:
 
-Logrando el mismo resultado que en el último ejemplo:
+Achieving the same result as in the last example:
 
 ```dart
 void main() {
@@ -105,7 +105,7 @@ void greetings(String name) {
 }
 ```
 
-Pero qué sucede si le pasan un valor de un tipo distinto del que la función espera?
+But what happens if you pass it a value of a type other than the one the function expects?
 
 ```dart
 void main() {
@@ -121,9 +121,9 @@ void greetings(String name) {
 }
 ```
 
-Muy simple y muchas gracias Dart: nos avisa que el parámetro del tipo `bool` no puede ser asignado a uno del tipo `String`! Bendito _static check_ que nos avisa y previene de estos errores! De la misma forma, si nos olvidamos de pasar un parámetro, Dart también nos avisa!
+Very simple and thank you very much Dart: it warns us that the parameter of type `bool` cannot be assigned to one of type `String`! Blessed _static check_ that warns us and prevents us from these errors! In the same way, if we forget to pass a parameter, Dart also warns us!
 
-Ya vimos que __las funciones nos sirven para hacer algo__ por lo que __deben declararse con un verbo__, mientras que __los nombres deben declararse como sustantivos__. Además, es __importante cuidar de que cada función que escribamos, sirva para un solo propósito__ y no hacer muchas cosas a la vez. Por ejemplo, supongamos que estamos en una fiesta y queremos saludar a una persona conocida para luego introducirle a un amigo. Vamos a hacer lo que no deberíamos hacer:
+We have already seen that __functions serve to do something__ so they __must be declared with a verb__, while __names must be declared as nouns__. In addition, it is __important to take care that each function we write serves only one purpose__ and does not do many things at once. For example, suppose we are at a party and we want to greet an acquaintance and then introduce a friend. Let's do what we should not do:
 
 ```dart
 void main() {
@@ -139,7 +139,7 @@ void sayHiAndIntroductAFriend(
 }
 ```
 
-Qué pasaría si de repente nuestro  amigo se fuera al baño y ya no tenemos a quien presentar? No podríamos saludar! 🤣 Por ello, es muy importante que cada función cumple con una ... función!
+What if our friend suddenly went to the bathroom and we have no one to introduce? We would not be able to say hello! 🤣 That is why it is very important that each function fulfills a... function!
 
 ```dart
 void main() {
