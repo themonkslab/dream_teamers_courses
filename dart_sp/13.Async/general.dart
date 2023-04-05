@@ -1,107 +1,37 @@
-class FlutterButton {
-  FlutterButton({
-    required this.text,
-    this.color = Color.lightBlue,
-    this.onPressed,
-  }) {
-    if (text.isEmpty) {
-      throw AssertionError('Text can\'t be empty');
-    }
-    if (onPressed != null && onPressed.runtimeType == () {}.runtimeType) {
-      throw AssertionError('onPressed can\'t be an empty function');
-    }
-    if (color == Color.red) {
-      throw RedForErrorsException('Color should be red just for errors');
-    }
-  }
-
-  final String text;
-  final Function? onPressed;
-  final Color color;
-}
-
-class RedForErrorsException implements Exception {
-  final String message;
-  RedForErrorsException(this.message);
-}
-
-enum Color {
-  lightBlue,
-  darkBlue,
-  red,
-  green,
-  yellow,
-  orange,
-  purple,
-  pink,
-  brown,
-  grey,
-  black,
-  white
-}
-
 // void main() {
-//   group('Given a FlutterButton', () {
-//     test('When created with an empty text, Then should throw AssertionError',
+//   group('Given a group of diners', () {
+//     test('When there are more than 4 diners, Then askForTable returns false',
 //         () {
-//       expect(() => FlutterButton(text: ''), throwsA(isA<AssertionError>()));
-//     });
-
-//     test('When created with text not empty, should return normally', () {
-//       expect(() => FlutterButton(text: 'Hello, world!'), returnsNormally);
+//       expectLater(askForTable(5), completion(isFalse));
 //     });
 
 //     test(
-//         'When created with an empty onPressed, Then should throw AssertionError',
+//         'When there are less than or equal to 4 diners, Then askForTable returns true',
 //         () {
-//       expect(() => FlutterButton(text: 'Hello, world!', onPressed: () {}),
-//           throwsA(isA<AssertionError>()));
-//     });
-
-//     test(
-//         'When created with a onPressed that returns nothing, Then should throw AssertionError',
-//         () {
-//       expect(
-//           () => FlutterButton(
-//               text: 'Hello, world!',
-//               onPressed: () {
-//                 // Do nothing
-//               }),
-//           throwsA(isA<AssertionError>()));
-//     });
-
-//     test(
-//         'When created with a onPressed that returns something, Then should return normally',
-//         () {
-//       expect(
-//           () => FlutterButton(
-//               text: 'Hello, world!', onPressed: () => print('test')),
-//           returnsNormally);
+//       expectLater(askForTable(4), completion(isTrue));
 //     });
 //   });
 // }
-void main() {
-  try {
-    createButton();
-  } catch (e) {
-    print('🧘🏻 I manage excecptions by meditation');
-    print(e);
-  }
-  print('🚀 Now, gets here!');
+
+Future<bool> askForTable(int diners) {
+  return Future.delayed(Duration(seconds: 3), () {
+    if (diners > 4) {
+      return false;
+    } else {
+      return true;
+    }
+  });
 }
 
-void createButton() {
-  try {
-    final button = FlutterButton(text: 'Send', color: Color.red);
-    // Hacer algo aquí con el super botón
-  } on RedForErrorsException catch (e, stackTrace) {
-    print(stackTrace);
-    print('☢️ This is a RedForErrorsException');
-    print(e.message);
-    rethrow;
-  } catch (e) {
-    print(e);
-  } finally {
-    print('🎬 Finally');
-  }
+void main() {
+  askForTable(5).then((value) {
+    if (value == true) {
+      print('You have a table! 🥳');
+    } else {
+      print('You don\'t have a table! 😋');
+    }
+    // El método catchError se ejecuta cuando se produce un error
+  }).catchError((error) {
+    print('Error: $error');
+  }).whenComplete(() => print('The process has finished! 🤓'));
 }
