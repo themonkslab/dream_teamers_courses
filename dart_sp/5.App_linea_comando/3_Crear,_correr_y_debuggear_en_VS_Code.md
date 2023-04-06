@@ -4,4 +4,4 @@ Qué es VS Code? Es __nuestro editor de código favorito__ ya que es sumamente _
 
 Vamos a instalarlo:
 
-TP Nahuel > instalación + extensiones que Mau pase
+Primero que todo debemos descargalo y lo haremos desde su _web page_ siguiendo este [link](https://code.visualstudio.com/Download). Allí elegiremos la opción de acuerdo a nuestro sistema operativo 

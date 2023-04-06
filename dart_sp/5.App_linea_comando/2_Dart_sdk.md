@@ -29,17 +29,17 @@ Ejecuten el _Power Shell_ como administradores y tal como indica la web de _choc
 Luego ejececuten el comando:
 `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 
-ACA LA IMAGEN
+![chocolatey y PowerShell](dart_sp/5.App_linea_comando/5.2.1_chocolatey_and_PowerShell.png)
 
-Listo! ya instalamos el _chocolatey package manager_ y estamos listos para instalar el __Dart SDK__. Para ello iremos al este [link](https://community.chocolatey.org/packages) y buscaremos el paquete de Dart SDK en su versión mas estable.
+Listo! ya instalamos el _chocolatey package manager_ y estamos listos para instalar el __Dart SDK__. Para ello iremos a este [link](https://community.chocolatey.org/packages) y buscaremos el paquete de Dart SDK en su versión mas estable.
 
-ACA LA IMAGEN
+![Dart SDK Package](dart_sp/5.App_linea_comando/5.2.2_DartSDK_package.png)
 
-Cierren el _Windows PowerShell_ y vuelvan a ejecutarlo como administrador y ahora ejecuten el comando: `choco install dart-sdk` y esperen unos minutos. Cuando haya terminado, cierren, vuelvan a abir y si ejecutan el comando `dart` les debería de aparecer lo siguiente:
+Cierren el _Windows PowerShell_ y vuelvan a ejecutarlo como administrador, y ahora ejecuten el comando: `choco install dart-sdk` y esperen unos minutos. Cuando haya terminado, cierren, vuelvan a abir y si ejecutan el comando `dart` les debería de aparecer lo siguiente:
 
-ACA LA IMAGEN
+ª[Dart command in PowerShell](dart_sp\5.App_linea_comando\5.2.3_Dart_command_in_PowerShell.png)
 
-Listo! 👍 el Dart SDK ya está instalado en Windows.
+Listo! el Dart SDK ya está instalado en Windows, ahora nos queda VS Code, pero en el próximo artículo 👍.
 
 ### En Mac
 
