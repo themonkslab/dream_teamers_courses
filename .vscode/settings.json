@@ -2,5 +2,10 @@
     "[markdown]": {
         "editor.wordWrap": "off",
         "diffEditor.wordWrap": "on"
-    }
+    },
+    "cSpell.words": [
+        "creacionales",
+        "escalabilidad",
+        "extensibilidad"
+    ]
 }

@@ -1,62 +1,37 @@
-import 'package:test/test.dart';
+void main() async {
+  print('🚀 The process has started!');
+  bool firstOrder;
+  bool secondOrder;
+  bool thirdOrder;
+  try {
+    firstOrder = await askForTable(5);
+    printResult(firstOrder);
+    secondOrder = await askForTable(4);
+    printResult(secondOrder);
+    thirdOrder = await askForTable(3);
+    printResult(thirdOrder);
+  } catch (e) {
+    print('Error: ${e}');
+  } finally {
+    print(' The process has ended! 🥳');
+  }
+}
 
-// void main() {
-//   group('Given a printSeconds with N as value', () {
-//     test('When value is greater than 60, Then throws AssertionError', () {
-//       expectLater(printSeconds(value: 61, returnError: false),
-//           throwsA(isA<AssertionError>()));
-//     });
+void printResult(bool value) {
+  if (value == true) {
+    print('You have a table! 🥳');
+  } else {
+    print('You don\'t have a table! 😋');
+  }
+}
 
-//     test('When ends correctly, Then returns true after N seconds', () {
-//       expectLater(
-//           printSeconds(value: 2, returnError: false), completion(isTrue));
-//     });
-
-//     test('When something went wrong, Then throws an exception after N seconds',
-//         () {
-//       expectLater(printSeconds(value: 2, returnError: true), throwsException);
-//     });
-//   });
-// }
-
-void main() {
-  group('Given printSeconds function', () {
-    test('When value is greater than 60, Then throws AssertionError', () {
-      expect(() => printSeconds(value: 61, returnError: false),
-          throwsA(isA<AssertionError>()));
-    });
-
-    test('When returnError is true, Then throws Exception', () {
-      expect(() => printSeconds(value: 30, returnError: true),
-          throwsA(isA<Exception>()));
-    });
-
-    test('When all parameters are valid, Then returns true', () async {
-      final result = await printSeconds(value: 5, returnError: false);
-      expect(result, isTrue);
-    });
+Future<bool> askForTable(int diners) {
+  return Future.delayed(Duration(seconds: 3), () {
+    // throw Exception('No tables available');
+    if (diners > 4) {
+      return false;
+    } else {
+      return true;
+    }
   });
 }
-
-Future<bool> printSeconds({
-  required int value,
-  required bool returnError,
-}) async {
-  assert(value <= 60, 'Value must be less than 60 seconds');
-  if (returnError) throw Exception('Something went wrong!');
-  for (var i = 0; i < value; i++) {
-    await Future.delayed(Duration(seconds: 1));
-    print('⏲ Seconds: ${i + 1}');
-  }
-  print('Done ⚡️');
-  return true;
-}
-
-// void main() async {
-//   try {
-//     await printSeconds(value: 10, returnError: false);
-//     await printSeconds(value: 10, returnError: true);
-//   } catch (e) {
-//     print(e);
-//   }
-// }
