@@ -26,7 +26,8 @@ Bien! lo maravilloso de VS Code es que dispone de miles de _extensions_ que nos 
 
 Y si bien no las utilizaremos todas por ahora, esta es la lista de extensiones que les recomiendo:
 
-![VS Code lista de extensiones](dart_sp/5.App_linea_comando/5.3.7_VSCode_extensions.png)
+![VS Code lista de extensiones 1](dart_sp/5.App_linea_comando/5.3.7_VSCode_extensions1.png)
+![VS Code lista de extensiones 2](dart_sp/5.App_linea_comando/5.3.7_VSCode_extensions2.png)
 
 ## Para Linux
 
