@@ -1,21 +1,9 @@
-void main() async {
-  print('🚀 The process has started!');
-  bool firstOrder;
-  bool secondOrder;
-  bool thirdOrder;
-  try {
-    firstOrder = await askForTable(5);
-    printResult(firstOrder);
-    secondOrder = await askForTable(4);
-    printResult(secondOrder);
-    thirdOrder = await askForTable(3);
-    printResult(thirdOrder);
-  } catch (e) {
-    print('Error: ${e}');
-  } finally {
-    print(' The process has ended! 🥳');
-  }
-}
+import 'dart:io';
+
+// void main() async {
+
+//   printResult(table);
+// }
 
 void printResult(bool value) {
   if (value == true) {
@@ -23,15 +11,21 @@ void printResult(bool value) {
   } else {
     print('You don\'t have a table! 😋');
   }
+  print('We hope to see you soon! 🤗');
 }
 
-Future<bool> askForTable(int diners) {
-  return Future.delayed(Duration(seconds: 3), () {
-    // throw Exception('No tables available');
-    if (diners > 4) {
-      return false;
-    } else {
-      return true;
-    }
-  });
+void main() async {
+  stdout.write('Welcome to our restaurant! 🍽️\nHow many people are you? ');
+  int diners = int.parse(stdin.readLineSync()!);
+
+  try {
+    bool table = await doWeHaveTable(diners);
+    printResult(table);
+  } catch (e) {
+    print('Error: ${e}');
+  }
+}
+
+Future<bool> doWeHaveTable(int diners) {
+  return Future.error(Exception('Something went wrong! 😱'));
 }
