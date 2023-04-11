@@ -72,14 +72,14 @@ __Extra help__: I leave you another example: days of the week.
 __💀 Solution__:
 
 ```dart
-enum Suits { hearts, diamons, clubs, spades}
+enum Suits { hearts, diamonds, clubs, spades}
 enum Weather { sunny, cloudy, rainy, snowy }
 enum OperatingSystems { windows, linux, mac }
-enum MeansOfTransport { car, bycicle, motorcycle, plane, boat}
+enum MeansOfTransport { car, bicycle, motorcycle, plane, boat}
 enum MostUsedLanguages { english, spanish, chinese}
 ```
 
-## _Trailing comma_
+## Trailing comma
 
 Easy! 💀 I want to try typing these two _in_ exactly as I leave them (paying attention to the commas), click 'Format' on Dartpad and see what happens:
 

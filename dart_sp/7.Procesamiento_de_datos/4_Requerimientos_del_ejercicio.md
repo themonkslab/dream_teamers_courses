@@ -1,6 +1,6 @@
 # Requerimientos del ejercicio
 
-Primero que nada, vayan a su `data_to_read.csv` para endenterlo un poco. Pueden ver que es muy sencillo y la primer línea es un _header_ o encabezado que muestra los títulos de cada columna: 'Año', 'Puntaje' y 'Título'. Qué es lo que queremos lograr? Vamos a ver los _requirements_:
+Primero que nada, vayan a su `data_to_read.csv` para entenderlo un poco. Pueden ver que es muy sencillo y la primer línea es un _header_ o encabezado que muestra los títulos de cada columna: 'Año', 'Puntaje' y 'Título'. Qué es lo que queremos lograr? Vamos a ver los _requirements_:
 
 _Requirement_: obtener y mostrar el promedio de puntaje de todas las películas.
 

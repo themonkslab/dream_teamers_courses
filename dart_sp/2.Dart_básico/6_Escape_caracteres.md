@@ -1,4 +1,4 @@
-# _Escaping_ o escape de caracteres
+# Escaping_o escape de caracteres
 
 Cuando vimos _interpolation_ dijimos que podíamos utilizar para hacerlo, _single-quotes_ ('') y _double-quotes_ (""). Qué diferencia habría?
 
@@ -6,7 +6,7 @@ Imaginemos que queremos imprimir en inglés el texto 'Yo soy Mauro', en inglés 
 
 Qué sucedió? Intentaron representarlo de esta manera?: `print('I'm Mauro');`. Si hicieron esto, seguramente se les llenó la consola de errores! Por qué? Porque estamos empezando la interpolación con una comilla simple (_single-quotes_) y luego introducimos otra para la abreviación del verbo (_I'm_). Allí, Dart entiende que terminamos con lo que queremos imprimir y no entiende nada de lo que pasa luego.
 
-Una de las formas de resolverlo sería en lugar de utilizar comillas simples para envolver toda la cadena de texto, utilizar comillas dobles o _double-quotes_. 💀 Prueben ustedes primero! Se vería algo así: `print("I'm Mauro");`. Ahora pueden ver que ya no tenemos errores en la consola y se imprime corrextamente. Sin embargo, tenemos otra forma de resolverlo: _String escaping_.
+Una de las formas de resolverlo sería en lugar de utilizar comillas simples para envolver toda la cadena de texto, utilizar comillas dobles o _double-quotes_. 💀 Prueben ustedes primero! Se vería algo así: `print("I'm Mauro");`. Ahora pueden ver que ya no tenemos errores en la consola y se imprime correctamente. Sin embargo, tenemos otra forma de resolverlo: _String escaping_.
 
 ## `String` _escaping_ o escape de `String`
 

@@ -1,4 +1,4 @@
-# _While loop_
+# While loop
 
 Un _loop_ es un __bucle, un proceso que se repite de forma infinita__. En el caso de un bucle _while_ (mientras), este se repite siempre que se cumpla una condición que fijamos de antemano.
 

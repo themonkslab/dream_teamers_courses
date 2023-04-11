@@ -60,7 +60,7 @@ We can __add values to a list__ in the following two ways. __The first one adds 
 
 ```dart
 void main() {
-    var cities = ['Coirdoba', 'New York', 'Paris'];
+    var cities = ['Cordoba', 'New York', 'Paris'];
     cities.add('Moscow');
     print(cities); // ['Cordoba', 'New York', 'Paris', 'Moscow']
 }
@@ -133,7 +133,7 @@ __Requirement__: you have to calculate if the next _assertion_ is going to give 
 ```dart
 void main() {
     var cities = ['Cordoba', 'New York', 'Paris', 'Moscow', 'Rome'];
-    var newCities = ['Buenos Aires', 'Washington', 'Marsella', 'San Petesburgo', 'Milan'];
+    var newCities = ['Buenos Aires', 'Washington', 'Marcella', 'San Petesburgo', 'Milan'];
     if(cities.contains('New York')) {
         cities.add(newCities[cities.indexOf('Moscow')]);
     }

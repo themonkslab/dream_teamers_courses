@@ -2,7 +2,7 @@
 
 Cuando empezamos a programar, nuestra meta principal es hacer que las cosas funcionen, como sea. __A medida que vamos ganando mayor experiencia, empezamos a utilizar paquetes o librerías que son conjuntos de funciones que nos ahorran tiempo y hacen nuestro código más simple.__ Y también nuestra vida! 😂
 
-Esto __nos permite reducir la complejidad sin saber muchas veces, qué sucede dentro de esas librerías__. Cada librería es una especie de caja negra en donde uno interactúa con las partes que el desarrollador de la librería expuso (comunmente es llamado _API, application programmer interface_ o interface de programación de aplicaciones), sin tener mucha idea de qué pasa dentro.
+Esto __nos permite reducir la complejidad sin saber muchas veces, qué sucede dentro de esas librerías__. Cada librería es una especie de caja negra en donde uno interactúa con las partes que el desarrollador de la librería expuso (comúnmente es llamado _API, application programmer interface_ o interface de programación de aplicaciones), sin tener mucha idea de qué pasa dentro.
 
 __Este mecanismo se llama _Composability_ o componibilidad y consiste en crear funciones o clases (ya veremos qué son), que se pueden combinar fácilmente.__ Así, si creamos una función A, podemos luego aplicarle a ella una función B y no necesariamente tenemos que saber qué hace una o la otra sino, conocer cuáles son sus argumentos requeridos y sus retornos.
 

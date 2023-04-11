@@ -1,4 +1,4 @@
-# _Lists_ o listas
+# Lists o listas
 
 También conocidas como _arrays_ en otros lenguajes, sirven para representar una __colección de valores__. Podemos inicializarla como un _list literal_ vacío, (`[]`), llenarla de valores e imprimirla de la siguiente manera:
 
@@ -23,7 +23,7 @@ Exacto, nos arroja un `RangeError (index)` que  dice que el _index_ está fuera 
 
 ## Cambiar sus valores
 
-Podemos utilzar nuevamente el _subscript operator_ para asignar un nuevo valor a el índice de la lista que querramos. Por ejemplo:
+Podemos utilizar nuevamente el _subscript operator_ para asignar un nuevo valor a el índice de la lista que querramos. Por ejemplo:
 
 ```dart
 void main() {

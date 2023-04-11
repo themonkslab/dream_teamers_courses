@@ -1,4 +1,4 @@
-# _Increment and Decrement operators_
+# Increment and Decrement operators
 
 Dart ofrece esta forma ya conocida de hacer nuestro código más conciso:
 

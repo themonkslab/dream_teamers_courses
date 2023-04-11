@@ -7,7 +7,7 @@ Supongamos que el ajo no me hace muy bien y __quiero elaborar una app__ que lea 
 3. Guardar la receta en la variable.
 4. Chequear si la receta contiene la palabra ajo.
 5. Asignar la respuesta del chequeo del paso previo a nuestra variable que nos dice si tiene ajo o no.
-6. Imprimir en consola el resultado de comprobar si la receta tiene ajo o no, segun la variable creada.
+6. Imprimir en consola el resultado de comprobar si la receta tiene ajo o no, según la variable creada.
 
 Esto que acabamos de hacer recibe el nombre de __Pseudo code__ y es una metodología que nos permite __representar los pasos__ para crear un algoritmo o solucionar un problema, __de forma coloquial o corriente__. Desde aquí, lo único que tenemos que hacer, es traducirlo a código! Vamos a ir haciendo esa conversión de a poquito y yendo de fin a principio, siguiendo nuestra __estrategia de crear desde los tests o desde qué deberíamos tener cuando nuestro programa esté terminado__.
 
@@ -18,6 +18,7 @@ void main() {
     print('Contains \'garlic\': $containsGarlic');
 }
 ```
+
 Notaron como usamos el caracter de escape?
 
 Bien, entonces como ya vieron, esto nos da un error porque la variable _containsGarlic_ (contieneAjo),  aun no ha sido declarada ni inicializada y esta es la forma en la que vamos creando desde el final: sabemos que nuestro paso entonces es crear dicha variable.
@@ -89,7 +90,7 @@ De esta manera, nuestro código se entiende sin tener que explicar cómo está e
 
 ## El operador || (OR)
 
-Es un operar que va a retornar _true_ o _false_ cuando analice dos o mas operaciones. Si de analizar la primer operación resulta un _true_, ya no continua y retorna ese valor; si la primera da _false_, continua a la siguiente y el operador solamente retorna _false_ si todas dieron como resultado _false_. No se preocupen que esto lo veremos luego, aunque me gusta ir mostrándole estas cosas de apoquito, con el uso.
+Es un operar que va a retornar _true_ o _false_ cuando analice dos o mas operaciones. Si de analizar la primer operación resulta un _true_, ya no continua y retorna ese valor; si la primera da _false_, continua a la siguiente y el operador solamente retorna _false_ si todas dieron como resultado _false_. No se preocupen que esto lo veremos luego, aunque me gusta ir mostrándole estas cosas de a poquito, con el uso.
 
 ```dart
 void main() {
@@ -127,7 +128,7 @@ Olive oil
 
 Bien! Qué pasa si fueron ustedes los que escribieron esta receta y no solo listaron ingredientes sino que luego, explicaron cómo utilizarlos, algo que les podría haber llevado mucho tiempo y, finalmente, luego de mucho esfuerzo se dieron cuenta que en realidad, en lugar de llevar _'Arugula'_ ('rúcula'), llevaba _'Spinach'_ ('espinaca')?
 
-## _Replace_ o reemplazar
+## Replace o reemplazar
 
 Podríamos __buscar el _Pattern_ (patrón) que representa a esa palabra y reemplazarlo__ y eso es básicamente lo que hace el método. Primero, cómo se vería el problema:
 

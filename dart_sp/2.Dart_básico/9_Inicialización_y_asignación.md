@@ -1,4 +1,4 @@
-# _Initialization and Assignment_ Inicialización y asignación
+# Initialization and Assignment o Inicialización y asignación
 
 Ya vimos que una variable para poder guardar un valor, debe ser declarada definiendo su tipo y un nombre que represente su contenido: `String myFirstName;`. En este caso la estamos declarando.
 

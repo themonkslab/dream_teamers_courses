@@ -32,7 +32,7 @@ Try running the program without fixing the error as _Dartpad_ recommends.
 
 ![Program does not run](https://raw.githubusercontent.com/themonkslab/courses/main/dart/2.Dart_b%C3%A1sico/3.2_programa_no_corre_falta_punto_y_coma.png)
 
-In this case, couldy you see that we didn't have to create any test to make sure that the line has to be written in a certain way, following [certain rules](https://dart.dev/guides/language/language-tour): Dart does it itself.
+In this case, could you see that we didn't have to create any test to make sure that the line has to be written in a certain way, following [certain rules](https://dart.dev/guides/language/language-tour): Dart does it itself.
 
 If you add such a line and run it, we should see the expected result... right? What did the console print? What was the requirement? While you are unconsciously thinking this, let us tell you something else.
 

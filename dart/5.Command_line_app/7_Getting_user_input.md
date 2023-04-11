@@ -29,7 +29,7 @@ After that, we need to get what the user enters and for that we are going to mak
 
 They are __libraries of functions and utilities that we can make use of, without having to write them ourselves__. To do this, we need to import these libraries.
 
-Let's begin by writing the function we need and Dart will help us to find out which library we are talking about. Write after the `print` the function `stdin;` (_stantard input_). You will see a red underline and next to it, Dart tells you what the error is: `Undefined name 'stdin'`. It's not recognizing that name in our code and that's because we haven't imported it yet.
+Let's begin by writing the function we need and Dart will help us to find out which library we are talking about. Write after the `print` the function `stdin;` (_standard input_). You will see a red underline and next to it, Dart tells you what the error is: `Undefined name 'stdin'`. It's not recognizing that name in our code and that's because we haven't imported it yet.
 
 Hover the cursor over that name, and press the `cmd/ctrl + .` keys and a help menu will open. Once there, select `Import library dart:io`. Dart takes care of importing the library for us and you will see that there is no longer any failure:
 

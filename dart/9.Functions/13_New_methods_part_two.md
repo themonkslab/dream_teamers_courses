@@ -121,7 +121,7 @@ List<String> findPrice(String rawDocument) {
 
 ```
 
-## 💪 Implementing the _where_ ourselves
+## 💪 Implementing the where ourselves
 
 __Requirement__: implement the `where` function as if it were not written. It is a method that has to receive a list of items and a function that evaluates each item of this list and then returns all those values that have fulfilled the condition requested in the function. Use generics so that it works with lists of any type and demostrate its functionality passing to your new function `where` the list `[1,2,3,4,5,6]` and a function as parameter that returns the odd numbers. The result should be `[1, 3, 5]`.
 

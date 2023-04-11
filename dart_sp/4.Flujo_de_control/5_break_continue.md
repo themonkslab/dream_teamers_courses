@@ -1,4 +1,4 @@
-# _Break_ y _continue statements_
+# Break y continue statements
 
 _Break_ (parar) y _continue_ (continuar), son dos mecanismos con los que contamos para alterar el flujo dentro de _for_ y _while_ _loops_.
 
@@ -24,7 +24,7 @@ void main() {
 }
 ```
 
-## _Break_
+## Break
 
 Nos permite __parar, salir__ del _loop_. Si agregamos un _break_ apenas comienza el bucle, qué ocurre? Sale e imprime _Done!_ Además, pueden observar que Dartpad entiende que el código dentro del loop no se va a ejecutar y es lo suficientemente amable para decirnos que es código muerto (_dead code_), con un subrayado.
 
@@ -66,7 +66,7 @@ void main() {
 }
 ```
 
-## _Continue_
+## Continue
 
 Cuando insertamos esta declaración, obligamos al _loop_ a __saltar a la próxima iteración (`i++`)__. Vamos a insertarlos en nuestro ejercicio:
 

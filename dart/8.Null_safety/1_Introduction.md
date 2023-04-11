@@ -2,7 +2,7 @@
 
 In order to explain what _Null safety_ is, we need to look deeper into something we saw a little bit: null values.
 
-## _Null value_
+## Null value
 
 Suppose we create an application for a restaurant. This app stores data of all the users who usually buy in that restaurant. Every time they place an order, the person in charge of taking the order asks if they have any favorite food to take into account in new preparations of the menu. And finally, suppose we write a feature of such a program that creates a menu based on the favorite meals of all users. __Will each user have a favorite meal? If not, what represents it? Exactly: a _null value___
 

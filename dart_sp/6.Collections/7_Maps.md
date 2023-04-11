@@ -1,4 +1,4 @@
-# _Maps_
+# Maps
 
 Los mapas o también llamados _dictionaries_ (diccionarios), son __colecciones de pares de claves y valores, _key:value pairs_.__
 

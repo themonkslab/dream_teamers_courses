@@ -47,7 +47,7 @@ Nuevamente exacto: `b` no está definido sino dentro del _scope_ del `if` y por 
 
 ## Shadow variables
 
-Son variables con el __mismo nombre pero distinto ámbito.__ Es como si pisáramos solamente dentro de ese _scope_, el valor inicial, aunque si también imprimimos fuera del `if` ese valor, van a ver que contiene el valor que le asignamos al principio porque en realiadad son variables distintas:
+Son variables con el __mismo nombre pero distinto ámbito.__ Es como si pisáramos solamente dentro de ese _scope_, el valor inicial, aunque si también imprimimos fuera del `if` ese valor, van a ver que contiene el valor que le asignamos al principio porque en realidad son variables distintas:
 
 ```dart
 void main() {

@@ -2,7 +2,7 @@
 
 Ahora que ya tenemos un conocimiento más profundo sobre funciones, podemos explorar nuevos métodos para nuestras colecciones.
 
-## `forEach` _method_
+## `forEach` method
 
 Ya vimos cómo iterar con un bucle _for-in_ en una colección. Pero podemos hacerlo de forma más suscinta:
 
@@ -30,7 +30,7 @@ void main() {
 }
 ```
 
- Sin embargo, __recuerdan que podemos pasar una función como parámetro de otra función si ambas tienen la misma firma o son declaradas esperando los mismos retornos y argumentos?__
+Sin embargo, __recuerdan que podemos pasar una función como parámetro de otra función si ambas tienen la misma firma o son declaradas esperando los mismos retornos y argumentos?__
 
 Resulta que en este caso, nuestro `forEach` tiene esta declaración:
 `void Function(String)` y el ya conocido `print` tiene la siguiente: `void print(Object?)`. Aun nos faltan cosas para entenderlo un poco más pero básicamente:

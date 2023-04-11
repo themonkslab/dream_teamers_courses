@@ -118,6 +118,6 @@ Y la explicación del porqué tienen que ser del tipo `double` es porque si usá
 
 Además, dejo ese `assertion` en la solución para que lo puedan ver ustedes pero Dart ya nos avisa de que no es necesario debido a que mediante el _static check_, él sabe que son `double`.
 
-Y aquí les dejo una tarea. Tal vez recuerden de su paso por la escuela que si hay algo que no podemos realizar en matemáticas es dividir por cero. 💀 Prueben que ocurre cuando asignan `0` a sus variables. No sería interesante entonces preveer esa posibilidad?
+Y aquí les dejo una tarea. Tal vez recuerden de su paso por la escuela que si hay algo que no podemos realizar en matemáticas es dividir por cero. 💀 Prueben que ocurre cuando asignan `0` a sus variables. No sería interesante entonces prever esa posibilidad?
 
 Finalmente, podríamos haber hecho una función para juntar ambas operaciones pero... PEEEERO... 🧐 Exacto... ya ustedes saben que __una función como una variable debe tener una y solo una razón para existir__. Esto es algo que veremos en el futuro cuando aprendamos sobre _SOLID_, que básicamente refiere a escribir código limpio, simple y fácil de mantener. El que tenga cada pedazo de nuestro código una sola razón para existir refiere a la __primera letra del acrónimo _SOLID_, _Single responsability_, una sola responsabilidad.__

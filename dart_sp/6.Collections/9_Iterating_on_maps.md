@@ -1,4 +1,4 @@
-# _Iterating on maps_
+# Iterating on maps
 
 Ya vimos en _lists_ y _sets_ que podemos iterar, recorrerlos y utilizar sus valores. Qué pasa si intentamos hacer lo mismo con un `Map`?
 

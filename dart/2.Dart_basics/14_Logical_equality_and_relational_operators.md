@@ -26,7 +26,7 @@ Note that relational operators take precedence over logical operators, so the la
 ```dart
 void main() {
     print(5 > 2 || 5 > 7); // true - see that here it won't evaluate
-                           // the second expresion because
+                           // the second expression because
                            // the first one is true
     print(5 < 2 && 5 > 7); // false
 }

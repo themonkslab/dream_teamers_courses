@@ -57,7 +57,7 @@ void main() {
 
 The first thing that happens is an evaluation in the `(...)` and if it results in `true` (if the condition is fulfilled), it enters inside the `{...}` and executes what is found there, otherwise it skips the _block_ of code and executes what follows.
 
-Then, in the case of entering an age lower than 16, it enters, executes the code and then goes to the end which does not have a condition, and executes the last command: `print('Enjoy your visit!`); if the age we enter is higher, it skips that block and jumps to the end.
+Then, in the case of entering an age lower than 16, it enters, executes the code and then goes to the end which does not have a condition, and executes the last command: `print('Enjoy your visit!)`; if the age we enter is higher, it skips that block and jumps to the end.
 
 Let's finish it!
 
