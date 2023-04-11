@@ -44,7 +44,7 @@ Esto sin embargo, qué arroja como resultado? 💀 Deberían ya mismo estar prob
 
 Retorna un `bool`! Pero nosotros queremos imprimir en la consola algún mensaje un poco más _user friendly_ (amistoso para el usuario), en lugar de decirles _true_ o _false_. Ay! Si tan solo tuviéramos...
 
-## _Conditional operator_ o _Ternary operator_
+## Conditional operator o Ternary operator
 
 Traducido como operador condicional o ternario, nos permite __evaluar una expresión como verdadera o falsa y retornar la expresión que queramos__ , siempre y cuando sean del mismo tipo. Conceptualmente, veríamos algo así:
 

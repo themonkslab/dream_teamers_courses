@@ -2,7 +2,7 @@
 
 Vamos a dar una breve introducción sobre Dart para luego a lo largo del curso, ir adentrándonos en mayor detalle.
 
-## 🎯 Qué significa _dart_
+## 🎯 Qué significa dart
 
 Es una palabra en inglés que significa 'dardo' y no fue elegida casualmente sino que está relacionada directamente a lo que el equipo de Google intentaba lograr creando este lenguaje. Por cada característica, piensen primero en el objeto y luego les voy a explicar su correspondencia en el lenguaje:
 
@@ -12,9 +12,9 @@ Es una palabra en inglés que significa 'dardo' y no fue elegida casualmente sin
 4. __Modificable__: el lenguaje tenía que poder permitirle al desarrollador transformar lo que estaba creando de forma rápida.
 5. __Popular__: el lenguaje tenía que ser usado por muchos desarrolladores y así asegurar su constante crecimiento y evolución.
 
-Todo lo anterior ha sido logrado en este maravilloso lenguaje y através de las características que vamos a ir nombrando ahora.
+Todo lo anterior ha sido logrado en este maravilloso lenguaje y a través de las características que vamos a ir nombrando ahora.
 
-## 👮🏽 _Type safe_
+## 👮🏽 Type safe
 
 También llamado fuertemente tipado o de seguridad de tipo, significa que __las únicas operaciones que se pueden realizar sobre los datos en el lenguaje, son las permitidas por el tipo de los datos.__
 
@@ -24,7 +24,7 @@ Por ejemplo si tenemos un dato que es un número, no podemos aplicarle un métod
 
 Pero cómo logra esto?
 
-## ☑️ _Checks_ y _sound type system_
+## ☑️ Checks y sound type system
 
 Mediante un __sistema de comprobaciones de dos tipos: _static type check_ o de chequeo estático antes de compilar__ el programa (antes de que lo preparemos para ejecutar) __o mediante _runtime check_ o de chequeo en tiempo de ejecución, mientras estamos corriendo el programa.__
 
@@ -32,13 +32,13 @@ Y __lo anterior mediante un _sound type system_ o sistema sonorizado!__ 😒 Qu�
 
 Pero cómo realiza estas comprobaciones? Cómo sabe de qué tipo se trata?
 
-## 🔍 _Type inference_
+## 🔍 Type inference
 
 O __inferencia de tipo, significa que Dart tiene la posibilidad de entender de qué tipo estamos hablando__, casi, en todo momento, a través de su propio _static analyzer_ o sistema de análisis.
 
 Esto significa que si no decimos de qué tipo de dato se trata, Dart intentará dar con el tipo de dato preciso y sino, durante tiempo de ejecución le asignará uno dinámico llamado, ejem, _dynamic_ aunque si aun allí no encuentra ningún tipo, le asignará uno del tipo nulo, aunque no es algo que queramos en la mayoría de los casos y para ello, estos genios de Google agregaron...
 
-## 📢 _Sound Null Safety_
+## 📢 Sound Null Safety
 
 Debido a que nos avisará con bombos y trompetas, nos vamos a dar cuenta de la premisa más importante en este tópico y es que __ningún dato puede ser nulo o vacío a no ser que explícitamente así lo definamos.__ Y esto se va a mantener al momento de ejecutar nuestro programa y antes incluso, a la hora de compilarlo.
 
@@ -48,13 +48,13 @@ __Sepan que esto los va a molestar seguido al principio__ pero que es algo que i
 
 Ah! Antes de querer prevenir sus posibles roturas familiares, les mencioné que esto también molestaba a la hora de compilar. Compi... qué?
 
-## 🚧 _Compile_
+## 🚧 Compile
 
 __Compilar es convertir el código fuente que escribimos a lenguajes específicos de específicas plataformas__. En nuestro caso (estoy hablando de desarrolladores Flutter), tenemos la mágica posibilidad de lograr que el mismo código fuente compile o se pueda ejecutar en todas las plataformas 🤩: Android, iOS, Mac, Windows, Linux y Web!
 
 Si compilamos para todos salvo web, Dart utiliza dos formas de compilar, cada una utilizada en una etapa de desarrollo distinta:
 
-### Etapa de desarrollo y _JIT_ o _Just in Time Compiler_
+### Etapa de desarrollo y JIT o Just in Time Compiler
 
 __La etapa de desarrollo, en donde escribimos el código__ y esperamos que este se puede probar rápidamente, nos prevenga de errores, tengamos métricas y sea fácil de testear.
 
@@ -62,7 +62,7 @@ En __desarrollo, Dart utiliza la forma de compilar llamada _JIT_ que refiere a s
 
 Además, este mismo proceso se encarga de no recompilar partes del código si éstas no cambiaron! Una hermosa locura!
 
-### Etapa de producción y _AOT_ o _Ahead of Time Compiler_
+### Etapa de producción y AOT o Ahead of Time Compiler
 
 __La etapa de producción es aquella donde el código se ejecuta, donde el usuario lo utiliza__.  Allí, esperamos que nuestra aplicación arranque rápidamente, se ejecute rápidamente y sea estable pero no necesitamos ninguna de las características que sí necesitamos cuando desarrollamos.
 

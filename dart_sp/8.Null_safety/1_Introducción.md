@@ -2,7 +2,7 @@
 
 Para poder explicarles qué es _Null safety_, tenemos que ver más en detalle algo que vimos un poco por arriba: valores nulos.
 
-## _Null value_
+## Null value
 
 Supongamos que creamos una aplicación para un restaurante. Dicha app guarda datos de todos los usuarios que suelen comprar en dicho restaurante. Cada vez que hacen un pedido, la persona encargada de tomarlo pregunta si tienen alguna comida favorita para tener en cuenta en nuevas preparaciones de la carta. Y finalmente, supongan que escribimos una funcionalidad de dicho programa que crea una carta en función de las comidas favoritas de todos los usuarios. __Cada usuario tendrá una comida favorita? Si no la tiene, qué lo representa? Exacto: un valor nulo o _null value_.__
 
@@ -12,7 +12,7 @@ Recuerdan que hablamos de dos estadíos de una app o etapas? __Si nuestro error 
 
 No sería mucho mejor poder descubrir estos errores cuando estamos escribiendo el código? Sí! Y para ello se creó _Sound null safety_ en Dart! 😍
 
-## _Sound null safety_
+## Sound null safety
 
 Es una _feature_ de Dart que dice que todo valor no podrá ser nulo a no ser que explicitemos lo contrario. Cómo se vería esto? 💀 Simplemente prueben escribir el siguiente código en Dartpad y traten de entender el error:
 

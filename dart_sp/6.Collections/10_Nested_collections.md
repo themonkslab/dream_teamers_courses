@@ -1,4 +1,4 @@
-# _Nested collections_
+# Nested collections
 
 Ahora que entendemos sobre colecciones, podemos conocer organizaciones más complejas de ellas. _Nested_ significa __anidadas__ y refiere a __colecciones que se encuentran dentro de otras colecciones__.
 
@@ -110,7 +110,7 @@ void main() {
   for(var restaurant in listOfRestaurants) {
     final listOfRatings = restaurant['rating'] as List<double>;
     // TODO: calculate average rating
-    restaurant['avgRaiting'] = /* value here */;
+    restaurant['avgRating'] = /* value here */;
     print(restaurant);
   }
 }
@@ -145,8 +145,8 @@ void main() {
     for(var rating in listOfRatings) {
         total += rating;
     }
-    final avgRaiting = (total / listOfRatings.length).toStringAsFixed(1);    
-    restaurant['avgRaiting'] = avgRaiting;
+    final avgRating = (total / listOfRatings.length).toStringAsFixed(1);    
+    restaurant['avgRating'] = avgRating;
     print(restaurant);
   }
 }

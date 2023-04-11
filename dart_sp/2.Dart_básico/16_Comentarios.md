@@ -1,10 +1,10 @@
-# _Comments_
+# Comments
 
 Los comentarios son una _feature_ que cualquier lenguaje de programación posee y nos permite __hacer aclaraciones del código__ (_documentation_), guías para otros desarrolladores o nosotros mismos o hasta recordarnos tareas a futuro; __todas ellas serán omitidos por el compilador__.
 
 Existen __dos tipos de _comments_: _single-line_ (con dos subtipos) y _multi-line_.__ Vamos a verlos!
 
-## _Single-line comments_
+## Single-line comments
 
 Podemos empezar un comentario del tipo _single-line_ agregando `//` o bien `///`. A simple vista, parecerían no traer diferencias sin embargo prueben lo siguiente (💀):
 

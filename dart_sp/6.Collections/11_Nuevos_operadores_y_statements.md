@@ -1,6 +1,6 @@
-# Nuevos operadores y _statement_
+# Nuevos operadores y statement
 
-## _Collection-if_
+## Collection-if
 
 Supongamos que queremos agregar condicionalmente algo a una lista. Lo podríamos hacer así:
 
@@ -49,9 +49,9 @@ void main() {
 }
 ```
 
-Noten que no es un `if` _statement_ ya que no podrían aplicarlo aquí (en la inicilización de la lista) sino un tipo nuevo de _statement_!
+Noten que no es un `if` _statement_ ya que no podrían aplicarlo aquí (en la inicialización de la lista) sino un tipo nuevo de _statement_!
 
-## _Collection-for_
+## Collection-for
 
 Vamos a partir limpiando un poco el código anterior y suponiendo que quisiéramos agregar los valores de otro listado de colores al previo:
 
@@ -106,7 +106,7 @@ void main() {
 }
 ```
 
-## _Spread operator_
+## Spread operator
 
 No sería hermoso poder poner en lugar de ese _Collection-for_ directamente la variable `extraColors`? Sucede que si hiciéramos eso, estaríamos agregando la lista y no sus elementos. Para poder hacerlo, tenemos que usar este operador: `...`. __El _spread operator_ o llamado algo así como operador de difuminación, nos permite retornar todos los elementos de la lista pero como valores independientes.__:
 
@@ -126,7 +126,7 @@ void main() {
 }
 ```
 
-## _Composable_
+## Composable
 
 Todos los operadores y declaraciones que vimos en este artículo, __son _composable_, quiere decir que pueden combinarse:__
 

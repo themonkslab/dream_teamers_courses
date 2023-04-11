@@ -1,4 +1,4 @@
-# Obteniendo _user input_
+# Obteniendo user input
 
 Empecemos por __cambiar lo primero que el usuario va a ver__ en nuestro programa:
 
@@ -25,7 +25,7 @@ void main() {
 
 Luego de ello, necesitamos obtener qué es lo que escribe y para ello vamos a hacer uso de una función dentro de un paquete o _package_, que es algo que frecuentemente utilizarán.
 
-## _Packages_
+## Packages
 
 Son __librerías de funciones y utilidades de las que podemos hacer uso, sin tener que escribirlas nosotros mismos__. Para ello, necesitamos importar dichas librerías.
 

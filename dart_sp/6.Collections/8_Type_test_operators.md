@@ -1,4 +1,4 @@
-# _Type test operators_
+# Type test operators
 
 Les había dejado una pregunta en el artículo anterior. De qué tipo era la variable `name`:
 

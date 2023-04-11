@@ -1,4 +1,4 @@
-# _if/else statements_
+# if/else statements
 
 Supongamos que estamos en la entrada de un museo y queremos escribir un programa que haga lo siguiente:
 

@@ -35,7 +35,7 @@ void sum(int a) {
 }
 ```
 
-Esta función no es pura ya que cada vez que se ejecuta, nos arroja un resultado distinto, por más que siempre le pasemos `a`. Además tiene un _side effect_, porque no solo imprime el valor de la suma sino que antes de ello, alteró el valor de `b`. __Esto es algo que debemos evitar a toda costa!__ Recordemos que __las funciones deben tener un solo propósito__ y a esto le sumemos que __deben arrojar el mismo resultado si se las llama con los mismos argumentos y no deben tener efectos secundarios__. Por qué les recalco esto? Porque aquí en el ejemplo, que es muy pequeño, podemos darnos cuenta cuál es el valor que está cambiando, los _side effects_ y sus implicancias, pero __en proyectos reales de mucha mayor embergadura, esto se vuelve imposible y vuelve imposible de mantener dicho proyecto.__
+Esta función no es pura ya que cada vez que se ejecuta, nos arroja un resultado distinto, por más que siempre le pasemos `a`. Además tiene un _side effect_, porque no solo imprime el valor de la suma sino que antes de ello, alteró el valor de `b`. __Esto es algo que debemos evitar a toda costa!__ Recordemos que __las funciones deben tener un solo propósito__ y a esto le sumemos que __deben arrojar el mismo resultado si se las llama con los mismos argumentos y no deben tener efectos secundarios__. Por qué les recalco esto? Porque aquí en el ejemplo, que es muy pequeño, podemos darnos cuenta cuál es el valor que está cambiando, los _side effects_ y sus implicancias, pero __en proyectos reales de mucha mayor envergadura, esto se vuelve imposible y vuelve imposible de mantener dicho proyecto.__
 
 ## Global state
 

@@ -1,4 +1,4 @@
-# _For loop_
+# For loop
 
 Este tipo de bucle sirve para lograr lo mismo que el _while loop_ pero de forma más concisa.
 

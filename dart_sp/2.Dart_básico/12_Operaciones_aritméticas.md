@@ -1,4 +1,4 @@
-# Operaciones aritméticas o _arithmetic operations_
+# Operaciones aritméticas o arithmetic operations
 
 Son las operaciones más conocidas a las que les sumamos un par que no utilizamos tan seguido:
 
@@ -9,7 +9,7 @@ Son las operaciones más conocidas a las que les sumamos un par que no utilizamo
 - División de enteros: __~/__ `print(5~/2)`
 - Módulo: __`%`__ `print(5%2)`
 
-## Operadores de asignación o _assignment operators_
+## Operadores de asignación o assignment operators
 
 Como ya vieron, pueden asignar un valor utilizando el _assignment operator_, '='. Ahora vamos a sumar el '??=' _operator_, que nos sirve para asignar un valor solo si la variable a la que se lo intentamos asignar está vacía, sino dicha variable mantiene su valor. Veámoslo:
 
@@ -77,7 +77,7 @@ void main() {
 
 Es el orden en el que los operadores van a ser ejecutados. Cuál les parece que va a ser el resultado de imprimir `print(10 - 2 * 5);`? 💀 Pongan a prueba su pasado matemático! 🤣
 
-El resultado es `0` ya que el operador `*` tiene precendencia sobre el operador `-`. Esto quiere decir que primero se ejecuta la operación que contiene `*` (la multiplicación) y luego la resta. Sucedería lo mismo con la división y la suma:
+El resultado es `0` ya que el operador `*` tiene precedencia sobre el operador `-`. Esto quiere decir que primero se ejecuta la operación que contiene `*` (la multiplicación) y luego la resta. Sucedería lo mismo con la división y la suma:
 
 ```dart
 void main() {

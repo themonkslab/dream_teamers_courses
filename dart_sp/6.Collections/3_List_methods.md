@@ -1,8 +1,8 @@
-# _List methods_
+# List methods
 
 Vamos a recorrer métodos muy útiles que nos provee esta clase o tipo.
 
-## _isEmpty_ o _isNotEmpty_
+## isEmpty o isNotEmpty
 
 Nos permite __chequear si la lista está vacía o no__. En nuestro ejemplo anterior pueden probarlo:
 
@@ -27,7 +27,7 @@ void main() {
 }
 ```
 
-## _Length_
+## Length
 
 Nos permite obtener la __cantidad de elementos__ que tiene dicha lista:
 
@@ -38,7 +38,7 @@ void main() {
 }
 ```
 
-## _First_ y _last_
+## First y last
 
 Nos permite __obtener el primer y último elemento__ de la lista:
 
@@ -54,13 +54,13 @@ void main() {
 
 Exacto: un error que nos dice que dicho elemento no existe.
 
-## _Add_ e _insert_
+## Add e insert
 
 Podemos __agregar valores a una lista__ de las siguientes dos maneras. __La primera lo agrega luego del último elemento__ de la lista:
 
 ```dart
 void main() {
-    var cities = ['Coirdoba', 'New York', 'Paris'];
+    var cities = ['Cordoba', 'New York', 'Paris'];
     cities.add('Moscow');
     print(cities); // ['Cordoba', 'New York', 'Paris', 'Moscow']
 }
@@ -76,7 +76,7 @@ void main() {
 }
 ```
 
-## _RemoveAt_ y _clear_
+## RemoveAt y clear
 
 Como podemos agregar valores, también podemos eliminarlos. Para __remover valores__ de una lista, utilizamos el __método _removeAt_ con el _index_ para indicar de qué valor se trata__:
 
@@ -104,7 +104,7 @@ void main() {
 }
 ```
 
-## _Contains_ e _indexOf_
+## Contains e indexOf
 
 Si quisiéramos saber __si un elemento se encuentra dentro de nuestra lista, utilizamos _contains_:__
 
@@ -126,7 +126,7 @@ void main() {
 }
 ```
 
-## 💪 _Guess_
+## 💪 Guess
 
 __Requirement__: tienen que calcular si el siguiente _assertion_ va a dar `true` o `false`, osea si va a pasar de largo o va a fallar.
 

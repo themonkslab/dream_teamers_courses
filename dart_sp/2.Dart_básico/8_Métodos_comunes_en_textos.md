@@ -19,7 +19,7 @@ Si luego introducimos la palabra _'to'_, vamos a ver que la lista de operaciones
 
 Allí, simplemente bajamos con la flecha hasta donde dice _'toUpperCase'_ o 'a mayúsculas' y damos en la tecla 'tab' o en la tecla 'enter' para autocompletar. Así entonces, nos encontramos con una expresión que convierte todos los caracteres del contenido de la variable `title`, a mayúsculas. Prueben correr el código para ver que funcione!
 
-## _Method_ o métodos
+## Methods o métodos
 
 Viendo la expresión `print(title.toUpperCase())` con detalle, sabemos que `title`, es una variable que guarda una cadena de texto o `String`. Qué es sin embargo `toUpperCase`? Un método!
 

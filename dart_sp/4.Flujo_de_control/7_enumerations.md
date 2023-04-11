@@ -1,4 +1,4 @@
-# _Enumerations_
+# Enumerations
 
 Recordemos el ejemplo anterior de la carrera:
 
@@ -72,14 +72,14 @@ __Extra help__: les dejo otro ejemplo: días de la semana.
 __💀 Solución__:
 
 ```dart
-enum Suits { hearts, diamons, clubs, spades}
+enum Suits { hearts, diamonds, clubs, spades}
 enum Weather { sunny, cloudy, rainy, snowy }
 enum OperatingSystems { windows, linux, mac }
-enum MeansOfTransport { car, bycicle, motorcycle, plane, boat}
+enum MeansOfTransport { car, bicycle, motorcycle, plane, boat}
 enum MostUsedLanguages { english, spanish, chinese}
 ```
 
-## _Trailing comma_
+## Trailing comma
 
 Simple! 💀 Quiero prueben escribir estos dos _enum_ exactamente como se los dejo (prestando atención a las comas), clickeen donde dice 'Format' en Dartpad y vean qué sucede:
 

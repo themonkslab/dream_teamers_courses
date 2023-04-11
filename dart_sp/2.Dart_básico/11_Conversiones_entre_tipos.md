@@ -52,7 +52,7 @@ void main() {
 
 💀 Espero que se hayan tomado su tiempo o recapaciten y lo hagan en este mismísimo momento! 🤣 El método `toStringAsFixed` convierte un `double` en un `String` pero nos permite elegir cuántos decimales utilizamos y redondea los decimales restantes.
 
-Ahora supongamos que queremos hacer el camino inverso: convertir un `String` en un `double`. Vamos a tener que cambiar un poquito la sintáxis:
+Ahora supongamos que queremos hacer el camino inverso: convertir un `String` en un `double`. Vamos a tener que cambiar un poquito la sintaxis:
 
 ```dart
 void main() {
@@ -62,7 +62,7 @@ void main() {
 }
 ```
 
-Porqué debemos utilizar esta otra sintáxis? Porque no todas las cadenas de texto o `String` pueden convertirse en `double` y el método `parse` intenta descifrarlo y si no lo logra, aborta la ejecución lanzando o retornando una _Exception_:
+Porqué debemos utilizar esta otra sintaxis? Porque no todas las cadenas de texto o `String` pueden convertirse en `double` y el método `parse` intenta descifrarlo y si no lo logra, aborta la ejecución lanzando o retornando una _Exception_:
 
 ```dart
 void main() {
