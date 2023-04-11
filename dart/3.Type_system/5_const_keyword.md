@@ -45,9 +45,9 @@ __Requirement__: Analyze the following code and determine which variable can be 
 void main() {
     String text = 'I like pizza';
     String topping = 'with tomatoes';
-    String favourite = '$text $topping';
-    String newText = favourite.replaceAll('pizza', 'pasta');
-    favourite = 'Now I like curry';
+    String favorite = '$text $topping';
+    String newText = favorite.replaceAll('pizza', 'pasta');
+    favorite = 'Now I like curry';
     print(newText);
 }
 ```
@@ -60,9 +60,9 @@ __💀 Solution__:
 void main() {
     const text = 'I like pizza';
     const topping = 'with tomatoes';
-    var favourite = '$text $topping';
-    final newText = favourite.replaceAll('pizza', 'pasta');
-    favourite = 'Now I like curry';
+    var favorite = '$text $topping';
+    final newText = favorite.replaceAll('pizza', 'pasta');
+    favorite = 'Now I like curry';
     print(newText);
 }
 ```
@@ -75,9 +75,9 @@ __💀 Better solution__:
 void main() {
     const text = 'I like pizza';
     const topping = 'with tomatoes';
-    const favourite = '$text $topping';
-    final newText = favourite.replaceAll('pizza', 'pasta');
-    const newFavourite = 'Now I like curry';    // since this variable is not used 
+    const favorite = '$text $topping';
+    final newText = favorite.replaceAll('pizza', 'pasta');
+    const newFavorite = 'Now I like curry';    // since this variable is not used 
                                                 // we might as well create a new one.
                                                 // Besides, Dart warns us that it is not used!
     print(newText);

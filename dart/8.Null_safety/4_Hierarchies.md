@@ -6,9 +6,9 @@ The graphic from the [documentation on null safety in Dart](https://dart.dev/nul
 
 ![Type hierarchy before null safety](4.1_jerarquias_antes_de_null_safety.png)
 
-Here we can see a simplification where all types were childs of the `Object` type (you didn't see `Iterable` and `num` yet but basically they are parents of `List` and, `double` and `int` as seen in the graphic). Underneath it all, there was the `Null` type.
+Here we can see a simplification where all types were children of the `Object` type (you didn't see `Iterable` and `num` yet but basically they are parents of `List` and, `double` and `int` as seen in the graphic). Underneath it all, there was the `Null` type.
 
-But what does it mean that they are parents and childs? We will see inheritance soon, but simply __childs have the possibility to do what their parent does__.
+But what does it mean that they are parents and children? We will see inheritance soon, but simply __children have the possibility to do what their parent does__.
 
 Suppose we meet Superman with his son and Batman with his son: Superman's son inherits the ability to fly, shoot lightning with his eyes and his marked reluctance to kryptonite. While Batman's son inherits only fortunes! 🤣
 

@@ -26,7 +26,7 @@ So far, so good! But __what would happen if we had more arguments? Or if this fu
 
 ## Named parameters
 
-To create this type of arguments, we only have to surround the positionals that we already have, with `{}` and ready: `String describe({String friendName, int age, String sport}) {}`. However, notice what happens if we only change the function declaration and not the call:
+To create this type of arguments, we only have to surround the positional that we already have, with `{}` and ready: `String describe({String friendName, int age, String sport}) {}`. However, notice what happens if we only change the function declaration and not the call:
 
 ```dart
 void main() {

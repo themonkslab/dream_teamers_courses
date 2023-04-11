@@ -86,7 +86,7 @@ If we take a closer look at his signature and the Dartpad documentation, we will
 
 - _'The returned iterable is lazy, so it won't iterate the elements of this iterable until it is itself iterated'_
 
-Yhis means that until we use that result, the anonymous function inside the `map` is not going to be called and this is a performance optimization.
+This means that until we use that result, the anonymous function inside the `map` is not going to be called and this is a performance optimization.
 
 And what if we want to have as return specifically a `List` instead of an `Iterable`? We can add to the `map` at the end the `toList()` method as follows:
 

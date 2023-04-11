@@ -40,7 +40,7 @@ Furthermore, __code editors can enhance how comments look__, add extensions to d
 
 ![Comentarios en una documentación](https://raw.githubusercontent.com/themonkslab/courses/main/dart/2.Dart_b%C3%A1sico/16.1_comentarios_vida_real.png)
 
-To finish with these single line comments, I could add that they are also useful to omit or skip some operation, variable or whatever you need. This could be usefull for example when testing.
+To finish with these single line comments, I could add that they are also useful to omit or skip some operation, variable or whatever you need. This could be useful for example when testing.
 In the following example, we can see how we temporarily omit the code `print('Program started');`.
 
 ```dart
