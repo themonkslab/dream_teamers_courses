@@ -1,4 +1,4 @@
-# _Basic types_ o tipos básicos
+# Basic types o tipos básicos
 
 Cuando decimos tipos básicos, nos referimos a las distintas cajas que tenemos para almacenar valores, pero específicamente, a las más sencillas de utilizar.
 
@@ -52,13 +52,13 @@ void main() {
 }
 ```
 
-## _Case sensitive_ o sensible a mayúsculas y minúsculas
+## Case sensitive o sensible a mayúsculas y minúsculas
 
 Dart reconoce entre minúsculas y mayúsculas, y los booleanos pueden llevar solamente dos valores `true` o `false`. `True` no es lo mismo que `true` para Dart, de la misma forma que no lo es `False`. Estén atentos a esto!
 
 ## 💪 a imprimir variables
 
-Vamos a ir alternando con algunas ejercitaciones un poco más largas que otras y por ello van a tener un lugar especial dentro del artículo. Recuerden que si quieren más ejercicios, un lugar donde consultar dudas o conocerse con nosotros y otros fanáticos del código, pueden [sumarse a nuestra comunidad gratuita en Discord](https://discord.gg/vpPVf7guPC)!
+Vamos a ir alternando con algunas ejercitaciones un poco más largas que otras y por ello van a tener un lugar especial dentro del artículo que reconocerán por este emoji 💪. Recuerden que si quieren más ejercicios, un lugar donde consultar dudas o conocerse con nosotros y otros fanáticos del código, pueden [sumarse a nuestra comunidad gratuita en Discord](https://discord.gg/vpPVf7guPC)!
 
 Cada ejercicio se va a componer de un _requirement_ y una o varias soluciones propuestas para resolverlo. Algunas veces, podremos introducir los pasos que llevamos para lograrlas. Sin embargo, recuerden siempre seguir el método propuesto de:
 

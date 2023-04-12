@@ -1,4 +1,4 @@
-# _While loop_
+# While loop
 
 A _loop_ is an __infinitely repeating process__. In the case of a _while loop_, it repeats as long as a condition we set beforehand is met.
 

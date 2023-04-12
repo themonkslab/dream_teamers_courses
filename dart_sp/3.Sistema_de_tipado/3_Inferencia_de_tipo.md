@@ -12,16 +12,16 @@ void main() {
 
 Ahora... cómo podría demostrarles esto? Cómo podemos chequear si un tipo es exactamente del tipo que pensamos que es? 🤔
 
-## _Type test operators_ u Operadores de testeo de tipo
+## Type test operators u Operadores de testeo de tipo
 
 Nos permiten chequear en _runtime_ o tiempo de ejecución si __un tipo es ese que esperamos__:
 
-- __`is`__: `true` si la variable es de ese tipo
-- __`is!`__: `false` si la variable no es de ese tipo
+- _variable_ __`is`__ _type_: devolverá `true` si la variable __es__ de ese tipo.
+- _variable_ __`is!`__ _type_: devolverá `true` si la variable __no es__ de ese tipo.
 
 Luego veremos esto más claramente cuando aprendamos sobre `Objects` y `Classes` pero por el momento, ya __tenemos todo para testear si nuestras variables fueron correctamente inferidas.__
 
-## Combinando _asserts_ y _type test operators_
+## Combinando asserts y type test operators
 
 Una vez que la variable fue inferida podemos con un `assert`, chequear si dicha variable fue tipada correctamente:
 

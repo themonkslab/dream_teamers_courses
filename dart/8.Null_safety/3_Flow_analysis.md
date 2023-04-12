@@ -1,6 +1,6 @@
 # Flow analysis
 
-Volvamos al ejemplo anterior y en lugar de inicializar la variable `x` como nula explícitamente, solo declarémosla. Esto hará que Dart por defecto, asigne _null_ a dicho valor:
+Let's go back to the previous example and instead of explicitly initializing the variable `x` as null, let's just declare it. This will make Dart assign _null_ to that value by default:
 
 ```dart
 void main() {
@@ -10,7 +10,7 @@ void main() {
 }
 ```
 
-Ahora qué pasaría si nosotros luego le asignamos un valor y tratamos de correr nuestra app?
+Now, what would happen if we later assign a value to it and try to run our app?
 
 ```dart
 void main() {
@@ -21,13 +21,13 @@ void main() {
 }
 ```
 
-Como pueden ver, ya Dart no nos avisa nada y cuando ejecutamos, no tenemos ningún error. Esto es porque __Dart pudo analizar el código darse cuenta que a `x` ya le asignamos un valor. Esto se llama _Flow Analysis_.__
+As you can see, Dart no longer notifies us of anything, and when we run, we have no errors. This is because __Dart was able to analyze the code and realize that x has already been assigned a value. This is called _Flow Analysis_.__
 
 Pero esto puede hacerlo de forma aun más inteligente y decidir el cambio de tipo de una variable! 🤨 Cómo?
 
-## _Promotion_
+## Promotion
 
-Vamos a imprimir la suma solamente si `x` no es nulo; caso contrario avisaremos con un `print` al usuario de que `x` es `null`:
+But this, Dart can do even smarter and decide to change the type of a variable! 🤨 How?
 
 ```dart
 void main() {
@@ -41,13 +41,13 @@ void main() {
 }
 ```
 
-En este caso, Dart es lo suficientemente inteligente para darse cuenta que hemos previsto que `x` puede ser `null` y agregamos un `if` para prevenirlo y por ello no nos avisa nada! Por el otro lado, también tiene en cuenta que __dentro de `else`, no existe posibilidad de que nuestra variable sea nula, por lo que 'promueve' a dicha variable y la convierte en un valor no nulleable__ Qué maravilla! 😍
+In this case, Dart is smart enough to realize that we have foreseen that `x` can be `null` and we add an `if` to prevent it and so it doesn't warn us at all! On the other hand, it also takes into account that __within `else`, there is no possibility that our variable is null, so it `promotes` that variable and turns it into a non-nullable value__ How wonderful! 😍
 
-Y esto sigue!
+And it goes on!
 
-## _Definite assignment_
+## Definite assignment
 
-Supongamos que estamos en la entrada de una disco virtual (en Argentina se les llama 'boliches') y queremos responder a quien quiere entrar, si puede o no hacerlo en función de si es mayor o no de edad. Cómo lo haríamos? 💀 Qué pasaría con el siguiente ejemplo?
+Let's suppose we are at the entrance of a virtual disco (in Argentina they are called 'boliches') and we want to answer to whoever wants to enter, if he/she can or cannot do it depending on whether he/she is of legal age or not. How would we do it? 💀 What would happen with the following example?
 
 ```dart
 void main() {
@@ -60,7 +60,7 @@ void main() {
 }
 ```
 
-_The non-nullable local variable 'message' must be assigned before it can be used._ Dice que tenemos que asignarle un valor a nuestra variable antes de poder utilizarla! Qué tal entonces haciendo esto:
+_The non-nullable local variable 'message' must be assigned before it can be used._ It says that we have to assign a value to our variable before we can use it! How about doing this then:
 
 ```dart
 void main() {
@@ -75,9 +75,9 @@ void main() {
 }
 ```
 
-__Dart__ ya no nos arroja un error ya que __puede, mediante su sistema de análisis, saber que la variable ha sigo asignada de forma definitiva__ en nuestro `if/else` y esto es _definite assignment_
+__Dart__ no longer throws an error because __it can, through its analysis system, know that the variable has been assigned definitively__ in our `if/else` and this is _definite assignment_.
 
-Pero antes de terminar, yo sé que ustedes saben que he escrito el ejemplo de esta forma para explicarles sobre _null safety_ pero cómo podríamos hacerlo más suscinto y bello? 💀 Cómo sería el ejemplo anterior utilizando un _ternary operator_?
+Pero antes de terminar, yo sé que ustedes saben que But before we finish, I know you know that I wrote the example this way to explain about _null safety_ but how could we make it more concise and beautiful? 💀 What would the above example look like using an _ternary operator_?
 
 ```dart
 void main() {
@@ -87,9 +87,9 @@ void main() {
 }
 ```
 
-Y en realidad no terminé! 🤣 Qué pasa con las colecciones? Puede Dart también inferir si un valor es nulo? Veamos el siguiente ejemplo. 💀 Me gustaría que antes de ver el resultado de cada uno de los códigos, escriban qué les parece que puede hacer Dartpad:
+And actually I am not done! 🤣 What about collections? Can Dart also infer whether a value is null? Let's look at the following example. 💀 I would like that before seeing the result of each of code, write what do you think Dartpad can do:
 
-_Primer ejemplo_:
+_First example_:
 
 ```dart
 void main() {
@@ -100,7 +100,7 @@ void main() {
 }
 ```
 
-_Segundo ejemplo_:
+_Second example_:
 
 ```dart
 void main() {
@@ -111,7 +111,7 @@ void main() {
 }
 ```
 
-_Tercer ejemplo_:
+_Third example_:
 
 ```dart
 void main() {
@@ -122,7 +122,7 @@ void main() {
 }
 ```
 
-_Cuarto ejemplo_:
+_Fourth example_:
 
 ```dart
 void main() {
@@ -133,17 +133,17 @@ void main() {
 }
 ```
 
-Vamos a ir analizando cada caso.
+We are going to analyze each case.
 
-En el primero vemos que podemos crear una lista introduciendo un valor nulo porque no especificamos su tipo y luego, cuando imprimimos cada valor, vemos el valor nulo.
+In the first we see that we can create a list by entering a null value because we do not specify its type and then, when we print each value, we see the null value.
 
-En el segundo ejemplo, tenemos un error ya que estamos estrictamente definiendo el tipo que debe recibir nuestra lista y ese tipo no es nulleable.
+In the second example, we have an error since we are strictly defining the type that our list should receive and that type is not nullable.
 
-En el tercer ejemplo sin embargo, admitimos un valor nulo por lo que no tendríamos problema en hacerlo.
+In the third example however, we admit a null value so we would have no problem in doing so.
 
-En el cuarto y último ejemplo finalmente, vemos otro error ya que no podemos ejecutar esa función sobre la variable debido a que sabe que puede ser nula.
+In the fourth and last example finally, we see another error since we cannot execute that function on the variable because it knows that it may be null.
 
-💀 Cómo haríamos para corregir el último ejemplo, permitiéndonos imprimir la pieza de hardware en letras mayúsculas y previniendo el caso de que la variable llegue nula?
+💀 How could we correct the last example, allowing us to print the hardware piece in uppercase letters and preventing the case where the variable is null?
 
 ```dart
 void main() {
@@ -154,11 +154,11 @@ void main() {
 }
 ```
 
-Aunque para serles sinceros, nunca tuve el deseo real de terminar este artículo! Aun podríamos hacer ese código anterior más bello y simple! Cómo? Utilizando el...
+To be honest, I never had any real desire to finish this article! We could even make that previous code more beautiful and simple! How? by using the...
 
-## _Conditional access operator_
+## Conditional access operator
 
-Este operador de acceso condicional, nos permite llamar a una función, método o propiedad de un valor solo si el valor no es nulo y nuevamente utilizamos nuestro querido `?`, de esta manera:
+This _conditional access operator_, allows us to call a function, method or property of a value only if the value is not null and again we use our beloved `?`, in this way:
 
 ```dart
 void main() {
@@ -169,4 +169,4 @@ void main() {
 }
 ```
 
-Ahora podemos ver que ya no tenemos error y que imprime nuestros valores, aunque también para ser sinceros, imprime el valor `null`. Por qué sucede esto? Para poder entenderlo, van a tener que seguir en el próximo artículo en el que tratamos las jararquías de clases en Dart.
+Now we can see that we no longer have an error and that it prints our values, although to be honest, it prints the value `null`. Why does this happen? In order to understand it, you will have to continue in the next article where we deal with class hierarchies in Dart.

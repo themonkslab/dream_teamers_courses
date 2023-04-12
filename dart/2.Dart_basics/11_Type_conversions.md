@@ -114,4 +114,4 @@ void main() {
 }
 ```
 
-Remenber that you can see if it worked just by adding a `Print` at the end of your code.
+Remember that you can see if it worked just by adding a `Print` at the end of your code.

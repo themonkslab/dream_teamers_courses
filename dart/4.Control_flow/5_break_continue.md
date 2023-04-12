@@ -1,4 +1,4 @@
-# _Break_ and _continue statements_
+# Break and continue statements
 
 _Break_ and _continue_ are two mechanisms we have to alter the flow within _for_ and _while_ _loops_.
 
@@ -24,7 +24,7 @@ void main() {
 }
 ```
 
-## _Break_
+## Break
 
 It allows us to __stop, exit__ the _loop_. If we add a _break_ as soon as the loop starts, what will happen? It exits and prints _Done!_ Also, you may notice that Dartpad understands that the code inside the loop is not going to be executed and is kind enough to tell us that it is _dead code_ with an underscore.
 
@@ -66,7 +66,7 @@ void main() {
 }
 ```
 
-## _Continue_
+## Continue
 
 When we insert this statement, we force the _loop_ to __jump to the next iteration (`i++`)__. Let's put it into our exercise:
 

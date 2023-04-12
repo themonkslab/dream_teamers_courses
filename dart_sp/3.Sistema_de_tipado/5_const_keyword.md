@@ -1,4 +1,4 @@
-# _Const keyword_
+# Const keyword
 
 Ya vimos que `var` nos permite cambiar el contenido de una variable e inferir automáticamente su tipo; `final` nos permite setear una variable también infiriendo su tipo pero que sería de solo lectura y calculada mientras ejecutamos un programa. Para qué queremos una palabra clave más?
 
@@ -14,8 +14,8 @@ Podemos declarar esa variable como `const` porque la inicializamos con un `Strin
 
 ```dart
 void main() {
-    const independenceDay = '9 de Julio';
-    final independenceDayUpperCase = independenceDay.toUpperCase();
+    final independenceDay = '9 de Julio';
+    const independenceDayUpperCase = independenceDay.toUpperCase();
 }
 ```
 
@@ -37,7 +37,7 @@ Por esta razón, es que __Dart prefiere este tipo de variables__ ya que le permi
 
 Ah! Antes me gustaría mostrarles que esto es correcto solo que no es necesario ya que Dart infiere el tipo sin nosotros tener que decirle: `const String myName = 'Mauro';`.
 
-## 💪 _final_, _const_ o _var_?
+## 💪 final, const o var?
 
 __Requirement__: Analicen el siguiente código y determinen cuál variable puede ser declaradas con `const`, `final` o `var` y que siga resultando en un programa válido.
 
@@ -45,9 +45,9 @@ __Requirement__: Analicen el siguiente código y determinen cuál variable puede
 void main() {
     String text = 'I like pizza';
     String topping = 'with tomatoes';
-    String favourite = '$text $topping';
-    String newText = favourite.replaceAll('pizza', 'pasta');
-    favourite = 'Now I like curry';
+    String favorite = '$text $topping';
+    String newText = favorite.replaceAll('pizza', 'pasta');
+    favorite = 'Now I like curry';
     print(newText);
 }
 ```
@@ -60,9 +60,9 @@ __💀 Solución__:
 void main() {
     const text = 'I like pizza';
     const topping = 'with tomatoes';
-    var favourite = '$text $topping';
-    final newText = favourite.replaceAll('pizza', 'pasta');
-    favourite = 'Now I like curry';
+    var favorite = '$text $topping';
+    final newText = favorite.replaceAll('pizza', 'pasta');
+    favorite = 'Now I like curry';
     print(newText);
 }
 ```
@@ -75,9 +75,9 @@ __💀 Mejor solución__:
 void main() {
     const text = 'I like pizza';
     const topping = 'with tomatoes';
-    const favourite = '$text $topping';
-    final newText = favourite.replaceAll('pizza', 'pasta');
-    const newFavourite = 'Now I like curry'; // como esta variable no se utiliza 
+    const favorite = '$text $topping';
+    final newText = favorite.replaceAll('pizza', 'pasta');
+    const newFavorite = 'Now I like curry'; // como esta variable no se utiliza 
     // bien podríamos crear una nueva.
     // Además Dart nos avisa que no se utiliza!
     print(newText);

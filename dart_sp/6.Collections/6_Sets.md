@@ -1,6 +1,6 @@
 # Sets
 
-Son collecciones al igual que las listas con las diferencias que las últimas, pueden contener valores repetidos mientras que los _set_ no. __Los `Set` son colecciones de valores únicos__ y declaramos sus versiones _literal_ con _curly-braces_ o `{ }`:
+Son colecciones al igual que las listas con las diferencias que las últimas, pueden contener valores repetidos mientras que los _set_ no. __Los `Set` son colecciones de valores únicos__ y declaramos sus versiones _literal_ con _curly-braces_ o `{ }`:
 
 ```dart
 void main() {
@@ -20,7 +20,7 @@ void main() {
 }
 ```
 
-## _Add and remove_
+## Add and remove
 
 Podemos agregar elementos a nuestro `Set`. Al igual que las `List`, si agregamos un elemento mediante `add`, dicho elemento se agregará al final:
 
@@ -54,11 +54,11 @@ void main() {
 }
 ```
 
-## _Last, first, length, and contains_
+## Last, first, length, and contains
 
 Funcionan de la misma manera que en las `List` por lo que no ahondaremos en ellos.
 
-## _Union, intersection and difference_
+## Union, intersection and difference
 
 Estos sí son métodos particulares de los `Set` y pueden sernos de mucha utilidad.
 

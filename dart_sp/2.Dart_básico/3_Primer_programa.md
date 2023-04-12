@@ -10,7 +10,7 @@ Qué son? Son una lista de enunciados (o solo uno ellos) que dice qué esperamos
 
 Por ahora, vamos pasito a pasito, saludando a este nuevo mundo en el que nos metemos!
 
-## _Hello world_ u hola mundo
+## Hello world u hola mundo
 
 Es el programa más sencillo de todos y es casi una _convention_ o convención empezar con él: imprimir en pantalla "Hola mundo!" y he allí nuestro requerimiento primero:
 
@@ -74,4 +74,4 @@ Nuevamente nos encontramos con un caso super simple y pensamos que no genera muc
 
 De ser así, lo mejor sería contactarte con esa persona y sugerirle que nuestro código puede solucionar mejor su problema o que no hace mucha falta marcar la diferencia.
 
-__Tratamos de que no solamente aprendan a escribir código de calidad sino también absorvan buenas prácticas__ para con ustedes y sus compañeros y compañeras y tengan la oportunidad de amar esta profesión como nosotros lo hacemos!
+__Tratamos de que no solamente aprendan a escribir código de calidad sino también absorban buenas prácticas__ para con ustedes y sus compañeros y compañeras y tengan la oportunidad de amar esta profesión como nosotros lo hacemos!

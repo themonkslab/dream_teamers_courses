@@ -12,7 +12,7 @@ void main() {
 
 Now... how could I prove this to you? How can we check if a type is exactly the type we think it is? 🤔
 
-## _Type test operators_
+## Type test operators
 
 They allow us to check at _runtime_ if __a type is the one we expect__:
 
@@ -21,7 +21,7 @@ They allow us to check at _runtime_ if __a type is the one we expect__:
 
 We will see this more clearly later when we learn about `Objects` and `Classes` but for the moment, we already __have everything to test if our variables were correctly inferred__.
 
-## Combining _asserts_ and _type test operators_
+## Combining asserts and type test operators
 
 Once the variable was inferred we can use an `assert` to check if the variable was assigned with the correct type:
 

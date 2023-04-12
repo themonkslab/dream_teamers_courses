@@ -1,4 +1,4 @@
-# _Maps_
+# Maps
 
 Maps, also called _dictionaries_, are __collections of _key:value pairs___.
 

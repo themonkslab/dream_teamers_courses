@@ -1,10 +1,10 @@
-# _Initialization and Assignment_
+# Initialization and Assignment
 
 We have already seen that in order to store a value, a variable must be declared by defining its type and a name that represents its content: `String myFirstName;`. In this case we are declaring it.
 
 There we only made the variable declaration but it does not contain anything inside. What we've learned to do is, at the same time that we declare it, we initialize it: `String myFirstName = 'Mauro';`.
 
-)However, we could do it in two different lines, being careful to use it after it has been assigned.
+However, we could do it in two different lines, being careful to use it after it has been assigned.
 
 ```dart
 void main() {

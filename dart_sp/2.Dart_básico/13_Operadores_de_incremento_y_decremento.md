@@ -1,4 +1,4 @@
-# _Increment and Decrement operators_
+# Increment and Decrement operators
 
 Dart ofrece esta forma ya conocida de hacer nuestro código más conciso:
 
@@ -30,7 +30,7 @@ void main() {
 }
 ```
 
-Utilizando el _sufix operator_, primero asignamos `x` (`x` que es igual a 1 se asigna a `y`) y luego la incrementamos (`x` ahora vale 2). Qué sucedería utilizando el _prefix operator_?
+Utilizando el _sufix operator_, primero asignamos `x` que es igual a 1 al valor de `y` y luego incrementamos `x` que ahora vale 2. Qué sucedería utilizando el _prefix operator_?
 
 ```dart
 void main() {
@@ -39,6 +39,8 @@ void main() {
     print('x: $x, y: $y'); // x: 2, y:2 
 }
 ```
+
+Dejamos la interpretación para ustedes! 😉
 
 Se preguntarán por qué esto funciona de esta manera! 🙃 La respuesta es que muchos de los lenguajes que derivan de __C__ (un lenguaje desarrollado entre 1969 y 1972), adoptaron esta convención en los últimos 50 años y Dart es uno de ellos.
 

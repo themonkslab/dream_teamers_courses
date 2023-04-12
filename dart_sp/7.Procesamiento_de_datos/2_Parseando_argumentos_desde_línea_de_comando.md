@@ -54,7 +54,7 @@ void main(List<String> arguments) {
 }
 ```
 
-Finalmente podriamos correr nuestro programa agregando el _path_ del archivo o _input file_ y que eso sea lo que imprimamos:
+Finalmente podríamos correr nuestro programa agregando el _path_ del archivo o _input file_ y que eso sea lo que imprimamos:
 
 ```dart
 import 'dart:io';

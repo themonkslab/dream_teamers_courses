@@ -4,30 +4,48 @@ import 'dart:io';
 import 'package:json_generator/models/_index.dart';
 
 void main() async {
-
   final List<FileCoursesGroup> coursesEn = [
     FileCoursesGroup(group_name: 'Learning Path', folder: 'dart', courses: [
-      FileCourse(title: 'Dart and TDD', path: 'dart_y_tdd_en', sections: 
-        await createCourseFromPath('dart'),
+      FileCourse(
+        title: 'Dart and TDD',
+        path: 'dart_y_tdd_en',
+        sections: await createCourseFromPath('dart'),
       )
     ]),
   ];
   await generateJsonFile(coursesList: coursesEn, outputFilename: 'courses_en.json');
 
   final List<FileCoursesGroup> coursesSp = [
-    FileCoursesGroup(group_name: 'Learning Path', folder: 'dart_sp', courses: [
-      FileCourse(title: 'Dart y TDD', path: 'dart_y_tdd_es', sections: 
-        await createCourseFromPath('dart_sp'),
-      )
-    ]),
+    FileCoursesGroup(
+      group_name: 'Learning Path',
+      folder: 'dart_sp',
+      courses: [
+        FileCourse(
+          title: 'Dart y TDD',
+          path: 'dart_y_tdd_es',
+          sections: await createCourseFromPath('dart_sp'),
+        ),
+      ],
+    ),
+    FileCoursesGroup(
+      group_name: 'Flutter Avanzado',
+      folder: 'flutter/cicd_sp',
+      courses: [
+        FileCourse(
+          title: 'CICD con Github',
+          path: 'cicd_es',
+          sections: await createCourseFromPath('flutter/cicd_sp'),
+        ),
+      ],
+    ),
   ];
   await generateJsonFile(coursesList: coursesSp, outputFilename: 'courses_es.json');
 }
 
 Future<void> generateJsonFile({
-    required List<FileCoursesGroup> coursesList, 
-    required String outputFilename,
-  }) async {
+  required List<FileCoursesGroup> coursesList,
+  required String outputFilename,
+}) async {
   final coursesDirectory = Directory('courses');
   if (!await coursesDirectory.exists()) {
     await coursesDirectory.create();
@@ -39,7 +57,6 @@ Future<void> generateJsonFile({
 
 String coursesToJson(List<FileCoursesGroup> data) => json.encode(List<dynamic>.from(data.map((x) => x.toMap())));
 
-
 Future<List<FileSection>> createCourseFromPath(String path) async {
   // Save directories as Directory in List, without 'assets' directory
   final directories = <Directory>[];
@@ -48,8 +65,7 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
   final List<FileSystemEntity> entities = await dir.list().toList();
   for (var entity in entities) {
     if (await FileSystemEntity.isDirectory(entity.path)) {
-      if (!(entity.path.substring(entity.path.lastIndexOf('/') + 1) ==
-          'assets')) {
+      if (!(entity.path.substring(entity.path.lastIndexOf('/') + 1) == 'assets')) {
         directories.add(entity as Directory);
       }
     }
@@ -59,10 +75,8 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
   final List<FileSection> sections = [];
   for (var directory in directories) {
     final List<FileArticle> articles = [];
-    final directoryNameWithUnderscore =
-        (directory.path.replaceAll('./$path/', ''));
-    final directoryName =
-        (directory.path.replaceAll('./$path/', '')).replaceAll('_', ' ');
+    final directoryNameWithUnderscore = (directory.path.replaceAll('./$path/', ''));
+    final directoryName = (directory.path.replaceAll('./$path/', '')).replaceAll('_', ' ');
 
     final List<FileSystemEntity> subEntities = await directory.list().toList();
     for (var entity in subEntities) {
@@ -80,32 +94,26 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
               .replaceFirst(' ', '.')
               .replaceAll('.md', ''));
 
-          final baseContentUrl =
-              'https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main';
+          final baseContentUrl = 'https://raw.githubusercontent.com/themonkslab/dream_teamers_courses/main';
 
           final contentUrl = entity.path.replaceFirst('.', baseContentUrl);
-          final articlePath = entity.path
-              .replaceFirst('./$path/', '')
-              .replaceAll('/', '_')
-              .replaceAll('.md', '');
+          final articlePath = entity.path.replaceFirst('./$path/', '').replaceAll('/', '_').replaceAll('.md', '');
 
-          articles.add(FileArticle(
-            path: articlePath,
-            title: articleName,
-            description: '',
-            // example: https://raw.githubusercontent.com/themonkslab/courses/main/dart/1.introduccion/1.2_que_esperamos_nosotros.md
-            contentUrl: contentUrl,
-            author: Author.theMonkslab,
-            published: DateTime.now()),
+          articles.add(
+            FileArticle(
+                path: articlePath,
+                title: articleName,
+                description: '',
+                // example: https://raw.githubusercontent.com/themonkslab/courses/main/dart/1.introduccion/1.2_que_esperamos_nosotros.md
+                contentUrl: contentUrl,
+                author: Author.theMonkslab,
+                published: DateTime.now()),
           );
         }
       }
     }
 
-    articles.sort((a, b) => (a.title ?? '').compareTo(b.title ?? ''));
-    // for (var i = 0; i < articles.length; i++) {
-    //   articles[i]['path'] = 'article_$i';
-    // }
+    articles.sort((a, b) => orderList(a, b));
     final sectionPath = directory.path.replaceFirst('./$path/', '');
     sections.add(FileSection(
       path: sectionPath,
@@ -115,7 +123,7 @@ Future<List<FileSection>> createCourseFromPath(String path) async {
     ));
   }
 
-  sections.sort((a, b) => (a.title ?? '').compareTo(b.title ?? ''));
+  sections.sort((a, b) => orderList(a, b));
   return sections;
 }
 

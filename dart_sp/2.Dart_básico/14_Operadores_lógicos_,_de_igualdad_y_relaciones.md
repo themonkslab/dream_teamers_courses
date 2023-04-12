@@ -9,19 +9,19 @@ Menor que: __`<`__ `print(5<2)`
 Mayor o igual: __`>=`__ `print(5>=2)`
 Menor o igual: __`<=`__ `print(5<=2)`
 
-En este caso, utilizamos utilizamos `int` _literals_ pero tengan en cuenta que podemos utilizar las expresiones que queramos y mezclar literales con variables, siempre que sean _compatibles_. 🤨 Fíjense qué pasa si tratan de comparar `print(5 < 2.5);`.
+En este caso, utilizamos utilizamos `int` _literals_ pero tengan en cuenta que podemos utilizar las expresiones que queramos y mezclar literales con variables, siempre que sean _compatibles_. 🤨 Fíjense qué pasa si tratan de comparar `print(5 < 2.5);`. Llegaron a alguna conclusión?
 
 Cómo harían sin embargo, si quisieran comparar múltiples expresiones?
 
-## _Logical operators_
+## Logical operators
 
-Pueden invertir o combinar _boolean expressions_ (expresiones booleanas: dan como resultado `true` o `false`), utilizando los operadores lógicos:
+Los operadores lógicos pueden ser utilizados invertir o combinar _boolean expressions_ (expresiones booleanas: dan como resultado `true` o `false`):
 
-- Invierte la expresión: __`!expr`__ `print(!false)`
-- Retorna: `true` si un lado o el otro son `true`. Al encontrar `true` retorna, sin evaluar la expresión siguiente __`||`__ `print(false||true)`
-- Retorna: `true` si ambos lados retornan true __`&&`__ `print(false&&true)` 
+- __`!expr`__ llamado en lógica __negación__ o _not_ invierte el valor de la expresión (`expr` es una expresión. Puede ser una comparación entre dos números, un bool, etc.): `print(!false)`
+- __`||`__ llamado __disyunción__ u _or_ retorna `true` si un lado o el otro son `true`. Al encontrar `true` retorna `true`, y ya no evalúa las siguientes. Sólo retorna `false` si ambas expresiones son falsas: `print(false||true)`
+- __`&&`__ llamado __conjunción__ o _and_ retorna: `true` si ambos lados retornan `true` y si encuentra algún `false` deja de evaluar y devuelve `false`:  `print(true&&false)`
 
-Tienen que tener en cuenta que los operadores relacionales tienen precendencia sobre los lógicos, por lo que estos últimos se evalúan al final y ustedes pueden hacer algo como lo siguiente sin la necesidad de usar paréntesis:
+Tienen que tener en cuenta que los operadores relacionales tienen precedencia sobre los lógicos, por lo que estos últimos se evalúan al final y ustedes pueden hacer algo como lo siguiente sin la necesidad de usar paréntesis:
 
 ```dart
 void main() {
@@ -40,11 +40,11 @@ void main() {
 }
 ```
 
-Además de todos los anteriores, podemos utilizar el _NOT operator_ `!expr`, que luego de que la expresión ha sido evaluada, invierte su valor:
+Y si queremos cambiar su valor final, podemos utilizar el _NOT operator_ `!expr`, que luego de que la expresión ha sido evaluada, invierte su valor:
 
 ```dart
 void main() {
-    print(!((5 > 2 || 5 > 7) && 5 == 6)); // false
+    print(!((5 > 2 || 5 > 7) && 5 == 6)); // true
 }
 ```
 

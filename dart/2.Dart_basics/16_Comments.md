@@ -1,10 +1,10 @@
-# _Comments_
+# Comments
 
 Comments are a _feature_ that any programming language has and allow us to __make code explanations__ (_documentation_), guides for other developers or ourselves, or even remind us of future tasks; __all of them will be omitted by the compiler__.
 
 There are __two types of _comments_: _single-line_ (with two subtypes) and _multi-line_.__ Let's see them!
 
-## _Single-line comments_
+## Single-line comments
 
 We can start a _single-line_ comment by adding either `//` or `///`. At first sight, they would seem to bring no difference however try the following (💀):
 
@@ -40,7 +40,7 @@ Furthermore, __code editors can enhance how comments look__, add extensions to d
 
 ![Comentarios en una documentación](https://raw.githubusercontent.com/themonkslab/courses/main/dart/2.Dart_b%C3%A1sico/16.1_comentarios_vida_real.png)
 
-To finish with these single line comments, I could add that they are also useful to omit or skip some operation, variable or whatever you need. This could be usefull for example when testing.
+To finish with these single line comments, I could add that they are also useful to omit or skip some operation, variable or whatever you need. This could be useful for example when testing.
 In the following example, we can see how we temporarily omit the code `print('Program started');`.
 
 ```dart
@@ -51,7 +51,7 @@ void main() {
 }
 ```
 
-## _Multi-lines comments_
+## Multi-lines comments
 
 They are __used when what we want to leave as a comment is longer__. To do this, we start the text block with `/*`, enter our big comment and then close it with `*/`. Note that to maintain alignment, we use `*` at the beginning of each line of the block but it is not necessary to do so:
 

@@ -1,8 +1,8 @@
-# _New methods part two_
+# New methods part two
 
 Ya que conocemos sobre funciones anónimas, podemos conocer otros métodos útiles para seguir agregando a nuestra lista.
 
-## _Where_
+## Where
 
 El método _where_ o 'donde', __nos permite analizar una _collection_ valor por valor mediante una función anónima que le pasemos. Va a retornar un `Iterable` con todos aquellos valores que han retornado `true` según la función anónima que le hayamos pasado.__
 
@@ -16,7 +16,7 @@ void main() {
 }
 ```
 
-## _First where_
+## First where
 
 Este método __también recibe una función anónima como primer parámetro solo que retorna el primer valor que habiendo sido analizado por la función que le pasemos, retorne `true`__. Veamos un ejemplo en donde el número `2` se repite varias veces:
 
@@ -121,7 +121,7 @@ List<String> findPrice(String rawDocument) {
 
 ```
 
-## 💪 Implementando nosotros mismos el _where_
+## 💪 Implementando nosotros mismos el where
 
 __Requirement__: implementar la función `where` como si no estuviera escrita. Es un método que tiene que recibir una lista de items y una función que evalúe cada item de dicha lista para luego retornar todos aquellos valores que hayan cumplido con la condición pedida en la función. Utilizar genéricos para que sirva con listas de cualquier tipo y demostrar su funcionamiento pasándole a su nueva función `where` la lista `[1,2,3,4,5,6]` y una función como parámetro que devuelva los números impares. El resultado debiera ser `[1, 3, 5]`.
 
@@ -148,7 +148,7 @@ List<T> where<T>(List<T> items, bool Function(T value) check) {
 }
 ```
 
-## _Reduce_
+## Reduce
 
 Este método nos permite combinar todos los elementos en una lista y producir un resultado único. El ejemplo más común es sumar todos los elementos de una lista y evitar tener que usar un _for-in_. Veámoslo con un ejemplo.
 

@@ -32,7 +32,7 @@ void main() {
 
 Now it returns another error: _'Non-nullable local variable 'containsGarlic' must be assigned before it can be used.'_ It means this variable cannot be empty before being used (remember: _sound null safety_). However, before assigning it with a value, we have to check whether or not the recipe contains garlic. Notice how __in this way, is Dart that is guiding us in what code to write__.
 
-## _Contains_
+## Contains
 
 To do this, we can use another method specific to this type of _primitive object_ that we already know, called `String`. But first, we store the recipe in a variable:
 
@@ -128,7 +128,7 @@ Olive oil
 
 Good! What if you were the one who wrote this recipe and not only listed ingredients but then explained how to use them, something that could have taken you a long time, and finally, after a lot of effort, you realized that instead of having _'Arugula'_, it actually had _'Spinach'_?
 
-## _Replace_ or replace
+## Replace
 
 We could __find the _Pattern_ that represents that word and replace it__ and that's basically what the method does.
 

@@ -20,7 +20,7 @@ void main() {
 }
 ```
 
-## _Add and remove_
+## Add and remove
 
 We can add elements to our `Set`. Like the `List`, if we add an element by `add`, that element will be added at the end:
 
@@ -54,11 +54,11 @@ void main() {
 }
 ```
 
-## _Last, first, length, and contains_
+## Last, first, length, and contains
 
 They work in the same way as in the `List` so we will not delve into them.
 
-## _Union, intersection and difference_
+## Union, intersection and difference
 
 These are particular methods of the `Set` and can be very useful.
 

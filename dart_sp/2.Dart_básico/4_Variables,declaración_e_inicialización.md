@@ -60,7 +60,7 @@ En el nombre podemos utilizar letras, números (siempre y cuando no sea el prime
 
 ### camelCase
 
-Cada lenguaje tiene sus espcificidades y esta es una de Dart: salvo la primer letra que debe escribirse en minúscula, cada palabra se diferencia comenzando con una mayúscula. En español sería 'algoComoEsto'.
+Cada lenguaje tiene sus especificidades y esta es una de Dart: salvo la primer letra que debe escribirse en minúscula, cada palabra se diferencia comenzando con una mayúscula. En español sería 'algoComoEsto'.
 
 Tenemos entonces hasta ahora la variable declarada. Será que ya podemos utilizarla?
 
@@ -85,7 +85,7 @@ _debe ser asignada antes de ser utilizada_: le tenemos que proveer un valor, un 
 
 ## Inicialización de variables
 
-Inicializar una variable es, __luego de que la variable ha sido declarada, ponerle un valor dentro__. Para hacerlo, utilizamos el siguiente orden, relación de palabras o _sintáxis_:
+Inicializar una variable es, __luego de que la variable ha sido declarada, ponerle un valor dentro__. Para hacerlo, utilizamos el siguiente orden, relación de palabras o _sintaxis_:
 
 ![Declaración e inicialización](https://raw.githubusercontent.com/themonkslab/courses/main/dart/2.Dart_b%C3%A1sico/4.2_declarar_e_inicializar.png)
 
@@ -99,7 +99,7 @@ Líneas'''
 
 __La práctica recomendada__ sería utilizar en la mayor cantidad de los casos __single-quotes__.
 
-Ahora bien, ya con todo eso, tendríamos todo lo necesario para completar a la perfección nuestro _requirement_? 💀 Intentalo!
+Ahora bien, ya con todo eso, tendríamos todo lo necesario para completar a la perfección nuestro _requirement_? 💀 Inténtalo!
 
 Esperamos que te hayas tomado el tiempo para tratar de hacerlo vos mismo y no hayas sacrificado a tu pobre aprendizaje!
 
@@ -120,12 +120,12 @@ Ahora sí cumplimos con todos los requerimientos necesarios :muscle: :
 
 Supongamos que en este programa que estamos construyendo queremos guardar además, nuestro segundo nombre, _en caso de que tengamos uno_. Qué pasa con aquellos que no tienen segundo nombre? Cómo va la aplicación a guardar algo que podría no existir o ser... nulo? 😳
 
-#### _Null value_ o valor nulo
+#### Null value o valor nulo
 
 Es un __valor utilizado para representar algo que no tiene valor.__
 Dicho valor en _Dart_ recibe el nombre de _null_, un tipo especial de valor del que hablaremos bastante y bastantes dolores de cabeza nos vamos ahorrar si aprendemos de él desde el comienzo!
 
-Lo primero que tenemos que hacer es cuando declaramos nuestra caja o _variable_, decirle que puede llegar a contener un valor nulo. Cómo hacemos esto? Simplemente agregando luego de su tipo, el operador de aserción nula o _null assertion operator_ (o bien pobremente llamado, signo de interrogación '?' 😝) de esta manera: `String?` Todo entero quedaría algo como... 💀 Sí! Primero prueben ustedes cómo sería guardar tanto el primer nombre como segundo nombre en sus códigos, previendo que el segundo sea nulo.
+Lo primero que tenemos que hacer es cuando declaramos nuestra caja o _variable_, decirle que puede llegar a contener un valor nulo (variable nulleable o nullable variable). Cómo hacemos esto? Simplemente agregando luego de su tipo, el operador de aserción nula o _null assertion operator_ (o bien pobremente llamado, signo de interrogación '?' 😝) de esta manera: `String?` Todo entero quedaría algo como... 💀 Sí! Primero prueben ustedes cómo sería guardar tanto el primer nombre como segundo nombre en sus códigos, previendo que el segundo sea nulo.
 
 ```dart
 void main() {
@@ -135,9 +135,9 @@ void main() {
 }
 ```
 
-## _Concatenation_ (concatenación) e Interpolation (interpolación)
+## Concatenation (concatenación) e Interpolation (interpolación)
 
-Bien! Fíjense que introdujimos algo nuevo y es la posibildad de _concatenar_ (proceso llamado _concatenation_) valores de texto con un '+'. Sin embargo, ya pudieron ver que al imprimirlo, ambos nombres quedan encimados. Vamos a hacer un poco más de espacio, introduciendo justamente, un espacio:
+Bien! Fíjense que introdujimos algo nuevo y es la posibilidad de _concatenar_ (proceso llamado _concatenation_) valores de texto con un '+'. Sin embargo, ya pudieron ver que al imprimirlo, ambos nombres quedan encimados. Vamos a hacer un poco más de espacio, introduciendo justamente, un espacio:
 
 ```dart
 void main() {
@@ -165,7 +165,7 @@ Vamos a ver que logramos el mismo resultado aunque con una práctica recomendada
 
 Ahora bien... cómo llenarían ustedes este código si no tuvieran segundo nombre? 💀 Hagan un intento solitos y solitas!
 
-Si hubieran introducido el valor nulo, habrían tenido una recomendación en la línea 4: No inicialicen variables explícitamente usando el valor nulo. Por qué es esto? Porque _Dart_ lo hace por nosotros. Y valdría solamente con declarar esa variable. El resultado sería algo así:
+Si hubieran introducido el valor nulo, habrían tenido una recomendación en la línea 3: _Redundant initialization to 'null'_. Sin conocer ingles ya casi podemos descifrar el mensaje: Es redundante inicializar con valor nulo una variable nulleable. Por qué es esto? Porque _Dart_ lo hace por nosotros. Y valdría solamente con declarar esa variable. El resultado sería algo así:
 
 ```dart
 void main() {
@@ -192,6 +192,6 @@ La última aclaración que les hago es que los __{ }__ dentro de una _interpolat
 ```dart
 void main() {
     double temp = 24.5;
-    print ('${temp}C');
+    print ('${temp}ºC');
 }
 ```

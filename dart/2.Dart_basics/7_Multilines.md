@@ -1,4 +1,4 @@
-# _Multilines_.
+# Multilines
 
 Suppose we want to print a piece of a beautiful poem called "Deja las letras y deja la ciudad" by Juan L. Ortiz (🤓), how would you do it?
 
@@ -61,7 +61,7 @@ void main() {
 
 Now we can see in the console what we tried from the beginning although it could be improved, since for example, you would need an ultra wide screen to be able to see all this code in a comfortable way 😅
 
-## _Multilines_, implementation
+## Multilines, implementation
 
 We already mentioned that we had three ways to give value to a `String`: _single-quotes_, _double-quotes_ and _multilines_, but we may not remember the last one. Basically, it allows us to represent the text as we write it, including automatically the line breaks. All we have to do is to surround it with three single or double quotes at the beginning and at the end. 💀 Do you make an attempt to solve the above problem with _multilines_?
 
@@ -82,7 +82,7 @@ un poco sucio de letras y un poco sucio de ciudad?''');
 
 ## Note about `\`
 
-There are other comination with the `\` like `\t` to make a tabulation in the text. For example in the previous code we could introduce some tabulations like this:
+There are other combination with the `\` like `\t` to make a tabulation in the text. For example in the previous code we could introduce some tabulations like this:
 
 ```dart
 void main() {

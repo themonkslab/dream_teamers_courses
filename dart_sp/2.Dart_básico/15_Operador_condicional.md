@@ -1,9 +1,9 @@
-# _Conditional operator_ u operador condicional
+# Conditional operator u operador condicional
 
 Supongamos que queremos escribir un programa que nos permita introducir la edad que tenemos y determinar si somos mayores o menores de edad. Haríamos algo así, de atrás para adelante:
 
 - Imprimir en pantalla si somos mayores o menores de edad.
-- Calcular una variable con nuestra edad, si somos mayores o menores de edad y retornarlo.
+- Calcular en una variable si somos mayores o menores de edad y retornarlo.
 - Crear una variable para almacenar el resultado de la operación que haremos.
 - Guardar la variable de nuestra edad.
 
@@ -44,7 +44,7 @@ Esto sin embargo, qué arroja como resultado? 💀 Deberían ya mismo estar prob
 
 Retorna un `bool`! Pero nosotros queremos imprimir en la consola algún mensaje un poco más _user friendly_ (amistoso para el usuario), en lugar de decirles _true_ o _false_. Ay! Si tan solo tuviéramos...
 
-## _Conditional operator_ o _Ternary operator_
+## Conditional operator o Ternary operator
 
 Traducido como operador condicional o ternario, nos permite __evaluar una expresión como verdadera o falsa y retornar la expresión que queramos__ , siempre y cuando sean del mismo tipo. Conceptualmente, veríamos algo así:
 
@@ -63,7 +63,7 @@ void main() {
 
 Como verán, tenemos el programa listo... o ... casi listo! 🧐 Si nos ponemos meticulosos, la variable que almacena el resultado es `isUnderAge` que significa si está por debajo del límite de edad pero en realidad, cuando iba escribiendo el `print` me di cuenta que quería expresar si era un adulto o un niño y preguntarlo tal como lo hice. Para poder probarlo, avancé pero sabiendo que tendría que cambiar luego la variable `isUnderAge` por otra como `isAndAdult`.
 
-Este tipo de comportamiento que todos tenemos con el objetivo de movernos más rápido, no suele ser eficaz el grueso de las veces. Ahora, el programa no falló y estamos próximos de aquello que queremos cambiar. No obstante, no es siempre el caso, nos enredamos en complicaciones y nos olvidamos de aquello que debíamos cambiar. Aun sin lograrlo la mayor parte del tiempo, sigo recomendado esta forma.
+Este tipo de comportamiento que todos tenemos con el objetivo de movernos más rápido, no suele ser eficaz el grueso de las veces. Ahora, el programa no falló y estamos próximos de aquello que queremos cambiar. No obstante, no es siempre el caso, nos enredamos en complicaciones y nos olvidamos de aquello que debíamos cambiar. Aun sin lograrlo yo mismo la mayor parte del tiempo, sigo recomendado esta forma.
 
 ```dart
 void main() {

@@ -1,8 +1,8 @@
-# _List methods_
+# List methods
 
 Let's walk through very useful methods provided by this class or type.
 
-## _isEmpty_ or _isNotEmpty_
+## isEmpty or isNotEmpty
 
 It allows us to __check if the list is empty or not__. You can try it in our previous example:
 
@@ -27,7 +27,7 @@ void main() {
 }
 ```
 
-## _Length_
+## Length
 
 It allows us to obtain the __number of elements__ in the list:
 
@@ -38,7 +38,7 @@ void main() {
 }
 ```
 
-## _First_ and _last_
+## First and last
 
 Allows us to __get the first and last element__ of the list:
 
@@ -54,13 +54,13 @@ void main() {
 
 Exactly: an error telling us that this element does not exist.
 
-## _Add_ and _insert_
+## Add and insert
 
 We can __add values to a list__ in the following two ways. __The first one adds it after the last element__ in the list:
 
 ```dart
 void main() {
-    var cities = ['Coirdoba', 'New York', 'Paris'];
+    var cities = ['Cordoba', 'New York', 'Paris'];
     cities.add('Moscow');
     print(cities); // ['Cordoba', 'New York', 'Paris', 'Moscow']
 }
@@ -76,7 +76,7 @@ void main() {
 }
 ```
 
-## _RemoveAt_ and _clear_
+## RemoveAt and clear
 
 The same way we can add values, we can also remove them. To __remove values__ from a list, we use the ___removeAt_ method with the _index_ to indicate which value it is__:
 
@@ -104,7 +104,7 @@ void main() {
 }
 ```
 
-## _Contains_ and _indexOf_
+## Contains and indexOf
 
 If we want to know __if an element is inside our list, we use _contains_:__
 
@@ -126,14 +126,14 @@ void main() {
 }
 ```
 
-## 💪 _Guess_
+## 💪 Guess
 
 __Requirement__: you have to calculate if the next _assertion_ is going to give `true` or `false`, that is, if it is going to pass or fail..
 
 ```dart
 void main() {
     var cities = ['Cordoba', 'New York', 'Paris', 'Moscow', 'Rome'];
-    var newCities = ['Buenos Aires', 'Washington', 'Marsella', 'San Petesburgo', 'Milan'];
+    var newCities = ['Buenos Aires', 'Washington', 'Marcella', 'San Petesburgo', 'Milan'];
     if(cities.contains('New York')) {
         cities.add(newCities[cities.indexOf('Moscow')]);
     }

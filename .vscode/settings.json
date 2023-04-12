@@ -8,4 +8,14 @@
         "escalabilidad",
         "extensibilidad"
     ]
+}{
+    "cSpell.enableFiletypes": [
+        "markdown"
+    ],
+    "cSpell.words": [
+        "inicialización",
+        "nulleable",
+        "parecerles",
+        "pasándole"
+    ]
 }

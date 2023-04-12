@@ -1,4 +1,4 @@
-# `Var`, `final` y `const` _with lists_
+# `Var`, `final` y `const` with lists
 
 _Disclaimer_ o descargo de responsabilidad: notarán que vengo mezclando cuándo utilizo términos en inglés y cuando en español y con el paso del curso vamos utilizando más de los primeros: es totalmente adrede. La idea es que se acostumbren y que acompañen a este curso con aprendizaje de inglés ya que es el idioma por excelencia no solo en cualquier trabajo sino en cualquier código que vayan a leer!
 

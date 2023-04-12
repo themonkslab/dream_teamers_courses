@@ -43,7 +43,7 @@ void main() {
 
 Ready! Our name printed on the screen! 🙄 However, if we stop for a moment and read the _requirement_ again, what do we find? I leave it here so you don't have to look for it again:
 
-__Requirement__: sstore our name for later printing.
+__Requirement__: store our name for later printing.
 
 If we were to go slowly, we could divide this request into two parts: _1: store our name_ for, _2: later printing_. But how do we save our name? We would need a... _sort of a box that allows us to store values_! 🚀. The time has come to introduce the _variables_.
 
@@ -79,7 +79,7 @@ So, strange message, isn't it? It's not if we take a breath, slow down and break
 
 _non-nullable_: it must have a value; it cannot be initialized empty.
 _local variable_: means it is in the piece of code we are writing.
-_must be assigned before it can be used_: we have to assing it with a value, a content before using it, we have to _initialize it.
+_must be assigned before it can be used_: we have to assign it with a value, a content before using it, we have to _initialize it.
 
 ## Variable initialization
 
@@ -117,7 +117,7 @@ Now we do meet all the necessary requirements :muscle: :
 
 Let's say that in this program we are building we want to store in addition, our middle name, _in case we have one_. What happens with those who do not have a middle name? How is the application going to store something that might not exist or be... null? 😳
 
-#### _Null value_
+#### Null value
 
 It's a __value used to represent something that has no value.__
 Such a value in _Dart_ is called _null_, a special type of value that we will talk about quite a bit and quite a few headaches we are going to save ourselves if we learn about it from the beginning!
@@ -132,7 +132,7 @@ void main() {
 }
 ```
 
-## _Concatenation_ and _Interpolation_
+## Concatenation and Interpolation
 
 Good! Notice that we introduced something new and that is the possibility to _concatenate_ text values with a '+'. However, you could already see that when printing, the space between the two names is missing and they are overlapping. We are going to create that space just by adding a space:
 
@@ -172,7 +172,7 @@ print ('$myFirstName $mySecondName'); // It would print: Mauro null
 }
 ```
 
-Not what you expected either, is it? Suddendly my name is ``Mauro null''! 🤣 Let's close this article with something a little more advanced and that will allow that if the middle name is null, then it won't print it!
+Not what you expected either, is it? Suddenly my name is ``Mauro null''! 🤣 Let's close this article with something a little more advanced and that will allow that if the middle name is null, then it won't print it!
 
 This code has __two new pieces: {} and '???'__. The __{}__ allow us to elaborate some operation in which we can, _if we want_, call a variable inside an _interpolation_. On the other hand the __'??'__ is one of the _null aware operators_ or operators to work with null values and allows us to return something else if the value that we are calling, is null. In this case, if `mySecondName` is null, we return an empty _String_, represented like this: ''.
 

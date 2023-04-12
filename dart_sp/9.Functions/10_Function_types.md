@@ -1,8 +1,8 @@
-# _Function types_
+# Function types
 
 Retomemos un poquito el ejemplo anterior y vamos a ir dándole utilidad de vida real a esos ejemplos.
 
-En el último, veíamos que creábamos una función llamada `welcome` y que esa función era de un tipo específico ya que retornaba un `String` y pedía otro como argumento. __Qué tal si pudiéramos definir una especie de _alias_ o nombre para ese tipo y poder lograr que cada vez que tengamos que llamarlo, no tengamos que escribir todo:__ `String Function(String)`?
+En el último, veíamos que creábamos una función llamada `welcome` y que esa función era de un tipo específico ya que retornaba un `String` y pedía otro `String`como argumento. __Qué tal si pudiéramos definir una especie de _alias_ o nombre para ese tipo y poder lograr que cada vez que tengamos que llamarlo, no tengamos que escribir todo:__ `String Function(String)`?
 
 ```dart
 // Aquí aparecerá el código mágico 🧙🏼‍♀️
@@ -69,7 +69,7 @@ void welcome(SayHi hi, String name) {
 }
 ```
 
-## _Closures_
+## Closures
 
 La palabra significa 'cerramiento' y quiero que la vean en el siguiente ejemplo:
 
@@ -97,4 +97,4 @@ void main() {
 }
 ```
 
-Lo ven más claramente? Súper! Ahora bien, ya que nos estamos poniendo un poco más detallistas, en realidad no es una _anonymous function_ sino que __se trata de una _closure_. Cuál es su diferencia? Que utiliza dentro, una variable definida fuera de__ su... a ver cómo anda su memoria?... dentro de __su _scope_ o ámbito__. Se trata del `prefix`. Y por esto es una _closure_.
+Lo ven más claramente? Súper! Ahora bien, ya que nos estamos poniendo un poco más detallistas, en realidad no es una _anonymous function_ sino que __se trata de una _closure_. Cuál es su diferencia? Que utiliza dentro, una variable definida fuera de__ su... a ver cómo anda su memoria?... fuera de __su _scope_ o ámbito__. Se trata del `prefix`. Y por esto es una _closure_.

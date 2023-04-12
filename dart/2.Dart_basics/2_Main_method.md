@@ -1,4 +1,4 @@
-# The _main_ method
+# The main method
 
 @Mau Di Bert
 

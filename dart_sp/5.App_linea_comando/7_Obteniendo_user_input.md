@@ -1,4 +1,4 @@
-# Obteniendo _user input_
+# Obteniendo user input
 
 Empecemos por __cambiar lo primero que el usuario va a ver__ en nuestro programa:
 
@@ -25,13 +25,13 @@ void main() {
 
 Luego de ello, necesitamos obtener qué es lo que escribe y para ello vamos a hacer uso de una función dentro de un paquete o _package_, que es algo que frecuentemente utilizarán.
 
-## _Packages_
+## Packages
 
 Son __librerías de funciones y utilidades de las que podemos hacer uso, sin tener que escribirlas nosotros mismos__. Para ello, necesitamos importar dichas librerías.
 
-Empecemos por escribir cuál es la función que necesitamos que Dart nos ayudará a reconocer de qué librería se trata. Escriban luego del `print` la función `stdin;` (_stantard input_ o entrada estándar). Van a observar un subrayado rojo y al lado, Dart les indica cuál es el error: `Undefined name 'stdin'.`. No está reconociendo ese nombre en nuestro código y eso es porque todavía no lo importamos.
+Empecemos por escribir cuál es la función que necesitamos que Dart nos ayudará a reconocer de qué librería se trata. Escriban luego del `print` la función `stdin;` (_standard input_ o entrada estándar). Van a observar un subrayado rojo y al lado, Dart les indica cuál es el error: `Undefined name 'stdin'.`. No está reconociendo ese nombre en nuestro código y eso es porque todavía no lo importamos.
 
-Situen el cursor encima de dicho nombre, y presionen las teclas `cmd/ctrl + .` y se les va a abrir un menú de ayuda. Allí seleccionan `Import library dart:io`. Dart se encargó de hacer el import de dicha librereia por nosotros y van a ver que ya no hay ningún fallo:
+Sitúen el cursor encima de dicho nombre, y presionen las teclas `cmd/ctrl + .` y se les va a abrir un menú de ayuda. Allí seleccionan `Import library dart:io`. Dart se encargó de hacer el import de dicha librería por nosotros y van a ver que ya no hay ningún fallo:
 
 ![Importando dart:io](https://raw.githubusercontent.com/themonkslab/courses/main/dart/5.app_linea_comando/5.7_importando_dart_io.gif)
 

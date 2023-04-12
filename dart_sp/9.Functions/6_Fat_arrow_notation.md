@@ -1,4 +1,4 @@
-# _Fat arrow notation_
+# Fat arrow notation
 
 Supongamos que tenemos una función bien simple que lo único que hace es calcular la suma de dos valores, algo así:
 

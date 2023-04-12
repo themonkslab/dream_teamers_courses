@@ -1,4 +1,4 @@
-# _For loop_
+# For loop
 
 This type of loop is used to achieve the same thing as the _while loop_ but in a more precise way.
 
@@ -18,7 +18,7 @@ Notice that this way, it takes even a couple of lines less! But how does it work
 
 1. We declare and initialize the variable: `var i = 1;`.
 2. We establish the condition that must be fulfilled to remain inside the loop: `i < 10;`.
-3. We define what the incrementer will be: `i++`.
+3. We define what the increaser will be: `i++`.
 
 This way, what is inside the loop (`{...here...}`) will be executed until the condition that we have established, results in `false`.
 

@@ -1,6 +1,6 @@
-# _Function arguments_
+# Function arguments
 
-Vamos a cambiar continuar con el ejemplo anterior y ya que estamos en una panadería, podría conocer a casi todos los clientes, por lo que quiero saludarlos con su nombre:
+Vamos a continuar con el ejemplo anterior y ya que estamos en una panadería, podría conocer a casi todos los clientes, por lo que quiero saludarlos con su nombre:
 
 ```dart
 void main() {
@@ -14,7 +14,7 @@ void main() {
   print('Hi $client3! 😄 How are you feeling today?');
   print('Hi $client4! 😄 How are you feeling today?');
   print('Hi $client5! 😄 How are you feeling today?');
-  // Again, hasta el inifinito! 😅
+  // Again, hasta el infinito! 😅
 }
 ```
 

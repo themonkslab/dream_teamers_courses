@@ -1,4 +1,4 @@
-# Operaciones aritméticas o _arithmetic operations_
+# Operaciones aritméticas o arithmetic operations
 
 Son las operaciones más conocidas a las que les sumamos un par que no utilizamos tan seguido:
 
@@ -9,7 +9,7 @@ Son las operaciones más conocidas a las que les sumamos un par que no utilizamo
 - División de enteros: __~/__ `print(5~/2)`
 - Módulo: __`%`__ `print(5%2)`
 
-## Operadores de asignación o _assignment operators_
+## Operadores de asignación o assignment operators
 
 Como ya vieron, pueden asignar un valor utilizando el _assignment operator_, '='. Ahora vamos a sumar el '??=' _operator_, que nos sirve para asignar un valor solo si la variable a la que se lo intentamos asignar está vacía, sino dicha variable mantiene su valor. Veámoslo:
 
@@ -37,13 +37,13 @@ void main() {
 }
 ```
 
-Sin embargo, en este último caso, descubrimos un subrayado nuevo a los anteriores (rojos y azules), el subrayado amarillo: nos advierte mediante una advertencia, que el valor no puede ser nulo:
+Sin embargo, en este último caso, descubrimos un subrayado nuevo a los anteriores (rojos y azules), el subrayado amarillo: nos muestra una advertencia, que el valor no puede ser nulo:
 
 ![Subrayado amarillo](https://raw.githubusercontent.com/themonkslab/courses/main/dart/2.Dart_b%C3%A1sico/12.1_subrayado_amarillo.png)
 
 ### Mezclando lo anterior con _compound assignment operators_
 
-Si quisiéramos asignar a una variable el resultado de sumar esa misma variable con otra, probablemente haríamos algo así:
+Si quisiéramos asignar a una variable el resultado de sumar esa misma variable con otra u otro valor, probablemente haríamos algo así:
 
 ```dart
 void main() {
@@ -63,7 +63,7 @@ void main() {
 }
 ```
 
-Obtenemos el mismo resultado pero con algunos caracteres menos. Y pueden aplicar todas las operaciones anteriores solo teniendo en cuenta utilizar un `double` si lo utilizamos para dividirm ya que un valor del tipo `double` (el que va a retornar la división) no puede ser asignado a uno del tipo `int`:
+Obtenemos el mismo resultado pero con algunos caracteres menos. Y pueden aplicar esto a todas las operaciones anteriores solo teniendo en cuenta utilizar un `double` si lo utilizamos para dividir ya que un valor del tipo `double` (el que va a retornar la división, ya que no necesariamente da un resultado exacto) no puede ser asignado a uno del tipo `int`:
 
 ```dart
 void main() {
@@ -77,7 +77,7 @@ void main() {
 
 Es el orden en el que los operadores van a ser ejecutados. Cuál les parece que va a ser el resultado de imprimir `print(10 - 2 * 5);`? 💀 Pongan a prueba su pasado matemático! 🤣
 
-El resultado es '0' ya que el operador '\*' tiene precendencia sobre el operador '-'. Esto quiere decir que primero se ejecuta la operación que contiene '\*' (la multiplicación) y luego la resta. Sucedería lo mismo con la división y la suma:
+El resultado es `0` ya que el operador `*` tiene precedencia sobre el operador `-`. Esto quiere decir que primero se ejecuta la operación que contiene `*` (la multiplicación) y luego la resta. Sucedería lo mismo con la división y la suma:
 
 ```dart
 void main() {
@@ -85,7 +85,7 @@ void main() {
 }
 ```
 
-__Si quisiéramos alterar el orden__ en el que se ejecutan, __podemos utilizar '( )'__, obligando a Dart a ejecutar primero lo que queremos__:
+__Si quisiéramos alterar el orden__ en el que se ejecutan, __podemos utilizar '( )'__, obligando a Dart a ejecutar primero lo que queremos:
 
 ```dart
 void main() {
@@ -93,7 +93,7 @@ void main() {
 }
 ```
 
-## 💪 De _Feet_ (Pie) a Cm
+## 💪 De cm a ft (Pie)
 
 __Requirement__:
 
@@ -103,7 +103,7 @@ __Requirement__:
 
 ```dart
 void main() {
-    // Basic formula: 1 f = 30.48 cm
+    // Basic formula: 1 ft = 30.48 cm
 }
 ```
 
@@ -115,6 +115,6 @@ void main() {
     double myHeightInCm = 165;
     double oneFeetInCm = 30.48;
     String myHeightInFeet = (myHeightInCm / oneFeetInCm).toStringAsFixed(2);
-    print('My height in feet is: $myHeightInFeet f.');
+    print('My height in feet is: $myHeightInFeet ft.');
 }
 ```
