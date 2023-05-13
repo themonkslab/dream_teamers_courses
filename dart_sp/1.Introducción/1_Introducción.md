@@ -46,6 +46,6 @@ __Vas a aprender haciendo__ así que tratá de hacer los ejercicios alternativos
 
 ## Respondiendo a tus preguntas
 
-__Si hay algo que no entendés__, seguí [esta guía]() para tratar de responderte vos mismo en primer lugar (una habilidad que todo programador debe dominar) y sino lo lográs, venite al Discord que alguno de nosotros va a estar ahí para darte una mano o por lo menos, sufrir juntos! 🤣
+__Si hay algo que no entendés__, seguí [esta guía](https://www.themonkslab.com) para tratar de responderte vos mismo en primer lugar (una habilidad que todo programador debe dominar) y sino lo lográs, venite al Discord que alguno de nosotros va a estar ahí para darte una mano o por lo menos, sufrir juntos! 🤣
 
 Te vuelvo a recordar porque nunca estará de más, porque nos enseñan desde chiquitos que el equivocarse está mal: __no existe el error si intentamos aprender de él y no hay pregunta tonta__.
